@@ -103,9 +103,8 @@ $(document).ready(function(){initNavTree('page_intro.html','');});
 <li>Clone our repo from GitHub</li>
 <li>Understand the basics of our tools</li>
 <li>Have a rough picture on the state of the project</li>
-<li>An example of a typical sw change workflow</li>
+<li>An example of a typical SW change workflow</li>
 </ol>
-<p>Off we go!</p>
 <h3>1: Do the necessary installations</h3>
 <p><b>The correct Unity Version via Unity Hub</b><br />
  Hop on over to <a href="https://unity3d.com/de/get-unity/download">Unity</a>, select the Unity Hub for download and go through the setup.<br />
@@ -135,7 +134,25 @@ $(document).ready(function(){initNavTree('page_intro.html','');});
 <li>**<a class="el" href="page_concepts.html">Concepts</a>** : Overall design approaches with requirements and ideas = high level</li>
 <li>**<a class="el" href="page_sys_components.html">System Components</a>** : Describes the overall parts the SW is made of, implementing the concepts = low level</li>
 </ul>
-<p>Best use the doxygen output for reading this, so links to classes etc. work.</p>
+<p>Best use the doxygen output for reading this, so links to classes etc. work. There is always a version of this docu together with the Doxygen output from the master branch hosted here: </p><blockquote class="doxtable">
+<p><a href="https://theroot89.github.io/BomberUnitsDocu/index.html">https://theroot89.github.io/BomberUnitsDocu/index.html</a><br />
+ (It may be out of date though...) </p>
+</blockquote>
+<h3>5. An example of a typical SW change workflow</h3>
+<p>For a feature implementation, things may go like this:</p>
+<ol type="1">
+<li>We decide together which features we want to implement next and move these on our <a href="https://github.com/TheRoot89/BomberUnits/projects">GitHub Repo Projects page</a> from the "Ideas" column to the "ToDo" column.</li>
+<li>Choose one of these tasks and convert the note card to a full <em>Issue</em> via "..." -&gt; "Convert to Issue", if that was not already done before. You also assign yourself as the "Assignee" of that task.</li>
+<li>Fill the issue with whatever info you feel necessary or start a conversation using the comment section.</li>
+<li>Create a branch (from master most of the time), mentioning the issue number in its naming.<br />
+ Example: "feature/#4_implement_multiplayer".<br />
+ Using the "feature/" prefix allows us to sort the branch names after features, bugfixes, releases and whatever categories we want to define.</li>
+<li>Work on you branch and add the feature, using Git and pushing your changes to our repo. Best move your issue from the "ToDo" column to the "In progress" column.</li>
+<li>If there were changes on the master branch from when you branched off it, merge "master" to your branch to check compatibility, resolve merge conflicts and test whether everything still works as expected.</li>
+<li>Go to GitHub, select your branch on the left and click "New pull request". Fill in the details of what you did on your branch, assign Reviewers on the top right and click "Create pull request".</li>
+<li>Once the reviews from us approve your changes, the created pull request (PR) can be merged in GitHub. If you don't need it any longer, your branch can be deleted (this will only delete the name, not the commits you did) and you can close your Issue and move it to the "Done" column! Yeah!</li>
+</ol>
+<p>We hope you feel like you know how things go now. Read on for info on Unity and what needs to be done in game development in general.</p>
 <h2>On Unity </h2>
 <p>Unity is a game engine and tool collection for this engine. There is no real winner when comparing Unity to other free engines, like Unreal - so we just start with the one that looks easier to pick up.</p>
 <p>Unity comes with its own graphical editor to arrange your game world in what Unity calls <em>Scenes</em>. In-game you as a player will always be in one of these Scenes. It may and will feature so-called <em>GameObjects</em>, representing any kind of entity present int the Scene, e.g. a player figure, bullets, particle effects or invisible objects only there to hold <em>Scripts</em>.</p>
@@ -227,7 +244,7 @@ $(document).ready(function(){initNavTree('page_intro.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 24 2019 22:35:34 for BomberUnits by
+    <li class="footer">Generated on Tue Sep 24 2019 23:24:32 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

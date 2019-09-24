@@ -1,0 +1,3 @@
+<map id="OnClick" name="OnClick">
+<area shape="rect" id="node3" href="$class_bomber_units_1_1_explodeable.html" title="{Explodeable\n|+ coreExplosionEffect\l+ coreExplosionEffectBIG\l+ subExplosionEffect\l+ range\l+ bigExplMinRange\l+ partsCollision\l&#45; parts\l&#45; objAffected\l&#45; gridCellsAffected\l&#45; baseForce\l&#45; upFactor\l|+ Start()\l+ Light()\l+ ExplodeSphere()\l+ ExplodeGrid()\l&#45; TestPosition()\l&#45; BreakAndThrow()\l}" alt="" coords="61,132,231,429"/>
+</map>

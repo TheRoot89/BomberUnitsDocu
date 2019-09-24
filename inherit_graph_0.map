@@ -1,0 +1,22 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_auto_destroy.html" title="AutoDestroy" alt="" coords="174,5,269,32"/>
+<area shape="rect" id="node3" href="$class_bomber_units_1_1_breakable.html" title="Breakable" alt="" coords="181,56,261,83"/>
+<area shape="rect" id="node4" href="$class_bomber_units_1_1_explodeable.html" title="Explodeable" alt="" coords="175,107,268,133"/>
+<area shape="rect" id="node5" href="$class_bomber_units_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its compone..." alt="" coords="168,157,275,184"/>
+<area shape="rect" id="node6" href="$class_bomber_units_1_1_loot_spawner.html" title="LootSpawner" alt="" coords="173,208,270,235"/>
+<area shape="rect" id="node7" href="$class_bomber_units_1_1_match_manager.html" title="MatchManager" alt="" coords="167,259,275,285"/>
+<area shape="rect" id="node8" href="$class_bomber_units_1_1_on_click.html" title="OnClick" alt="" coords="187,309,255,336"/>
+<area shape="rect" id="node9" href="$class_bomber_units_1_1_player_controller.html" title="PlayerController" alt="" coords="164,360,279,387"/>
+<area shape="rect" id="node10" href="$class_bomber_units_1_1_u_i_label.html" title="A label handles all kinds of world space hovering displays for game objects. " alt="" coords="189,411,254,437"/>
+<area shape="rect" id="node11" href="$class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="179,461,263,488"/>
+<area shape="rect" id="node13" href="$class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="164,512,279,539"/>
+<area shape="rect" id="node14" href="$class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="173,563,269,589"/>
+<area shape="rect" id="node15" href="$class_bomber_units_1_1_u_i_play_cust_ctrl.html" title="UIPlayCustCtrl" alt="" coords="168,613,275,640"/>
+<area shape="rect" id="node16" href="$class_bomber_units_1_1_u_i_trigger.html" title="A UI Trigger is an object only responsible for setting up a button listener to a target UIMenuPage..." alt="" coords="185,664,258,691"/>
+<area shape="rect" id="node17" href="$class_fade_children.html" title="FadeChildren" alt="" coords="172,715,271,741"/>
+<area shape="rect" id="node18" href="$class_fade_out.html" title="FadeOut" alt="" coords="185,765,257,792"/>
+<area shape="rect" id="node19" href="$class_float_and_rotate.html" title="Makes an object float and rotate. This should be used on a child object, as the floating updates sets..." alt="" coords="165,816,277,843"/>
+<area shape="rect" id="node20" href="$class_grid_overlay.html" title="GridOverlay" alt="" coords="177,867,266,893"/>
+<area shape="rect" id="node21" href="$class_u_i_billboard.html" title="UIBillboard" alt="" coords="179,917,263,944"/>
+<area shape="rect" id="node12" href="$class_bomber_units_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="327,461,436,488"/>
+</map>

@@ -21,5 +21,7 @@ var searchData=
   ['hidetoup',['HideToUp',['../class_bomber_units_1_1_u_i_menu_page.html#ab18b7a1c0b3ea7d45dc6d0d4ff1e15e8',1,'BomberUnits::UIMenuPage']]],
   ['hideup',['HideUp',['../class_bomber_units_1_1_u_i_menu_element.html#a1e08940f127a3f4132f155cf2d319df0',1,'BomberUnits::UIMenuElement']]],
   ['home',['Home',['../index.html',1,'']]],
-  ['how_20to_20doxygen',['How to Doxygen',['../page_how_to_doxygen.html',1,'page_tooling']]]
+  ['how_20to_20add_20to_20doxygen',['How to add to Doxygen',['../page_how_to_add_to_doxygen.html',1,'page_howtos']]],
+  ['how_20to_20generate_20doxygen',['How to generate Doxygen',['../page_how_to_generate_doxygen.html',1,'page_howtos']]],
+  ['how_2dtos',['How-Tos',['../page_howtos.html',1,'']]]
 ];

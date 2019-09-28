@@ -6,6 +6,7 @@ var NAVTREE =
     [ "Concepts", "page_concepts.html", "page_concepts" ],
     [ "System Components", "page_sys_components.html", null ],
     [ "Tooling", "page_tooling.html", "page_tooling" ],
+    [ "How-Tos", "page_howtos.html", "page_howtos" ],
     [ "Todo List", "todo.html", null ],
     [ "Namespace Members", "namespacemembers.html", [
       [ "All", "namespacemembers.html", null ],

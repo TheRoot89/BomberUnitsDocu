@@ -86,31 +86,43 @@ $(document).ready(function(){initNavTree('page_tooling.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Tooling </h1>
-<p>Every developer collects the tooling he finds works best for his tasks, so here are our recommendations to use for this project :)</p>
+<p>Every developer collects the tooling he finds works best for his tasks, so here are our recommendations to use for this project. The list does not claim to be complete and is not binding of course :)</p>
 <h2>Unity </h2>
-<p>Best use <a href="https://unity3d.com/de/get-unity/download">UnityHub</a> to manage the ever-changing versions of Unity and your installations thereof. You can also make sure the right one is associated to this project when firing it up.</p>
+<p>Best use <a href="https://unity3d.com/de/get-unity/download">UnityHub</a> to manage the ever-changing versions of Unity and your installations thereof. You can make sure the right version is associated to this project when firing it up.</p>
 <blockquote class="doxtable">
 <p>Please find the correct Unity version on the mainpage! </p>
 </blockquote>
-<p>For more introductory words on Unity, look at the "On Unity" section at: <a class="el" href="page_intro.html">Introduction</a>.</p>
+<p>For more introductory words on Unity, have a look at the "On Unity" section at: <a class="el" href="page_intro.html">Introduction</a>. Unity provides a lot of tutorials on their own page, as well as on.</p>
 <h2>VS Code </h2>
-<p>You may choose to install and use Visual Studio together with Unity for a full-blown IDE. However the more lightweight VS Code is a great and lean alternative! Have a look here for how to set Visual Studio Code up: <a class="el" href="page_vs_code_setup.html">VSCode Setup</a></p>
+<p>You may choose to install and use Visual Studio together with Unity for a full-blown IDE. However the more lightweight VS Code is a great and lean alternative!</p>
+<p>Have a look here for how to set Visual Studio Code up: <a class="el" href="page_vs_code_setup.html">VSCode Setup</a></p>
 <h2>Git </h2>
-<p>We use Git for versioning and GitHub to track issues, ideas and implementation status. You may want to download the desktop client for ease of use with this repo.</p>
+<p>We use Git for versioning and GitHub to track issues, ideas and implementation status. You may want to download the <a href="https://desktop.github.com/">GitHub Desktop</a> client for ease of use with this repo.</p>
+<h2>GitHub </h2>
+<p>Explore our code repo hoster yourself a bit :) <br />
+ The most prominent feature we use is the project and issue handling. We can sort ideas and features into projects and status columns, convert these to issues, and collaborate on them. This allows for easy team organization.</p>
 <h2>Doxygen </h2>
 <p>Doxygen is the defacto-standard for creating automated code documentation. The auto-generated parts combine nicely with manually created pages, such as this one. The configuration can be a bit fiddly, but you don't have to care for this too much if everything is set up correctly.</p>
-<p>In order to support the auto-generation, <b>please add your code comments in the Doxygen format</b>. Have a look at existing code comments to see how this looks.</p>
-<p>For adding custom pages, look here for more info: <a class="el" href="page_how_to_doxygen.html">How to Doxygen</a></p>
+<p>It parses a given set of input files and folders in search for compatible text and code files. It then extracts the code symbols and attaches correctly written code comments as description of these symbols. Found text pages are converted to HTML pages.<br />
+ It then creates a website structure from which all found pages and all code symbols (the API) can be navigated.</p>
+<p>In order to support the auto-generation, <b>please add your code comments in the Doxygen format</b>. Have a look at existing code comments to see how this looks. Most importantly, one can describe a code symbol at its place of declaration, together with parameters and return value for functions.</p>
+<p>The Doxygen output html is <b>hosted on GitHub</b> as well, by uploading it as the content of a repo:<br />
+ <a href="https://theroot89.github.io/BomberUnitsDocu/index.html">https://theroot89.github.io/BomberUnitsDocu/index.html</a></p>
+<p>There are some How-tos to help you further in using this tool:</p>
+<ul>
+<li><a class="el" href="page_how_to_add_to_doxygen.html">How to add to Doxygen</a></li>
+<li><a class="el" href="page_how_to_generate_doxygen.html">How to generate Doxygen</a></li>
+</ul>
 <h2>Blender </h2>
-<p>Blender is a 3D modelling tool. We can use it to create models and animations. Learning Blender is a whole topic of its own. Importantly, we can open and save most common model formats with it and Unity even supports direct import of blender files.</p>
+<p>Blender is a 3D modelling tool. We can use it to create models, textures and animations. Learning Blender is a whole topic of its own. Importantly, we can open and save most common model formats with it and Unity even supports direct import of blender files.</p>
 <h2>AssetForge </h2>
-<p>A simple tool to create low-poly 3D-Models. These can be used as a style of their own or be used as placeholders. Saves to .obj files. </p>
+<p>A simple tool to create low-poly 3D-Models. These can be used as a style of their own or be used as placeholders. Saves to .obj files, which have to be imported as assets. This tool is not free however! </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 24 2019 23:24:32 for BomberUnits by
+    <li class="footer">Generated on Sat Sep 28 2019 10:15:44 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

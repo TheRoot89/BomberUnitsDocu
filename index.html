@@ -92,52 +92,32 @@ $(document).ready(function(){initNavTree('index.html','');});
  <b>Hash:</b> 07ebd336db4b5eb5f4d40b9a1288352fff5543e9<br />
  <b>Unity version to use:</b> 2018.2.21f1<br />
  <b>How to start:</b> Check out the correct commit, install and assign the correct Unity version to the project in UnityHub, load the project, load and play the "MainMenuScene".</p>
+<h2>About the Documentation </h2>
+<p>This documentation is based on a combination of Doxygen and Markdown. While the Markdown part is (mostly) readable directly or on GitHub, better go to our "GitHub Pages" for the fully generated docu. It will be updated from the master branch from time to time:</p>
+<blockquote class="doxtable">
+<p><a href="https://theroot89.github.io/BomberUnitsDocu/index.html">https://theroot89.github.io/BomberUnitsDocu/index.html</a> </p>
+</blockquote>
+<p>You can also generate and view the up-to-data HTML output locally, as explained here:<br />
+ <a class="el" href="page_how_to_generate_doxygen.html">How to generate Doxygen</a></p>
 <h2>Content </h2>
 <ul>
 <li><a class="el" href="page_intro.html">Introduction</a></li>
 <li><a class="el" href="page_concepts.html">Concepts</a> : Overall design approaches with requirements and ideas.</li>
 <li><a class="el" href="page_sys_components.html">System Components</a> : Describes the overall parts the SW is made of, implementing the concepts.</li>
 <li><a class="el" href="page_tooling.html">Tooling</a></li>
+<li><a class="el" href="page_howtos.html">How-Tos</a></li>
 <li>Auto-generated content: Todo-List, Classes, etc...</li>
-</ul>
-<h2>About the Documentation </h2>
-<p>This documentation is based on a combination of Doxygen and Markdown. While the Markdown part is (mostly) readable directly or on GitHub, better go to our "GitHub Pages" for the fully generated docu. It will be updated from the master branch from time to time:</p>
-<blockquote class="doxtable">
-<p><a href="https://theroot89.github.io/BomberUnitsDocu/index.html">https://theroot89.github.io/BomberUnitsDocu/index.html</a> </p>
-</blockquote>
-<p>The docu shall be built up like this:</p>
-<p>~~~plantuml </p><div class="plantumlgraph">
-<img src="inline_umlgraph_4.png" />
-</div>
-<p> ~~~</p>
-<p>As mentioned above, the docu consists of auto-generated content from the parsed scripts and additional pages on various topics. Most importantly, the <b>Concepts</b> pages each explain: (See: <a class="el" href="page_concepts.html">Concepts</a>)</p>
-<ul>
-<li><b>System Requirements</b>: A typical problem a game program such as this poses, which needs to be solved.<br />
- In essence, these are the results of the Game Design process, i.e. what we want to achieve. The GameDesign can currently be found in a ppt file.</li>
-<li><b>System solution</b>: The approach taken to solve the problem from a top-level perspective.</li>
-<li><b>SW requirements (in part)</b>: Constraints on how to implement the system solution best.</li>
-<li><b>SW solution</b>: Explanations on how the solution works if solved by multiple classes. Also find <b>usage information</b> here for how the implementation is to be used.<br />
- The actual <b>SW solution detailed design</b> is represented by the code comments in the implementation files. This is parsed and accessible at the Doxygen output for each of the related classes.</li>
 </ul>
 <p>These documentation pages are viewable as text files, rendered as Markdown, e.g. in VSCode preview, or after generating the Doxygen docu HTML as explained below.</p>
 <p>The Doxygen-specific "\\ref" links and commands will not work when viewing the files directly or as Markdown, but you may search textually for the referenced unique keywords to find the relevant content.</p>
-<h2>Building the Documentation locally </h2>
-<p>Prerequisites:<br />
- You may have to install Doxygen and GraphViz (dot) from the internet. Google is your friend here.</p>
-<p>Use the PowerShell script <code>build_docu.ps1</code> in the <em>Doc</em> folder to build the documentation. It calls <code>doxygen Doxyfile</code> to call doxygen with its configuration and creates a link to the start page. <br />
- Double-click it to execute and select PowerShell as program to open it with if necessary. In order to allow PowerShell script execution you may have to execute the following in a PowerShell you started with Admin rights: <code>Set-ExecutionPolicy Unrestricted</code></p>
-<h2>Adding to the Documentation </h2>
-<ul>
-<li><em>MUST</em>: Comment your code with Doxygen-compatible syntax ( -&gt; have a look at existing code).</li>
-<li><em>OPTIONAL</em>: Create your own so-called 'Related pages' (this is one of them) to describe overall concepts or details you don't want to explain in your class documentation via above-mentioned comments. See <a class="el" href="page_how_to_doxygen.html">How to Doxygen</a> for more details.</li>
-</ul>
-<p>If you updated the master branch with new documentation, think about pushing the generated html files to the root of the repo hosting the docu <a href="https://github.com/TheRoot89/BomberUnitsDocu">here</a>. </p>
+<h2>Contributing to the Documentation </h2>
+<p>Have a look at the How-To for this: <a class="el" href="page_how_to_add_to_doxygen.html">How to add to Doxygen</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 24 2019 23:24:36 for BomberUnits by
+    <li class="footer">Generated on Sat Sep 28 2019 10:15:48 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

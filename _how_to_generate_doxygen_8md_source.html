@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BomberUnits: Member List</title>
+<title>BomberUnits: doxy_in/docs_doxygen/HowTos/HowToGenerateDoxygen.md Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_bomber_units_1_1_state___host_main_menu.html','');});
+$(document).ready(function(){initNavTree('_how_to_generate_doxygen_8md.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -82,24 +82,16 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_state___host_ma
 
 <div class="header">
   <div class="headertitle">
-<div class="title">State_HostMainMenu Member List</div>  </div>
+<div class="title">doxy_in/docs_doxygen/HowTos/HowToGenerateDoxygen.md</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_bomber_units_1_1_state___host_main_menu.html">State_HostMainMenu</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html#aed10231a53b21a74174d61bc03a415b4">HandleBackCommand</a>()</td><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html">State_HostMainMenu</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_bomber_units_1_1_game_state.html#a0eaceac08b3e206d573c37ab0913ecd8">HandleCommand</a>(StateCommand cmd)</td><td class="entry"><a class="el" href="class_bomber_units_1_1_game_state.html">GameState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html#aa845f667ad54bd18d3be2723d4e4a289">HandleConnectCommand</a>()</td><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html">State_HostMainMenu</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html#aaf49ec34071db330bbb34939118c4b90">HandleNextCommand</a>()</td><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html">State_HostMainMenu</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html#afd39b1931c365300d96b06e734fb04ee">HandleSettingsCommand</a>()</td><td class="entry"><a class="el" href="class_bomber_units_1_1_state___host_main_menu.html">State_HostMainMenu</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>StateCommand</b> enum name (defined in <a class="el" href="class_bomber_units_1_1_game_state.html">GameState</a>)</td><td class="entry"><a class="el" href="class_bomber_units_1_1_game_state.html">GameState</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;\page page_how_to_generate_doxygen How to generate Doxygen</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;How to generate the Doxygen output locally</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;==========================================</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&gt; Prerequisites:&lt;br&gt;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&gt; You may have to install Doxygen and GraphViz (dot) from the internet. Google is your friend.</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;Use the PowerShell script ```build_docu.ps1``` in the *Doc* folder to build the documentation.</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;It calls ```doxygen Doxyfile``` to call doxygen with its configuration and creates a link to the start page.</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;br&gt;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;Double-click it to execute and select PowerShell as program to open it with if necessary. In order to allow</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;PowerShell script execution you may have to execute the following in a PowerShell you started with Admin</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;rights:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;```Set-ExecutionPolicy Unrestricted```</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;When the generation of the HTML output ist done, the script will also add a link to the main page which is in</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;```Doc/doxy_out/html/index.html```. Open that with your browser.&lt;br&gt;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;The content of the *html* folder is what is uploaded to our Docu repository and hosted automatically by</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;GitHub.</div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 28 2019 10:15:47 for BomberUnits by
+    <li class="navelem"><b>HowToGenerateDoxygen.md</b></li>
+    <li class="footer">Generated on Sat Sep 28 2019 10:15:43 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

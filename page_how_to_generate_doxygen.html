@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BomberUnits: How to Doxygen</title>
+<title>BomberUnits: How to generate Doxygen</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('page_how_to_doxygen.html','');});
+$(document).ready(function(){initNavTree('page_how_to_generate_doxygen.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -82,24 +82,25 @@ $(document).ready(function(){initNavTree('page_how_to_doxygen.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">How to Doxygen </div>  </div>
+<div class="title">How to generate Doxygen </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>How to <em>Doxygen</em> </h1>
-<h2>Using PlantUML graphs in Markdown files </h2>
-<p>PlantUML provides a syntax to specify UML graphs inline from Markdown. The result is rendered here in the preview and in Doxygen. Writing PlantUML with the following Syntax will generate it in the VSCode preview, but also show the initial, quite ugly code block ticks in Doxygen. This is unfortunate but I found no workaround yet. Also the set style configuration file is not included when previewing.</p>
-<p>An example for a PlantUML activity diagram:</p>
-<p>```plantuml </p><div class="plantumlgraph">
-<img src="inline_umlgraph_2.png" />
-</div>
-<p> ``` </p>
+<div class="textblock"><h1>How to generate the Doxygen output locally </h1>
+<blockquote class="doxtable">
+<p>Prerequisites:<br />
+ You may have to install Doxygen and GraphViz (dot) from the internet. Google is your friend. </p>
+</blockquote>
+<p>Use the PowerShell script <code>build_docu.ps1</code> in the <em>Doc</em> folder to build the documentation. It calls <code>doxygen Doxyfile</code> to call doxygen with its configuration and creates a link to the start page. <br />
+ Double-click it to execute and select PowerShell as program to open it with if necessary. In order to allow PowerShell script execution you may have to execute the following in a PowerShell you started with Admin rights: <code>Set-ExecutionPolicy Unrestricted</code></p>
+<p>When the generation of the HTML output ist done, the script will also add a link to the main page which is in <code>Doc/doxy_out/html/index.html</code>. Open that with your browser.<br />
+ The content of the <em>html</em> folder is what is uploaded to our Docu repository and hosted automatically by GitHub. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="page_tooling.html">Tooling</a></li>
-    <li class="footer">Generated on Tue Sep 24 2019 23:24:33 for BomberUnits by
+    <li class="navelem"><a class="el" href="page_howtos.html">How-Tos</a></li>
+    <li class="footer">Generated on Sat Sep 28 2019 10:15:45 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

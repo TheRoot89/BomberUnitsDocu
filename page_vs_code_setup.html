@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('page_vs_code_setup.html','');});
 <li>Install the C# extension.</li>
 <li>Open the Unity project.</li>
 <li>Set Visual Studio Code as the default External Script Editor.</li>
-<li>Extend VSCode with further extensions, like Debugging, as listed on the website above after the setup section.</li>
+<li>Extend VSCode with further extensions, like Debugging for Unity, as listed on the website above after the setup section.</li>
 <li>Enable code completion.</li>
 </ol>
 <p><b>Note:</b> you may have to delete all the .sln and .csproj files in the root folder to have Unity build the configuration specialized for VSCode.</p>
@@ -105,20 +105,21 @@ $(document).ready(function(){initNavTree('page_vs_code_setup.html','');});
 <h3>C&lt;/h3&gt; Use this if working for example with Unity C# code. Regions with Colors</h3>
 <p>Provides #region highlight for C# code. You can set the color with alpha channel in the settings. Purple: rgba(132, 27, 237, 0.1)</p>
 <h3>Git Lens</h3>
-<p>This add way more functionality, such as Diffs, History, Blame annotations etc. to your sources. You may want to configure it to show everything under the normal <em>Source Control</em> sidebar, so it does not generate an additional icon to the side.</p>
+<p>This adds way more functionality, such as Diffs, History, Blame annotations etc. to your source control in VS Code. You may want to configure it to show everything under the normal <em>Source Control</em> sidebar, so it does not generate an additional icon to the side.</p>
 <h3>Git Graph</h3>
-<p>Allows you to show a Git Graph (or <em>Git log</em>) view from the <em>Source Control</em> side bar via a small additional icon at the top. You may even interact with the commits etc.</p>
+<p>Allows you to show a Git Graph (or <em>Git log</em>) view from the <em>Source Control</em> side bar via a small additional icon at the top, or via the "Git Graph" button in the status bar.<br />
+ It is way easier to get an overview on what is going on using this visual representation of branches etc..</p>
 <h3>Bracket Pair Colorizer 2</h3>
-<p>This will highlight cascaded brackets such as ([{}]) in your code, making your life easier :)</p>
+<p>This will highlight cascaded brackets such as ([{}]) in your code, making your life a bit easier :)</p>
 <h3>Code Spell Checker</h3>
-<p>This is a nice spelling checker. You can disable certain file types and it will recognize CamelCase and the like as own words. You may have to add a lot of words to the <em>User Dictionary</em> though in the beginning.</p>
-<p>Hint: When having this and other kinds of checks, such as Unused-include checks (C# support), use a filter of <code>!Photon</code> in the <em>PROBLEMS</em> panel to not display findings from the Photon sources.</p>
+<p>This is a nice spelling checker. You can disable certain file types and it will recognize CamelCase and the like as a concatenation of words. You may have to add a lot of words to your <em>User Dictionary</em> in the beginning though.</p>
+<p>Hint: When having this and other kinds of checks, such as Unused-include checks (C# support), use a filter of <code>!Photon</code> in the bottom <em>PROBLEMS</em> panel to not display findings from the Photon sources we use.</p>
 <h3>PlantUML</h3>
-<p>Provides previews of plantuml code blocks in Markdown or own PlantUML files. Be sure to set the mode to <em>Server</em>. This documentation should contain some examples of how to use this.</p>
+<p>Provides previews of plantuml code blocks in Markdown or own PlantUML files when viewing these with VS Code. Be sure to set the mode to <em>Server</em>. This documentation should contain some examples of how to write PlantUML diagrams in the Markdowns. Click the top right "Open Preview to the Side" button to have your Markdown rendered.</p>
 <h3>Markdown Preview Github Styling</h3>
-<p>Makes your markdown background white and is much closer to the usually rendered result this way! Also UML diagrams with black text will be readable ;)</p>
+<p>Makes your markdown background white and is much closer to the usually rendered result this way! Also UML diagrams with black text will be readable now ;)</p>
 <h3>TODO Highlight</h3>
-<p>...lets you highlight tags you can set yourself. Typical comment flags, such as //TODO are pre-set. You may want to add the Doxygen-specific flag \todo though.</p>
+<p>...lets you highlight tags you can set yourself. Typical comment flags, such as //TODO are pre-set. You may want to add the Doxygen-specific flag \todo though. You can also define your own, such as "//TONI"</p>
 <h3>vscode-icons</h3>
 <p>Nice icons for your folders and files, increasing explorer view usability a lot! </p>
 </div></div><!-- contents -->
@@ -127,7 +128,7 @@ $(document).ready(function(){initNavTree('page_vs_code_setup.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_tooling.html">Tooling</a></li>
-    <li class="footer">Generated on Tue Sep 24 2019 23:24:34 for BomberUnits by
+    <li class="footer">Generated on Sat Sep 28 2019 10:15:45 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

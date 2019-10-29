@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['populatecolors',['PopulateColors',['../class_bomber_units_1_1_u_i_play_cust_ctrl.html#ac009dc40d5b45c49639527c82a305c6f',1,'BomberUnits::UIPlayCustCtrl']]],
-  ['populatefigures',['PopulateFigures',['../class_bomber_units_1_1_u_i_play_cust_ctrl.html#aef2c6cf677bac483a5d0c1dd6750d8d8',1,'BomberUnits::UIPlayCustCtrl']]],
-  ['populateinputschemes',['PopulateInputSchemes',['../class_bomber_units_1_1_u_i_play_cust_ctrl.html#a2088c2879ac558812d38e33d97064538',1,'BomberUnits::UIPlayCustCtrl']]],
-  ['pressaddplayer',['PressAddPlayer',['../class_bomber_units_1_1_u_i_manager.html#abd987f3ffff11b6d0f04c7a415712e42',1,'BomberUnits::UIManager']]],
-  ['presschangefigure',['PressChangeFigure',['../class_bomber_units_1_1_u_i_play_cust_ctrl.html#a0f9d9f545b385e7a467eb13f7d1239f2',1,'BomberUnits::UIPlayCustCtrl']]],
-  ['presscustomizeplayerfigure',['PressCustomizePlayerFigure',['../class_bomber_units_1_1_u_i_manager.html#acad87ba739aab685523fb4da9765f70f',1,'BomberUnits::UIManager']]],
-  ['pressok',['PressOK',['../class_bomber_units_1_1_u_i_play_cust_ctrl.html#a96f0bb958707a4aff94832783e2e6d20',1,'BomberUnits::UIPlayCustCtrl']]]
+  ['readboard',['ReadBoard',['../class_bomber_units_1_1_match_manager.html#a694155de0a38b6b6c6d74dd27bc716e8',1,'BomberUnits::MatchManager']]],
+  ['replaceby',['ReplaceBy',['../class_bomber_units_1_1_u_i_menu_page.html#aac8c4744e954ee4eb2828c7a3daa2a35',1,'BomberUnits::UIMenuPage']]],
+  ['replacebylasthiddenpage',['ReplaceByLastHiddenPage',['../class_bomber_units_1_1_u_i_menu_page.html#ab2f2d084d3144a5c33219a4003062df0',1,'BomberUnits::UIMenuPage']]]
 ];

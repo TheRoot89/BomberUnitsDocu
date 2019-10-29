@@ -1,5 +1,2 @@
 <map id="UITrigger" name="UITrigger">
-<area shape="rect" id="node3" href="$class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="133,740,333,1008"/>
-<area shape="rect" id="node4" href="$class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="68,219,271,663"/>
-<area shape="rect" id="node5" href="$class_bomber_units_1_1_game_state.html" title="Base class for all Game states. " alt="" coords="275,5,490,156"/>
 </map>

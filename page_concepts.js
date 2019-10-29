@@ -1,8 +1,8 @@
 var page_concepts =
 [
-    [ "Menu page System", "page_menu_system.html", null ],
-    [ "UI State System", "page_ui_states.html", null ],
+    [ "Game Management and Control Flow", "page_game_management_control_flow.html", null ],
+    [ "Handling State", "page_handling_state.html", null ],
+    [ "Menu page System", "page_ui_menu_system.html", null ],
     [ "Player Management", "page_player_management.html", null ],
-    [ "Networking", "page_networking.html", null ],
-    [ "Dialogs", "page_dialogs.html", null ]
+    [ "Networking", "page_networking.html", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['system_20components',['System Components',['../page_sys_components.html',1,'']]]
+  ['sw_20architecture',['SW Architecture',['../page_sw_architecture.html',1,'']]]
 ];

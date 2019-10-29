@@ -5,6 +5,7 @@ var class_bomber_units_1_1_player =
     [ "color", "class_bomber_units_1_1_player.html#aa5f4d1eda21c196bd8401ff73f105073", null ],
     [ "input", "class_bomber_units_1_1_player.html#a72386a46ee420f71a0076dc47f2676fb", null ],
     [ "isNew", "class_bomber_units_1_1_player.html#a9530e1e393763277fa4e373d996a2142", null ],
+    [ "modelID", "class_bomber_units_1_1_player.html#a28ef9c4d5a8aeceda8d105548733586e", null ],
     [ "name", "class_bomber_units_1_1_player.html#a8ccf841cb59e451791bcb2e1ac4f1edc", null ],
     [ "playerFigure", "class_bomber_units_1_1_player.html#adf44da2163ca6067b247cdc95ecc862b", null ],
     [ "playerSlot", "class_bomber_units_1_1_player.html#ac4d352ef12c5b8be2cce2392a11ac25d", null ],

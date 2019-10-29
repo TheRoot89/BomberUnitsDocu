@@ -85,8 +85,8 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_u_i_menu_page.h
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_bomber_units_1_1_u_i_menu_page-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -110,9 +110,8 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_u_i_menu_page.h
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bomber_units_1_1_u_i_menu_page__coll__graph.png" border="0" usemap="#_u_i_menu_page_coll__map" alt="Collaboration graph"/></div>
 <map name="_u_i_menu_page_coll__map" id="_u_i_menu_page_coll__map">
-<area shape="rect" id="node4" href="class_bomber_units_1_1_u_i_trigger.html" title="A UI Trigger is an object only responsible for setting up a button listener to a target UIMenuPage..." alt="" coords="233,984,407,1105"/>
-<area shape="rect" id="node3" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="127,132,329,576"/>
-<area shape="rect" id="node5" href="class_bomber_units_1_1_game_state.html" title="Base class for all Game states. " alt="" coords="405,697,619,848"/>
+<area shape="rect" id="node3" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="55,132,258,576"/>
+<area shape="rect" id="node4" href="class_bomber_units_1_1_u_i_trigger.html" title="{UITrigger\n|+ button\l+ command\l|+ ClearBtnAndRegisterCommand()\l+ GetCmdName()\l}" alt="" coords="283,301,505,407"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -205,21 +204,24 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_bomber_units_1_1_u_i_menu_element.html">UIMenuElement</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_menu_page.html#a07777372d18563cb1885f02fb5f6d95b">pageElements</a></td></tr>
 <tr class="memdesc:a07777372d18563cb1885f02fb5f6d95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the elements that comprise a page. <br /></td></tr>
 <tr class="separator:a07777372d18563cb1885f02fb5f6d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f5d5ed90419d19d1041199158ead9a6"><td class="memItemLeft" align="right" valign="top"><a id="a0f5d5ed90419d19d1041199158ead9a6"></a>
+<a class="el" href="class_bomber_units_1_1_u_i_trigger.html">UITrigger</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>triggers</b></td></tr>
+<tr class="separator:a0f5d5ed90419d19d1041199158ead9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa41345d41e1b2687d594b05facdf7d"><td class="memItemLeft" align="right" valign="top"><a id="a3fa41345d41e1b2687d594b05facdf7d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isShown</b> = false</td></tr>
 <tr class="separator:a3fa41345d41e1b2687d594b05facdf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3813f1bffb4272b1b5fa1faf30a2203d"><td class="memItemLeft" align="right" valign="top"><a id="a3813f1bffb4272b1b5fa1faf30a2203d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAllTriggers</b> ()</td></tr>
+<tr class="separator:a3813f1bffb4272b1b5fa1faf30a2203d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a4fadcb0f180fa869b836b194dc05a5e0"><td class="memItemLeft" align="right" valign="top"><a id="a4fadcb0f180fa869b836b194dc05a5e0"></a>
 static List&lt; <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllShownPages</b> ()</td></tr>
 <tr class="separator:a4fadcb0f180fa869b836b194dc05a5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a0f5d5ed90419d19d1041199158ead9a6"><td class="memItemLeft" align="right" valign="top"><a id="a0f5d5ed90419d19d1041199158ead9a6"></a>
-<a class="el" href="class_bomber_units_1_1_u_i_trigger.html">UITrigger</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>triggers</b></td></tr>
-<tr class="separator:a0f5d5ed90419d19d1041199158ead9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -265,7 +267,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 <p>Hide all elements to a specified direction using their delays, overwriting their directions. </p>
 <p>This can only be called from script due to the parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00235">235</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00238">238</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
 
 </div>
 </div>
@@ -295,7 +297,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 
 <p>Hides everything not also on the new page and shows that page instead, elements on both pages are not animated. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00073">73</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00065">65</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
 
 </div>
 </div>
@@ -325,7 +327,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 <p>Allows to replace this page by the last hidden page, if any. </p>
 <p>Will log a warning if there is no last hidden page. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00096">96</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00088">88</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
 
 </div>
 </div>
@@ -354,7 +356,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 
 <p>Closes everything else before showing this page, elements already shown are not animated. </p>
 <p>Idea: return a backup: </p><div class="fragment"><div class="line"><a class="code" href="class_bomber_units_1_1_u_i_menu_page.html#a3222a65d8903f1858f192dcc04dfe46d">UIMenuPage</a> backup = <span class="keyword">new</span> <a class="code" href="class_bomber_units_1_1_u_i_menu_page.html#a3222a65d8903f1858f192dcc04dfe46d">UIMenuPage</a>(curShownElements.ToArray());</div><div class="line">...</div><div class="line">return backup;</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00117">117</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00109">109</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
 
 </div>
 </div>
@@ -385,7 +387,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 <p>Override to show an exclusive page with all elements coming from a specified direction. </p>
 <p>This is typically used to introduce a completely new menu, such as the main menu. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00140">140</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00134">134</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
 
 </div>
 </div>
@@ -416,7 +418,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 <p>Show all elements from a specified direction using their delays, overwriting their directions. </p>
 <p>This can only be called from script due to the parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00189">189</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_menu_page_8cs_source.html#l00187">187</a> of file <a class="el" href="_u_i_menu_page_8cs_source.html">UIMenuPage.cs</a>.</p>
 
 </div>
 </div>
@@ -429,7 +431,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_bomber_units.html">BomberUnits</a></li><li class="navelem"><a class="el" href="class_bomber_units_1_1_u_i_menu_page.html">UIMenuPage</a></li>
-    <li class="footer">Generated on Sun Sep 29 2019 10:20:49 for BomberUnits by
+    <li class="footer">Generated on Tue Oct 29 2019 06:07:00 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

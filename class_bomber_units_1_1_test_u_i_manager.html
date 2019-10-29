@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_test_u_i_manage
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bomber_units_1_1_test_u_i_manager__inherit__graph.png" border="0" usemap="#_test_u_i_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_test_u_i_manager_inherit__map" id="_test_u_i_manager_inherit__map">
-<area shape="rect" id="node2" href="class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="5,131,216,399"/>
+<area shape="rect" id="node2" href="class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="5,131,216,413"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,14 +108,11 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_test_u_i_manage
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bomber_units_1_1_test_u_i_manager__coll__graph.png" border="0" usemap="#_test_u_i_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_test_u_i_manager_coll__map" id="_test_u_i_manager_coll__map">
-<area shape="rect" id="node2" href="class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="141,984,352,1208"/>
-<area shape="rect" id="node8" href="class_bomber_units_1_1_u_i_play_cust_ctrl.html" title="{UIPlayCustCtrl\n|+ colorsAvailable\l+ figuresAvailable\l&#45; colorVLayout\l&#45; playerFigureImage\l&#45; playerNameInputField\l&#45; inputSchemeDropdown\l&#45; figureSelScrollView\l|+ CustomizePlayerFigure()\l+ PressChangeFigure()\l+ PressOK()\l&#45; Awake()\l&#45; Start()\l&#45; PopulateColors()\l&#45; PopulateInputSchemes()\l&#45; PopulateFigures()\l}" alt="" coords="427,1271,604,1539"/>
-<area shape="rect" id="node4" href="class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="286,639,486,907"/>
-<area shape="rect" id="node5" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="285,132,488,576"/>
-<area shape="rect" id="node6" href="class_bomber_units_1_1_u_i_trigger.html" title="A UI Trigger is an object only responsible for setting up a button listener to a target UIMenuPage..." alt="" coords="458,1035,632,1157"/>
-<area shape="rect" id="node7" href="class_bomber_units_1_1_game_state.html" title="Base class for all Game states. " alt="" coords="47,697,262,848"/>
-<area shape="rect" id="node9" href="class_bomber_units_1_1_player.html" title="{Player\n|+ name\l+ type\l+ playerFigure\l+ sprite\l+ color\l+ playerSlot\l+ isNew\l|+ Player()\l+ GetCtrl()\l}" alt="" coords="740,1006,846,1186"/>
-<area shape="rect" id="node10" href="struct_bomber_units_1_1_input_scheme.html" title="InputScheme holds the Input axes of a given input setting. One scheme is assigned to each player..." alt="" coords="736,712,855,833"/>
+<area shape="rect" id="node2" href="class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="180,1208,391,1447"/>
+<area shape="rect" id="node4" href="class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="186,863,386,1145"/>
+<area shape="rect" id="node5" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="422,132,624,576"/>
+<area shape="rect" id="node7" href="class_bomber_units_1_1_main_menu_state_machine.html" title="{MainMenuStateMachine\n|+ mainMenuPrefab\l&#45; controller\l&#45; menuPagesInstance\l&#45; nameOfLastBtnPressed\l&#45; menuInstance\l|+ DestroyMenu()\l+ GetLastButtonPressed()\l+ DoTransition()\l+ Init()\l+ CreateMainMenuIfNotExisting()\l+ GetPageFromName()\l&#45; Awake()\l&#45; Start()\l}" alt="" coords="535,600,748,839"/>
+<area shape="rect" id="node6" href="class_bomber_units_1_1_u_i_trigger.html" title="{UITrigger\n|+ button\l+ command\l|+ ClearBtnAndRegisterCommand()\l+ GetCmdName()\l}" alt="" coords="174,301,397,407"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,18 +122,21 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HideAllCurShown</b> ()</td></tr>
 <tr class="separator:a4c9bb2d431d67b94e7d1a33164e84d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_bomber_units_1_1_u_i_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_bomber_units_1_1_u_i_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a></td></tr>
+<tr class="memitem:af7755dc83126a261af82ac60d23765a9 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="af7755dc83126a261af82ac60d23765a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitAndShowMainMenu</b> ()</td></tr>
+<tr class="separator:af7755dc83126a261af82ac60d23765a9 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d3f78639b0b3599a121df97dd2fc78 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78">SetStatus</a> (string msg)</td></tr>
 <tr class="memdesc:a84d3f78639b0b3599a121df97dd2fc78 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows other components to show messages on the menu UI.  <a href="class_bomber_units_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78">More...</a><br /></td></tr>
 <tr class="separator:a84d3f78639b0b3599a121df97dd2fc78 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434725173a9372a81aaf1b3215deb887 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a434725173a9372a81aaf1b3215deb887"></a>
+<a class="el" href="class_bomber_units_1_1_main_menu_state_machine.html">MainMenuStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMainMenuSM</b> ()</td></tr>
+<tr class="separator:a434725173a9372a81aaf1b3215deb887 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b513cddd594f1c359e4f0a3e79a8c6 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#ae4b513cddd594f1c359e4f0a3e79a8c6">Awake</a> ()</td></tr>
 <tr class="memdesc:ae4b513cddd594f1c359e4f0a3e79a8c6 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Awake is called even before Start, so do checks and singleton assignment here.  <a href="class_bomber_units_1_1_u_i_manager.html#ae4b513cddd594f1c359e4f0a3e79a8c6">More...</a><br /></td></tr>
 <tr class="separator:ae4b513cddd594f1c359e4f0a3e79a8c6 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b55551f82d3e740cf1e2a84d5518af3 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#a4b55551f82d3e740cf1e2a84d5518af3">HandleStateCommand</a> (string cmd)</td></tr>
-<tr class="memdesc:a4b55551f82d3e740cf1e2a84d5518af3 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles calls to this function by UI objects, such as buttons.  <a href="class_bomber_units_1_1_u_i_manager.html#a4b55551f82d3e740cf1e2a84d5518af3">More...</a><br /></td></tr>
-<tr class="separator:a4b55551f82d3e740cf1e2a84d5518af3 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd987f3ffff11b6d0f04c7a415712e42 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#abd987f3ffff11b6d0f04c7a415712e42">PressAddPlayer</a> ()</td></tr>
 <tr class="memdesc:abd987f3ffff11b6d0f04c7a415712e42 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the "Add Player" symbol button component near the bottom of the main screen.  <a href="class_bomber_units_1_1_u_i_manager.html#abd987f3ffff11b6d0f04c7a415712e42">More...</a><br /></td></tr>
 <tr class="separator:abd987f3ffff11b6d0f04c7a415712e42 inherit pub_methods_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,9 +166,6 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>playerSlotAvail
 <tr class="memitem:a17aa307f607787001f7e5735ea651976 inherit pub_attribs_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a17aa307f607787001f7e5735ea651976"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>playerSlotTakenPrefab</b></td></tr>
 <tr class="separator:a17aa307f607787001f7e5735ea651976 inherit pub_attribs_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e7738b58802bcb29c84cc79e955f4d0 inherit pub_attribs_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a8e7738b58802bcb29c84cc79e955f4d0"></a>
-<a class="el" href="class_bomber_units_1_1_u_i_play_cust_ctrl.html">UIPlayCustCtrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uiPlayCustCtrl</b></td></tr>
-<tr class="separator:a8e7738b58802bcb29c84cc79e955f4d0 inherit pub_attribs_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a813a9e22eee7906318c106b7077307de inherit pub_attribs_class_bomber_units_1_1_u_i_manager"><td class="memItemLeft" align="right" valign="top"><a id="a813a9e22eee7906318c106b7077307de"></a>
 Text&#160;</td><td class="memItemRight" valign="bottom"><b>statusBar</b></td></tr>
 <tr class="separator:a813a9e22eee7906318c106b7077307de inherit pub_attribs_class_bomber_units_1_1_u_i_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +183,7 @@ Text&#160;</td><td class="memItemRight" valign="bottom"><b>statusBar</b></td></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_bomber_units.html">BomberUnits</a></li><li class="navelem"><a class="el" href="class_bomber_units_1_1_test_u_i_manager.html">TestUIManager</a></li>
-    <li class="footer">Generated on Sun Sep 29 2019 10:20:49 for BomberUnits by
+    <li class="footer">Generated on Tue Oct 29 2019 06:07:00 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

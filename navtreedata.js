@@ -2,9 +2,10 @@ var NAVTREE =
 [
   [ "BomberUnits", "index.html", [
     [ "Home", "index.html", null ],
-    [ "Introduction", "page_intro.html", null ],
+    [ "Introduction", "page_intro.html", "page_intro" ],
+    [ "Game Design", "page_game_design.html", null ],
+    [ "SW Architecture", "page_sw_architecture.html", "page_sw_architecture" ],
     [ "Concepts", "page_concepts.html", "page_concepts" ],
-    [ "System Components", "page_sys_components.html", null ],
     [ "Tooling", "page_tooling.html", "page_tooling" ],
     [ "How-Tos", "page_howtos.html", "page_howtos" ],
     [ "Todo List", "todo.html", null ],
@@ -31,7 +32,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_auto_destroy_8cs_source.html",
-"class_bomber_units_1_1_u_i_menu_page.html#af9fcba118ca08616b2f011f0f938c84e"
+"class_bomber_units_1_1_u_i_menu_element.html#a874518707dbe04a8d049d64e9db60e9d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

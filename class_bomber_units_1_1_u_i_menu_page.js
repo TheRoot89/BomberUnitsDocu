@@ -13,6 +13,7 @@ var class_bomber_units_1_1_u_i_menu_page =
     [ "HideToLeft", "class_bomber_units_1_1_u_i_menu_page.html#a9d8762956d61caa7ef345cf6fc5fcf86", null ],
     [ "HideToRight", "class_bomber_units_1_1_u_i_menu_page.html#af4b766e0a856cd4576e99e45d3616f5e", null ],
     [ "HideToUp", "class_bomber_units_1_1_u_i_menu_page.html#ab18b7a1c0b3ea7d45dc6d0d4ff1e15e8", null ],
+    [ "RegisterAllTriggers", "class_bomber_units_1_1_u_i_menu_page.html#a3813f1bffb4272b1b5fa1faf30a2203d", null ],
     [ "ReplaceBy", "class_bomber_units_1_1_u_i_menu_page.html#aac8c4744e954ee4eb2828c7a3daa2a35", null ],
     [ "ReplaceByLastHiddenPage", "class_bomber_units_1_1_u_i_menu_page.html#ab2f2d084d3144a5c33219a4003062df0", null ],
     [ "Show", "class_bomber_units_1_1_u_i_menu_page.html#ace79e5f49885e486e8e1d48ff0666476", null ],

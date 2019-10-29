@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_u_i_manager.htm
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_bomber_units_1_1_u_i_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -101,7 +102,7 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_u_i_manager.htm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bomber_units_1_1_u_i_manager__inherit__graph.png" border="0" usemap="#_u_i_manager_inherit__map" alt="Inheritance graph"/></div>
 <map name="_u_i_manager_inherit__map" id="_u_i_manager_inherit__map">
-<area shape="rect" id="node3" href="class_bomber_units_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="39,447,182,524"/>
+<area shape="rect" id="node3" href="class_bomber_units_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="39,461,182,539"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -111,30 +112,30 @@ $(document).ready(function(){initNavTree('class_bomber_units_1_1_u_i_manager.htm
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_bomber_units_1_1_u_i_manager__coll__graph.png" border="0" usemap="#_u_i_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_u_i_manager_coll__map" id="_u_i_manager_coll__map">
-<area shape="rect" id="node7" href="class_bomber_units_1_1_u_i_play_cust_ctrl.html" title="{UIPlayCustCtrl\n|+ colorsAvailable\l+ figuresAvailable\l&#45; colorVLayout\l&#45; playerFigureImage\l&#45; playerNameInputField\l&#45; inputSchemeDropdown\l&#45; figureSelScrollView\l|+ CustomizePlayerFigure()\l+ PressChangeFigure()\l+ PressOK()\l&#45; Awake()\l&#45; Start()\l&#45; PopulateColors()\l&#45; PopulateInputSchemes()\l&#45; PopulateFigures()\l}" alt="" coords="19,1271,197,1539"/>
-<area shape="rect" id="node3" href="class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="333,639,533,907"/>
-<area shape="rect" id="node4" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="193,132,396,576"/>
-<area shape="rect" id="node5" href="class_bomber_units_1_1_u_i_trigger.html" title="A UI Trigger is an object only responsible for setting up a button listener to a target UIMenuPage..." alt="" coords="379,1035,554,1157"/>
-<area shape="rect" id="node6" href="class_bomber_units_1_1_game_state.html" title="Base class for all Game states. " alt="" coords="94,697,309,848"/>
-<area shape="rect" id="node8" href="class_bomber_units_1_1_player.html" title="{Player\n|+ name\l+ type\l+ playerFigure\l+ sprite\l+ color\l+ playerSlot\l+ isNew\l|+ Player()\l+ GetCtrl()\l}" alt="" coords="659,1006,765,1186"/>
-<area shape="rect" id="node9" href="struct_bomber_units_1_1_input_scheme.html" title="InputScheme holds the Input axes of a given input setting. One scheme is assigned to each player..." alt="" coords="733,712,851,833"/>
+<area shape="rect" id="node3" href="class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="186,863,386,1145"/>
+<area shape="rect" id="node4" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="422,132,624,576"/>
+<area shape="rect" id="node6" href="class_bomber_units_1_1_main_menu_state_machine.html" title="{MainMenuStateMachine\n|+ mainMenuPrefab\l&#45; controller\l&#45; menuPagesInstance\l&#45; nameOfLastBtnPressed\l&#45; menuInstance\l|+ DestroyMenu()\l+ GetLastButtonPressed()\l+ DoTransition()\l+ Init()\l+ CreateMainMenuIfNotExisting()\l+ GetPageFromName()\l&#45; Awake()\l&#45; Start()\l}" alt="" coords="535,600,748,839"/>
+<area shape="rect" id="node5" href="class_bomber_units_1_1_u_i_trigger.html" title="{UITrigger\n|+ button\l+ command\l|+ ClearBtnAndRegisterCommand()\l+ GetCmdName()\l}" alt="" coords="174,301,397,407"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af7755dc83126a261af82ac60d23765a9"><td class="memItemLeft" align="right" valign="top"><a id="af7755dc83126a261af82ac60d23765a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitAndShowMainMenu</b> ()</td></tr>
+<tr class="separator:af7755dc83126a261af82ac60d23765a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d3f78639b0b3599a121df97dd2fc78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78">SetStatus</a> (string msg)</td></tr>
 <tr class="memdesc:a84d3f78639b0b3599a121df97dd2fc78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows other components to show messages on the menu UI.  <a href="#a84d3f78639b0b3599a121df97dd2fc78">More...</a><br /></td></tr>
 <tr class="separator:a84d3f78639b0b3599a121df97dd2fc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434725173a9372a81aaf1b3215deb887"><td class="memItemLeft" align="right" valign="top"><a id="a434725173a9372a81aaf1b3215deb887"></a>
+<a class="el" href="class_bomber_units_1_1_main_menu_state_machine.html">MainMenuStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMainMenuSM</b> ()</td></tr>
+<tr class="separator:a434725173a9372a81aaf1b3215deb887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#ae4b513cddd594f1c359e4f0a3e79a8c6">Awake</a> ()</td></tr>
 <tr class="memdesc:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Awake is called even before Start, so do checks and singleton assignment here.  <a href="#ae4b513cddd594f1c359e4f0a3e79a8c6">More...</a><br /></td></tr>
 <tr class="separator:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b55551f82d3e740cf1e2a84d5518af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#a4b55551f82d3e740cf1e2a84d5518af3">HandleStateCommand</a> (string cmd)</td></tr>
-<tr class="memdesc:a4b55551f82d3e740cf1e2a84d5518af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles calls to this function by UI objects, such as buttons.  <a href="#a4b55551f82d3e740cf1e2a84d5518af3">More...</a><br /></td></tr>
-<tr class="separator:a4b55551f82d3e740cf1e2a84d5518af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd987f3ffff11b6d0f04c7a415712e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_u_i_manager.html#abd987f3ffff11b6d0f04c7a415712e42">PressAddPlayer</a> ()</td></tr>
 <tr class="memdesc:abd987f3ffff11b6d0f04c7a415712e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the "Add Player" symbol button component near the bottom of the main screen.  <a href="#abd987f3ffff11b6d0f04c7a415712e42">More...</a><br /></td></tr>
 <tr class="separator:abd987f3ffff11b6d0f04c7a415712e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,12 +166,15 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>playerSlotAvail
 <tr class="memitem:a17aa307f607787001f7e5735ea651976"><td class="memItemLeft" align="right" valign="top"><a id="a17aa307f607787001f7e5735ea651976"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>playerSlotTakenPrefab</b></td></tr>
 <tr class="separator:a17aa307f607787001f7e5735ea651976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e7738b58802bcb29c84cc79e955f4d0"><td class="memItemLeft" align="right" valign="top"><a id="a8e7738b58802bcb29c84cc79e955f4d0"></a>
-<a class="el" href="class_bomber_units_1_1_u_i_play_cust_ctrl.html">UIPlayCustCtrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uiPlayCustCtrl</b></td></tr>
-<tr class="separator:a8e7738b58802bcb29c84cc79e955f4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a813a9e22eee7906318c106b7077307de"><td class="memItemLeft" align="right" valign="top"><a id="a813a9e22eee7906318c106b7077307de"></a>
 Text&#160;</td><td class="memItemRight" valign="bottom"><b>statusBar</b></td></tr>
 <tr class="separator:a813a9e22eee7906318c106b7077307de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:add1148d8f58fbb3903c3a03a5b1b0edd"><td class="memItemLeft" align="right" valign="top"><a id="add1148d8f58fbb3903c3a03a5b1b0edd"></a>
+<a class="el" href="class_bomber_units_1_1_main_menu_state_machine.html">MainMenuStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mainMenuSM</b> = null</td></tr>
+<tr class="separator:add1148d8f58fbb3903c3a03a5b1b0edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -184,7 +188,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 <p>Menu page management: Each page is represented by a page object and associated state of the UI. Normally these correspond 1:1, so a change in state is change in page.</p>
 <p><a class="el" href="class_bomber_units_1_1_player.html">Player</a> Lobby management: Currently for the Players, it provides a number of PlayerSlots displaying each in the UI. When the total number of players is below the maximum number, a vacant slot will be shown which will open a dialogue for adding another player when clicked. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00017">17</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae4b513cddd594f1c359e4f0a3e79a8c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4b513cddd594f1c359e4f0a3e79a8c6">&#9670;&nbsp;</a></span>Awake()</h2>
@@ -210,40 +214,9 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 </div><div class="memdoc">
 
 <p>Awake is called even before Start, so do checks and singleton assignment here. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>add checking of set gameobjects and raise errors if not set. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>add checking of set gameobjects and raise errors if not set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00061">61</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="a4b55551f82d3e740cf1e2a84d5518af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b55551f82d3e740cf1e2a84d5518af3">&#9670;&nbsp;</a></span>HandleStateCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HandleStateCommand </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handles calls to this function by UI objects, such as buttons. </p>
-<p>Instead of providing one function for each object that could be pressed we request a string, representing a command name from <a class="el" href="class_bomber_units_1_1_game_state.html" title="Base class for all Game states. ">GameState</a>'s StateCommand enumerate. Correctly written commands are forwarded to the current state for handling, while incorrect ones log an error. </p>
-
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00090">90</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00079">79</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
 
 </div>
 </div>
@@ -274,7 +247,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 <p>Is called by the Customization Dialog when it is finished. </p>
 <p>The dialog returns a changed <a class="el" href="class_bomber_units_1_1_player.html">Player</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00125">125</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00120">120</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
 
 </div>
 </div>
@@ -304,7 +277,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 <p>Callback for the "Add Player" symbol button component near the bottom of the main screen. </p>
 <p>A newly created <a class="el" href="class_bomber_units_1_1_player.html">Player</a> has the "isNew" property set to "true". This helps when the customization dialog returns. The customization GUI will call OnCustomizationDone when complete </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00111">111</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00106">106</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
 
 </div>
 </div>
@@ -335,7 +308,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 <p>Callback for the button component of already added player slots. </p>
 <p>The customization GUI will call OnCustomizationDone when complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00118">118</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00113">113</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
 
 </div>
 </div>
@@ -364,9 +337,9 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 </div><div class="memdoc">
 
 <p>Allows other components to show messages on the menu UI. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>refactor this to be its own class </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>refactor this to be its own class </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00050">50</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_u_i_manager_8cs_source.html#l00063">63</a> of file <a class="el" href="_u_i_manager_8cs_source.html">UIManager.cs</a>.</p>
 
 </div>
 </div>
@@ -379,7 +352,7 @@ static <a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_bomber_units.html">BomberUnits</a></li><li class="navelem"><a class="el" href="class_bomber_units_1_1_u_i_manager.html">UIManager</a></li>
-    <li class="footer">Generated on Sun Sep 29 2019 10:20:49 for BomberUnits by
+    <li class="footer">Generated on Tue Oct 29 2019 06:07:00 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

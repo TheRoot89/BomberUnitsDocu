@@ -131,6 +131,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr
 <tr class="memitem:a694155de0a38b6b6c6d74dd27bc716e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_match_manager.html#a694155de0a38b6b6c6d74dd27bc716e8">ReadBoard</a> ()</td></tr>
 <tr class="memdesc:a694155de0a38b6b6c6d74dd27bc716e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the Board for Environment objects, such as boxes and walls Findings are added to the object grid for quick access in a grid-based game.  <a href="#a694155de0a38b6b6c6d74dd27bc716e8">More...</a><br /></td></tr>
 <tr class="separator:a694155de0a38b6b6c6d74dd27bc716e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a14db78040814a10735ed7b0a31d9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bomber_units_1_1_match_manager.html#a6a14db78040814a10735ed7b0a31d9b6">InitPlayers</a> ()</td></tr>
+<tr class="memdesc:a6a14db78040814a10735ed7b0a31d9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns registered players to the available spawn positions.  <a href="#a6a14db78040814a10735ed7b0a31d9b6">More...</a><br /></td></tr>
+<tr class="separator:a6a14db78040814a10735ed7b0a31d9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -149,8 +152,38 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>boardHeightZ</b></td><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_match_manager_8cs_source.html#l00006">6</a> of file <a class="el" href="_match_manager_8cs_source.html">MatchManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_match_manager_8cs_source.html#l00007">7</a> of file <a class="el" href="_match_manager_8cs_source.html">MatchManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6a14db78040814a10735ed7b0a31d9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a14db78040814a10735ed7b0a31d9b6">&#9670;&nbsp;</a></span>InitPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitPlayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spawns registered players to the available spawn positions. </p>
+<p>!&ndash; These are randomized if set as such in the settings. </p>
+
+<p class="definition">Definition at line <a class="el" href="_match_manager_8cs_source.html#l00043">43</a> of file <a class="el" href="_match_manager_8cs_source.html">MatchManager.cs</a>.</p>
+
+</div>
+</div>
 <a id="a694155de0a38b6b6c6d74dd27bc716e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a694155de0a38b6b6c6d74dd27bc716e8">&#9670;&nbsp;</a></span>ReadBoard()</h2>
 
@@ -177,7 +210,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>boardHeightZ</b></td><
 <p>Scans the Board for Environment objects, such as boxes and walls Findings are added to the object grid for quick access in a grid-based game. </p>
 <p>Lower left corner of board must be the origin, so coordinates are correctly rounded! </p>
 
-<p class="definition">Definition at line <a class="el" href="_match_manager_8cs_source.html#l00029">29</a> of file <a class="el" href="_match_manager_8cs_source.html">MatchManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_match_manager_8cs_source.html#l00031">31</a> of file <a class="el" href="_match_manager_8cs_source.html">MatchManager.cs</a>.</p>
 
 </div>
 </div>
@@ -190,7 +223,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>boardHeightZ</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_bomber_units.html">BomberUnits</a></li><li class="navelem"><a class="el" href="class_bomber_units_1_1_match_manager.html">MatchManager</a></li>
-    <li class="footer">Generated on Sun Sep 29 2019 10:20:48 for BomberUnits by
+    <li class="footer">Generated on Tue Oct 29 2019 06:07:00 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

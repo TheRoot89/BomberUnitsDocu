@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "BomberUnits", "namespace_bomber_units.html", "namespace_bomber_units" ],
+    [ "DTAnimatorStateMachine", "namespace_d_t_animator_state_machine.html", "namespace_d_t_animator_state_machine" ],
     [ "AutoDestroy", "class_auto_destroy.html", "class_auto_destroy" ],
     [ "FadeChildren", "class_fade_children.html", "class_fade_children" ],
     [ "FadeOut", "class_fade_out.html", "class_fade_out" ],

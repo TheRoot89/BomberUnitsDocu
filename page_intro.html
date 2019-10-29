@@ -95,81 +95,11 @@ $(document).ready(function(){initNavTree('page_intro.html','');});
 <li>Realizing game ideas we would want to play ourselves</li>
 <li>Becoming better coders, designers, architects ...</li>
 </ul>
-<p>Any additions? What's your ranking among the above? :)</p>
-<h2>Getting started </h2>
-<p>Alright recruit, to get you up to speed we will (probably) need five things:</p>
-<ol type="1">
-<li>Do the necessary installations</li>
-<li>Clone our repo from GitHub</li>
-<li>Understand the basics of our tools</li>
-<li>Have a rough picture on the state of the project</li>
-<li>An example of a typical SW change workflow</li>
-</ol>
-<h3>1: Do the necessary installations</h3>
-<p><b>The correct Unity Version via Unity Hub</b><br />
- Hop on over to <a href="https://unity3d.com/de/get-unity/download">Unity</a>, select the Unity Hub for download and go through the setup.<br />
- Unity Hub allows you to manage multiple installations of Unity on your computer, as well as associate your projects (and our project) with one of these installations. This is a good thing, as we need to work all with the same version but you may, for example, need want to switch back to an old branch requiring an older Unity.<br />
- Install and select the currently used Unity version from the Hub App. You can find our currently used Unity version near the top of our mainpage in the "Last stable release" note.</p>
-<p><b>Visual Studio or Visual Studio Code</b><br />
- The Unity Editor comes with built-in support vor VS and VS Code. This means Unity will create the project configuration and start it up when you click to edit a script from your game's <em>Assets</em>. You need to have one of the above installed. Unity offers to install a VS version automatically with its main installation.</p>
-<p>Toni strongly recommends though to check out VS Code as it is awesome. To switch to VS Code support from the default VS: Open up <em>Unity Preferences</em>, <em>External Tools</em>, then browse for the VS Code executable as <em>External Script Editor</em>. VS Code profits from a vast range of plugins to make your life easier and some especially useful for us are listed on the <em>Tooling</em> page: <a class="el" href="page_tooling.html">Tooling</a> <br />
- Also look <a href="https://code.visualstudio.com/docs/other/unity">here</a> for more info on VS Code used with Unity.</p>
-<p><b>Git</b><br />
- Git is one of the currently most popular Versioning Tools out there. It can be used from the command line, but got a lot of graphical front ends from hobby devs and companies alike. Download it <a href="https://git-scm.com/">here</a> and be sure to understand the basics of it by making use of the vast amount of tutorials on the net (for example on the Git homepage itself).<br />
-</p>
-<p><b>Doxygen</b><br />
- ...is the defacto standard for automated documentation generation for all kinds of languages. This is not a <em>must</em>, but dearly recommended, as we try to document lots of useful stuff nicely readable there **fingers crossed**. Get it <a href="http://doxygen.nl/files/doxygen-1.8.16-setup.exe">here</a> and install. This is also a command line tool - usage instructions can be found on our project homepage mainpage.</p>
-<h3>2: Clone our repo from GitHub</h3>
-<p>Your Git installation gives you access to our repository on GitHub. You may want to download and install the <a href="https://desktop.github.com/">GitHub Desktop</a> client for ease of use.<br />
- If you choose to do so, you will simply have to log into the client and can already add a repository from GitHub from the "Current Repository" section at the top left -&gt; "Add" -&gt; "Clone Repository". You may have to give the direct ULR (as from the browser) of the repo as it is set to be private to us.</p>
-<p>After the clone, be sure to execute<br />
- <code>git lfs install</code><br />
- from your local repo folder once, using for example the Git Bash, which comes with your Git installation. This ensures large files are not saved in every version on every client, which is important when working with Unity Assets.</p>
-<p>You will now have the newest "Master" branch checked out. The folder can be selected from Unity Hub as project and should open with an installed Unity version as given on the top of the mainpage.</p>
-<h3>3: Understand the basics of our tools</h3>
-<p>This should be more of lookup thing than learning everything beforehand. Go to the <a class="el" href="page_tooling.html">Tooling</a> if you need info on a certain tool. Maybe start with Unity itself ;).</p>
-<h3>4. Have a rough picture on the state of the project</h3>
-<p>Ok, this is the most tricky part. The idea is to have everything documented on the following pages and their respective child pages:</p>
-<ul>
-<li>**<a class="el" href="page_concepts.html">Concepts</a>** : Overall design approaches with requirements and ideas = high level</li>
-<li>**<a class="el" href="page_sys_components.html">System Components</a>** : Describes the overall parts the SW is made of, implementing the concepts = low level</li>
-</ul>
-<p>Best use the doxygen output for reading this, so links to classes etc. work. There is always a version of this docu together with the Doxygen output from the master branch hosted here: </p><blockquote class="doxtable">
-<p><a href="https://theroot89.github.io/BomberUnitsDocu/index.html">https://theroot89.github.io/BomberUnitsDocu/index.html</a><br />
- (It may be out of date though...) </p>
-</blockquote>
-<h3>5. An example of a typical SW change workflow</h3>
-<p>For a feature implementation, things may go like this:</p>
-<ol type="1">
-<li>We decide together which features we want to implement next and move these on our <a href="https://github.com/TheRoot89/BomberUnits/projects">GitHub Repo Projects page</a> from the "Ideas" column to the "ToDo" column.</li>
-<li>Choose one of these tasks and convert the note card to a full <em>Issue</em> via "..." -&gt; "Convert to Issue", if that was not already done before. You also assign yourself as the "Assignee" of that task.</li>
-<li>Fill the issue with whatever info you feel necessary or start a conversation using the comment section.</li>
-<li>Create a branch (from master most of the time), mentioning the issue number in its naming.<br />
- Example: "feature/#4_implement_multiplayer".<br />
- Using the "feature/" prefix allows us to sort the branch names after features, bugfixes, releases and whatever categories we want to define.</li>
-<li>Work on you branch and add the feature, using Git and pushing your changes to our repo. Best move your issue from the "ToDo" column to the "In progress" column.</li>
-<li>If there were changes on the master branch from when you branched off it, merge "master" to your branch to check compatibility, resolve merge conflicts and test whether everything still works as expected.</li>
-<li>Go to GitHub, select your branch on the left and click "New pull request". Fill in the details of what you did on your branch, assign Reviewers on the top right and click "Create pull request".</li>
-<li>Once the reviews from us approve your changes, the created pull request (PR) can be merged in GitHub. If you don't need it any longer, your branch can be deleted (this will only delete the name, not the commits you did) and you can close your Issue and move it to the "Done" column! Yeah!</li>
-</ol>
-<p>We hope you feel like you know how things go now. Read on for info on Unity and what needs to be done in game development in general.</p>
-<h2>On Unity </h2>
-<p>Unity is a game engine and tool collection for this engine. There is no real winner when comparing Unity to other free engines, like Unreal - so we just start with the one that looks easier to pick up.</p>
-<p>Unity comes with its own graphical editor to arrange your game world in what Unity calls <em>Scenes</em>. In-game you as a player will always be in one of these Scenes. It may and will feature so-called <em>GameObjects</em>, representing any kind of entity present int the Scene, e.g. a player figure, bullets, particle effects or invisible objects only there to hold <em>Scripts</em>.</p>
-<p>Scripts represented the logic of a game, implemented in C#. These can be written as in any other project, defining and creating objects and calling the Unity API to act on the game world.</p>
-<p>Interaction of your Scripts with the engine comes in two directions:</p>
-<ul>
-<li>Script to engine: Your Script causes something to happen by calling the API, e.g. to change the position of a game object.</li>
-<li>Engine to Script: Some predefined Script functions can be called from the game and are thus called <em>Callbacks</em>. An example is the <em>Update()</em> function called by the game for every frame.<br />
- In order for this to work your Script's class has to be a <em>Behavior</em>, by inheriting from the <em>MonoBehavior</em> class. In order for your class to be instantiated and the Callbacks (like <em>Update</em>) to be called, it also has to be added to a <em>GameObject</em> in the Unity editor. That <em>GameObject</em> will now have the additional <em>Behavior</em> you code for it.</li>
-</ul>
-<blockquote class="doxtable">
-<p>Example: A <em>PlayerController</em> script is often added to the player's figure in the game world. Each frame its <em>Update</em> function will be called by the engine. Within that function, code may be added to check the input keys a player may be pressing to control his figure and the figure may then be moved accordingly. </p>
-</blockquote>
 <h2>About the game </h2>
 <p>So, <b>Bomberman</b> is a classic game type (Google!). We first want to replicate its classic, simple scheme of moving your player figure, lay bombs, collect PowerUps and finally explode your opponents.</p>
 <p>As this is vitally important today, we also want to support <b>mixed multiplayer</b> (local, online). Of course a game does not just start directly with a level and your fellow players already there. There will have to be a menu UI, (online) player management, level selection, game-over screen etc...</p>
 <p>When this runs stable, we want to add our own take on the genre and add our <b>own features</b>. This even more so than the above points is a group effort, where we can brainstorm, decide, implement and test together.</p>
+<p>Interested? Read the <b><a class="el" href="page_getting_started.html">Getting Started</a></b> page so set things up. For more details on what there is to do, read on :)</p>
 <h2>So how can I contribute? </h2>
 <p>The are quite a lot of things to be done, where you can pick what you think is most fun for you. A brainstormed list, with the must-haves in <b>bold</b>:</p>
 <ul>
@@ -236,15 +166,16 @@ $(document).ready(function(){initNavTree('page_intro.html','');});
 <p>No time for the other stuff? No worries - we need people that from time to time have a look at the current state and tell us what we f**** up. At pat on the back is also helpful sometimes.</p>
 <p>And then, there is <em>proper</em> testing, including <em>Unit Tests</em>. It may not seem reasonable for the dynamic nature of game scripting code, but it is very well possible and supported by Unity's own set own <b>tools</b>. The scripters will kiss the feet of the guy who tells them how to use those tools. At the very latest when complexity increases and devs become afraid of breaking things accidentally.</p>
 <h2>Where to learn more? </h2>
+<p>On this subpage you can get up to speed: **<a class="el" href="page_getting_started.html">Getting Started</a>**</p>
 <p>Luckily, there is an abundance of resources on Unity (and probably on the other stuff as well) on the web. You may start with the tutorials present on the Unity website. Or you can take courses on leaning portals, such as Zenva or Udemy. The best way to learn of course is to take part in this project and learn from and with your friends. Most importantly, don't think anyone will look down on you because you are just learning a new thing - this is not Dota after all... (yet).</p>
-<p>Regarding the project itself, read on :) <br />
- mainpage </p>
+<p>Regarding the project itself, read on, check out the Architecture and Concepts :) <br />
+ <a class="el" href="index.html">Home</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Sep 29 2019 10:20:44 for BomberUnits by
+    <li class="footer">Generated on Tue Oct 29 2019 06:06:56 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

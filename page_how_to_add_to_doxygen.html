@@ -90,24 +90,15 @@ $(document).ready(function(){initNavTree('page_how_to_add_to_doxygen.html','');}
 <p>The docu consists of auto-generated content from the parsed scripts and additional pages on various topics. To support the duty is good practice as a developer, so:</p>
 <ul>
 <li><em>MUST</em>: Comment your code with Doxygen-compatible syntax ( -&gt; have a look at existing code).</li>
-<li><em>OPTIONAL</em>: Create your own so-called 'Related pages' (this is one of them) to describe overall concepts or details you don't want to explain in your class documentation via above-mentioned comments. See page_how_to_doxygen for more details.</li>
+<li><em>OPTIONAL</em>: Create your own so-called 'Related pages' (this is one of them) to describe overall concepts or details you don't want to explain in your class documentation via above-mentioned comments.</li>
 </ul>
 <p>If you updated the master branch with new documentation, think about pushing the generated html files to the root of the repo hosting the docu <a href="https://github.com/TheRoot89/BomberUnitsDocu">here</a>.</p>
+<blockquote class="doxtable">
+<p><b>Note:</b> We are currently using Doxygen Version 1.8.13 for Windows. Other versions may have queer effects as each version tends to have their own quirks... </p>
+</blockquote>
 <h2>Documentation structure </h2>
-<p>Regarding the project (game feature) content itself, there is are distinct steps from an idea, to its evaluation/integration on system level, to its realization on SW level. Thus that part of the documentation (the <em>Concepts</em> pages) shall be built up like the diagram below. Additionally, there shall be pages explaining the overall SW system composed from the above concepts, as well as pages on development topics, such as tooling and How-Tos.</p>
-<p>~~~plantuml </p><div class="plantumlgraph">
-<img src="inline_umlgraph_2.png" />
-</div>
-<p> ~~~</p>
-<p>Most importantly, the <b>Concepts</b> pages each explain: (See: <a class="el" href="page_concepts.html">Concepts</a>)</p>
-<ul>
-<li><b>System Requirements</b>: A typical problem a game program such as this poses, which needs to be solved.<br />
- In essence, these are the results of the Game Design process, i.e. what we want to achieve. The GameDesign can currently be found in a ppt file.</li>
-<li><b>System solution</b>: The approach taken to solve the problem from a top-level perspective.</li>
-<li><b>SW requirements (in part)</b>: Constraints on how to implement the system solution best.</li>
-<li><b>SW solution</b>: Explanations on how the solution works if solved by multiple classes. Also find <b>usage information</b> here for how the implementation is to be used.<br />
- The actual <b>SW solution detailed design</b> is represented by the code comments in the implementation files. This is parsed and accessible at the Doxygen output for each of the related classes.</li>
-</ul>
+<p>Regarding the project (game feature) content itself, there are distinct steps from an idea, to its evaluation/integration on system level, to its realization on SW level. This is explained on the <a class="el" href="page_concepts.html">Concepts</a> pages.<br />
+ The resulting SW has to be documented as well, which is done in the <a class="el" href="page_sw_architecture.html">SW Architecture</a> and the generated SW detailed design (API). Additionally, there should be pages on development topics, such as tooling and How-Tos.</p>
 <h2>Modifying a page </h2>
 <p>You can change the Markdown content with any text editor. Some editors, like VS Code, are able to show rendered previews of the Markdown, which gives a hint for how it's going to look as Doxygen output as well.</p>
 <p>When adding or modifying content of pages, consider to build the docu afterwards locally, to check whether the result matches your expectations. Also consider uploading the HTML output (in <em>Doc/doxy_out</em>) to our Docu repository: <a href="https://github.com/TheRoot89/BomberUnitsDocu">https://github.com/TheRoot89/BomberUnitsDocu</a><br />
@@ -125,22 +116,32 @@ $(document).ready(function(){initNavTree('page_how_to_add_to_doxygen.html','');}
 </ol>
 <p>At the positions of references and \subpage commands Doxygen will place the page title (may contain spaces) you also defined on the first line.</p>
 <blockquote class="doxtable">
-<p>Note: In case you are reading this as a text file: the commands only use a single backslash "\", the second one is an escape character for writing this. </p>
+<p>Note: In case you are reading this as a text file: the commands only use a single backslash: "\". The second one is an escape character for writing this without invoking the command. </p>
 </blockquote>
 <h2>Using PlantUML graphs in Markdown files </h2>
 <p>PlantUML provides a syntax to specify UML graphs inline from Markdown. The result is rendered here in the preview and in Doxygen. Writing PlantUML with the following Syntax will generate it in the VSCode preview, but also show the initial, quite ugly code block ticks in Doxygen. This is unfortunate but I found no workaround yet. Also the set style configuration file is not included when previewing.</p>
 <p>An example for a PlantUML activity diagram:</p>
-<p>```plantuml </p><div class="plantumlgraph">
+<p>~~~plantuml </p><div class="plantumlgraph">
 <img src="inline_umlgraph_3.png" />
 </div>
-<p> ``` </p>
+<p> ~~~</p>
+<h2>Using images in Doxygen </h2>
+<p>To import an image file use the command ![Caption text](/path/to/img.jpg). Again, without any backslashes, should you be reading this in plain text.</p>
+<p>Your have to give the path relative to the Doc folder as this is the execution directory for Doxygen. Also, you have to place your images in the <code>doxy_in/images</code> folder, so your path will be: <code>/doxy_in/images/[image_file]</code></p>
+<div class="image">
+<img src="Dunny.png" alt="Dunny.png"/>
+<div class="caption">
+Example image</div></div>
+ <blockquote class="doxtable">
+<p>Please note images will usually not be found and displayed in the markdown preview.</p>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_howtos.html">How-Tos</a></li>
-    <li class="footer">Generated on Sun Sep 29 2019 10:20:47 for BomberUnits by
+    <li class="footer">Generated on Tue Oct 29 2019 06:06:59 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

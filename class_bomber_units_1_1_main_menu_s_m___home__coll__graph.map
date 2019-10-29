@@ -1,0 +1,6 @@
+<map id="MainMenuSM_Home" name="MainMenuSM_Home">
+<area shape="rect" id="node3" href="$class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="189,863,389,1145"/>
+<area shape="rect" id="node5" href="$class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="42,132,245,576"/>
+<area shape="rect" id="node7" href="$class_bomber_units_1_1_main_menu_state_machine.html" title="{MainMenuStateMachine\n|+ mainMenuPrefab\l&#45; controller\l&#45; menuPagesInstance\l&#45; nameOfLastBtnPressed\l&#45; menuInstance\l|+ DestroyMenu()\l+ GetLastButtonPressed()\l+ DoTransition()\l+ Init()\l+ CreateMainMenuIfNotExisting()\l+ GetPageFromName()\l&#45; Awake()\l&#45; Start()\l}" alt="" coords="474,600,687,839"/>
+<area shape="rect" id="node6" href="$class_bomber_units_1_1_u_i_trigger.html" title="{UITrigger\n|+ button\l+ command\l|+ ClearBtnAndRegisterCommand()\l+ GetCmdName()\l}" alt="" coords="320,301,543,407"/>
+</map>

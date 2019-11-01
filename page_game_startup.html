@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('page_game_startup.html','');});
 <ol type="1">
 <li>The <b>GameManager</b> component is instantiated immediately when the game loads. It holds reference to the <b>Game State Machine</b> component, providing access to it. In this step, the <em>Animator</em> component, holding the state machine graph is instantiated as well.</li>
 <li>The <b>GameManager</b> boots the game with some initializations, while in parallel the <b>Game State Machine</b> starts in the 'MainMenu' state.</li>
-<li>The 'MainMenu' state causes the UI Manager transition the <b>Main Menu State Machine</b> from its initial 'Idle' state to the 'Home' state.</li>
+<li>The 'MainMenu' state causes the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> Manager transition the <b>Main Menu State Machine</b> from its initial 'Idle' state to the 'Home' state.</li>
 <li>The 'Home' state creates the Main Menu GameObject and shows the initial menu page.</li>
 </ol>
 <blockquote class="doxtable">
@@ -97,9 +97,9 @@ $(document).ready(function(){initNavTree('page_game_startup.html','');});
 </blockquote>
 <p><b>Links to above mentioned classes:</b></p>
 <ul>
-<li><a class="el" href="class_bomber_units_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its compone...">BomberUnits::GameManager</a></li>
-<li><a class="el" href="class_bomber_units_1_1_game_state_machine.html">BomberUnits::GameStateMachine</a></li>
-<li><a class="el" href="class_bomber_units_1_1_main_menu_state_machine.html">BomberUnits::MainMenuStateMachine</a> </li>
+<li><a class="el" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">Management::GameManager</a></li>
+<li><a class="el" href="class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">Management::GameStateMachine</a></li>
+<li><a class="el" href="class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ...">UI::MainMenuStateMachine</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('page_game_startup.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_sw_architecture.html">SW Architecture</a></li>
-    <li class="footer">Generated on Tue Oct 29 2019 06:06:58 for BomberUnits by
+    <li class="footer">Generated on Fri Nov 1 2019 15:21:24 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

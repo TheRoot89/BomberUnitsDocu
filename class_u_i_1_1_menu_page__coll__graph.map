@@ -1,0 +1,5 @@
+<map id="MenuPage" name="MenuPage">
+<area shape="rect" id="node4" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="119,132,332,371"/>
+<area shape="rect" id="node5" href="$class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="297,395,500,839"/>
+<area shape="rect" id="node3" href="$class_u_i_1_1_trigger.html" title="Provides runtime setup of button listeners for the MainMenu state machine. " alt="" coords="119,863,342,955"/>
+</map>

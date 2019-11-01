@@ -82,18 +82,18 @@ $(document).ready(function(){initNavTree('page_player_management.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Player Management </div>  </div>
+<div class="title">Player <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Player Management </h1>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>: <b>Player Management is WIP for Multiplayer</b></dd></dl>
+<div class="textblock"><h1>Player <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> </h1>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>: <b>Player <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> is WIP for Multiplayer</b></dd></dl>
 <p>The player management shall wrap all tasks related to tracking which players (local and remote) are connected to the game and provide services to them.</p>
 <h2>Requirements </h2>
 <ol type="1">
 <li>The player management state shall be persistent over the application runtime.</li>
 <li>It shall keep track of all connected players, local and remote</li>
 <li>It shall provide the logic behind adding/removing new players (local or remote) and limitation thereof by a configured maximum amount of players permitted.</li>
-<li>It shall interact with the UI to allow for customization of local players.</li>
+<li>It shall interact with the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> to allow for customization of local players.</li>
 <li>It shall be able to save/restore the host player settings upon application start.</li>
 </ol>
 <h2>Architecture </h2>
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('page_player_management.html','');});
 <p>Based on Req. 4:<br />
 </p>
 <ul>
-<li>The UIPlayerSlot represents a UI component able to adequately represent the player's current settings, such as name, color and InputScheme.</li>
-<li>A click on the slot's UI shall open up a customization dialog for local players.</li>
+<li>The UIPlayerSlot represents a <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> component able to adequately represent the player's current settings, such as name, color and InputScheme.</li>
+<li>A click on the slot's <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> shall open up a customization dialog for local players.</li>
 </ul>
 <h3>UIPlayerCustDialog</h3>
 <p>This class shall be a subclass of a so-called 'UIDialog', which manages a blocking pop-up in-game or in menus. For this Prefabs are used, not references to existing instances. Also after the dialog has ended, the instance is destroyed, not only disabled. The script is therefore a component of the dialog.</p>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('page_player_management.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_concepts.html">Concepts</a></li>
-    <li class="footer">Generated on Tue Oct 29 2019 06:06:58 for BomberUnits by
+    <li class="footer">Generated on Fri Nov 1 2019 15:21:24 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

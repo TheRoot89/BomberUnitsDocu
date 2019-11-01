@@ -1,7 +1,0 @@
-<map id="TestUIManager" name="TestUIManager">
-<area shape="rect" id="node2" href="$class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="180,1208,391,1447"/>
-<area shape="rect" id="node4" href="$class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="186,863,386,1145"/>
-<area shape="rect" id="node5" href="$class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="422,132,624,576"/>
-<area shape="rect" id="node7" href="$class_bomber_units_1_1_main_menu_state_machine.html" title="{MainMenuStateMachine\n|+ mainMenuPrefab\l&#45; controller\l&#45; menuPagesInstance\l&#45; nameOfLastBtnPressed\l&#45; menuInstance\l|+ DestroyMenu()\l+ GetLastButtonPressed()\l+ DoTransition()\l+ Init()\l+ CreateMainMenuIfNotExisting()\l+ GetPageFromName()\l&#45; Awake()\l&#45; Start()\l}" alt="" coords="535,600,748,839"/>
-<area shape="rect" id="node6" href="$class_bomber_units_1_1_u_i_trigger.html" title="{UITrigger\n|+ button\l+ command\l|+ ClearBtnAndRegisterCommand()\l+ GetCmdName()\l}" alt="" coords="174,301,397,407"/>
-</map>

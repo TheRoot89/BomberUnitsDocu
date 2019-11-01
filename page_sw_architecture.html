@@ -87,83 +87,79 @@ $(document).ready(function(){initNavTree('page_sw_architecture.html','');});
 <div class="contents">
 <div class="textblock"><h1>SW Architecture </h1>
 <p>These pages shall give an overview on how the overall system works. The SW architecture realizes the game concepts (See <a class="el" href="page_concepts.html">Concepts</a>) in a hopefully understandable way. Below the architecture come the individual SW components, which are documented by code comments, generated into the API.</p>
-<blockquote class="doxtable">
-<p>Note: The current SW is not very structured and, actually, not very big. The architecture needs to be split in more domains, like UI and Behaviours etc, reflected by namespaces in the actual SW and Boxes around the classes is pictures here. There is a ticket for it... </p>
-</blockquote>
 <h2>Overview </h2>
+<p>The SW components are sorted to namespaces reflecting their overall category. Have a look at the namespace index for a short comment on each: <a href="namespaces.html"><b>Namespace List</b></a> <br />
+ Also have a look at the grouping below:</p>
 <p>```plantuml </p><div class="plantumlgraph">
 <img src="inline_umlgraph_1.png" />
 </div>
 <p> ```</p>
-<p>The <b>Game Management</b> Layer is responsible for various basic, background tasks. Its components are implemented as behaviours and attached to invisible management GameObjects named after them.<br />
- Those components which track their state have an additional state machine script attached to the same object.</p>
-<p>Please find information on the individual managers in their source comments or the detailed description section in their Doxygen docu here:</p>
+<h2><a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> </h2>
+<p>The <b><a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a></b> Layer (click for details) is responsible for various basic, background tasks. The following important managers exist, with each topic being fairly independent. Have a look at their detailed design docu:</p>
 <table class="doxtable">
 <tr>
 <th>Component </th><th>Short description  </th></tr>
 <tr>
-<td><a class="el" href="class_bomber_units_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its compone...">BomberUnits::GameManager</a> </td><td>Manages the overall game state: startup, loading, quit </td></tr>
+<td><a class="el" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">Management::GameManager</a> </td><td>Manages the overall game state: startup, loading, quit </td></tr>
 <tr>
-<td><a class="el" href="class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. ">BomberUnits::UIManager</a> </td><td>Manages UI display and inputs and delegates reactions accordingly </td></tr>
+<td><a class="el" href="class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. ">Management::UIManager</a> </td><td>Manages <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> display and inputs and delegates reactions accordingly </td></tr>
 <tr>
-<td><a class="el" href="class_bomber_units_1_1_match_manager.html">BomberUnits::MatchManager</a> </td><td>Initializes and manages a single match's state </td></tr>
+<td><a class="el" href="class_management_1_1_match_manager.html" title="Responsible for managing a single match. Is thus part of each level scene and destroyed with it...">Management::MatchManager</a> </td><td>Initializes and manages a single match's state </td></tr>
 <tr>
-<td><a class="el" href="class_bomber_units_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. ">BomberUnits::PlayerManager</a> </td><td>Manages local and remote players </td></tr>
+<td><a class="el" href="class_management_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. ">Management::PlayerManager</a> </td><td>Manages local and remote players </td></tr>
 <tr>
-<td>BomberUnits::NetManager </td><td>Manages Network interactions with Photon for enabling MP </td></tr>
+<td>Management::NetManager </td><td>Manages Network interactions with Photon for enabling MP </td></tr>
 </table>
-<h2>Further topics </h2>
+<p>Most important is the <b>GameManager</b>, featuring its own state machine:</p>
 <ul>
-<li><a class="el" href="page_game_startup.html">The Game Startup</a> : How the components work together during startup</li>
-<li><a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a> : How the UI elements are animated in menus</li>
+<li>Concept: <a class="el" href="page_game_management_control_flow.html">Game Management and Control Flow</a></li>
+<li>Concept: <a class="el" href="page_handling_state.html">Handling State</a></li>
+<li>State Machine: <a class="el" href="class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">Management::GameStateMachine</a></li>
+<li>Also see: <a class="el" href="page_game_startup.html">The Game Startup</a> : How the components work together during startup</li>
 </ul>
-<h2>Custom Classes </h2>
-<p>Additionally, there is a range of custom classes which don't need to be behaviors. Most importantly:</p>
+<p>Additionally, there is a range of custom classes which don't need to be behaviors. These are often data structures, such as:</p>
 <ul>
-<li>Container types, such as:<ul>
-<li><a class="el" href="class_bomber_units_1_1_player.html">BomberUnits::Player</a></li>
-<li><a class="el" href="struct_bomber_units_1_1_input_scheme.html" title="InputScheme holds the Input axes of a given input setting. One scheme is assigned to each player...">BomberUnits::InputScheme</a></li>
-<li><a class="el" href="class_bomber_units_1_1_game_settings.html">BomberUnits::GameSettings</a></li>
-<li><a class="el" href="struct_bomber_units_1_1_level.html">BomberUnits::Level</a></li>
+<li><a class="el" href="class_management_1_1_player.html" title="A Player is one participant in a game. ">Management::Player</a></li>
+<li><a class="el" href="struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. ">Management::InputScheme</a></li>
+<li><a class="el" href="class_management_1_1_game_settings.html" title="Wraps all settings into one object. ">Management::GameSettings</a></li>
+<li><a class="el" href="struct_management_1_1_level.html">Management::Level</a></li>
 </ul>
-</li>
-<li>UI classes for managing UI components, grouping and animation. See:<ul>
-<li><a class="el" href="class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa...">BomberUnits::UIMenuPage</a></li>
-<li><a class="el" href="class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. ">BomberUnits::UIMenuElement</a></li>
-<li><a class="el" href="class_bomber_units_1_1_u_i_trigger.html">BomberUnits::UITrigger</a></li>
-</ul>
-</li>
-</ul>
-<h2>Other Scripts </h2>
-<p>Categorized into folders we also have scripts for:</p>
+<h2><a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> </h2>
+<p>The <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> implementations one the one hand need to provide functionality to compose, animate and switch menu pages.<br />
+ Architecture Details: <a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a> <br />
+ Concept page: <a class="el" href="page_ui_menu_system.html">Menu page System</a> <br />
+</p>
+<table class="doxtable">
+<tr>
+<th>Component </th><th>Short description  </th></tr>
+<tr>
+<td><a class="el" href="class_u_i_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa...">UI::MenuPage</a> </td><td>Groups MenuElements to be shown together as a menu page </td></tr>
+<tr>
+<td><a class="el" href="class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. ">UI::MenuElement</a> </td><td>Added to game objects to enable their animation </td></tr>
+<tr>
+<td><a class="el" href="class_u_i_1_1_trigger.html" title="Provides runtime setup of button listeners for the MainMenu state machine. ">UI::Trigger</a> </td><td>Provides Button Callback registering at creation </td></tr>
+<tr>
+<td><a class="el" href="class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ...">UI::MainMenuStateMachine</a> </td><td>Treats each main menu page as a state </td></tr>
+</table>
+<p>On the other hand there are single-use pop-ups (like simple menus without transitions). These will be called Dialogs, but this is work in progress.</p>
+<p>And finally additional <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> content, such as in-game hovering labels and other effects:</p>
 <ul>
-<li><em>Game Mechanics</em>:<ul>
-<li><a class="el" href="class_bomber_units_1_1_player_controller.html">BomberUnits::PlayerController</a> : manages player interaction with the player figure</li>
+<li><a class="el" href="class_u_i_1_1_label.html" title="A label handles all kinds of world space hovering displays for game objects. ">UI::Label</a></li>
+<li><a class="el" href="class_u_i_1_1_billboard.html" title="The billboard script allows this gameobject to always face a set target camera. ">UI::Billboard</a></li>
 </ul>
-</li>
-<li><em>Attributes</em>, which provide further functionality/interactions to GameObjects. Each attribute script can be configured from the editor, or by loading from the settings.<ul>
-<li><a class="el" href="class_bomber_units_1_1_breakable.html">BomberUnits::Breakable</a> : Exposes the Break() to replace a model by its broken variant.</li>
-<li><a class="el" href="class_bomber_units_1_1_explodeable.html">BomberUnits::Explodeable</a> : Exposes the Light() function to trigger a delayed explosion of the object.</li>
-<li><a class="el" href="class_bomber_units_1_1_loot_spawner.html">BomberUnits::LootSpawner</a> : Exposes the DropLoot() function</li>
-</ul>
-</li>
-<li><em>UI Behaviours</em>, providing UI features for objects they are attached to:<ul>
-<li><a class="el" href="class_bomber_units_1_1_u_i_label.html" title="A label handles all kinds of world space hovering displays for game objects. ">BomberUnits::UILabel</a></li>
-</ul>
-</li>
-<li><em>Misc</em>, for other topics, such reading and writing from/to files.</li>
-<li><em>State Machines</em>, which are associated to certain objects:<ul>
-<li><a class="el" href="class_bomber_units_1_1_game_state_machine.html">BomberUnits::GameStateMachine</a></li>
-<li><a class="el" href="class_bomber_units_1_1_main_menu_state_machine.html">BomberUnits::MainMenuStateMachine</a> </li>
-</ul>
-</li>
+<h2><a class="el" href="namespace_mechanics.html" title="Provides scripts representing important game mechanics and capabilities of game objects. ">Mechanics</a> </h2>
+<p>Game <a class="el" href="namespace_mechanics.html" title="Provides scripts representing important game mechanics and capabilities of game objects. ">Mechanics</a> represent core game design ideas, spread out over various scripts. Some of these provide input management (<a class="el" href="class_mechanics_1_1_player_controller.html" title="Is responsible for handling player input and keeping the player figure status. ">Mechanics::PlayerController</a>), while other provide behaviours for game objects:</p>
+<ul>
+<li><a class="el" href="class_mechanics_1_1_breakable.html" title="Provides the &#39;Breakable&#39; attribute to game objects, giving them the Break() method. ">Mechanics::Breakable</a> : Exposes the Break() to replace a model by its broken variant.</li>
+<li><a class="el" href="class_mechanics_1_1_explodeable.html" title="Provides the &#39;Explodeable&#39; attribute to game objects, giving them the Light() method. ">Mechanics::Explodeable</a> : Exposes the Light() function to trigger a delayed explosion of the object.</li>
+<li><a class="el" href="class_mechanics_1_1_loot_spawner.html" title="Provides the &#39;LootSpawner&#39; attribute to game objects, giving them the &#39;DropLoot()&#39; method...">Mechanics::LootSpawner</a> : Exposes the DropLoot() function </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 29 2019 06:06:57 for BomberUnits by
+    <li class="footer">Generated on Fri Nov 1 2019 15:21:23 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

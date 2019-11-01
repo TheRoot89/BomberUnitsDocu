@@ -1,0 +1,6 @@
+<map id="PreMatchPageBehaviour" name="PreMatchPageBehaviour">
+<area shape="rect" id="node3" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="245,132,458,371"/>
+<area shape="rect" id="node6" href="$class_u_i_1_1_trigger.html" title="Provides runtime setup of button listeners for the MainMenu state machine. " alt="" coords="240,863,463,955"/>
+<area shape="rect" id="node5" href="$class_u_i_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="343,1017,543,1300"/>
+<area shape="rect" id="node7" href="$class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="521,395,723,839"/>
+</map>

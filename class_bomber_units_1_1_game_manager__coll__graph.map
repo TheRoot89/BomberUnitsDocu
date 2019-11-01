@@ -1,5 +1,0 @@
-<map id="GameManager" name="GameManager">
-<area shape="rect" id="node4" href="$class_bomber_units_1_1_game_state_machine.html" title="{GameStateMachine\n|&#45; controller\l|+ StartMatch()\l&#45; Awake()\l&#45; Start()\l}" alt="" coords="64,183,201,290"/>
-<area shape="rect" id="node3" href="$class_bomber_units_1_1_game_settings.html" title="{GameSettings\n|+ maxTotPlayers\l+ maxLocPlayers\l+ randomizeSpawns\l+ showLabels\l+ playerSpeed\l+ playerBombCooldown\l+ playerBombCountdown\l+ playerInitBombRange\l+ playerInitMaxBombs\l+ powerUpChance\l|}" alt="" coords="225,132,392,341"/>
-<area shape="rect" id="node5" href="$struct_bomber_units_1_1_input_scheme.html" title="InputScheme holds the Input axes of a given input setting. One scheme is assigned to each player..." alt="" coords="416,176,535,297"/>
-</map>

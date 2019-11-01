@@ -1,23 +1,25 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_auto_destroy.html" title="AutoDestroy" alt="" coords="198,5,293,32"/>
-<area shape="rect" id="node3" href="$class_bomber_units_1_1_breakable.html" title="Breakable" alt="" coords="205,56,285,83"/>
-<area shape="rect" id="node4" href="$class_bomber_units_1_1_explodeable.html" title="Explodeable" alt="" coords="199,107,292,133"/>
-<area shape="rect" id="node5" href="$class_bomber_units_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its compone..." alt="" coords="192,157,299,184"/>
-<area shape="rect" id="node6" href="$class_bomber_units_1_1_game_state_machine.html" title="GameStateMachine" alt="" coords="177,208,314,235"/>
-<area shape="rect" id="node7" href="$class_bomber_units_1_1_loot_spawner.html" title="LootSpawner" alt="" coords="197,259,294,285"/>
-<area shape="rect" id="node8" href="$class_bomber_units_1_1_main_menu_state_machine.html" title="MainMenuStateMachine" alt="" coords="164,309,327,336"/>
-<area shape="rect" id="node9" href="$class_bomber_units_1_1_match_manager.html" title="MatchManager" alt="" coords="191,360,299,387"/>
-<area shape="rect" id="node10" href="$class_bomber_units_1_1_on_click.html" title="OnClick" alt="" coords="211,411,279,437"/>
-<area shape="rect" id="node11" href="$class_bomber_units_1_1_player_controller.html" title="PlayerController" alt="" coords="188,461,303,488"/>
-<area shape="rect" id="node12" href="$class_bomber_units_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. " alt="" coords="191,512,300,539"/>
-<area shape="rect" id="node13" href="$class_bomber_units_1_1_u_i_label.html" title="A label handles all kinds of world space hovering displays for game objects. " alt="" coords="213,563,278,589"/>
-<area shape="rect" id="node14" href="$class_bomber_units_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="203,613,287,640"/>
-<area shape="rect" id="node16" href="$class_bomber_units_1_1_u_i_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="188,664,303,691"/>
-<area shape="rect" id="node17" href="$class_bomber_units_1_1_u_i_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="197,715,293,741"/>
-<area shape="rect" id="node18" href="$class_fade_children.html" title="FadeChildren" alt="" coords="196,765,295,792"/>
-<area shape="rect" id="node19" href="$class_fade_out.html" title="FadeOut" alt="" coords="209,816,281,843"/>
-<area shape="rect" id="node20" href="$class_float_and_rotate.html" title="Makes an object float and rotate. This should be used on a child object, as the floating updates sets..." alt="" coords="189,867,301,893"/>
-<area shape="rect" id="node21" href="$class_grid_overlay.html" title="GridOverlay" alt="" coords="201,917,290,944"/>
-<area shape="rect" id="node22" href="$class_u_i_billboard.html" title="UIBillboard" alt="" coords="203,968,287,995"/>
-<area shape="rect" id="node15" href="$class_bomber_units_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="375,613,484,640"/>
+<area shape="rect" id="node2" href="$class_effects_1_1_auto_destroy_particle_sys.html" title="Allows a Particle System to destroy itself after its duration. " alt="" coords="165,5,326,32"/>
+<area shape="rect" id="node3" href="$class_effects_1_1_fade_children.html" title="Provides a transparent fading effect for this object&#39;s children. " alt="" coords="196,56,295,83"/>
+<area shape="rect" id="node4" href="$class_effects_1_1_fade_out.html" title="Provides a fading effect for this object. " alt="" coords="209,107,281,133"/>
+<area shape="rect" id="node5" href="$class_effects_1_1_float_and_rotate.html" title="Makes an object float and rotate. " alt="" coords="189,157,301,184"/>
+<area shape="rect" id="node6" href="$class_effects_1_1_grid_overlay.html" title="Provides drawn grid lines according to the settings. " alt="" coords="201,208,290,235"/>
+<area shape="rect" id="node7" href="$class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts..." alt="" coords="192,259,299,285"/>
+<area shape="rect" id="node8" href="$class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="177,309,314,336"/>
+<area shape="rect" id="node9" href="$class_management_1_1_match_manager.html" title="Responsible for managing a single match. Is thus part of each level scene and destroyed with it..." alt="" coords="191,360,299,387"/>
+<area shape="rect" id="node10" href="$class_management_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. " alt="" coords="191,411,300,437"/>
+<area shape="rect" id="node11" href="$class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="203,461,287,488"/>
+<area shape="rect" id="node13" href="$class_mechanics_1_1_breakable.html" title="Provides the &#39;Breakable&#39; attribute to game objects, giving them the Break() method. " alt="" coords="205,512,285,539"/>
+<area shape="rect" id="node14" href="$class_mechanics_1_1_explodeable.html" title="Provides the &#39;Explodeable&#39; attribute to game objects, giving them the Light() method. " alt="" coords="199,563,292,589"/>
+<area shape="rect" id="node15" href="$class_mechanics_1_1_loot_spawner.html" title="Provides the &#39;LootSpawner&#39; attribute to game objects, giving them the &#39;DropLoot()&#39; method..." alt="" coords="197,613,294,640"/>
+<area shape="rect" id="node16" href="$class_mechanics_1_1_player_controller.html" title="Is responsible for handling player input and keeping the player figure status. " alt="" coords="188,664,303,691"/>
+<area shape="rect" id="node17" href="$class_test_1_1_on_click.html" title="OnClick" alt="" coords="211,715,279,741"/>
+<area shape="rect" id="node18" href="$class_u_i_1_1_billboard.html" title="The billboard script allows this gameobject to always face a set target camera. " alt="" coords="209,765,281,792"/>
+<area shape="rect" id="node19" href="$class_u_i_1_1_dialog.html" title="Base class for a unified Dialog system. " alt="" coords="216,816,275,843"/>
+<area shape="rect" id="node21" href="$class_u_i_1_1_label.html" title="A label handles all kinds of world space hovering displays for game objects. " alt="" coords="219,867,272,893"/>
+<area shape="rect" id="node22" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="164,917,327,944"/>
+<area shape="rect" id="node23" href="$class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="194,968,297,995"/>
+<area shape="rect" id="node24" href="$class_u_i_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="203,1019,287,1045"/>
+<area shape="rect" id="node12" href="$class_test_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="379,461,489,488"/>
+<area shape="rect" id="node20" href="$class_u_i_1_1_game_over_dialog.html" title="A Dialog handler for the game over screen. Associated to a specific UI prefab. " alt="" coords="375,816,493,843"/>
 </map>

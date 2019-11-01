@@ -9,9 +9,12 @@ var NAVTREE =
     [ "Tooling", "page_tooling.html", "page_tooling" ],
     [ "How-Tos", "page_howtos.html", "page_howtos" ],
     [ "Todo List", "todo.html", null ],
-    [ "Namespace Members", "namespacemembers.html", [
-      [ "All", "namespacemembers.html", null ],
-      [ "Enumerations", "namespacemembers_enum.html", null ]
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -20,7 +23,8 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -31,8 +35,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_auto_destroy_8cs_source.html",
-"class_bomber_units_1_1_u_i_menu_element.html#a874518707dbe04a8d049d64e9db60e9d"
+"_auto_destroy_particle_sys_8cs_source.html",
+"class_mechanics_1_1_player_controller.html#a967e42e8f504a42432c5d996c7acafc9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -85,14 +85,14 @@ $(document).ready(function(){initNavTree('page_ui_menu_system.html','');});
 <div class="title">Menu page System </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>The UI Menu Page System </h1>
+<div class="textblock"><h1>The <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> Menu Page System </h1>
 <h2>System Requirements </h2>
 <p>The menu page system is intended to provide animations for menu components as well as grouping, but still allow to use the Unity-inherent Layout features etc.</p>
-<p>The classic approach is having multiple full menu "pages" readily set up with all their children on the canvas at the same time. These would then be made visible or invisible as pages are switched. We instead want to be able to animate and pan into view the individual elements (often panels with buttons and images) independently. By parenting, also complex UI elements can be animated with this of course.</p>
+<p>The classic approach is having multiple full menu "pages" readily set up with all their children on the canvas at the same time. These would then be made visible or invisible as pages are switched. We instead want to be able to animate and pan into view the individual elements (often panels with buttons and images) independently. By parenting, also complex <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> elements can be animated with this of course.</p>
 <p>The concrete menus may be found in the GDD under the Doc folder or in the Game Design section once written :)</p>
 <h2>System Solution </h2>
 <p>Unity provides its own Animation system, which we also use to realize State Machines. Have a look here for details: <a class="el" href="page_how_to_animate.html">How to animate</a> .</p>
-<p>This animation system is one, quite flexible approach handle movement and appearance of UI elements, as opposed to hard-coding the element movements.</p>
+<p>This animation system is one, quite flexible approach handle movement and appearance of <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> elements, as opposed to hard-coding the element movements.</p>
 <p>In addition, for the transition of pages, another State machine is used.</p>
 <h2>SW Requirements </h2>
 <p>The system should be independent of the specific project. One should be able to set up an arbitrary menu without having to change the code.</p>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('page_ui_menu_system.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_concepts.html">Concepts</a></li>
-    <li class="footer">Generated on Tue Oct 29 2019 06:06:58 for BomberUnits by
+    <li class="footer">Generated on Fri Nov 1 2019 15:21:24 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

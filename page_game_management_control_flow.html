@@ -82,10 +82,10 @@ $(document).ready(function(){initNavTree('page_game_management_control_flow.html
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Game Management and Control Flow </div>  </div>
+<div class="title">Game <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> and Control Flow </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Game Management and Control Flow </h1>
+<div class="textblock"><h1>Game <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> and Control Flow </h1>
 <h2>System Requirements </h2>
 <p>We need a program control flow which is as simple as possible while being inspectable and extendable.</p>
 <h2>Background info </h2>
@@ -95,30 +95,30 @@ $(document).ready(function(){initNavTree('page_game_management_control_flow.html
 <p>With the control flow being inherently highly parallel and with an unknown sequence, the remaining design decision is <em>how</em> all these scripts should <b>interact</b> with each other and with other classes and their instances not derived from Behaviours.</p>
 <h2>System Solution </h2>
 <h3>Interaction during runtime</h3>
-<p>There are a number of re-occurring important tasks, such as managing the overall program state, keeping track of the network state, the UI etc...<br />
+<p>There are a number of re-occurring important tasks, such as managing the overall program state, keeping track of the network state, the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> etc...<br />
  This leads to a number of GameManagement components attached to invisible management GameObjects. These provide the interface or access to a component having the interface to affect the global game behaviour.</p>
 <p>The control flow from Events, such as User Input, Network or In-Game events, should go from the receiving entity to the affected management component.</p>
 <p><b>Example: User Control Flow:</b><br />
- User input -&gt; UI Management -&gt; Distribution to other components as per domain.</p>
+ User input -&gt; <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> -&gt; Distribution to other components as per domain.</p>
 <blockquote class="doxtable">
-<p>E.g: Creation of a new local player via UI -&gt; UI Management is given the new player -&gt; Player Management logs and keeps track of it and triggers </p>
+<p>E.g: Creation of a new local player via <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> -&gt; <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> is given the new player -&gt; Player <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> logs and keeps track of it and triggers </p>
 </blockquote>
 <p><b>Example: Network Event Control Flow:</b><br />
- Network Event -&gt; Network Management -&gt; Distribution to other components as per domain.</p>
+ Network Event -&gt; Network <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> -&gt; Distribution to other components as per domain.</p>
 <blockquote class="doxtable">
-<p>E.g: The connection is dropped -&gt; Network Management receives event -&gt; informs Game Management about the </p>
+<p>E.g: The connection is dropped -&gt; Network <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> receives event -&gt; informs Game <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> about the </p>
 </blockquote>
-<p>issue -&gt; Game Management causes all kinds of actions, e.g. pausing and waiting for a reconnect.</p>
+<p>issue -&gt; Game <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> causes all kinds of actions, e.g. pausing and waiting for a reconnect.</p>
 <h3>Keeping track of the internals: state machines</h3>
 <p>We want visually scriptable and inspectable state machines to represent management states for the above domains and carry out actions. The reactive behaviour of a management component to a change in state is thus allocated with the affected state of the state machine.</p>
 <p>Have a look at the <a class="el" href="page_handling_state.html">Handling State</a> page for details on the existing state machines.</p>
-<p>Each state machine can trigger actions when their state transitions. State machines are never accessed directly though, but through an abstraction layer by their holding Behavior (Management component).</p>
+<p>Each state machine can trigger actions when their state transitions. State machines are never accessed directly though, but through an abstraction layer by their holding Behavior (<a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> component).</p>
 <p>We need the following pairs of management domains with state:</p>
 <ul>
 <li>GameState(Machine): responsible for the overall program. Held in the <em>Game Manager</em>.</li>
 <li>NetState(Machine): responsible for the state of network connection and current role. Held in <em>Net Manger</em>.</li>
-<li>MainMenuState(Machine): responsible for the main menu. Held in the <em>UI Manager</em>.</li>
-<li>Player Management does not need a state for the moment.</li>
+<li>MainMenuState(Machine): responsible for the main menu. Held in the <em><a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> Manager</em>.</li>
+<li>Player <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> does not need a state for the moment.</li>
 </ul>
 <h2>SW Requirements </h2>
 <h3>Access to the management scripts</h3>
@@ -130,12 +130,12 @@ $(document).ready(function(){initNavTree('page_game_management_control_flow.html
 <p>Have a look here for background info on the startup: <a class="el" href="page_how_to_startup_behaviours.html">How to startup Behaviours</a></p>
 <p>Using the Callbacks explained there in combination with State Machines is used to 'boot' the game to its initial state in the main menu. See here for details: <a class="el" href="page_game_startup.html">The Game Startup</a></p>
 <h3>Interaction during runtime:</h3>
-<p>Here are the relevant management classes, implementing the above concepts:</p>
+<p>Here are the relevant management classes, implementing the above concepts. They are accessible as singletons:</p>
 <ul>
-<li>(Singleton) <a class="el" href="class_bomber_units_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its compone...">BomberUnits::GameManager</a></li>
-<li>(Singleton) <a class="el" href="class_bomber_units_1_1_match_manager.html">BomberUnits::MatchManager</a></li>
-<li><a class="el" href="class_bomber_units_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. ">BomberUnits::PlayerManager</a></li>
-<li>BomberUnits::NetManager</li>
+<li><a class="el" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">Management::GameManager</a></li>
+<li><a class="el" href="class_management_1_1_match_manager.html" title="Responsible for managing a single match. Is thus part of each level scene and destroyed with it...">Management::MatchManager</a></li>
+<li><a class="el" href="class_management_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. ">Management::PlayerManager</a></li>
+<li>Management::NetManager</li>
 </ul>
 <p>See here for an overview of the existing state machines, and how to use them: <a class="el" href="page_handling_state.html">Handling State</a> </p>
 </div></div><!-- contents -->
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('page_game_management_control_flow.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_concepts.html">Concepts</a></li>
-    <li class="footer">Generated on Tue Oct 29 2019 06:06:58 for BomberUnits by
+    <li class="footer">Generated on Fri Nov 1 2019 15:21:24 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,0 +1,3 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. " alt="" coords="5,5,124,127"/>
+</map>

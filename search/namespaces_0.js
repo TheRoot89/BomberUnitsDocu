@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bomberunits',['BomberUnits',['../namespace_bomber_units.html',1,'']]]
+  ['effects',['Effects',['../namespace_effects.html',1,'']]]
 ];

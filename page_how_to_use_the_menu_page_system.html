@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('page_how_to_use_the_menu_page_system.h
 <div class="contents">
 <div class="textblock"><h1>How to use the Menu Page System </h1>
 <p>This is a How-To for the concept of <a class="el" href="page_ui_menu_system.html">Menu page System</a>, with components explained on its architecture site here: <a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a>.</p>
-<p>Please note this concept is responsible for hiding or showing different parts of a UI. It can also be used to implement actual menu pages. The switching of pages could be done by utilizing a state machine approach. In <a class="el" href="namespace_bomber_units.html">BomberUnits</a>, the main menu has its own state machine, with each state corresponding to a menu page as introduced here.</p>
+<p>Please note this concept is responsible for hiding or showing different parts of a <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a>. It can also be used to implement actual menu pages. The switching of pages could be done by utilizing a state machine approach. In BomberUnits, the main menu has its own state machine, with each state corresponding to a menu page as introduced here.</p>
 <blockquote class="doxtable">
 <p>There is a test scene to look at with this How-To: Assets/Test/MenuAnimationWithLayoutsTest.unity </p>
 </blockquote>
@@ -106,10 +106,10 @@ $(document).ready(function(){initNavTree('page_how_to_use_the_menu_page_system.h
 <li>Example in the test scene: <code>Element3LayoutContainer</code></li>
 </ul>
 </li>
-<li>The elements itself, such as <code>Element3</code>, need the <code>Animator</code> and <code>UIMenuElement</code> components.</li>
+<li>The elements itself, such as <code>Element3</code>, need the <code>Animator</code> and <code>MenuElement</code> components.</li>
 <li>Give the <code>Animator</code> component the <code>MenuElementTransition</code> controller asset.</li>
-<li>Assign the container object to the <code>UIMenuElement</code>'s <em>Container</em> field if any. This is needed so the container can be disabled when the element is disabled. This will change the organization of the enclosing <em>Layout Group</em>, so don't give a reference to the container if you don't want it to be disabled when the element is hidden (see in the example: container setting is empty).</li>
-<li>Assign groups of elements to animate together to the "Page Elements" fields of empty objects with the <code>UIMenuPage</code> component. These can represent menu pages but don't necessarily have to. You should group your logical pages under its own parent, e.g. <em>Pages</em>. <blockquote class="doxtable">
+<li>Assign the container object to the <code>MenuElement</code>'s <em>Container</em> field if any. This is needed so the container can be disabled when the element is disabled. This will change the organization of the enclosing <em>Layout Group</em>, so don't give a reference to the container if you don't want it to be disabled when the element is hidden (see in the example: container setting is empty).</li>
+<li>Assign groups of elements to animate together to the "Page Elements" fields of empty objects with the <code>MenuPage</code> component. These can represent menu pages but don't necessarily have to. You should group your logical pages under its own parent, e.g. <em>Pages</em>. <blockquote class="doxtable">
 <p>Hint: The page inspector provides a toggle to show or hide the page GameObject while editing, which </p>
 </blockquote>
 should be handy.</li>
@@ -126,7 +126,7 @@ should be handy.</li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_howtos.html">How-Tos</a></li>
-    <li class="footer">Generated on Tue Oct 29 2019 06:06:59 for BomberUnits by
+    <li class="footer">Generated on Fri Nov 1 2019 15:21:25 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,7 +1,0 @@
-<map id="Globals" name="Globals">
-<area shape="rect" id="node2" href="$class_bomber_units_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its compone..." alt="" coords="114,584,302,764"/>
-<area shape="rect" id="node5" href="$class_bomber_units_1_1_game_state_machine.html" title="{GameStateMachine\n|&#45; controller\l|+ StartMatch()\l&#45; Awake()\l&#45; Start()\l}" alt="" coords="38,183,175,290"/>
-<area shape="rect" id="node7" href="$class_bomber_units_1_1_match_manager.html" title="{MatchManager\n|+ spawns\l&#45; board\l&#45; objGrid\l&#45; boardWidthX\l&#45; boardHeightZ\l|+ GetObjectOnGrid()\l+ GetObjectOnGrid()\l&#45; Start()\l&#45; ReadBoard()\l&#45; InitPlayers()\l}" alt="" coords="475,365,618,560"/>
-<area shape="rect" id="node4" href="$class_bomber_units_1_1_game_settings.html" title="{GameSettings\n|+ maxTotPlayers\l+ maxLocPlayers\l+ randomizeSpawns\l+ showLabels\l+ playerSpeed\l+ playerBombCooldown\l+ playerBombCountdown\l+ playerInitBombRange\l+ playerInitMaxBombs\l+ powerUpChance\l|}" alt="" coords="342,132,508,341"/>
-<area shape="rect" id="node6" href="$struct_bomber_units_1_1_input_scheme.html" title="InputScheme holds the Input axes of a given input setting. One scheme is assigned to each player..." alt="" coords="199,176,318,297"/>
-</map>

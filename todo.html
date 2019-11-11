@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_management_1_1_game_manager.html#ad5a58fbf752d8890f32f36351c5ad7ef">GameManager.AddDummyLevel</a>  ()</dt>
 <dd>replace by reading levels from folder  </dd>
 <dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_management_1_1_game_manager.html#ae1d7a39756e67a1f25a73b8917528b0e">GameManager.StartMatch</a>  (<a class="el" href="struct_management_1_1_level.html">Level</a> level)</dt>
-<dd>Add check for ok number of players somewhere  </dd>
+<dd>Add check for ok number of players somewhere against level spawn locations supported.  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Page <a class="el" href="page_handling_state.html">Handling State</a>  </dt>
 <dd>Write the "handling State" concept page </dd>
 <dt><a class="anchor" id="_todo000005"></a>Page <a class="el" href="page_how_to_use_the_menu_page_system.html">How to use the Menu Page System</a>  </dt>
@@ -100,13 +100,17 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>: <b>Networking is WIP</b> </dd>
 <dt><a class="anchor" id="_todo000004"></a>Page <a class="el" href="page_player_management.html">Player Management</a>  </dt>
 <dd>: <b><a class="el" href="class_management_1_1_player.html" title="A Player is one participant in a game. ">Player</a> <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> is WIP for Multiplayer</b> </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_management_1_1_player_manager.html#a1afdc4d32b2f4397af0898ff8ef851e6">PlayerManager.playerFigurePrefabs</a>  </dt>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_u_i_1_1_player_cust_dialog.html#ae4b513cddd594f1c359e4f0a3e79a8c6">PlayerCustDialog.Awake</a>  ()</dt>
+<dd>check everything is set  </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_management_1_1_player_manager.html#a51d2bd742874fce3d21b84c97f5bcfdc">PlayerManager.localInputSchemes</a>  </dt>
 <dd>make connection to fitting model more clear.  </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_page_behaviour.html#aa08f924c99198398ca8bcff58acca21e">PreMatchPageBehaviour.OnStateExit</a>  (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)</dt>
+<dd>Check launch conditions fulfilled! E.g.: Num players is ok? Can be a GameManager capability.  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Page <a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a>  </dt>
 <dd>Triggers are not final. </dd>
-<dt><a class="anchor" id="_todo000010"></a>Class <a class="el" href="class_u_i_1_1_trigger.html">Trigger</a>  </dt>
+<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="class_u_i_1_1_trigger.html">Trigger</a>  </dt>
 <dd>This is too specific, the trigger now only works for the main menu :(  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_management_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78">UIManager.SetStatus</a>  (string msg)</dt>
+<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="class_management_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78">UIManager.SetStatus</a>  (string msg)</dt>
 <dd>refactor this to be its own class </dd>
 </dl>
 </div></div><!-- contents -->
@@ -114,7 +118,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2019 15:21:25 for BomberUnits by
+    <li class="footer">Generated on Mon Nov 11 2019 19:55:52 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

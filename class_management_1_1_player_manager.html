@@ -116,6 +116,9 @@ $(document).ready(function(){initNavTree('class_management_1_1_player_manager.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa17ce90d7f311221e2fd018741cc675a"><td class="memItemLeft" align="right" valign="top"><a id="aa17ce90d7f311221e2fd018741cc675a"></a>
+<a class="el" href="class_management_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddNewLocalPlayer</b> ()</td></tr>
+<tr class="separator:aa17ce90d7f311221e2fd018741cc675a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e8d73ed2e64121b406807ed24754f26"><td class="memItemLeft" align="right" valign="top"><a id="a5e8d73ed2e64121b406807ed24754f26"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a5e8d73ed2e64121b406807ed24754f26">AddLocalPlayer</a> (<a class="el" href="class_management_1_1_player.html">Player</a> p)</td></tr>
 <tr class="memdesc:a5e8d73ed2e64121b406807ed24754f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new player given by the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> (as well as initial player loaded from prefs). <br /></td></tr>
@@ -148,10 +151,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1afdc4d32b2f4397af0898ff8ef851e6"><td class="memItemLeft" align="right" valign="top">GameObject []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a1afdc4d32b2f4397af0898ff8ef851e6">playerFigurePrefabs</a></td></tr>
 <tr class="memdesc:a1afdc4d32b2f4397af0898ff8ef851e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The prefabs for instantiating different player models.  <a href="#a1afdc4d32b2f4397af0898ff8ef851e6">More...</a><br /></td></tr>
 <tr class="separator:a1afdc4d32b2f4397af0898ff8ef851e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d2bd742874fce3d21b84c97f5bcfdc"><td class="memItemLeft" align="right" valign="top"><a id="a51d2bd742874fce3d21b84c97f5bcfdc"></a>
-<a class="el" href="struct_management_1_1_input_scheme.html">InputScheme</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a51d2bd742874fce3d21b84c97f5bcfdc">localInputSchemes</a></td></tr>
-<tr class="memdesc:a51d2bd742874fce3d21b84c97f5bcfdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis names combined to input sets, set in scene editor. <br /></td></tr>
+<tr class="memitem:a51d2bd742874fce3d21b84c97f5bcfdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_management_1_1_input_scheme.html">InputScheme</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a51d2bd742874fce3d21b84c97f5bcfdc">localInputSchemes</a></td></tr>
+<tr class="memdesc:a51d2bd742874fce3d21b84c97f5bcfdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis names combined to input sets, set in scene editor.  <a href="#a51d2bd742874fce3d21b84c97f5bcfdc">More...</a><br /></td></tr>
 <tr class="separator:a51d2bd742874fce3d21b84c97f5bcfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e98d1d8874e683cff441bbd1198463d"><td class="memItemLeft" align="right" valign="top"><a id="a7e98d1d8874e683cff441bbd1198463d"></a>
+Color []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a7e98d1d8874e683cff441bbd1198463d">playerColors</a></td></tr>
+<tr class="memdesc:a7e98d1d8874e683cff441bbd1198463d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colors selectable for players. <br /></td></tr>
+<tr class="separator:a7e98d1d8874e683cff441bbd1198463d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -165,9 +171,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memItemLeft" align="right" valign="top"><a id="a1e3b6d38df0786ccf7f938d60e386aae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
 <tr class="separator:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7610b7e3c20f7a5cdb53e4bb4193270e"><td class="memItemLeft" align="right" valign="top"><a id="a7610b7e3c20f7a5cdb53e4bb4193270e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePlayerFigure</b> (<a class="el" href="class_management_1_1_player.html">Player</a> p, Vector3 spawn)</td></tr>
-<tr class="separator:a7610b7e3c20f7a5cdb53e4bb4193270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -232,11 +235,30 @@ static <a class="el" href="class_management_1_1_player_manager.html">PlayerManag
 <p>Gets an available input scheme by its name. </p>
 <p>Returns input Scheme at position [0] if the name is not found and logs a warning. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00114">114</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00125">125</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a51d2bd742874fce3d21b84c97f5bcfdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d2bd742874fce3d21b84c97f5bcfdc">&#9670;&nbsp;</a></span>localInputSchemes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_management_1_1_input_scheme.html">InputScheme</a> [] localInputSchemes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Axis names combined to input sets, set in scene editor. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>make connection to fitting model more clear. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+
+</div>
+</div>
 <a id="a1afdc4d32b2f4397af0898ff8ef851e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1afdc4d32b2f4397af0898ff8ef851e6">&#9670;&nbsp;</a></span>playerFigurePrefabs</h2>
 
@@ -250,7 +272,6 @@ static <a class="el" href="class_management_1_1_player_manager.html">PlayerManag
 </div><div class="memdoc">
 
 <p>The prefabs for instantiating different player models. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>make connection to fitting model more clear. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00016">16</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
@@ -265,7 +286,7 @@ static <a class="el" href="class_management_1_1_player_manager.html">PlayerManag
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_management.html">Management</a></li><li class="navelem"><a class="el" href="class_management_1_1_player_manager.html">PlayerManager</a></li>
-    <li class="footer">Generated on Fri Nov 1 2019 15:21:25 for BomberUnits by
+    <li class="footer">Generated on Mon Nov 11 2019 19:55:52 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

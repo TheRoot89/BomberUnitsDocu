@@ -15,11 +15,13 @@
 <area shape="rect" id="node16" href="$class_mechanics_1_1_player_controller.html" title="Is responsible for handling player input and keeping the player figure status. " alt="" coords="188,664,303,691"/>
 <area shape="rect" id="node17" href="$class_test_1_1_on_click.html" title="OnClick" alt="" coords="211,715,279,741"/>
 <area shape="rect" id="node18" href="$class_u_i_1_1_billboard.html" title="The billboard script allows this gameobject to always face a set target camera. " alt="" coords="209,765,281,792"/>
-<area shape="rect" id="node19" href="$class_u_i_1_1_dialog.html" title="Base class for a unified Dialog system. " alt="" coords="216,816,275,843"/>
-<area shape="rect" id="node21" href="$class_u_i_1_1_label.html" title="A label handles all kinds of world space hovering displays for game objects. " alt="" coords="219,867,272,893"/>
-<area shape="rect" id="node22" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="164,917,327,944"/>
-<area shape="rect" id="node23" href="$class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="194,968,297,995"/>
-<area shape="rect" id="node24" href="$class_u_i_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="203,1019,287,1045"/>
-<area shape="rect" id="node12" href="$class_test_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="379,461,489,488"/>
-<area shape="rect" id="node20" href="$class_u_i_1_1_game_over_dialog.html" title="A Dialog handler for the game over screen. Associated to a specific UI prefab. " alt="" coords="375,816,493,843"/>
+<area shape="rect" id="node19" href="$class_u_i_1_1_game_over_dialog.html" title="A Dialog handler for the game over screen. Associated to a specific UI prefab. " alt="" coords="186,816,305,843"/>
+<area shape="rect" id="node20" href="$class_u_i_1_1_label.html" title="A label handles all kinds of world space hovering displays for game objects. " alt="" coords="219,867,272,893"/>
+<area shape="rect" id="node21" href="$class_u_i_1_1_lobby_panel_controller.html" title="LobbyPanelController" alt="" coords="173,917,318,944"/>
+<area shape="rect" id="node22" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="164,968,327,995"/>
+<area shape="rect" id="node23" href="$class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="194,1019,297,1045"/>
+<area shape="rect" id="node24" href="$class_u_i_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="203,1069,287,1096"/>
+<area shape="rect" id="node25" href="$class_u_i_1_1_message_dialog.html" title="A Dialog handler for arbitrary messages which is to be associated to the dialog prefab. " alt="" coords="190,1120,301,1147"/>
+<area shape="rect" id="node26" href="$class_u_i_1_1_player_cust_dialog.html" title="PlayerCustDialog" alt="" coords="184,1171,307,1197"/>
+<area shape="rect" id="node12" href="$class_test_1_1_test_u_i_manager.html" title="Extension to UIManager for testing. " alt="" coords="375,461,484,488"/>
 </map>

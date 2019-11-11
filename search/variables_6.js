@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['maxlocplayers',['maxLocPlayers',['../class_management_1_1_player_manager.html#a2b52e443b3ccee116bed5c92d8e29d4c',1,'Management::PlayerManager']]],
-  ['maxplayers',['maxPlayers',['../class_management_1_1_player_manager.html#aa1b24fe78bd4f1d94890fc632e97151f',1,'Management::PlayerManager']]]
+  ['lasthiddenpage',['lastHiddenPage',['../class_u_i_1_1_menu_page.html#a0a9ce2b369a571346476b565b23ae855',1,'UI::MenuPage']]],
+  ['localinputschemes',['localInputSchemes',['../class_management_1_1_player_manager.html#a51d2bd742874fce3d21b84c97f5bcfdc',1,'Management::PlayerManager']]]
 ];

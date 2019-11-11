@@ -1,8 +1,8 @@
 var class_management_1_1_player_manager =
 [
     [ "AddLocalPlayer", "class_management_1_1_player_manager.html#a5e8d73ed2e64121b406807ed24754f26", null ],
+    [ "AddNewLocalPlayer", "class_management_1_1_player_manager.html#aa17ce90d7f311221e2fd018741cc675a", null ],
     [ "Awake", "class_management_1_1_player_manager.html#ae4b513cddd594f1c359e4f0a3e79a8c6", null ],
-    [ "CreatePlayerFigure", "class_management_1_1_player_manager.html#a7610b7e3c20f7a5cdb53e4bb4193270e", null ],
     [ "Get", "class_management_1_1_player_manager.html#abcfbfa831ecd3e2e8ac4f1b1dddd2dff", null ],
     [ "GetInputIdxFromName", "class_management_1_1_player_manager.html#a23e1133841f74fc4d047da0b2a574eaa", null ],
     [ "GetInputSchemeFromName", "class_management_1_1_player_manager.html#a43fbf72941ea58c8ba4b4be392713cc8", null ],
@@ -17,6 +17,7 @@ var class_management_1_1_player_manager =
     [ "maxPlayers", "class_management_1_1_player_manager.html#aa1b24fe78bd4f1d94890fc632e97151f", null ],
     [ "numLocPlayers", "class_management_1_1_player_manager.html#a3818d0ec327d1f33d92d8b5e232c05b9", null ],
     [ "numPlayers", "class_management_1_1_player_manager.html#a1aa5827ad337d72a54017b4e84d6f150", null ],
+    [ "playerColors", "class_management_1_1_player_manager.html#a7e98d1d8874e683cff441bbd1198463d", null ],
     [ "playerFigurePrefabs", "class_management_1_1_player_manager.html#a1afdc4d32b2f4397af0898ff8ef851e6", null ],
     [ "players", "class_management_1_1_player_manager.html#a9fb81e7f1419670b05b1e55a5a9ced9a", null ]
 ];

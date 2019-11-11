@@ -11,5 +11,6 @@ var searchData=
   ['menuelement',['MenuElement',['../class_u_i_1_1_menu_element.html',1,'UI']]],
   ['menupage',['MenuPage',['../class_u_i_1_1_menu_page.html',1,'MenuPage'],['../class_u_i_1_1_menu_page.html#ae318ebd93a71b6137a9dc5005f0769e8',1,'UI.MenuPage.MenuPage()']]],
   ['menupageeditor',['MenuPageEditor',['../class_u_i_1_1_menu_page_editor.html',1,'UI']]],
+  ['messagedialog',['MessageDialog',['../class_u_i_1_1_message_dialog.html',1,'UI']]],
   ['menu_20page_20system',['Menu page System',['../page_ui_menu_system.html',1,'page_concepts']]]
 ];

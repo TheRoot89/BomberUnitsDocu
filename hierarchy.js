@@ -29,13 +29,14 @@ var hierarchy =
       [ "PlayerController", "class_mechanics_1_1_player_controller.html", null ],
       [ "OnClick", "class_test_1_1_on_click.html", null ],
       [ "Billboard", "class_u_i_1_1_billboard.html", null ],
-      [ "Dialog", "class_u_i_1_1_dialog.html", [
-        [ "GameOverDialog", "class_u_i_1_1_game_over_dialog.html", null ]
-      ] ],
+      [ "GameOverDialog", "class_u_i_1_1_game_over_dialog.html", null ],
       [ "Label", "class_u_i_1_1_label.html", null ],
+      [ "LobbyPanelController", "class_u_i_1_1_lobby_panel_controller.html", null ],
       [ "MainMenuStateMachine", "class_u_i_1_1_main_menu_state_machine.html", null ],
       [ "MenuElement", "class_u_i_1_1_menu_element.html", null ],
-      [ "MenuPage", "class_u_i_1_1_menu_page.html", null ]
+      [ "MenuPage", "class_u_i_1_1_menu_page.html", null ],
+      [ "MessageDialog", "class_u_i_1_1_message_dialog.html", null ],
+      [ "PlayerCustDialog", "class_u_i_1_1_player_cust_dialog.html", null ]
     ] ],
     [ "Player", "class_management_1_1_player.html", null ],
     [ "PropertyAttribute", null, [

@@ -36,7 +36,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_auto_destroy_particle_sys_8cs_source.html",
-"class_mechanics_1_1_player_controller.html#a967e42e8f504a42432c5d996c7acafc9"
+"class_mechanics_1_1_player_controller.html#a6b1cbf185f142f54c7cb50f5c5d5022b",
+"page_how_to_create_state_machines.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

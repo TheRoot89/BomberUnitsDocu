@@ -7,6 +7,7 @@ var namespace_management =
     [ "InputScheme", "struct_management_1_1_input_scheme.html", "struct_management_1_1_input_scheme" ],
     [ "Level", "struct_management_1_1_level.html", "struct_management_1_1_level" ],
     [ "MatchManager", "class_management_1_1_match_manager.html", "class_management_1_1_match_manager" ],
+    [ "NetManager", "class_management_1_1_net_manager.html", "class_management_1_1_net_manager" ],
     [ "Player", "class_management_1_1_player.html", "class_management_1_1_player" ],
     [ "PlayerManager", "class_management_1_1_player_manager.html", "class_management_1_1_player_manager" ],
     [ "SceneReference", "class_management_1_1_scene_reference.html", "class_management_1_1_scene_reference" ],

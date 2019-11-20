@@ -110,19 +110,30 @@ $(document).ready(function(){initNavTree('class_management_1_1_player_manager.ht
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_management_1_1_player_manager__coll__graph.png" border="0" usemap="#_player_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_player_manager_coll__map" id="_player_manager_coll__map">
-<area shape="rect" id="node3" href="struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. " alt="" coords="140,5,259,127"/>
+<area shape="rect" id="node4" href="class_management_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="455,189,605,413"/>
+<area shape="rect" id="node5" href="struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. " alt="" coords="315,5,433,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1dc6672102f53d1a955cfee0500f4572"><td class="memItemLeft" align="right" valign="top"><a id="a1dc6672102f53d1a955cfee0500f4572"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLobbyPanel</b> (<a class="el" href="class_u_i_1_1_lobby_panel_controller.html">UI.LobbyPanelController</a> ctrl)</td></tr>
+<tr class="separator:a1dc6672102f53d1a955cfee0500f4572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3250476d3cf34ebe449b4999ae7fa7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#ab3250476d3cf34ebe449b4999ae7fa7b">LoadAndAddMainPlayer</a> ()</td></tr>
+<tr class="memdesc:ab3250476d3cf34ebe449b4999ae7fa7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read from preferences to create the initial host/client or "main" player.  <a href="#ab3250476d3cf34ebe449b4999ae7fa7b">More...</a><br /></td></tr>
+<tr class="separator:ab3250476d3cf34ebe449b4999ae7fa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ccbd7059fd7d815047860b76b4c05c"><td class="memItemLeft" align="right" valign="top"><a id="a84ccbd7059fd7d815047860b76b4c05c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a84ccbd7059fd7d815047860b76b4c05c">SaveMainPlayer</a> ()</td></tr>
+<tr class="memdesc:a84ccbd7059fd7d815047860b76b4c05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the main player's settings to the PlayerPrefs. Does nothing if not set. <br /></td></tr>
+<tr class="separator:a84ccbd7059fd7d815047860b76b4c05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17ce90d7f311221e2fd018741cc675a"><td class="memItemLeft" align="right" valign="top"><a id="aa17ce90d7f311221e2fd018741cc675a"></a>
 <a class="el" href="class_management_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddNewLocalPlayer</b> ()</td></tr>
 <tr class="separator:aa17ce90d7f311221e2fd018741cc675a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8d73ed2e64121b406807ed24754f26"><td class="memItemLeft" align="right" valign="top"><a id="a5e8d73ed2e64121b406807ed24754f26"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a5e8d73ed2e64121b406807ed24754f26">AddLocalPlayer</a> (<a class="el" href="class_management_1_1_player.html">Player</a> p)</td></tr>
-<tr class="memdesc:a5e8d73ed2e64121b406807ed24754f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new player given by the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> (as well as initial player loaded from prefs). <br /></td></tr>
-<tr class="separator:a5e8d73ed2e64121b406807ed24754f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056ee05c09ef72cdde25d85f54e3a482"><td class="memItemLeft" align="right" valign="top"><a id="a056ee05c09ef72cdde25d85f54e3a482"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a056ee05c09ef72cdde25d85f54e3a482">AddLocalPlayer</a> (<a class="el" href="class_management_1_1_player.html">Player</a> p)</td></tr>
+<tr class="memdesc:a056ee05c09ef72cdde25d85f54e3a482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new player given by the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> (as well as initial player loaded from prefs). <br /></td></tr>
+<tr class="separator:a056ee05c09ef72cdde25d85f54e3a482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dea40f761a3e27c27d77329ac8ea6bc"><td class="memItemLeft" align="right" valign="top"><a id="a0dea40f761a3e27c27d77329ac8ea6bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllPlayers</b> ()</td></tr>
 <tr class="separator:a0dea40f761a3e27c27d77329ac8ea6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +150,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPlayer</b> (<a c
 <tr class="memitem:a43fbf72941ea58c8ba4b4be392713cc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_management_1_1_input_scheme.html">InputScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a43fbf72941ea58c8ba4b4be392713cc8">GetInputSchemeFromName</a> (string inputSchemeName)</td></tr>
 <tr class="memdesc:a43fbf72941ea58c8ba4b4be392713cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an available input scheme by its name.  <a href="#a43fbf72941ea58c8ba4b4be392713cc8">More...</a><br /></td></tr>
 <tr class="separator:a43fbf72941ea58c8ba4b4be392713cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb68a25a54e6cd6115d75c631552c8d"><td class="memItemLeft" align="right" valign="top"><a id="aedb68a25a54e6cd6115d75c631552c8d"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlayerFigurePrefabFromID</b> (int id)</td></tr>
+<tr class="separator:aedb68a25a54e6cd6115d75c631552c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -165,8 +179,7 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
 <tr class="separator:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a07aaf1227e4d645f15e0a964f54ef291">Start</a> ()</td></tr>
-<tr class="memdesc:a07aaf1227e4d645f15e0a964f54ef291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes members. <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memItemLeft" align="right" valign="top"><a id="a1e3b6d38df0786ccf7f938d60e386aae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
@@ -190,10 +203,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a1aa5827ad337d72a54017b4e84d6f150">numPlayers</a></td></tr>
 <tr class="memdesc:a1aa5827ad337d72a54017b4e84d6f150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current amount of all players, local and remote. <br /></td></tr>
 <tr class="separator:a1aa5827ad337d72a54017b4e84d6f150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9ba794d9f6bf26441bc0429ee0fce7"><td class="memItemLeft" align="right" valign="top"><a id="a2a9ba794d9f6bf26441bc0429ee0fce7"></a>
+<a class="el" href="class_management_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a2a9ba794d9f6bf26441bc0429ee0fce7">localMainPlayer</a></td></tr>
+<tr class="memdesc:a2a9ba794d9f6bf26441bc0429ee0fce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the std local "main" player, who is always present. <br /></td></tr>
+<tr class="separator:a2a9ba794d9f6bf26441bc0429ee0fce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="memItemLeft" align="right" valign="top"><a id="a9fb81e7f1419670b05b1e55a5a9ced9a"></a>
 List&lt; <a class="el" href="class_management_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a9fb81e7f1419670b05b1e55a5a9ced9a">players</a></td></tr>
-<tr class="memdesc:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to track <a class="el" href="class_management_1_1_player.html" title="A Player is one participant in a game. ">Player</a> objects, local (incl. main) and remote. <br /></td></tr>
+<tr class="memdesc:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to track all <a class="el" href="class_management_1_1_player.html" title="A Player is one participant in a game. ">Player</a> instances, local (incl. main) and remote. <br /></td></tr>
 <tr class="separator:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bf0e25a3474dbc2e0cc9aca2706626"><td class="memItemLeft" align="right" valign="top"><a id="a94bf0e25a3474dbc2e0cc9aca2706626"></a>
+<a class="el" href="class_u_i_1_1_lobby_panel_controller.html">UI.LobbyPanelController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_player_manager.html#a94bf0e25a3474dbc2e0cc9aca2706626">lobbyPanelController</a> = null</td></tr>
+<tr class="memdesc:a94bf0e25a3474dbc2e0cc9aca2706626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference for Slot updates. <br /></td></tr>
+<tr class="separator:a94bf0e25a3474dbc2e0cc9aca2706626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -235,7 +256,37 @@ static <a class="el" href="class_management_1_1_player_manager.html">PlayerManag
 <p>Gets an available input scheme by its name. </p>
 <p>Returns input Scheme at position [0] if the name is not found and logs a warning. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00125">125</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00179">179</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab3250476d3cf34ebe449b4999ae7fa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3250476d3cf34ebe449b4999ae7fa7b">&#9670;&nbsp;</a></span>LoadAndAddMainPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoadAndAddMainPlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tries to read from preferences to create the initial host/client or "main" player. </p>
+<p>Assigns default values if the keys are not found in the preferences. This is to be triggered during initialization by the <a class="el" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">GameManager</a>. The function assigns the player to a slot and opens another slot if more players are allowed. </p>
+
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00091">91</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
@@ -253,7 +304,7 @@ static <a class="el" href="class_management_1_1_player_manager.html">PlayerManag
 </div><div class="memdoc">
 
 <p>Axis names combined to input sets, set in scene editor. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>make connection to fitting model more clear. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>make connection to fitting model more clear. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
@@ -286,7 +337,7 @@ static <a class="el" href="class_management_1_1_player_manager.html">PlayerManag
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_management.html">Management</a></li><li class="navelem"><a class="el" href="class_management_1_1_player_manager.html">PlayerManager</a></li>
-    <li class="footer">Generated on Mon Nov 11 2019 19:55:52 for BomberUnits by
+    <li class="footer">Generated on Wed Nov 20 2019 20:46:55 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

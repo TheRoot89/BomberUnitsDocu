@@ -1,10 +1,12 @@
 var searchData=
 [
   ['sw_20architecture',['SW Architecture',['../page_sw_architecture.html',1,'']]],
+  ['savemainplayer',['SaveMainPlayer',['../class_management_1_1_player_manager.html#a84ccbd7059fd7d815047860b76b4c05c',1,'Management::PlayerManager']]],
   ['scenereference',['SceneReference',['../class_management_1_1_scene_reference.html',1,'Management']]],
   ['screendir',['ScreenDir',['../namespace_u_i.html#afd8038ee38480e8b3d82f555a4672093',1,'UI']]],
   ['screendirhiddenstatenames',['screenDirHiddenStateNames',['../class_u_i_1_1_menu_element.html#a678ec67daa6ab179e4a73244712992c4',1,'UI::MenuElement']]],
   ['setstatus',['SetStatus',['../class_management_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78',1,'Management::UIManager']]],
+  ['settings',['settings',['../class_management_1_1_game_manager.html#ad595baaa852c5d39f4429a7e6b91c76c',1,'Management::GameManager']]],
   ['show',['Show',['../class_u_i_1_1_menu_element.html#ace79e5f49885e486e8e1d48ff0666476',1,'UI.MenuElement.Show()'],['../class_u_i_1_1_menu_element.html#ae2f9774046c17a8a328b9f586782e879',1,'UI.MenuElement.Show(ScreenDir fromDir)'],['../class_u_i_1_1_menu_page.html#ace79e5f49885e486e8e1d48ff0666476',1,'UI.MenuPage.Show()']]],
   ['showdelay',['showDelay',['../class_u_i_1_1_menu_element.html#a83923449482c742d9cedb6c8fdb515e3',1,'UI::MenuElement']]],
   ['showdialogbehaviour',['ShowDialogBehaviour',['../class_u_i_1_1_general_s_m_behaviours_1_1_show_dialog_behaviour.html',1,'UI::GeneralSMBehaviours']]],
@@ -21,7 +23,8 @@ var searchData=
   ['showleft',['ShowLeft',['../class_u_i_1_1_menu_element.html#a874518707dbe04a8d049d64e9db60e9d',1,'UI::MenuElement']]],
   ['showright',['ShowRight',['../class_u_i_1_1_menu_element.html#a0ed3486c6ed4b350949bae510d611ae3',1,'UI::MenuElement']]],
   ['showup',['ShowUp',['../class_u_i_1_1_menu_element.html#a391f287e175fa60504ee3b01fa71d8a1',1,'UI::MenuElement']]],
-  ['start',['Start',['../class_management_1_1_player_manager.html#a07aaf1227e4d645f15e0a964f54ef291',1,'Management::PlayerManager']]],
+  ['shuffle_3c_20t_20_3e',['Shuffle&lt; T &gt;',['../class_helper_functions.html#ab30b7468eaeef7f20edb307378c796bf',1,'HelperFunctions']]],
   ['startmatch',['StartMatch',['../class_management_1_1_game_manager.html#ae1d7a39756e67a1f25a73b8917528b0e',1,'Management::GameManager']]],
+  ['statusbar',['statusBar',['../class_management_1_1_u_i_manager.html#a813a9e22eee7906318c106b7077307de',1,'Management::UIManager']]],
   ['switchpageelements',['switchPageElements',['../class_u_i_1_1_menu_page_editor.html#adfc23017d10d7e787a4c2db5bbe97779',1,'UI::MenuPageEditor']]]
 ];

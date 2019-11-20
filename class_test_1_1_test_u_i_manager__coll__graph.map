@@ -1,4 +1,4 @@
 <map id="TestUIManager" name="TestUIManager">
-<area shape="rect" id="node2" href="$class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="5,433,216,643"/>
-<area shape="rect" id="node4" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="127,132,340,371"/>
+<area shape="rect" id="node2" href="$class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="5,433,180,584"/>
+<area shape="rect" id="node4" href="$class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="109,132,322,371"/>
 </map>

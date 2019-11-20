@@ -1,4 +1,4 @@
 <map id="MatchManager" name="MatchManager">
-<area shape="rect" id="node3" href="$class_management_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="141,189,285,399"/>
-<area shape="rect" id="node4" href="$struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. " alt="" coords="153,5,272,127"/>
+<area shape="rect" id="node3" href="$class_management_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="140,189,291,413"/>
+<area shape="rect" id="node4" href="$struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. " alt="" coords="156,5,275,127"/>
 </map>

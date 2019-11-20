@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <area shape="rect" id="node6" href="class_effects_1_1_grid_overlay.html" title="Provides drawn grid lines according to the settings. " alt="" coords="201,208,290,235"/>
 <area shape="rect" id="node7" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts..." alt="" coords="192,259,299,285"/>
 <area shape="rect" id="node8" href="class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="177,309,314,336"/>
-<area shape="rect" id="node9" href="class_management_1_1_match_manager.html" title="Responsible for managing a single match. Is thus part of each level scene and destroyed with it..." alt="" coords="191,360,299,387"/>
+<area shape="rect" id="node9" href="class_management_1_1_match_manager.html" title="Responsible for managing a single match. " alt="" coords="191,360,299,387"/>
 <area shape="rect" id="node10" href="class_management_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. " alt="" coords="191,411,300,437"/>
 <area shape="rect" id="node11" href="class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="203,461,287,488"/>
 <area shape="rect" id="node13" href="class_mechanics_1_1_breakable.html" title="Provides the &#39;Breakable&#39; attribute to game objects, giving them the Break() method. " alt="" coords="205,512,285,539"/>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </td></tr>
 <tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#_helper_functions"/>
 <map name="_helper_functions" id="_helper_functions">
-<area shape="rect" id="node1" href="class_helper_functions.html" title="HelperFunctions" alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node1" href="class_helper_functions.html" title="Contains various static helpful functions usable from any other component. " alt="" coords="5,5,121,32"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#_input_scheme"/>
@@ -139,11 +139,11 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </td></tr>
 <tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_main_menu_behaviour"/>
 <map name="_main_menu_behaviour" id="_main_menu_behaviour">
-<area shape="rect" id="node2" href="class_management_1_1_game_s_m_behaviours_1_1_main_menu_behaviour.html" title="Behaviour to trigger creation of the Main Menu Scene and UI upon entering it. " alt="" coords="225,5,363,32"/>
-<area shape="rect" id="node3" href="class_u_i_1_1_general_s_m_behaviours_1_1_show_dialog_behaviour.html" title="Basic behaviour usable by any state machine to show a set UI dialog prefab. " alt="" coords="221,56,367,83"/>
-<area shape="rect" id="node4" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_generic_page_behaviour.html" title="A UI behaviour to show a specific named page. " alt="" coords="217,107,371,133"/>
-<area shape="rect" id="node5" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_home_page_behaviour.html" title="A behaviour ensuring creation of the menu prefab and showing the initial page. " alt="" coords="223,157,365,184"/>
-<area shape="rect" id="node6" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_page_behaviour.html" title="The PreMatch behaviour for the preMatch page ensures the menu is existing and destroyed correctly..." alt="" coords="212,208,376,235"/>
+<area shape="rect" id="node2" href="class_management_1_1_game_s_m_behaviours_1_1_main_menu_behaviour.html" title="Behaviour to trigger creation of the Main Menu Scene and UI upon entering it. " alt="" coords="219,5,358,32"/>
+<area shape="rect" id="node3" href="class_u_i_1_1_general_s_m_behaviours_1_1_show_dialog_behaviour.html" title="Basic behaviour usable by any state machine to show a set UI dialog prefab. " alt="" coords="215,56,362,83"/>
+<area shape="rect" id="node4" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_generic_page_behaviour.html" title="A UI behaviour to show a specific named page. " alt="" coords="212,107,365,133"/>
+<area shape="rect" id="node5" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_home_page_behaviour.html" title="A behaviour ensuring creation of the menu prefab and showing the initial page. " alt="" coords="217,157,360,184"/>
+<area shape="rect" id="node6" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_behaviour.html" title="The PreMatch behaviour for the preMatch page ensures the menu is existing and destroyed correctly..." alt="" coords="221,208,356,235"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_menu_page_editor"/>
@@ -151,27 +151,42 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <area shape="rect" id="node2" href="class_u_i_1_1_menu_page_editor.html" title="Custom Editor using SerializedProperties. " alt="" coords="109,5,228,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_player"/>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_net_manager"/>
+<map name="_net_manager" id="_net_manager">
+<area shape="rect" id="node2" href="class_management_1_1_net_manager.html" title="Manages all Network related topics, is persistent across scenes, just as the game manager..." alt="" coords="244,5,336,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_player"/>
 <map name="_player" id="_player">
 <area shape="rect" id="node1" href="class_management_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="5,5,64,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_read_only_attribute"/>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_player_prefs_keys"/>
+<map name="_player_prefs_keys" id="_player_prefs_keys">
+<area shape="rect" id="node1" href="class_player_prefs_keys.html" title="Static class defining the key strings to be used with player preferences. " alt="" coords="5,5,124,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_player_prefs_x"/>
+<map name="_player_prefs_x" id="_player_prefs_x">
+<area shape="rect" id="node1" href="class_player_prefs_x.html" title="This class is an extension to the PlayerPrefs class provided by Unity. " alt="" coords="5,5,101,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_read_only_attribute"/>
 <map name="_read_only_attribute" id="_read_only_attribute">
 <area shape="rect" id="node2" href="class_read_only_attribute.html" title="Defines the ReadOnly attribute or property. " alt="" coords="173,5,301,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_read_only_drawer"/>
+<tr><td><img src="inherit_graph_12.png" border="0" alt="" usemap="#_read_only_drawer"/>
 <map name="_read_only_drawer" id="_read_only_drawer">
 <area shape="rect" id="node2" href="class_read_only_drawer.html" title="PropertyDrawer for the ReadOnly Attribute. " alt="" coords="164,5,283,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_scene_reference"/>
+<tr><td><img src="inherit_graph_13.png" border="0" alt="" usemap="#_scene_reference"/>
 <map name="_scene_reference" id="_scene_reference">
 <area shape="rect" id="node2" href="class_management_1_1_scene_reference.html" title="A wrapper that provides the means to safely serialize Scene Asset References. " alt="" coords="248,5,365,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_trigger"/>
+<tr><td><img src="inherit_graph_14.png" border="0" alt="" usemap="#_trigger"/>
 <map name="_trigger" id="_trigger">
 <area shape="rect" id="node1" href="class_u_i_1_1_trigger.html" title="Provides runtime setup of button listeners for the MainMenu state machine. " alt="" coords="5,5,67,32"/>
 </map>
@@ -182,7 +197,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 11 2019 19:55:54 for BomberUnits by
+    <li class="footer">Generated on Wed Nov 20 2019 20:46:57 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

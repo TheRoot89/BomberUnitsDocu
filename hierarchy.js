@@ -38,7 +38,12 @@ var hierarchy =
       [ "MessageDialog", "class_u_i_1_1_message_dialog.html", null ],
       [ "PlayerCustDialog", "class_u_i_1_1_player_cust_dialog.html", null ]
     ] ],
+    [ "MonoBehaviourPunCallbacks", null, [
+      [ "NetManager", "class_management_1_1_net_manager.html", null ]
+    ] ],
     [ "Player", "class_management_1_1_player.html", null ],
+    [ "PlayerPrefsKeys", "class_player_prefs_keys.html", null ],
+    [ "PlayerPrefsX", "class_player_prefs_x.html", null ],
     [ "PropertyAttribute", null, [
       [ "ReadOnlyAttribute", "class_read_only_attribute.html", null ]
     ] ],
@@ -50,7 +55,7 @@ var hierarchy =
       [ "ShowDialogBehaviour", "class_u_i_1_1_general_s_m_behaviours_1_1_show_dialog_behaviour.html", null ],
       [ "GenericPageBehaviour", "class_u_i_1_1_main_menu_s_m_behaviours_1_1_generic_page_behaviour.html", null ],
       [ "HomePageBehaviour", "class_u_i_1_1_main_menu_s_m_behaviours_1_1_home_page_behaviour.html", null ],
-      [ "PreMatchPageBehaviour", "class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_page_behaviour.html", null ]
+      [ "PreMatchBehaviour", "class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_behaviour.html", null ]
     ] ],
     [ "Trigger", "class_u_i_1_1_trigger.html", null ]
 ];

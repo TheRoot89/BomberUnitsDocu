@@ -23,10 +23,10 @@ var class_mechanics_1_1_player_controller =
     [ "controlActive", "class_mechanics_1_1_player_controller.html#a4566f866d8cbc6a99846f1d0f1f9aefb", null ],
     [ "curBombCooldown", "class_mechanics_1_1_player_controller.html#a188c22759153a6e692f6d2492576f0d6", null ],
     [ "curNrBombs", "class_mechanics_1_1_player_controller.html#a3597b5c047c0094731da4bc7f9a9e593", null ],
-    [ "figureID", "class_mechanics_1_1_player_controller.html#a19be8c0fdd3b824f5c6f86cfbba684af", null ],
     [ "input", "class_mechanics_1_1_player_controller.html#a72386a46ee420f71a0076dc47f2676fb", null ],
     [ "lifePts", "class_mechanics_1_1_player_controller.html#acf2a1b441d3161b8060d183f5edca444", null ],
     [ "maxBombs", "class_mechanics_1_1_player_controller.html#a238136e6bf6d04ddd125fb5c2d5ab266", null ],
+    [ "prefabID", "class_mechanics_1_1_player_controller.html#afe0c2fbc664a243ebcd3c4aaafcd6b99", null ],
     [ "speed", "class_mechanics_1_1_player_controller.html#a7f7e4724cf57d59513b39c5ecc81adc8", null ],
     [ "xBoardMargin", "class_mechanics_1_1_player_controller.html#a3b3365545c75899fc9c74ab77b78595a", null ],
     [ "zBoardMargin", "class_mechanics_1_1_player_controller.html#ae8569a0492c5c59c7f9eb290e0964304", null ]

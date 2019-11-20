@@ -8,12 +8,12 @@ var searchData=
   ['playercustdialog',['PlayerCustDialog',['../class_u_i_1_1_player_cust_dialog.html',1,'UI']]],
   ['playerfigureprefabs',['playerFigurePrefabs',['../class_management_1_1_player_manager.html#a1afdc4d32b2f4397af0898ff8ef851e6',1,'Management::PlayerManager']]],
   ['playermanager',['PlayerManager',['../class_management_1_1_player_manager.html',1,'Management']]],
+  ['playerprefskeys',['PlayerPrefsKeys',['../class_player_prefs_keys.html',1,'']]],
+  ['playerprefsx',['PlayerPrefsX',['../class_player_prefs_x.html',1,'']]],
   ['players',['players',['../class_management_1_1_player_manager.html#a9fb81e7f1419670b05b1e55a5a9ced9a',1,'Management::PlayerManager']]],
   ['playertocustomize',['playerToCustomize',['../class_u_i_1_1_player_cust_dialog.html#a69de4ceabeb14125f5a4f95ddf3baf3f',1,'UI::PlayerCustDialog']]],
   ['populatecolors',['PopulateColors',['../class_u_i_1_1_player_cust_dialog.html#ac009dc40d5b45c49639527c82a305c6f',1,'UI::PlayerCustDialog']]],
   ['populatefigures',['PopulateFigures',['../class_u_i_1_1_player_cust_dialog.html#aef2c6cf677bac483a5d0c1dd6750d8d8',1,'UI::PlayerCustDialog']]],
   ['populateinputschemes',['PopulateInputSchemes',['../class_u_i_1_1_player_cust_dialog.html#a2088c2879ac558812d38e33d97064538',1,'UI::PlayerCustDialog']]],
-  ['prematchpagebehaviour',['PreMatchPageBehaviour',['../class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_page_behaviour.html',1,'UI::MainMenuSMBehaviours']]],
-  ['pressaddplayer',['PressAddPlayer',['../class_management_1_1_u_i_manager.html#abd987f3ffff11b6d0f04c7a415712e42',1,'Management::UIManager']]],
-  ['presscustomizeplayerfigure',['PressCustomizePlayerFigure',['../class_management_1_1_u_i_manager.html#acad87ba739aab685523fb4da9765f70f',1,'Management::UIManager']]]
+  ['prematchbehaviour',['PreMatchBehaviour',['../class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_behaviour.html',1,'UI::MainMenuSMBehaviours']]]
 ];

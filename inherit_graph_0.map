@@ -6,7 +6,7 @@
 <area shape="rect" id="node6" href="$class_effects_1_1_grid_overlay.html" title="Provides drawn grid lines according to the settings. " alt="" coords="201,208,290,235"/>
 <area shape="rect" id="node7" href="$class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts..." alt="" coords="192,259,299,285"/>
 <area shape="rect" id="node8" href="$class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="177,309,314,336"/>
-<area shape="rect" id="node9" href="$class_management_1_1_match_manager.html" title="Responsible for managing a single match. Is thus part of each level scene and destroyed with it..." alt="" coords="191,360,299,387"/>
+<area shape="rect" id="node9" href="$class_management_1_1_match_manager.html" title="Responsible for managing a single match. " alt="" coords="191,360,299,387"/>
 <area shape="rect" id="node10" href="$class_management_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. " alt="" coords="191,411,300,437"/>
 <area shape="rect" id="node11" href="$class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="203,461,287,488"/>
 <area shape="rect" id="node13" href="$class_mechanics_1_1_breakable.html" title="Provides the &#39;Breakable&#39; attribute to game objects, giving them the Break() method. " alt="" coords="205,512,285,539"/>

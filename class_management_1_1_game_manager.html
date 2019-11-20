@@ -140,6 +140,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af1b396ea8d84b2607f64d89eafb71939"><td class="memItemLeft" align="right" valign="top"><a id="af1b396ea8d84b2607f64d89eafb71939"></a>
 static <a class="el" href="class_management_1_1_game_manager.html">GameManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> ()</td></tr>
 <tr class="separator:af1b396ea8d84b2607f64d89eafb71939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915559b3cc949c6e8e8c276e2e43e99b"><td class="memItemLeft" align="right" valign="top"><a id="a915559b3cc949c6e8e8c276e2e43e99b"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersion</b> ()</td></tr>
+<tr class="separator:a915559b3cc949c6e8e8c276e2e43e99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,7 +150,8 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_management_1_1_scene_reference.html">SceneReference</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mainMenuScene</b></td></tr>
 <tr class="separator:aa6a3316bd7b321507aa6695fd4255262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad595baaa852c5d39f4429a7e6b91c76c"><td class="memItemLeft" align="right" valign="top"><a id="ad595baaa852c5d39f4429a7e6b91c76c"></a>
-<a class="el" href="class_management_1_1_game_settings.html">GameSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
+<a class="el" href="class_management_1_1_game_settings.html">GameSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_game_manager.html#ad595baaa852c5d39f4429a7e6b91c76c">settings</a></td></tr>
+<tr class="memdesc:ad595baaa852c5d39f4429a7e6b91c76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are set in the scene editor and then accessed publicly. <br /></td></tr>
 <tr class="separator:ad595baaa852c5d39f4429a7e6b91c76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -180,6 +184,10 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad15855996ddc277badb6a2802cf7f97c"><td class="memItemLeft" align="right" valign="top"><a id="ad15855996ddc277badb6a2802cf7f97c"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_game_manager.html#ad15855996ddc277badb6a2802cf7f97c">gameVersion</a> = &quot;0.2&quot;</td></tr>
+<tr class="memdesc:ad15855996ddc277badb6a2802cf7f97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only same Versions can play MP together. <br /></td></tr>
+<tr class="separator:ad15855996ddc277badb6a2802cf7f97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26454863fd4a4875ea7ab82b28d5fc9"><td class="memItemLeft" align="right" valign="top"><a id="aa26454863fd4a4875ea7ab82b28d5fc9"></a>
 static <a class="el" href="class_management_1_1_game_manager.html">GameManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_management_1_1_game_manager.html#aa26454863fd4a4875ea7ab82b28d5fc9">instance</a></td></tr>
 <tr class="memdesc:aa26454863fd4a4875ea7ab82b28d5fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton pattern instance. <br /></td></tr>
@@ -187,7 +195,7 @@ static <a class="el" href="class_management_1_1_game_manager.html">GameManager</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">GameManager</a> controls the overall flow of the program and organizes the interaction of its parts. </p>
-<p>It can be accessed via Get() by its Singleton pattern, after this object was initialized. It is not deleted after scene switch. It notably tracks the current State of the game, see also: <a class="el" href="class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">GameStateMachine</a> To not overcrowd this class, functionality is continuously relocated to external managers. See also: <a class="el" href="class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. ">UIManager</a> <a class="el" href="class_management_1_1_match_manager.html" title="Responsible for managing a single match. Is thus part of each level scene and destroyed with it...">MatchManager</a> PlayerManger </p>
+<p>It can be accessed via Get() by its Singleton pattern, after this object was initialized. It is not deleted after scene switch. It notably tracks the current State of the game, see also: <a class="el" href="class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">GameStateMachine</a> To not overcrowd this class, functionality is continuously relocated to external managers. See also: <a class="el" href="class_management_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. ">UIManager</a> <a class="el" href="class_management_1_1_match_manager.html" title="Responsible for managing a single match. ">MatchManager</a> PlayerManger </p>
 
 <p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00017">17</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -215,7 +223,7 @@ static <a class="el" href="class_management_1_1_game_manager.html">GameManager</
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>replace by reading levels from folder </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00106">106</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00117">117</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -244,7 +252,7 @@ static <a class="el" href="class_management_1_1_game_manager.html">GameManager</
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add check for ok number of players somewhere against level spawn locations supported. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00096">96</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00107">107</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -257,7 +265,7 @@ static <a class="el" href="class_management_1_1_game_manager.html">GameManager</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_management.html">Management</a></li><li class="navelem"><a class="el" href="class_management_1_1_game_manager.html">GameManager</a></li>
-    <li class="footer">Generated on Mon Nov 11 2019 19:55:52 for BomberUnits by
+    <li class="footer">Generated on Wed Nov 20 2019 20:46:55 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['populatecolors',['PopulateColors',['../class_u_i_1_1_player_cust_dialog.html#ac009dc40d5b45c49639527c82a305c6f',1,'UI::PlayerCustDialog']]],
-  ['populatefigures',['PopulateFigures',['../class_u_i_1_1_player_cust_dialog.html#aef2c6cf677bac483a5d0c1dd6750d8d8',1,'UI::PlayerCustDialog']]],
-  ['populateinputschemes',['PopulateInputSchemes',['../class_u_i_1_1_player_cust_dialog.html#a2088c2879ac558812d38e33d97064538',1,'UI::PlayerCustDialog']]],
-  ['pressaddplayer',['PressAddPlayer',['../class_management_1_1_u_i_manager.html#abd987f3ffff11b6d0f04c7a415712e42',1,'Management::UIManager']]],
-  ['presscustomizeplayerfigure',['PressCustomizePlayerFigure',['../class_management_1_1_u_i_manager.html#acad87ba739aab685523fb4da9765f70f',1,'Management::UIManager']]]
+  ['loadandaddmainplayer',['LoadAndAddMainPlayer',['../class_management_1_1_player_manager.html#ab3250476d3cf34ebe449b4999ae7fa7b',1,'Management::PlayerManager']]],
+  ['loadlevelforwholeroom',['LoadLevelForWholeRoom',['../class_management_1_1_net_manager.html#a82923059864d385eec6fed9831a8fb27',1,'Management::NetManager']]],
+  ['loadorcreatemain',['LoadOrCreateMain',['../class_management_1_1_player.html#a26f82bec64b6b5efc770011c8733e77c',1,'Management::Player']]]
 ];

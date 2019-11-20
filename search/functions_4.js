@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['initplayers',['InitPlayers',['../class_management_1_1_match_manager.html#a6a14db78040814a10735ed7b0a31d9b6',1,'Management::MatchManager']]],
-  ['isshown',['isShown',['../class_u_i_1_1_menu_element.html#ab23515d860fc613ee1fa2263d3752d15',1,'UI::MenuElement']]]
+  ['getctrl',['GetCtrl',['../class_management_1_1_player.html#a770362001a10745adbac9e180431c8a4',1,'Management::Player']]],
+  ['getinputidxfromname',['GetInputIdxFromName',['../class_management_1_1_player_manager.html#a23e1133841f74fc4d047da0b2a574eaa',1,'Management::PlayerManager']]],
+  ['getinputschemefromname',['GetInputSchemeFromName',['../class_management_1_1_player_manager.html#a43fbf72941ea58c8ba4b4be392713cc8',1,'Management::PlayerManager']]],
+  ['getobjectongrid',['GetObjectOnGrid',['../class_management_1_1_match_manager.html#a1bd94f8cb74cba44359e1b1e8e5e98e7',1,'Management.MatchManager.GetObjectOnGrid(Vector3 pos)'],['../class_management_1_1_match_manager.html#a2a46dca5797654c834818f990600a39d',1,'Management.MatchManager.GetObjectOnGrid(int x, int z)']]],
+  ['getuid',['GetUID',['../class_helper_functions.html#a20c5c812212b5b85bec11b4dc2249c42',1,'HelperFunctions']]]
 ];

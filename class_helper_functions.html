@@ -83,11 +83,15 @@ $(document).ready(function(){initNavTree('class_helper_functions.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_helper_functions-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HelperFunctions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains various static helpful functions usable from any other component.  
+ <a href="class_helper_functions.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for HelperFunctions:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -99,13 +103,56 @@ $(document).ready(function(){initNavTree('class_helper_functions.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab30b7468eaeef7f20edb307378c796bf"><td class="memItemLeft" align="right" valign="top"><a id="ab30b7468eaeef7f20edb307378c796bf"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Shuffle&lt; T &gt;</b> (this IList&lt; T &gt; list)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_helper_functions.html#ab30b7468eaeef7f20edb307378c796bf">Shuffle&lt; T &gt;</a> (this IList&lt; T &gt; list)</td></tr>
+<tr class="memdesc:ab30b7468eaeef7f20edb307378c796bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides Fisher-Yates in-place shuffling for any list-interface object. <br /></td></tr>
 <tr class="separator:ab30b7468eaeef7f20edb307378c796bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c5c812212b5b85bec11b4dc2249c42"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_helper_functions.html#a20c5c812212b5b85bec11b4dc2249c42">GetUID</a> ()</td></tr>
+<tr class="memdesc:a20c5c812212b5b85bec11b4dc2249c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides unique integers between 1 and 9999 to be used as UID.  <a href="#a20c5c812212b5b85bec11b4dc2249c42">More...</a><br /></td></tr>
+<tr class="separator:a20c5c812212b5b85bec11b4dc2249c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:adc20a9515e2a4bad8e19c6837fbcc61b"><td class="memItemLeft" align="right" valign="top"><a id="adc20a9515e2a4bad8e19c6837fbcc61b"></a>
+static List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_helper_functions.html#adc20a9515e2a4bad8e19c6837fbcc61b">UIDs</a> = new List&lt;int&gt;()</td></tr>
+<tr class="memdesc:adc20a9515e2a4bad8e19c6837fbcc61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">UID list to ensure uniqueness. <br /></td></tr>
+<tr class="separator:adc20a9515e2a4bad8e19c6837fbcc61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_helper_functions_8cs_source.html#l00006">6</a> of file <a class="el" href="_helper_functions_8cs_source.html">HelperFunctions.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Contains various static helpful functions usable from any other component. </p>
+
+<p class="definition">Definition at line <a class="el" href="_helper_functions_8cs_source.html#l00007">7</a> of file <a class="el" href="_helper_functions_8cs_source.html">HelperFunctions.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a20c5c812212b5b85bec11b4dc2249c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c5c812212b5b85bec11b4dc2249c42">&#9670;&nbsp;</a></span>GetUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int GetUID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provides unique integers between 1 and 9999 to be used as UID. </p>
+<p>Uniqueness is verified by checking against a static list of all UIDs. </p>
+
+<p class="definition">Definition at line <a class="el" href="_helper_functions_8cs_source.html#l00033">33</a> of file <a class="el" href="_helper_functions_8cs_source.html">HelperFunctions.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Toni/Documents/Programming/Unity/BomberUnits/Assets/Scripts/Helpers/<a class="el" href="_helper_functions_8cs_source.html">HelperFunctions.cs</a></li>
 </ul>
 </div><!-- contents -->
@@ -114,7 +161,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Shuffle&lt; T 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_helper_functions.html">HelperFunctions</a></li>
-    <li class="footer">Generated on Mon Nov 11 2019 19:55:52 for BomberUnits by
+    <li class="footer">Generated on Wed Nov 20 2019 20:46:55 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

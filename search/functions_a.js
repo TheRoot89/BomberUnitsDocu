@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['update',['Update',['../class_management_1_1_match_manager.html#aec0783b5a136e042adcc47bae4fe5291',1,'Management::MatchManager']]],
-  ['updatefloat',['UpdateFloat',['../class_effects_1_1_float_and_rotate.html#a1782c4a719f5949ff32a41d80f983916',1,'Effects::FloatAndRotate']]],
-  ['updateslotofplayer',['UpdateSlotOfPlayer',['../class_u_i_1_1_lobby_panel_controller.html#aae83a3f639b122898b9a2f858d0c65b4',1,'UI::LobbyPanelController']]]
+  ['populatecolors',['PopulateColors',['../class_u_i_1_1_player_cust_dialog.html#ac009dc40d5b45c49639527c82a305c6f',1,'UI::PlayerCustDialog']]],
+  ['populatefigures',['PopulateFigures',['../class_u_i_1_1_player_cust_dialog.html#aef2c6cf677bac483a5d0c1dd6750d8d8',1,'UI::PlayerCustDialog']]],
+  ['populateinputschemes',['PopulateInputSchemes',['../class_u_i_1_1_player_cust_dialog.html#a2088c2879ac558812d38e33d97064538',1,'UI::PlayerCustDialog']]]
 ];

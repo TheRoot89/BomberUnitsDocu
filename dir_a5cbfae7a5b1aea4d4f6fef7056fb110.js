@@ -6,6 +6,7 @@ var dir_a5cbfae7a5b1aea4d4f6fef7056fb110 =
     [ "InputScheme.cs", "_input_scheme_8cs_source.html", null ],
     [ "Level.cs", "_level_8cs_source.html", null ],
     [ "MatchManager.cs", "_match_manager_8cs_source.html", null ],
+    [ "NetManager.cs", "_net_manager_8cs_source.html", null ],
     [ "Player.cs", "_player_8cs_source.html", null ],
     [ "PlayerManager.cs", "_player_manager_8cs_source.html", null ],
     [ "SceneReference.cs", "_scene_reference_8cs_source.html", null ]

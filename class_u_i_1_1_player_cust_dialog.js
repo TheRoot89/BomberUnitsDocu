@@ -10,6 +10,7 @@ var class_u_i_1_1_player_cust_dialog =
     [ "PopulateDialog", "class_u_i_1_1_player_cust_dialog.html#a5f7f67600591fd73d5d552fbf4c68e37", null ],
     [ "PopulateFigures", "class_u_i_1_1_player_cust_dialog.html#aef2c6cf677bac483a5d0c1dd6750d8d8", null ],
     [ "PopulateInputSchemes", "class_u_i_1_1_player_cust_dialog.html#a2088c2879ac558812d38e33d97064538", null ],
+    [ "SetSelection", "class_u_i_1_1_player_cust_dialog.html#a16c5547ba328691c74a5aa905305479d", null ],
     [ "Start", "class_u_i_1_1_player_cust_dialog.html#a07aaf1227e4d645f15e0a964f54ef291", null ],
     [ "colorsAvailable", "class_u_i_1_1_player_cust_dialog.html#af22fd734315cce9b20066244b303c136", null ],
     [ "colorVLayout", "class_u_i_1_1_player_cust_dialog.html#ac6b79fba734b5d6609fed19b09982f7d", null ],

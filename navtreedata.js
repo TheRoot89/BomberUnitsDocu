@@ -21,7 +21,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
@@ -36,8 +36,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_auto_destroy_particle_sys_8cs_source.html",
-"class_mechanics_1_1_explodeable.html#a55f69930d3c7bb53fdc90cf71ba6499c",
-"class_u_i_1_1_menu_page.html#a2e9fba5ef7bc41703c674eaf34464c09"
+"classeffects_1_1_fade_children.html#a0f9c47d23c09c0b467fb881032a82dca",
+"classnet_1_1_net_manager.html#ab809512d85b2b1fee32dde5735bc7794",
+"classui_1_1_menu_page.html#adccf3eca2892cba30d678619c1d14865",
+"page_vs_code_setup.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

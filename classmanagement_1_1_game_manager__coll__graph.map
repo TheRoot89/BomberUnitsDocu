@@ -1,0 +1,6 @@
+<map id="GameManager" name="GameManager">
+<area shape="rect" id="node4" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="65,132,221,327"/>
+<area shape="rect" id="node3" href="$classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="61,426,199,518"/>
+<area shape="rect" id="node5" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="223,389,394,555"/>
+<area shape="rect" id="node7" href="$classmanagement_1_1_scene_reference.html" title="A wrapper that provides the means to safely serialize Scene Asset References. " alt="" coords="436,404,587,540"/>
+</map>

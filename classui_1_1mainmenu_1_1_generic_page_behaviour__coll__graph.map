@@ -1,0 +1,6 @@
+<map id="GenericPageBehaviour" name="GenericPageBehaviour">
+<area shape="rect" id="node3" href="$classui_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa..." alt="" coords="189,907,389,1189"/>
+<area shape="rect" id="node6" href="$classui_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. " alt="" coords="49,132,251,576"/>
+<area shape="rect" id="node7" href="$classui_1_1mainmenu_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="455,600,666,883"/>
+<area shape="rect" id="node5" href="$classui_1_1_trigger.html" title="Provides runtime setup of button listeners for the MainMenu state machine. " alt="" coords="327,308,504,400"/>
+</map>

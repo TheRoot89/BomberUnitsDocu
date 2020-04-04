@@ -1,0 +1,9 @@
+<map id="ListeningState" name="ListeningState">
+<area shape="rect" id="node4" href="$classnet_1_1_net_overlay_state.html" title="{NetOverlayState\n|# netOverlayRef\l# netSM\l|+ OnStateEnter()\l}" alt="" coords="465,513,586,605"/>
+<area shape="rect" id="node2" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="440,131,611,311"/>
+<area shape="rect" id="node5" href="$classnet_1_1_connect_to_master_state.html" title="This state is responsible for doing the first step to hosting: connecting to the Photon Master Server..." alt="" coords="5,675,176,782"/>
+<area shape="rect" id="node6" href="$classnet_1_1_disconnected_state.html" title="This network behaviour is reached during startup and whenever a disconnect occurs for whatever reason..." alt="" coords="201,675,407,782"/>
+<area shape="rect" id="node7" href="$classnet_1_1_host_new_room_state.html" title="Responsible for creating and hosting a new room once connected to Master. " alt="" coords="431,661,619,797"/>
+<area shape="rect" id="node8" href="$classnet_1_1_join_room_state.html" title="State for joining an existing room; expects to be connected to Master. " alt="" coords="644,653,839,804"/>
+<area shape="rect" id="node9" href="$classnet_1_1_leave_room_state.html" title="A base behaviour to initialize and return the state&#39;s name. " alt="" coords="863,683,1033,775"/>
+</map>

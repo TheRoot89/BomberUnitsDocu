@@ -86,26 +86,102 @@ $(document).ready(function(){initNavTree('page_networking.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Networking </h1>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>: <b>Networking is WIP</b></dd></dl>
-<h2>Definitions </h2>
+<p>This is a big topic, so it is divided up:</p>
+<h2>Some Definitions </h2>
 <ul>
-<li><em>Client</em>: An instance of the game, which can join a room and always has at least one (Main) Player.</li>
-<li><em>Player: Game representation of one physical human/bot player. Has a player slot in menus and a player figure with controller in a match. Each Player can be customized.</em></li>
-<li><em>*Main Player</em>: Each Client needs to have at least one Player, which is set up and loaded during startup and cannot be removed. This is the Main Player.</li>
-<li><em>Host</em>: One Client acts as the host of a room, giving him settings options for matches etc. The Host is the Client who created the room and to whom the other Clients joined. This is called "Master
-  Client" in Photon.</li>
+<li><em>Player: Game representation of one physical human or bot player. Has a player slot in menus and a player figure with controller in a match. Each Player can be customized which is synced over the net. There is always at least one (Main) Player, which cannot be removed, while other local players can be added and removed freely.</em></li>
+<li><em>*Client</em>: An instance of the game, which can play offline, host or join a match.</li>
+<li><em>Main Player</em>: Each Client needs to have at least one human Player, which is set up and loaded during startup and cannot be removed. This is the Main Player.</li>
+<li><em>MasterClient</em>: The instance of the game having control over a match. In an online game, the Master is the owner of the current room. In an offline game, the current client is considered MasterClient as well (over the local offline room). He is still also a Client.</li>
+<li><em>JoinedClient</em>: All clients in a room, which are not the MasterClient. They joined the room afterwards.</li>
+<li><em>Room</em>: Association of one or more Clients as a group playing together. This allows data exchange, instantiation, concurrent scene loading and more features. Being in a room is the precondition for Photon's in-game API to function.</li>
 </ul>
-<h2>Hosting </h2>
+<h2>Offline Play </h2>
+<p>After the startup, the local client is not connected automatically. Offline Play is enable by simulating a connection to the servers via Photon's so-called 'Offline Mode'. Local players can be added and a local match can be started. The goal is to use as much code as possible for offline and online play. Instantiation happens - internally - as usual for offline games, as opposed to online instantiation over the network. In Photon Offline mode, a 'room' for this single client is created as well, allowing use of the same data storage (etc.) functionality which would be used during online play.</p>
+<h2>Connecting </h2>
+<p>A connection attempt explicitly ends the simulated 'Offline Mode'. This means data shared via room properties has to be saved locally as well and is to be carried over to a new 'online room'. A connection attempt can fail for a number of reasons, including user or network interruption. See 'Disconnecting' for an overview of this topic.</p>
+<p>There are multiple successive steps involved:</p>
 <ol type="1">
-<li>Upon starting the game, a new room containing only the Host as Client is created.</li>
-<li>The Main Player of the Host is created.</li>
-<li>The Main Player is added to Player management.</li>
+<li>Connecting to the Photon Master Server</li>
+<li>Creation of a new room</li>
+<li>Joining the new room as MasterClient</li>
 </ol>
-<h2>Similarities between Host and Clients </h2>
+<h2>Hosting (aka. being the MasterClient) </h2>
+<p>Upon successful connection, the local client acts as the MasterClient of the new room with only him present. Being the MasterClient implies having authority over a number of networking aspects, such as:</p>
+<ul>
+<li>Extended user options as Host of the game (Level selection etc.)</li>
+<li>Scene transitions</li>
+<li>Networked object Instantiation and Destruction</li>
+<li>Match Start, End etc. (Initiation of game state transitions)</li>
+</ul>
+<h2>Joining (aka. being a JoinedClient) </h2>
+<p>Joining a game means selecting one of the available hosted rooms. In joining (also as MasterClient), a Client sends information on his players to all other clients in the room. Each client thus keeps track of all players. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>: This is to be changed by using room properties (see below)! A JoinedClient has restricted authority over certain game aspects, see MasterClient section.</dd></dl>
+<h2>Disconnecting </h2>
+<p>A disconnect comes in two shapes:</p>
+<ul>
+<li>Actual disconnect from the Internet game service -&gt; majority of cases.</li>
+<li>Logical disconnect from the simulated connection to the Master Server during Offline Mode.</li>
+</ul>
+<p>While the second form should ideally never happen, we should guard against it. In any case, the requirement after such an event is to:</p>
+<ul>
+<li>Display a message stating the reason to the user</li>
+<li>Regain a stable state in activated Offline Mode, allowing local play at least. The game state must be reset so that no side effects remain.</li>
+</ul>
+<p>This requires:</p>
+<ul>
+<li>Detection of a Disconnect: Done via an Event from the NetManager</li>
+<li>Halting of current gameplay</li>
+<li>Restriction of user interaction with Menus &amp; Game Objects: Display a Message Overlay</li>
+<li>Reset of the game state towards the main menu in the background, including re-activation of Offline Mode.</li>
+</ul>
+<h2>Disconnect of other Clients during Online Play </h2>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Think about Disconnects of other Clients during Online Play</dd></dl>
+<h2>Similarities between Host and joined Clients </h2>
 <p>This is an important part from an implementation perspective:</p>
 <ul>
-<li>Local players and remote Players are displayed in Slots, with the local players coming first and displayed bigger.</li>
-<li>An "add Player" button is displayed if new players can still be added. The maximum amount of local and total players thus has to be the same across Clients! </li>
+<li>Local players and remote Players are displayed in Slots, with the local players coming first and displayed differently than remote ones.</li>
+<li>An "add Player" button is displayed if new players can still be added. The maximum amount of local and total players thus has to be the same across Clients.</li>
+</ul>
+<h2>Networked game aspects </h2>
+<p>There are two main points for what and how to synchronize aspects of the game over the network.</p>
+<ol type="1">
+<li>Consistency of the game state over all clients (Sync): Avoid e.g. a player being hit on one client but not on the other.</li>
+<li>User experience: The game should not offer advantages or disadvantages for hosts or clients introduced by lag or deviating not-networked game object states.</li>
+</ol>
+<h2>Data synchronization via room properties </h2>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Using room properties for syncing e.g. of player data is not yet implemented!</dd></dl>
+<h2>Other Networking Tasks </h2>
+<ul>
+<li>Player Management: Changes to players need to be synced. This is best done via specific events: This encompasses all player information valid independent of match states. Send all local players if:<ul>
+<li>Entering a new room -&gt; send to all, unbuffered (bit of overhead for self, as it creates an update)</li>
+<li>A new client enters a room -&gt; send to him specifically Send one local player if:</li>
+<li>A new local player is added -&gt; send to all others</li>
+<li>A local player is changed -&gt; send to all others</li>
+<li>A local player is removed -&gt; (own event) send to all others</li>
+</ul>
+</li>
+<li>Player Figures: information concerning the state within a match<ul>
+<li>Player figure instantiation -&gt; information on spawn positions is sent out by the match manager. Then the spawning is done by each client separately. Additional information on the looks of every figure is read from the player list by each client and applied during or after instantiation.</li>
+<li>Player figure transform -&gt; Photon Transform View</li>
+<li>Hitpoints -&gt; monitor and sync for UI via PhotonView</li>
+<li>Bombs available -&gt; monitor and sync for UI via PhotonView</li>
+<li>Status effects -&gt; monitor and sync for UI via PhotonView (No status effects impl. yet! Could also be done by events.)</li>
+<li>Being Hit -&gt; calculated on owning client for correct user experience, propagation done via hit points</li>
+<li>Death -&gt; calculated on client, propagation via event. (Could also be done via hit points client-side, but those are shared with unreliable transmission, which is not good for something that important.)</li>
+</ul>
+</li>
+<li>Game objects: in-game objects with influence on game state or UX.<ul>
+<li>Bomb instantiation -&gt; Bomb placement sent via RPC and instantiated per client. RPC used to target the player figure instance setting the bomb individually and correctly.</li>
+<li>Bomb explosion -&gt; Calculation per client with Hits on Player figures and environment. This is reliable enough to be calculated client-side. The explosion timing with independent instantiation needs to be tested for potential negative influence. A global explosion target time could be sent with the RPC or the delay calculated and subtracted from the timer.</li>
+<li>Power-Up Spawn: The type is random and thus decided on the master only and spawned for all -&gt; photon view and Photon-based instantiation needed. No sync of transform needed as animation not relevant for gameplay.</li>
+<li>Power-Up Collection: Has to be calculated on client-side for UX. Destroy via network.</li>
+</ul>
+</li>
+</ul>
+<h2>Photon Networking mechanisms </h2>
+<ul>
+<li>RPCs: Call a specific function on all Client's PhotonViews with the same ID. You can transmit function parameters as well. This is good for keeping the same objects in sync. -&gt; Use to act on objects that have a PhotonView anyway.</li>
+<li>Events: RaiseEvent allows to send an event package with data to specific clients. Any method can be registered to handle this event. No PhotonView is needed. This is good to announce ...err... events, concerning multiple receivers and can be targeted better than the RPC. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -113,7 +189,7 @@ $(document).ready(function(){initNavTree('page_networking.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_concepts.html">Concepts</a></li>
-    <li class="footer">Generated on Wed Nov 20 2019 20:46:54 for BomberUnits by
+    <li class="footer">Generated on Sat Apr 4 2020 09:22:32 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

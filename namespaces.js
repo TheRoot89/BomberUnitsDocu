@@ -1,8 +1,12 @@
 var namespaces =
 [
-    [ "Effects", "namespace_effects.html", null ],
-    [ "Management", "namespace_management.html", "namespace_management" ],
-    [ "Mechanics", "namespace_mechanics.html", null ],
-    [ "Test", "namespace_test.html", null ],
-    [ "UI", "namespace_u_i.html", "namespace_u_i" ]
+    [ "editor", "namespaceeditor.html", null ],
+    [ "effects", "namespaceeffects.html", null ],
+    [ "management", "namespacemanagement.html", null ],
+    [ "mechanics", "namespacemechanics.html", null ],
+    [ "misc", "namespacemisc.html", null ],
+    [ "net", "namespacenet.html", null ],
+    [ "player", "namespaceplayer.html", null ],
+    [ "test", "namespacetest.html", null ],
+    [ "ui", "namespaceui.html", "namespaceui" ]
 ];

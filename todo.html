@@ -86,49 +86,94 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_management_1_1_game_manager.html#ad5a58fbf752d8890f32f36351c5ad7ef">GameManager.AddDummyLevel</a>  ()</dt>
-<dd>replace by reading levels from folder  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_management_1_1_game_manager.html#ae1d7a39756e67a1f25a73b8917528b0e">GameManager.StartMatch</a>  (<a class="el" href="struct_management_1_1_level.html">Level</a> level)</dt>
-<dd>Add check for ok number of players somewhere against level spawn locations supported.  </dd>
+<dt><a class="anchor" id="_todo000023"></a>Member <a class="el" href="classplayer_1_1_color_scheme.html#ada35d7d301ca1deed6a5aa7df8d43a58">ColorScheme.ColorScheme</a>  (Color color)</dt>
+<dd>: Use templates to create these player property classes! (Define versions e.g. in the settings)  </dd>
+<dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="classplayer_1_1_color_scheme.html#a70e7dab548be6d37f79761988ec8222c">ColorScheme.Register</a>  ()</dt>
+<dd>Can this not be done by the constructor?  </dd>
+<dt><a class="anchor" id="_todo000036"></a>Member <a class="el" href="classnet_1_1_connect_to_master_state.html#a2523d5db41cffa41e56961adc61c8f33">ConnectToMasterState.OnCancelBtnPressed</a>  ()</dt>
+<dd></dd>
+<dt><a class="anchor" id="_todo000037"></a>Member <a class="el" href="classnet_1_1_disconnected_state.html#ab75bc397453369e43187e93d5800d5d0">DisconnectedState.OnMyStateEnter</a>  ()</dt>
+<dd>: How to handle this?  </dd>
+<dt><a class="anchor" id="_todo000022"></a>Member <a class="el" href="classmechanics_1_1_explodeable.html#a1c5edcb18e8149920e676219e3082261">Explodeable.BreakAndThrow</a>  (GameObject obj)</dt>
+<dd>: Add rotation to exploded parts. Either here with rng or maybe via setting the center of mass off a bit for these objects during modelling?  </dd>
+<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="classmechanics_1_1_explodeable.html#aabfff1f9200248c3e05d8382e5c995a8">Explodeable.Hit</a>  (GameObject obj)</dt>
+<dd>: Add objects that need multiple hits -&gt; move lives to 'Destroyable'. Everything would be treated the same this way.  </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="classmanagement_1_1_game_manager.html#ad5a58fbf752d8890f32f36351c5ad7ef">GameManager.AddDummyLevel</a>  ()</dt>
+<dd>replace by having proper level management.  </dd>
+<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="classmanagement_1_1_game_manager.html#a0d942fe576cb5b2cb7e2245c77862738">GameManager.AttemptToStartDemoLevel</a>  ()</dt>
+<dd>: Start from a state  </dd>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="classmanagement_1_1_game_manager.html#ae4b513cddd594f1c359e4f0a3e79a8c6">GameManager.Awake</a>  ()</dt>
+<dd>Create a common 'Singleton' base MonoBehaviour for all these managers.  </dd>
+<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="classmanagement_1_1_game_manager.html#a3b95deb69a7aff593b94faf9553e6777">GameManager.CheckMatchStartConditions</a>  (<a class="el" href="structmanagement_1_1_level.html" title="Wraps info on each level. ">Level</a> level)</dt>
+<dd>Move to proper level management.  </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="classmanagement_1_1_game_manager.html#ad18d20f001f36a47cc7b87828e4c975d">GameManager.levels</a>  </dt>
+<dd>: Move to a <a class="el" href="structmanagement_1_1_level.html" title="Wraps info on each level. ">Level</a> Manager  </dd>
+<dt><a class="anchor" id="_todo000031"></a>Member <a class="el" href="classmanagement_1_1_game_state_machine.html#a403adc7a93d43ec63086c4a293220112">GameStateMachine.MatchStarted</a>  ()</dt>
+<dd>: There should be an initial Pre-Match phase, where stuff and clients load.  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Page <a class="el" href="page_handling_state.html">Handling State</a>  </dt>
 <dd>Write the "handling State" concept page </dd>
-<dt><a class="anchor" id="_todo000005"></a>Page <a class="el" href="page_how_to_use_the_menu_page_system.html">How to use the Menu Page System</a>  </dt>
+<dt><a class="anchor" id="_todo000038"></a>Member <a class="el" href="classnet_1_1_host_new_room_state.html#a3320f264a20c4a9fc9e6ee74aa849d68">HostNewRoomState.CloseOverlayAndContinue</a>  ()</dt>
+<dd>The following is too cryptic! -&gt; provide correct interface and update to use <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> class. Also think about using events.  </dd>
+<dt><a class="anchor" id="_todo000007"></a>Page <a class="el" href="page_how_to_use_the_menu_page_system.html">How to use the Menu Page System</a>  </dt>
 <dd><p class="startdd">Link to Menu state machine docu needed.</p>
 <p class="enddd">Trigger concept not final, as too specific for main menu state machine!  </p>
 </dd>
-<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="class_u_i_1_1_main_menu_state_machine.html#a1107a0432bf6f35e6eaacba6fb693570">MainMenuStateMachine.InitDepOnNetState</a>  ()</dt>
-<dd>Read net state from NET SM for this! -&gt; Enum?  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_management_1_1_net_manager.html#a2b569814044647b6b7946cc0f4d45a40">NetManager.OnCreateRoomFailed</a>  (short returnCode, string message)</dt>
-<dd>How to behave in case room creation failed? (E.g. room already exists?)  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_management_1_1_net_manager.html#a8d67d691073b567d4fec1e9627f9fcf7">NetManager.OnJoinedRoom</a>  ()</dt>
-<dd>: list players already present in own player management?  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_management_1_1_net_manager.html#acec6fed8a951e40e6f9f6cd805494880">NetManager.OnJoinRoomFailed</a>  (short returnCode, string message)</dt>
-<dd>How to behave in case room join failed?  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="class_management_1_1_net_manager.html#ae9ef0fde54a253641ff638ba4391aeec">NetManager.OnPlayerEnteredRoom</a>  (Photon.Realtime.Player newClient)</dt>
+<dt><a class="anchor" id="_todo000039"></a>Member <a class="el" href="classnet_1_1_join_room_state.html#a3320f264a20c4a9fc9e6ee74aa849d68">JoinRoomState.CloseOverlayAndContinue</a>  ()</dt>
+<dd>: too cryptic -&gt; connection via events?  </dd>
+<dt><a class="anchor" id="_todo000041"></a>Member <a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#ac820cae421a1841d34ea13b9bdd947c9">LobbyPanelController.UpdateAllPlayerSlots</a>  ()</dt>
+<dd>: Also check for unused player slots? Or guarantee by Player destruction?  </dd>
+<dt><a class="anchor" id="_todo000032"></a>Member <a class="el" href="classmanagement_1_1_main_menu_state.html#ab75bc397453369e43187e93d5800d5d0">MainMenuState.OnMyStateEnter</a>  ()</dt>
+<dd>The main menu instance should be part of the main menu scene and be loaded with it! The MainMenuSM should be moved to an object as well, instead of being part of the UI Manager. This way it is loaded with the scene and destroyed with it. Very simple.  </dd>
+<dt><a class="anchor" id="_todo000033"></a>Member <a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html#a1107a0432bf6f35e6eaacba6fb693570">MainMenuStateMachine.InitDepOnNetState</a>  ()</dt>
+<dd>: case "Local": was removed, so no direct transition to the local MP match page is possible this way. How can we get this functionality back? controller.SetTrigger("Next"); break;  </dd>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="classmanagement_1_1_match_manager.html#ae4b513cddd594f1c359e4f0a3e79a8c6">MatchManager.Awake</a>  ()</dt>
+<dd>: Only have a <a class="el" href="classmanagement_1_1_match_manager.html" title="Responsible for managing a single match. ">MatchManager</a> on the Host. Move Board functionality to a board or <a class="el" href="structmanagement_1_1_level.html" title="Wraps info on each level. ">Level</a> object.  </dd>
+<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="classmanagement_1_1_match_manager.html#aca6448151e924d2cb062632532d9081f">MatchManager.MatchState</a>  </dt>
+<dd>Remove as the match state can as well be inferred from the GameSM.  </dd>
+<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="classmanagement_1_1_match_manager.html#ac54ce402cec4f1d67a1cef4db841d26d">MatchManager.OnDestroy</a>  ()</dt>
+<dd>Singleton access for the <a class="el" href="classmanagement_1_1_match_manager.html" title="Responsible for managing a single match. ">MatchManager</a> may not be needed. </dd>
+<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="classmanagement_1_1_match_manager.html#a694155de0a38b6b6c6d74dd27bc716e8">MatchManager.ReadBoard</a>  ()</dt>
+<dd>Rework the board concept in general!  </dd>
+<dt><a class="anchor" id="_todo000020"></a>Member <a class="el" href="classmanagement_1_1_match_manager.html#a77ee0719e7ed7e620172262489a5033c">MatchManager.SendPlayerSpawnInfo</a>  ()</dt>
+<dd>: the spawn info should also contain the (synced) network time of the spawn. Rework the match startup phase in general (countdown, show-off, etc...).  </dd>
+<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="classmanagement_1_1_match_manager.html#a07aaf1227e4d645f15e0a964f54ef291">MatchManager.Start</a>  ()</dt>
+<dd><p class="startdd">Lock and unlock the message queue, so everyone has finished loading when events arrive! Read the Photon documentation regarding this. Assess the below delay, add an initial Pre-Match phase for loading etc. </p>
+<p class="enddd">shift more responsibility to the Game states  </p>
+</dd>
+<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="classnet_1_1_net_adapter.html#aba041fa98694d323b073e5ad8521c22c">NetAdapter.JoinRoom</a>  ()</dt>
+<dd>This is for testing only, needs to be replaced by Lobby room list or so.  </dd>
+<dt><a class="anchor" id="_todo000028"></a>Class <a class="el" href="classnet_1_1_net_manager.html">NetManager</a>  </dt>
+<dd>: Use Photon "Custom Properties" to sync client info, such as player info and infrequent stuff  </dd>
+<dt><a class="anchor" id="_todo000029"></a>Member <a class="el" href="classnet_1_1_net_manager.html#a1056dd3c95ffa4c51fcde696d43082d9">NetManager.OnPlayerEnteredRoom</a>  (Client newClient)</dt>
 <dd>: This split may not be necessary, if new players are handled the same across Clients, including the host. The callback thus can assign the remote property to those  </dd>
+<dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="classnet_1_1_net_manager.html#a33e1e222986ac3e1f96161fda45140b8">NetManager.OnPlayerLeftRoom</a>  (Client client)</dt>
+<dd>: We have to take over hosting or something!  </dd>
+<dt><a class="anchor" id="_todo000040"></a>Member <a class="el" href="classnet_1_1_net_state_machine.html#af8b7f7e4a603b24ed5e33bce187ac309">NetStateMachine.HandleDisconnect</a>  (string cause)</dt>
+<dd>Handle disconnects with a reset to main menu.  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Page <a class="el" href="page_networking.html">Networking</a>  </dt>
-<dd>: <b>Networking is WIP</b> </dd>
-<dt><a class="anchor" id="_todo000004"></a>Page <a class="el" href="page_player_management.html">Player Management</a>  </dt>
-<dd>: <b><a class="el" href="class_management_1_1_player.html" title="A Player is one participant in a game. ">Player</a> <a class="el" href="namespace_management.html" title="Provides basic, overarching functionality for managing different game aspects. ">Management</a> is WIP for Multiplayer</b> </dd>
-<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="class_u_i_1_1_player_cust_dialog.html#ae4b513cddd594f1c359e4f0a3e79a8c6">PlayerCustDialog.Awake</a>  ()</dt>
-<dd>check everything is set  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="class_management_1_1_player_manager.html#a51d2bd742874fce3d21b84c97f5bcfdc">PlayerManager.localInputSchemes</a>  </dt>
-<dd>make connection to fitting model more clear.  </dd>
-<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="class_u_i_1_1_main_menu_s_m_behaviours_1_1_pre_match_behaviour.html#a2da132f9ff53dd9fb1cecb51be94af10">PreMatchBehaviour.OnStateEnter</a>  (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)</dt>
-<dd>Check launch conditions fulfilled! E.g.: Num players is ok? Can be a GameManager capability.  </dd>
+<dd><p class="startdd">: This is to be changed by using room properties (see below)! A JoinedClient has restricted authority over certain game aspects, see MasterClient section.</p>
+<p>Think about Disconnects of other Clients during Online Play</p>
+<p class="enddd">Using room properties for syncing e.g. of player data is not yet implemented! </p>
+</dd>
+<dt><a class="anchor" id="_todo000006"></a>Page <a class="el" href="page_player_management.html">Player Management</a>  </dt>
+<dd>: <b>Player Management is WIP for Multiplayer</b> </dd>
+<dt><a class="anchor" id="_todo000025"></a>Member <a class="el" href="classplayer_1_1_player_controller.html#a241258b3824fb9780c8f65662c80846b">PlayerController.RequestSpawnBombIfFree</a>  ()</dt>
+<dd>: Think about using an event. Is all bomb info on all clients safely in sync? What if a new powerUp was collected while the RPC was in travel?  </dd>
+<dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="classplayer_1_1_player_manager.html#a3785d9cd7bdf789ea2c5dbbb011ba009">PlayerManager.OnPlayerSpawnInfo</a>  (PlayerSpawnNetData data)</dt>
+<dd>: Do not spawn now but at the given synced point in time and only if all local players have been given a spawn.  </dd>
+<dt><a class="anchor" id="_todo000034"></a>Member <a class="el" href="classui_1_1mainmenu_1_1_pre_match_behaviour.html#a2da132f9ff53dd9fb1cecb51be94af10">PreMatchBehaviour.OnStateEnter</a>  (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)</dt>
+<dd><p class="startdd">: Make prefab out of MainMenu, which regulates itself, with only external access to <a class="el" href="classui_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. ">UIManager</a> </p>
+<p class="enddd">: This is not good - we need to have level management and the current selected level will be started from the state machine.  </p>
+</dd>
 <dt><a class="anchor" id="_todo000001"></a>Page <a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a>  </dt>
-<dd>Triggers are not final. </dd>
-<dt><a class="anchor" id="_todo000017"></a>Class <a class="el" href="class_u_i_1_1_trigger.html">Trigger</a>  </dt>
-<dd>This is too specific, the trigger now only works for the main menu :(  </dd>
-<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="class_management_1_1_u_i_manager.html#a84d3f78639b0b3599a121df97dd2fc78">UIManager.SetStatus</a>  (string msg)</dt>
-<dd>refactor this to be its own class </dd>
+<dd>Triggers are not final.</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 20 2019 20:46:55 for BomberUnits by
+    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

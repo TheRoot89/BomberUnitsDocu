@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('page_how_to_create_state_machines.html
 <div class="title">How to create state machines </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>How to create State Machines (using the Unity Animator System) </h1>
+<div class="textblock"><h1>How to create <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machines (using the Unity Animator System) </h1>
 <h2>In general </h2>
 <div class="image">
 <img src="State_machine_example.png" alt="State_machine_example.png"/>
@@ -113,7 +113,7 @@ Example state machine</div></div>
 <li>For each transition, set transition duration to zero and deactivate the exit time. If transition duration is non-zero, the next state’s OnEnter will be called before the current state’s OnExit and both are active at the same time! (This is the intended function of the transition between to animation states: a blend- over between the two.)</li>
 <li>Add transition Triggers in the parameter sidebar and assign them as conditions to the transitions you created. A logical 'Or' is done by adding more than one transition between the same source and target. A logical 'And' is done by having multiple conditions on a single transition.</li>
 <li>Add your Controller to an Animator component of a suitable object of your choice. Example: A GameState state machine would go to the 'GameManager' persistent object.</li>
-<li>Get the Animator component, which represents the State Machine from your script. You may want to wrap this in your own StateMachine type class.</li>
+<li>Get the Animator component, which represents the <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine from your script. You may want to wrap this in your own <a class="el" href="class_state_machine.html" title="Common Base class for all state machines. ">StateMachine</a> type class.</li>
 <li>Call <code>SetTrigger("Trigger name")</code> from code on that controller object to enable the transitions.</li>
 <li>Add subclasses of StateMachineBehaviours to individual states of the machine. As explained above, these possess Callbacks, which are called from Unity when the relevant state is entered or exited. This mechanism works very much like the 'normal' MonoBehaviours you are probably used to.</li>
 </ol>
@@ -137,7 +137,7 @@ Example state machine</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_howtos.html">How-Tos</a></li>
-    <li class="footer">Generated on Wed Nov 20 2019 20:46:54 for BomberUnits by
+    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -87,14 +87,14 @@ $(document).ready(function(){initNavTree('page_how_to_use_the_menu_page_system.h
 <div class="contents">
 <div class="textblock"><h1>How to use the Menu Page System </h1>
 <p>This is a How-To for the concept of <a class="el" href="page_ui_menu_system.html">Menu page System</a>, with components explained on its architecture site here: <a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a>.</p>
-<p>Please note this concept is responsible for hiding or showing different parts of a <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a>. It can also be used to implement actual menu pages. The switching of pages could be done by utilizing a state machine approach. In BomberUnits, the main menu has its own state machine, with each state corresponding to a menu page as introduced here.</p>
+<p>Please note this concept is responsible for hiding or showing different parts of a UI. It can also be used to implement actual menu pages. The switching of pages could be done by utilizing a state machine approach. In BomberUnits, the main menu has its own state machine, with each state corresponding to a menu page as introduced here.</p>
 <blockquote class="doxtable">
 <p>There is a test scene to look at with this How-To: Assets/Test/MenuAnimationWithLayoutsTest.unity </p>
 </blockquote>
 <h2>How to set up menu pages. </h2>
 <ol type="1">
 <li>Have some object, such as a <code>UIManager</code> to organize the logics between page transitions. It decides <em>which</em> menu components should switch <em>when</em>, using the provided callbacks. This logic is however not part of this How-To. Just be aware that you will need to register function callbacks to your buttons which can trigger page switches directly or activate some other mechanism, such as a full menu state machine.<br />
- See:<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Link to Menu state machine docu needed.</dd></dl>
+ See:<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Link to Menu state machine docu needed.</dd></dl>
 </li>
 <li>Do the usual Layout with the Unity System:<ul>
 <li>Versions of <em>Layout Group</em> components are added to the parents of groups of objects to be layed out.</li>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('page_how_to_use_the_menu_page_system.h
 should be handy.</li>
 <li>Handle your menu transitions:<ul>
 <li>Some convenience functions are available for pages and elements directly, so you can assign these to your button's callbacks directly, without doing an extra UI-manager-detour.</li>
-<li>Or add a number of triggers to the corresponding setting for your pages in the editor. This will take a button and a command each, which will be set to the button automatically once the page is shown. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Trigger concept not final, as too specific for main menu state machine! </dd></dl>
+<li>Or add a number of triggers to the corresponding setting for your pages in the editor. This will take a button and a command each, which will be set to the button automatically once the page is shown. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Trigger concept not final, as too specific for main menu state machine! </dd></dl>
 </li>
 </ul>
 </li>
@@ -126,7 +126,7 @@ should be handy.</li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_howtos.html">How-Tos</a></li>
-    <li class="footer">Generated on Wed Nov 20 2019 20:46:55 for BomberUnits by
+    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

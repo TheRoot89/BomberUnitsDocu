@@ -2,6 +2,7 @@ var searchData=
 [
   ['home',['Home',['../index.html',1,'']]],
   ['handling_20state',['Handling State',['../page_handling_state.html',1,'page_concepts']]],
+  ['how_20to_20add_20models',['How to add Models',['../page_how_to_add_models.html',1,'page_howtos']]],
   ['how_20to_20add_20to_20doxygen',['How to add to Doxygen',['../page_how_to_add_to_doxygen.html',1,'page_howtos']]],
   ['how_20to_20animate',['How to animate',['../page_how_to_animate.html',1,'page_howtos']]],
   ['how_20to_20create_20state_20machines',['How to create state machines',['../page_how_to_create_state_machines.html',1,'page_howtos']]],

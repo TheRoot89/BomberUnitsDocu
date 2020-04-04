@@ -1,4 +1,0 @@
-<map id="PlayerCustDialog" name="PlayerCustDialog">
-<area shape="rect" id="node3" href="$class_management_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="332,189,483,413"/>
-<area shape="rect" id="node4" href="$struct_management_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. One scheme is assigned to each player. " alt="" coords="176,5,295,127"/>
-</map>

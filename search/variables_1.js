@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['colorsavailable',['colorsAvailable',['../class_u_i_1_1_player_cust_dialog.html#af22fd734315cce9b20066244b303c136',1,'UI::PlayerCustDialog']]],
-  ['colorvlayout',['colorVLayout',['../class_u_i_1_1_player_cust_dialog.html#ac6b79fba734b5d6609fed19b09982f7d',1,'UI::PlayerCustDialog']]],
-  ['container',['container',['../class_u_i_1_1_menu_element.html#a4b348229f85b88e566fad3be4b079b55',1,'UI::MenuElement']]],
-  ['curroomname',['curRoomName',['../class_management_1_1_net_manager.html#a72311fbefafd4424504be59cf1a7e67f',1,'Management::NetManager']]],
-  ['curshownelements',['curShownElements',['../class_u_i_1_1_menu_element.html#a84280250251aaf617eaf806355841387',1,'UI::MenuElement']]]
+  ['backbtn',['backBtn',['../classui_1_1_std_dialog.html#acfc1913daa652e8aae2e50b655372ea9',1,'ui::StdDialog']]],
+  ['bootstrapdelay',['bootstrapDelay',['../classmanagement_1_1_game_manager.html#ad2813b0540d13c7e3a051064eeb5b97b',1,'management::GameManager']]]
 ];

@@ -1,0 +1,7 @@
+<map id="INetDataPkg" name="INetDataPkg">
+<area shape="rect" id="node2" href="$structnet_1_1_player_full_net_data.html" title="{PlayerFullNetData\n|+ clientID\l+ UID\l+ name\l+ type\l+ colorDictKey\l+ playerFigurePrefabDictKey\l+ inputDictKey\l|+ PlayerFullNetData()\l+ ToRaw()\l+ FromRaw()\l}" alt="" coords="5,145,193,340"/>
+<area shape="rect" id="node3" href="$structnet_1_1_player_id_net_data.html" title="{PlayerIdNetData\n|+ clientID\l+ UID\l|+ PlayerIdNetData()\l+ ToRaw()\l+ FromRaw()\l}" alt="" coords="218,182,354,303"/>
+<area shape="rect" id="node4" href="$structnet_1_1_player_spawn_net_data.html" title="{PlayerSpawnNetData\n|+ UID\l+ spawnLoc\l|+ PlayerSpawnNetData()\l+ ToRaw()\l+ FromRaw()\l}" alt="" coords="378,182,543,303"/>
+<area shape="rect" id="node5" href="$structnet_1_1_positional_event_net_data.html" title="{PositionalEventNetData\n|+ type\l+ pos\l|+ PositionalEventNetData()\l+ ToRaw()\l+ FromRaw()\l}" alt="" coords="567,182,746,303"/>
+<area shape="rect" id="node6" href="$structnet_1_1_type_only_event_net_data.html" title="{TypeOnlyEventNetData\n|+ type\l|+ TypeOnlyEventNetData()\l+ ToRaw()\l+ FromRaw()\l}" alt="" coords="770,189,946,296"/>
+</map>

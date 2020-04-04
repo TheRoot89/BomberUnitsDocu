@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uimanager',['UIManager',['../class_management_1_1_u_i_manager.html',1,'Management']]]
+  ['readonlyattribute',['ReadOnlyAttribute',['../class_read_only_attribute.html',1,'']]],
+  ['readonlydrawer',['ReadOnlyDrawer',['../classeditor_1_1_read_only_drawer.html',1,'editor']]]
 ];

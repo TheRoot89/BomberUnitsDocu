@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uids',['UIDs',['../class_helper_functions.html#adc20a9515e2a4bad8e19c6837fbcc61b',1,'HelperFunctions']]]
+  ['offlinemode',['offlineMode',['../classnet_1_1_net_manager.html#a7f906cbe774dc57a194c5e47c8c3c2d5',1,'net::NetManager']]]
 ];

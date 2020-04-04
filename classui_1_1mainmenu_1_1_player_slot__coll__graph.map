@@ -1,0 +1,8 @@
+<map id="PlayerSlot" name="PlayerSlot">
+<area shape="rect" id="node10" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="61,132,217,327"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="314,720,495,1003"/>
+<area shape="rect" id="node4" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="283,426,417,621"/>
+<area shape="rect" id="node6" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="504,389,639,657"/>
+<area shape="rect" id="node7" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="663,433,829,613"/>
+<area shape="rect" id="node8" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="87,441,258,606"/>
+</map>

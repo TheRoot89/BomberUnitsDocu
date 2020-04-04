@@ -1,0 +1,9 @@
+<map id="PlayerFullNetData" name="PlayerFullNetData">
+<area shape="rect" id="node2" href="$interface_i_net_data_pkg.html" title="Used by all datatypes which shall be sent via a Net::NetEvent. " alt="" coords="161,558,259,650"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="283,463,465,745"/>
+<area shape="rect" id="node4" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="196,169,331,363"/>
+<area shape="rect" id="node6" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="417,132,552,400"/>
+<area shape="rect" id="node7" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="5,176,172,356"/>
+<area shape="rect" id="node8" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="577,183,747,349"/>
+<area shape="rect" id="node10" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="691,507,847,701"/>
+</map>

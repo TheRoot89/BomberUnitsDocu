@@ -1,0 +1,9 @@
+<map id="PlayerController" name="PlayerController">
+<area shape="rect" id="node12" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="614,132,770,327"/>
+<area shape="rect" id="node3" href="$interface_i_initable.html" title="Interface for MonoBehaviours to allow for initialization after instantiation. " alt="" coords="43,823,109,900"/>
+<area shape="rect" id="node5" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="163,389,298,657"/>
+<area shape="rect" id="node6" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="383,720,564,1003"/>
+<area shape="rect" id="node7" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="322,426,457,621"/>
+<area shape="rect" id="node9" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="543,433,710,613"/>
+<area shape="rect" id="node10" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="735,441,905,606"/>
+</map>

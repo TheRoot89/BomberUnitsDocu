@@ -1,5 +1,0 @@
-<map id="GameManager" name="GameManager">
-<area shape="rect" id="node4" href="$class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="61,191,210,297"/>
-<area shape="rect" id="node3" href="$class_management_1_1_game_settings.html" title="Wraps all settings into one object. " alt="" coords="235,132,401,356"/>
-<area shape="rect" id="node5" href="$class_management_1_1_scene_reference.html" title="A wrapper that provides the means to safely serialize Scene Asset References. " alt="" coords="425,176,576,312"/>
-</map>

@@ -85,20 +85,20 @@ $(document).ready(function(){initNavTree('page_ui_menu_page_system.html','');});
 <div class="title">The Menu Page System </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>The <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> Menu Page System </h1>
-<p>The menu page system is a custom grouping and animation system for <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> Menu content. It currently features bringing individual elements in and out of view, as well as grouping these elements into pages.</p>
+<div class="textblock"><h1>The UI Menu Page System </h1>
+<p>The menu page system is a custom grouping and animation system for UI Menu content. It currently features bringing individual elements in and out of view, as well as grouping these elements into pages.</p>
 <h2>The System </h2>
 <p>Have a look at the test scene: Assets/Test/MenuAnimationWithLayoutsTest.unity</p>
-<p>The basis of the system is using an animation state for each <a class="el" href="class_u_i_1_1_menu_element.html" title="This behaviour enables a UI gameobject to be shown and hidden with an animation. ">UI::MenuElement</a>. Each can be in a state of 'shown' or 'hidden' to one of the four sides of the screen.<br />
+<p>The basis of the system is using an animation state for each UI::MenuElement. Each can be in a state of 'shown' or 'hidden' to one of the four sides of the screen.<br />
  Each "animation" only consists of one frame: the new position the object shall have. The actual visible animation of an element sliding out or in is done by the smooth transition between those 1-frame-animations.</p>
 <p>Each item to be animated thus need the component 'Animator', as well as the script MenuElement.</p>
-<p>These "elements" can be grouped to form a logical "page", by listing these elements on an empty object featuring the <a class="el" href="class_u_i_1_1_menu_page.html" title="A Menu page groups a number of UI elements (with arbitrary children) which are shown together as a pa...">UI::MenuPage</a> component. They do not have to be children of the page, but only be listed there! This allows the same elements to be on multiple pages, so when you switch a page, only the subset of removed or added elements needs to change.</p>
+<p>These "elements" can be grouped to form a logical "page", by listing these elements on an empty object featuring the UI::MenuPage component. They do not have to be children of the page, but only be listed there! This allows the same elements to be on multiple pages, so when you switch a page, only the subset of removed or added elements needs to change.</p>
 <blockquote class="doxtable">
 <p><b>Note:</b> The pages should be children of a 'Pages' parent. </p>
 </blockquote>
 <p><em>Elements</em> and <em>Pages</em> provide functions to hide or show them. Have a look at their documentation for details.</p>
 <h2>Switching between pages </h2>
-<p>Should you not want to implement a callback for your <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> management for every possible transition and do not set callbacks to buttons directly, you can set up <code>Triggers</code> on a per-page basis. The <a class="el" href="class_u_i_1_1_trigger.html" title="Provides runtime setup of button listeners for the MainMenu state machine. ">UI::Trigger</a> instances can be set for page objects in the editor, taking a button and a command. Upon showing of a page, the trigger will register a callback to the button, issuing the command.</p>
+<p>Should you not want to implement a callback for your UI management for every possible transition and do not set callbacks to buttons directly, you can set up <code>Triggers</code> on a per-page basis. The UI::Trigger instances can be set for page objects in the editor, taking a button and a command. Upon showing of a page, the trigger will register a callback to the button, issuing the command.</p>
 <blockquote class="doxtable">
 <p>This is not finished yet, as the trigger searches for a main menu state machine. This has to be made more versatile to use triggers in any situation. Proposal: re-route over a "UIManager" object. </p>
 </blockquote>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('page_ui_menu_page_system.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_sw_architecture.html">SW Architecture</a></li>
-    <li class="footer">Generated on Wed Nov 20 2019 20:46:54 for BomberUnits by
+    <li class="footer">Generated on Sat Apr 4 2020 09:22:32 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

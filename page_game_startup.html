@@ -87,19 +87,19 @@ $(document).ready(function(){initNavTree('page_game_startup.html','');});
 <div class="contents">
 <div class="textblock"><h1>The Game Startup </h1>
 <ol type="1">
-<li>The <b>GameManager</b> component is instantiated immediately when the game loads. It holds reference to the <b>Game State Machine</b> component, providing access to it. In this step, the <em>Animator</em> component, holding the state machine graph is instantiated as well.</li>
-<li>The <b>GameManager</b> boots the game with some initializations, while in parallel the <b>Game State Machine</b> starts in the 'MainMenu' state.</li>
-<li>The 'MainMenu' state causes the <a class="el" href="namespace_u_i.html" title="Scripts and utilities for providing UI functionality, including menus as well as in-game UI...">UI</a> Manager transition the <b>Main Menu State Machine</b> from its initial 'Idle' state to the 'Home' state.</li>
+<li>The <b>GameManager</b> component is instantiated immediately when the game loads. It holds reference to the <b>Game <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine</b> component, providing access to it. In this step, the <em>Animator</em> component, holding the state machine graph is instantiated as well.</li>
+<li>The <b>GameManager</b> boots the game with some initializations, while in parallel the <b>Game <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine</b> starts in the 'MainMenu' state.</li>
+<li>The 'MainMenu' state causes the UI Manager transition the <b>Main Menu <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine</b> from its initial 'Idle' state to the 'Home' state.</li>
 <li>The 'Home' state creates the Main Menu GameObject and shows the initial menu page.</li>
 </ol>
 <blockquote class="doxtable">
-<p>Note: The GameManager and the MainMenu state of the Game State Machine start both in the first frame. This is a quite parallel startup, so if there are any dependencies for the Main Menu to show its first page, we should think about introducing an 'Idle' initial state to the Game State Machine. The first transition to the main menu can then be triggered by the Game Manager when everything is ready. I am thinking here especially of necessary loading steps at Game Start, e.g. of Settings. </p>
+<p>Note: The GameManager and the MainMenu state of the Game <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine start both in the first frame. This is a quite parallel startup, so if there are any dependencies for the Main Menu to show its first page, we should think about introducing an 'Idle' initial state to the Game <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine. The first transition to the main menu can then be triggered by the Game Manager when everything is ready. I am thinking here especially of necessary loading steps at Game Start, e.g. of Settings. </p>
 </blockquote>
 <p><b>Links to above mentioned classes:</b></p>
 <ul>
-<li><a class="el" href="class_management_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">Management::GameManager</a></li>
-<li><a class="el" href="class_management_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">Management::GameStateMachine</a></li>
-<li><a class="el" href="class_u_i_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ...">UI::MainMenuStateMachine</a> </li>
+<li>Management::GameManager</li>
+<li>Management::GameStateMachine</li>
+<li>UI::MainMenuStateMachine </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('page_game_startup.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="page_sw_architecture.html">SW Architecture</a></li>
-    <li class="footer">Generated on Wed Nov 20 2019 20:46:54 for BomberUnits by
+    <li class="footer">Generated on Sat Apr 4 2020 09:22:32 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

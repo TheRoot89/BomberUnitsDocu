@@ -1,10 +1,20 @@
 var searchData=
 [
-  ['colorsavailable',['colorsAvailable',['../class_u_i_1_1_player_cust_dialog.html#af22fd734315cce9b20066244b303c136',1,'UI::PlayerCustDialog']]],
-  ['colorvlayout',['colorVLayout',['../class_u_i_1_1_player_cust_dialog.html#ac6b79fba734b5d6609fed19b09982f7d',1,'UI::PlayerCustDialog']]],
-  ['container',['container',['../class_u_i_1_1_menu_element.html#a4b348229f85b88e566fad3be4b079b55',1,'UI::MenuElement']]],
-  ['createorupdateslotofplayer',['CreateOrUpdateSlotOfPlayer',['../class_u_i_1_1_lobby_panel_controller.html#a603dca862dc6198025bda3dc4ec93e30',1,'UI::LobbyPanelController']]],
-  ['curroomname',['curRoomName',['../class_management_1_1_net_manager.html#a72311fbefafd4424504be59cf1a7e67f',1,'Management::NetManager']]],
-  ['curshownelements',['curShownElements',['../class_u_i_1_1_menu_element.html#a84280250251aaf617eaf806355841387',1,'UI::MenuElement']]],
+  ['checkformatchend',['CheckForMatchEnd',['../classmanagement_1_1_match_manager.html#a9032b64818488bf49c59a6b6d98fa9b4',1,'management::MatchManager']]],
+  ['checkmatchstartconditions',['CheckMatchStartConditions',['../classmanagement_1_1_game_manager.html#a3b95deb69a7aff593b94faf9553e6777',1,'management::GameManager']]],
+  ['closeoverlayandcontinue',['CloseOverlayAndContinue',['../classnet_1_1_host_new_room_state.html#a3320f264a20c4a9fc9e6ee74aa849d68',1,'net.HostNewRoomState.CloseOverlayAndContinue()'],['../classnet_1_1_join_room_state.html#a3320f264a20c4a9fc9e6ee74aa849d68',1,'net.JoinRoomState.CloseOverlayAndContinue()']]],
+  ['color',['color',['../classplayer_1_1_color_scheme.html#aa5f4d1eda21c196bd8401ff73f105073',1,'player::ColorScheme']]],
+  ['colorscheme',['ColorScheme',['../classplayer_1_1_color_scheme.html',1,'ColorScheme'],['../classplayer_1_1_color_scheme.html#ada35d7d301ca1deed6a5aa7df8d43a58',1,'player.ColorScheme.ColorScheme()']]],
+  ['colorvlayout',['colorVLayout',['../classui_1_1mainmenu_1_1_player_cust_dialog.html#ac6b79fba734b5d6609fed19b09982f7d',1,'ui::mainmenu::PlayerCustDialog']]],
+  ['commandbehaviour',['CommandBehaviour',['../classui_1_1mainmenu_1_1_command_behaviour.html',1,'ui::mainmenu']]],
+  ['connect',['Connect',['../classnet_1_1_net_manager.html#a5b6b4e47c7e5a413015c702d9825734f',1,'net::NetManager']]],
+  ['connectbtnpressed',['ConnectBtnPressed',['../classui_1_1_u_i_manager.html#af28580482a84c3085003372060fd4bf0',1,'ui::UIManager']]],
+  ['connecttomasterserver',['ConnectToMasterServer',['../classnet_1_1_net_adapter.html#ab583e80261aef88bc5e7702d284bd371',1,'net::NetAdapter']]],
+  ['connecttomasterstate',['ConnectToMasterState',['../classnet_1_1_connect_to_master_state.html',1,'net']]],
+  ['container',['container',['../classui_1_1_menu_element.html#a4b348229f85b88e566fad3be4b079b55',1,'ui::MenuElement']]],
+  ['controller',['controller',['../class_state_machine.html#a14be8540c39e8ff0ab7639c2608e7966',1,'StateMachine']]],
+  ['createorupdateslotofplayer',['CreateOrUpdateSlotOfPlayer',['../classui_1_1mainmenu_1_1_lobby_panel_controller.html#a603dca862dc6198025bda3dc4ec93e30',1,'ui::mainmenu::LobbyPanelController']]],
+  ['curroomname',['curRoomName',['../classnet_1_1_net_manager.html#a72311fbefafd4424504be59cf1a7e67f',1,'net::NetManager']]],
+  ['curshownelements',['curShownElements',['../classui_1_1_menu_element.html#a84280250251aaf617eaf806355841387',1,'ui::MenuElement']]],
   ['concepts',['Concepts',['../page_concepts.html',1,'']]]
 ];

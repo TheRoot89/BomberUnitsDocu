@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['effects',['Effects',['../namespace_effects.html',1,'']]]
+  ['editor',['editor',['../namespaceeditor.html',1,'']]],
+  ['effects',['effects',['../namespaceeffects.html',1,'']]]
 ];

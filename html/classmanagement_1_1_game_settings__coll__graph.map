@@ -1,4 +1,5 @@
 <map id="GameSettings" name="GameSettings">
-<area shape="rect" id="node3" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="140,42,275,237"/>
-<area shape="rect" id="node4" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="299,5,433,273"/>
+<area shape="rect" id="node2" href="$class_mono_singleton.html" title="{MonoSingleton\&lt; GameSettings \&gt;\n|# instance\l|+ Get()\l# MyAwake()\l&#45; Awake()\l}" alt="" coords="5,123,220,229"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="244,42,379,310"/>
+<area shape="rect" id="node4" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="403,5,537,347"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node1" href="$classlevel_1_1_ao_e_scheme.html" title="AoEScheme" alt="" coords="5,31,100,57"/>
+<area shape="rect" id="node2" href="$classlevel_1_1_cross_ao_e_scheme.html" title="CrossAoEScheme" alt="" coords="148,5,277,32"/>
+<area shape="rect" id="node3" href="$classlevel_1_1_line_ao_e_scheme.html" title="LineAoEScheme" alt="" coords="153,56,272,83"/>
 </map>

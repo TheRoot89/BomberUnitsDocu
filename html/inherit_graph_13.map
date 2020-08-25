@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classnet_1_1_net_event.html" title="NetEvent\&lt; net.TypeOnlyEvent\lNetData \&gt;" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node1" href="$interface_i_net_data_pkg.html" title="Used by all datatypes which shall be sent via a Net::NetEvent. " alt="" coords="5,81,100,108"/>
+<area shape="rect" id="node2" href="$structnet_1_1_player_id_net_data.html" title="PlayerIdNetData" alt="" coords="169,5,285,32"/>
+<area shape="rect" id="node3" href="$structnet_1_1_player_spawn_net_data.html" title="PlayerSpawnNetData" alt="" coords="155,56,300,83"/>
+<area shape="rect" id="node4" href="$structnet_1_1_positional_event_net_data.html" title="PositionalEventNetData" alt="" coords="148,107,307,133"/>
+<area shape="rect" id="node5" href="$structnet_1_1_type_only_event_net_data.html" title="TypeOnlyEventNetData" alt="" coords="149,157,305,184"/>
 </map>

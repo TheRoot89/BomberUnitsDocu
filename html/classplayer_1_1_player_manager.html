@@ -85,9 +85,9 @@ $(document).ready(function(){initNavTree('classplayer_1_1_player_manager.html','
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classplayer_1_1_player_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PlayerManager Class Reference</div>  </div>
@@ -102,6 +102,9 @@ $(document).ready(function(){initNavTree('classplayer_1_1_player_manager.html','
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classplayer_1_1_player_manager__inherit__graph.png" border="0" usemap="#_player_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_player_manager_inherit__map" id="_player_manager_inherit__map">
+<area shape="rect" id="node2" href="class_mono_singleton.html" title="{MonoSingleton\&lt; PlayerManager \&gt;\n|# instance\l|+ Get()\l# MyAwake()\l&#45; Awake()\l}" alt="" coords="5,5,224,112"/>
+</map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for PlayerManager:</div>
@@ -110,145 +113,102 @@ $(document).ready(function(){initNavTree('classplayer_1_1_player_manager.html','
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classplayer_1_1_player_manager__coll__graph.png" border="0" usemap="#_player_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_player_manager_coll__map" id="_player_manager_coll__map">
-<area shape="rect" id="node3" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html" title="{LobbyPanelController\n|+ addPlayerButton\l+ playerSlotPrefab\l+ playerSlotParentLayout\l+ customizationDialogPrefab\l&#45; customizationDialogInstance\l|+ Awake()\l+ Start()\l+ OnDestroy()\l+ OnClickAddPlayer()\l+ OnPressCustomizePlayerFigure()\l+ UpdateAllPlayerSlots()\l+ CreateOrUpdateSlotOfPlayer()\l+ AddPlayerSlotToUIandPlayer()\l+ UpdateAddPlayerBtnAvailability()\l&#45; OnPressRemovePlayerBtn()\l}" alt="" coords="26,351,254,619"/>
-<area shape="rect" id="node11" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="194,132,350,327"/>
-<area shape="rect" id="node4" href="classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="456,973,637,1256"/>
-<area shape="rect" id="node5" href="classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="425,679,559,874"/>
-<area shape="rect" id="node7" href="classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="646,643,781,911"/>
-<area shape="rect" id="node8" href="classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="805,687,971,867"/>
-<area shape="rect" id="node9" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="229,694,400,859"/>
+<area shape="rect" id="node2" href="class_mono_singleton.html" title="{MonoSingleton\&lt; PlayerManager \&gt;\n|# instance\l|+ Get()\l# MyAwake()\l&#45; Awake()\l}" alt="" coords="5,147,224,253"/>
+<area shape="rect" id="node3" href="classplayer_1_1_unity_player_change_event.html" title="An event type that contains the reference to a specific player. " alt="" coords="248,161,413,239"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0894bde3789ff417a76eaafb1da2161"><td class="memItemLeft" align="right" valign="top"><a id="af0894bde3789ff417a76eaafb1da2161"></a>
-<a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlayer</b> (string clientID, int UID, bool raiseErrorIfMissing=true)</td></tr>
-<tr class="separator:af0894bde3789ff417a76eaafb1da2161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa82f9fb134aef2da482d5bd2356dbc"><td class="memItemLeft" align="right" valign="top"><a id="afaa82f9fb134aef2da482d5bd2356dbc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLobbyPanel</b> (<a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html">LobbyPanelController</a> ctrl)</td></tr>
-<tr class="separator:afaa82f9fb134aef2da482d5bd2356dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3250476d3cf34ebe449b4999ae7fa7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#ab3250476d3cf34ebe449b4999ae7fa7b">LoadAndAddMainPlayer</a> ()</td></tr>
-<tr class="memdesc:ab3250476d3cf34ebe449b4999ae7fa7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to read from preferences to create the initial "main" player.  <a href="#ab3250476d3cf34ebe449b4999ae7fa7b">More...</a><br /></td></tr>
-<tr class="separator:ab3250476d3cf34ebe449b4999ae7fa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ccbd7059fd7d815047860b76b4c05c"><td class="memItemLeft" align="right" valign="top"><a id="a84ccbd7059fd7d815047860b76b4c05c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a84ccbd7059fd7d815047860b76b4c05c">SaveMainPlayer</a> ()</td></tr>
-<tr class="memdesc:a84ccbd7059fd7d815047860b76b4c05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the main player's settings to the PlayerPrefs. Does nothing if not set. <br /></td></tr>
-<tr class="separator:a84ccbd7059fd7d815047860b76b4c05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ebcbdf5981493656fcf4c5d6e009928"><td class="memItemLeft" align="right" valign="top"><a id="a9ebcbdf5981493656fcf4c5d6e009928"></a>
-<a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMainPlayer</b> ()</td></tr>
-<tr class="separator:a9ebcbdf5981493656fcf4c5d6e009928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a676d96e60d7efd6d270f16e6fdae112e"><td class="memItemLeft" align="right" valign="top"><a id="a676d96e60d7efd6d270f16e6fdae112e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllRemotePlayers</b> ()</td></tr>
-<tr class="separator:a676d96e60d7efd6d270f16e6fdae112e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac23f56b4029a96bfaa6b2d46bd68fe11"><td class="memItemLeft" align="right" valign="top"><a id="ac23f56b4029a96bfaa6b2d46bd68fe11"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllRemotePlayersOf</b> (string clientID)</td></tr>
-<tr class="separator:ac23f56b4029a96bfaa6b2d46bd68fe11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a80577fa89d54a512446e03e2abaa08"><td class="memItemLeft" align="right" valign="top"><a id="a7a80577fa89d54a512446e03e2abaa08"></a>
-List&lt; <a class="el" href="classplayer_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlayers</b> ()</td></tr>
-<tr class="separator:a7a80577fa89d54a512446e03e2abaa08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1790d4fdf64482c8043db868582d8d30"><td class="memItemLeft" align="right" valign="top"><a id="a1790d4fdf64482c8043db868582d8d30"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPlayer</b> (int UID, Vector3 spawnLoc, bool verifyExists=false)</td></tr>
-<tr class="separator:a1790d4fdf64482c8043db868582d8d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac71fcd1c920bef0ead7799b1b1994c"><td class="memItemLeft" align="right" valign="top"><a id="aaac71fcd1c920bef0ead7799b1b1994c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPlayer</b> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="separator:aaac71fcd1c920bef0ead7799b1b1994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531ec993e35335d94691984dcff19386"><td class="memItemLeft" align="right" valign="top"><a id="a531ec993e35335d94691984dcff19386"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAddingNewPlayerPossible</b> ()</td></tr>
 <tr class="separator:a531ec993e35335d94691984dcff19386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abcfbfa831ecd3e2e8ac4f1b1dddd2dff"><td class="memItemLeft" align="right" valign="top"><a id="abcfbfa831ecd3e2e8ac4f1b1dddd2dff"></a>
-static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> ()</td></tr>
-<tr class="separator:abcfbfa831ecd3e2e8ac4f1b1dddd2dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d9c5a91605fb2523dcd24722728bb9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#ac9d9c5a91605fb2523dcd24722728bb9">RemovePlayer</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
+<tr class="memdesc:ac9d9c5a91605fb2523dcd24722728bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> removal caused by:  <a href="#ac9d9c5a91605fb2523dcd24722728bb9">More...</a><br /></td></tr>
+<tr class="separator:ac9d9c5a91605fb2523dcd24722728bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_mono_singleton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_mono_singleton')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_mono_singleton.html">MonoSingleton&lt; PlayerManager &gt;</a></td></tr>
+<tr class="memitem:ac25f6b4353c974f11a5e488a5cf8ee2a inherit pub_static_methods_class_mono_singleton"><td class="memItemLeft" align="right" valign="top"><a id="ac25f6b4353c974f11a5e488a5cf8ee2a"></a>
+static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mono_singleton.html#ac25f6b4353c974f11a5e488a5cf8ee2a">Get</a> ()</td></tr>
+<tr class="memdesc:ac25f6b4353c974f11a5e488a5cf8ee2a inherit pub_static_methods_class_mono_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton access. <br /></td></tr>
+<tr class="separator:ac25f6b4353c974f11a5e488a5cf8ee2a inherit pub_static_methods_class_mono_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1aa5827ad337d72a54017b4e84d6f150"><td class="memItemLeft" align="right" valign="top"><a id="a1aa5827ad337d72a54017b4e84d6f150"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a1aa5827ad337d72a54017b4e84d6f150">numPlayers</a></td></tr>
-<tr class="memdesc:a1aa5827ad337d72a54017b4e84d6f150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current amount of all players, local and remote. <br /></td></tr>
-<tr class="separator:a1aa5827ad337d72a54017b4e84d6f150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18400c2baf794b578451bb2b1fb0fb7e"><td class="memItemLeft" align="right" valign="top"><a id="a18400c2baf794b578451bb2b1fb0fb7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>logEnabled</b></td></tr>
+<tr class="separator:a18400c2baf794b578451bb2b1fb0fb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1e9c22a11c59b54970b6e9af4fb4931f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classplayer_1_1_unity_player_change_event.html">UnityPlayerChangeEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a1e9c22a11c59b54970b6e9af4fb4931f">playerChangeEvent</a></td></tr>
+<tr class="memdesc:a1e9c22a11c59b54970b6e9af4fb4931f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked from NET layer but located better here.  <a href="#a1e9c22a11c59b54970b6e9af4fb4931f">More...</a><br /></td></tr>
+<tr class="separator:a1e9c22a11c59b54970b6e9af4fb4931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7930432406c70272cf29288500e08c82"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a7930432406c70272cf29288500e08c82">MyAwake</a> ()</td></tr>
+<tr class="memdesc:a7930432406c70272cf29288500e08c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">You may override this to have an Awake()-like function.  <a href="#a7930432406c70272cf29288500e08c82">More...</a><br /></td></tr>
+<tr class="separator:a7930432406c70272cf29288500e08c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memItemLeft" align="right" valign="top"><a id="ae4b513cddd594f1c359e4f0a3e79a8c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
-<tr class="separator:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a15e5eb89fdaf996e5bc29b4c5a2bc1"><td class="memItemLeft" align="right" valign="top"><a id="a8a15e5eb89fdaf996e5bc29b4c5a2bc1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnApplicationQuit</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a8a15e5eb89fdaf996e5bc29b4c5a2bc1">OnApplicationQuit</a> ()</td></tr>
+<tr class="memdesc:a8a15e5eb89fdaf996e5bc29b4c5a2bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called also when ending play mode in Unity Editor. <br /></td></tr>
 <tr class="separator:a8a15e5eb89fdaf996e5bc29b4c5a2bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memItemLeft" align="right" valign="top"><a id="a1e3b6d38df0786ccf7f938d60e386aae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
-<tr class="separator:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb728b933b5e98675d9571d64953795"><td class="memItemLeft" align="right" valign="top"><a id="aebb728b933b5e98675d9571d64953795"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterCallbacks</b> ()</td></tr>
 <tr class="separator:aebb728b933b5e98675d9571d64953795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60fdd94821a092a64a799092aa7395c7"><td class="memItemLeft" align="right" valign="top"><a id="a60fdd94821a092a64a799092aa7395c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterCallbacks</b> ()</td></tr>
 <tr class="separator:a60fdd94821a092a64a799092aa7395c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae251d390837b65717669caa998e1359f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#ae251d390837b65717669caa998e1359f">AddPlayer</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="memdesc:ae251d390837b65717669caa998e1359f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new player given by the UI, given from loading or handed by connecting clients in the same match.  <a href="#ae251d390837b65717669caa998e1359f">More...</a><br /></td></tr>
-<tr class="separator:ae251d390837b65717669caa998e1359f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9e5bd083d848672c18ba8caa6eb6289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#af9e5bd083d848672c18ba8caa6eb6289">RemovePlayer</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="memdesc:af9e5bd083d848672c18ba8caa6eb6289"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> removal can be caused by:  <a href="#af9e5bd083d848672c18ba8caa6eb6289">More...</a><br /></td></tr>
-<tr class="separator:af9e5bd083d848672c18ba8caa6eb6289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e6eeea710566d5442a031a1a48c2e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a33e6eeea710566d5442a031a1a48c2e5">SpawnPlayer</a> (<a class="el" href="classplayer_1_1_local_player.html">LocalPlayer</a> p)</td></tr>
+<tr class="separator:a33e6eeea710566d5442a031a1a48c2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a98b2c83653b2d222be26a491ca7b7"><td class="memItemLeft" align="right" valign="top"><a id="a19a98b2c83653b2d222be26a491ca7b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a19a98b2c83653b2d222be26a491ca7b7">OnConnectedToMaster</a> ()</td></tr>
-<tr class="memdesc:a19a98b2c83653b2d222be26a491ca7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for updating the local players client ID after connection. <br /></td></tr>
+<tr class="memdesc:a19a98b2c83653b2d222be26a491ca7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for updating the local players' client ID after connection. <br /></td></tr>
 <tr class="separator:a19a98b2c83653b2d222be26a491ca7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2585443ed201c560849568cbfd8714a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#ac2585443ed201c560849568cbfd8714a">OnClientPropertiesUpdate</a> (string clientId, ExitGames.Client.Photon.Hashtable changedProps)</td></tr>
+<tr class="memdesc:ac2585443ed201c560849568cbfd8714a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the clientPropertiesUpdateEvent The <a class="el" href="classplayer_1_1_net_data.html" title="Holds all player data that needs to be synchronized over the network. ">NetData</a> needs to be identified and converted first.  <a href="#ac2585443ed201c560849568cbfd8714a">More...</a><br /></td></tr>
+<tr class="separator:ac2585443ed201c560849568cbfd8714a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab5734622ef5567e4cb0970f8957471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a0ab5734622ef5567e4cb0970f8957471">InterpreteNetDataChangeAndSendEvents</a> (string clientId, int uid, <a class="el" href="classplayer_1_1_net_data.html">NetData</a> netData)</td></tr>
+<tr class="memdesc:a0ab5734622ef5567e4cb0970f8957471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoking the event is always the last step to be consistent between direct callbacks during OfflineMode and delayed transmission when online.  <a href="#a0ab5734622ef5567e4cb0970f8957471">More...</a><br /></td></tr>
+<tr class="separator:a0ab5734622ef5567e4cb0970f8957471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84eaf1f86099fd0baadf45b86d234724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a84eaf1f86099fd0baadf45b86d234724">OnJoinedRoom</a> ()</td></tr>
-<tr class="memdesc:a84eaf1f86099fd0baadf45b86d234724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses the packing offered by <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> class to send network-relevant data on own (local) players to all clients.  <a href="#a84eaf1f86099fd0baadf45b86d234724">More...</a><br /></td></tr>
+<tr class="memdesc:a84eaf1f86099fd0baadf45b86d234724"><td class="mdescLeft">&#160;</td><td class="mdescRight">When entering another client's room, this client needs to:  <a href="#a84eaf1f86099fd0baadf45b86d234724">More...</a><br /></td></tr>
 <tr class="separator:a84eaf1f86099fd0baadf45b86d234724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e2f62545a3807af7424e22749cb25f2"><td class="memItemLeft" align="right" valign="top"><a id="a6e2f62545a3807af7424e22749cb25f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClientEnteredRoom</b> (string userID)</td></tr>
-<tr class="separator:a6e2f62545a3807af7424e22749cb25f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14f13f6c7f28ade37b4974f62064465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#ac14f13f6c7f28ade37b4974f62064465">OnPlayerUpdate</a> (<a class="el" href="structnet_1_1_player_full_net_data.html">PlayerFullNetData</a> data)</td></tr>
-<tr class="memdesc:ac14f13f6c7f28ade37b4974f62064465"><td class="mdescLeft">&#160;</td><td class="mdescRight">All clients (even this if offline) receive the update event when a player is added or changed.  <a href="#ac14f13f6c7f28ade37b4974f62064465">More...</a><br /></td></tr>
-<tr class="separator:ac14f13f6c7f28ade37b4974f62064465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a39537a539c9c6db60940d6d9efb271"><td class="memItemLeft" align="right" valign="top"><a id="a9a39537a539c9c6db60940d6d9efb271"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPlayerRemoved</b> (<a class="el" href="structnet_1_1_player_id_net_data.html">PlayerIdNetData</a> data)</td></tr>
-<tr class="separator:a9a39537a539c9c6db60940d6d9efb271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f3cada5e1852ad50326013dc19854a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a39f3cada5e1852ad50326013dc19854a">OnLeftRoom</a> ()</td></tr>
+<tr class="memdesc:a39f3cada5e1852ad50326013dc19854a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leaving a room, we can remove all remote players and clients.  <a href="#a39f3cada5e1852ad50326013dc19854a">More...</a><br /></td></tr>
+<tr class="separator:a39f3cada5e1852ad50326013dc19854a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3785d9cd7bdf789ea2c5dbbb011ba009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a3785d9cd7bdf789ea2c5dbbb011ba009">OnPlayerSpawnInfo</a> (<a class="el" href="structnet_1_1_player_spawn_net_data.html">PlayerSpawnNetData</a> data)</td></tr>
+<tr class="memdesc:a3785d9cd7bdf789ea2c5dbbb011ba009"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the spawn order with location issued by the master when the match begins.  <a href="#a3785d9cd7bdf789ea2c5dbbb011ba009">More...</a><br /></td></tr>
 <tr class="separator:a3785d9cd7bdf789ea2c5dbbb011ba009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d80687989897975bf9d548f04e4c4c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a9d80687989897975bf9d548f04e4c4c4">OnClientLeftRoom</a> (string clientId)</td></tr>
+<tr class="memdesc:a9d80687989897975bf9d548f04e4c4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a client leaves, we can remove all his remote players.  <a href="#a9d80687989897975bf9d548f04e4c4c4">More...</a><br /></td></tr>
+<tr class="separator:a9d80687989897975bf9d548f04e4c4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a3818d0ec327d1f33d92d8b5e232c05b9"><td class="memItemLeft" align="right" valign="top"><a id="a3818d0ec327d1f33d92d8b5e232c05b9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a3818d0ec327d1f33d92d8b5e232c05b9">numLocPlayers</a></td></tr>
-<tr class="memdesc:a3818d0ec327d1f33d92d8b5e232c05b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current amount of local players. <br /></td></tr>
-<tr class="separator:a3818d0ec327d1f33d92d8b5e232c05b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9ba794d9f6bf26441bc0429ee0fce7"><td class="memItemLeft" align="right" valign="top"><a id="a2a9ba794d9f6bf26441bc0429ee0fce7"></a>
-<a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a2a9ba794d9f6bf26441bc0429ee0fce7">localMainPlayer</a></td></tr>
-<tr class="memdesc:a2a9ba794d9f6bf26441bc0429ee0fce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the std local "main" player, who is always present. <br /></td></tr>
-<tr class="separator:a2a9ba794d9f6bf26441bc0429ee0fce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="memItemLeft" align="right" valign="top"><a id="a9fb81e7f1419670b05b1e55a5a9ced9a"></a>
-List&lt; <a class="el" href="classplayer_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a9fb81e7f1419670b05b1e55a5a9ced9a">players</a></td></tr>
-<tr class="memdesc:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to track all <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> instances, local (incl. main) and remote. <br /></td></tr>
-<tr class="separator:a9fb81e7f1419670b05b1e55a5a9ced9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed25fd6d70c812b340d92ac2b408716a"><td class="memItemLeft" align="right" valign="top"><a id="aed25fd6d70c812b340d92ac2b408716a"></a>
-<a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html">LobbyPanelController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#aed25fd6d70c812b340d92ac2b408716a">lobbyPanelController</a> = null</td></tr>
-<tr class="memdesc:aed25fd6d70c812b340d92ac2b408716a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference for Slot updates. <br /></td></tr>
-<tr class="separator:aed25fd6d70c812b340d92ac2b408716a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a4822262c5fd7b8bb030ee839c9a6a93e"><td class="memItemLeft" align="right" valign="top"><a id="a4822262c5fd7b8bb030ee839c9a6a93e"></a>
-static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_manager.html#a4822262c5fd7b8bb030ee839c9a6a93e">instance</a></td></tr>
-<tr class="memdesc:a4822262c5fd7b8bb030ee839c9a6a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton pattern instance. <br /></td></tr>
-<tr class="separator:a4822262c5fd7b8bb030ee839c9a6a93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_static_attribs_class_mono_singleton"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_mono_singleton')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_mono_singleton.html">MonoSingleton&lt; PlayerManager &gt;</a></td></tr>
+<tr class="memitem:ac0091740a1a1b13daab37328b10bdc3f inherit pro_static_attribs_class_mono_singleton"><td class="memItemLeft" align="right" valign="top"><a id="ac0091740a1a1b13daab37328b10bdc3f"></a>
+static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mono_singleton.html#ac0091740a1a1b13daab37328b10bdc3f">instance</a></td></tr>
+<tr class="memdesc:ac0091740a1a1b13daab37328b10bdc3f inherit pro_static_attribs_class_mono_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton pattern instance. <br /></td></tr>
+<tr class="separator:ac0091740a1a1b13daab37328b10bdc3f inherit pro_static_attribs_class_mono_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classplayer_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. ">PlayerManager</a> controlls the local and remote players. </p>
-<p>It is a Singleton and persistent over scenes, like the GameManager. This manager also provides Input Schemes for the local players and interacts with the UIManager to provide UIPlayerSlots. </p>
+<p>It is a Singleton and persistent over scenes, like the GameManager. This manager also provides Input Schemes for the local players. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00015">15</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00029">29</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae251d390837b65717669caa998e1359f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae251d390837b65717669caa998e1359f">&#9670;&nbsp;</a></span>AddPlayer()</h2>
+<a id="a0ab5734622ef5567e4cb0970f8957471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab5734622ef5567e4cb0970f8957471">&#9670;&nbsp;</a></span>InterpreteNetDataChangeAndSendEvents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,10 +217,89 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool AddPlayer </td>
+          <td class="memname">void InterpreteNetDataChangeAndSendEvents </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>clientId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classplayer_1_1_net_data.html">NetData</a>&#160;</td>
+          <td class="paramname"><em>netData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoking the event is always the last step to be consistent between direct callbacks during OfflineMode and delayed transmission when online. </p>
+<p>A change can mean an addition, a removal or a change in content. Local Players are not added/removed via their net Data normally -&gt; issue warnings. Also a data change will have occurred due to previous local customization. Remote players in turn are signaled to have been added or removed via their net data. </p>
+
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00181">181</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a7930432406c70272cf29288500e08c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7930432406c70272cf29288500e08c82">&#9670;&nbsp;</a></span>MyAwake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void MyAwake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>You may override this to have an Awake()-like function. </p>
+<p>Only called if this is the first instance as all further instances are destroyed. </p>
+
+<p>Reimplemented from <a class="el" href="class_mono_singleton.html#acb1840dd4f863da32e45e3e0acac2ef1">MonoSingleton&lt; PlayerManager &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00078">78</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9d80687989897975bf9d548f04e4c4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d80687989897975bf9d548f04e4c4c4">&#9670;&nbsp;</a></span>OnClientLeftRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnClientLeftRoom </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>clientId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -271,14 +310,15 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
 </table>
 </div><div class="memdoc">
 
-<p>Add a new player given by the UI, given from loading or handed by connecting clients in the same match. </p>
+<p>When a client leaves, we can remove all his remote players. </p>
+<p>Interestingly, the netData is still available for these for a while and a second event may arrive after a while! -&gt; catch this gracefully. Maybe this functionality shall make a reconnect possible... </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00249">249</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00272">272</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
-<a id="ab3250476d3cf34ebe449b4999ae7fa7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3250476d3cf34ebe449b4999ae7fa7b">&#9670;&nbsp;</a></span>LoadAndAddMainPlayer()</h2>
+<a id="ac2585443ed201c560849568cbfd8714a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2585443ed201c560849568cbfd8714a">&#9670;&nbsp;</a></span>OnClientPropertiesUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,23 +327,34 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LoadAndAddMainPlayer </td>
+          <td class="memname">void OnClientPropertiesUpdate </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>clientId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">ExitGames.Client.Photon.Hashtable&#160;</td>
+          <td class="paramname"><em>changedProps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Tries to read from preferences to create the initial "main" player. </p>
-<p>Assigns default values if the keys are not found in the preferences. This is to be triggered during initialization by the GameManager. The function assigns the player to a slot and opens another slot if more players are allowed. </p>
+<p>Callback for the clientPropertiesUpdateEvent The <a class="el" href="classplayer_1_1_net_data.html" title="Holds all player data that needs to be synchronized over the network. ">NetData</a> needs to be identified and converted first. </p>
+<p>Then it is interpreted. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00103">103</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00161">161</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
@@ -330,10 +381,45 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
 </table>
 </div><div class="memdoc">
 
-<p>Uses the packing offered by <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> class to send network-relevant data on own (local) players to all clients. </p>
-<p>This is reliable but not buffered -&gt; needs to be sent to new clients joining as well. </p>
+<p>When entering another client's room, this client needs to: </p>
+<ol type="1">
+<li>Add all already existing players in the room</li>
+<li>Check own local players for compatibility.</li>
+<li>Adapt (if needed) local players and publish them to the other clients. This is best done in simply re-transmitting the player net data for other to pick up the change event. Regarding adding already existing remote players, we only locally re-send the change event without actually sending out data of another client. </li>
+</ol>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>: Add checks here whether own players can be added at all (resources, nr of players.) Do necessary modification to local players if there are conflicts. Iterate over all Remote players </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00320">320</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00221">221</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a39f3cada5e1852ad50326013dc19854a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f3cada5e1852ad50326013dc19854a">&#9670;&nbsp;</a></span>OnLeftRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnLeftRoom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Leaving a room, we can remove all remote players and clients. </p>
+<p>We do not have access to their netData any longer -&gt; Remove remaining local representations. </p>
+
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00248">248</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
@@ -360,14 +446,18 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>: Do not spawn now but at the given synced point in time and only if all local players have been given a spawn. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00367">367</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p>This is the spawn order with location issued by the master when the match begins. </p>
+<p>Each client spawns their own players. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>: dangerous </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>: Do not spawn now but at the given synced point in time and only if all local players have been given a spawn. (Match init phase needed) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00259">259</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
-<a id="ac14f13f6c7f28ade37b4974f62064465"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14f13f6c7f28ade37b4974f62064465">&#9670;&nbsp;</a></span>OnPlayerUpdate()</h2>
+<a id="ac9d9c5a91605fb2523dcd24722728bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d9c5a91605fb2523dcd24722728bb9">&#9670;&nbsp;</a></span>RemovePlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,29 +466,34 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void OnPlayerUpdate </td>
+          <td class="memname">static void RemovePlayer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnet_1_1_player_full_net_data.html">PlayerFullNetData</a>&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>All clients (even this if offline) receive the update event when a player is added or changed. </p>
-<p>Causes: local or remote adding or customization </p>
+<p><a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> removal caused by: </p>
+<ul>
+<li>a local user UI interaction to remove a player</li>
+<li>disconnect of this client: Remove All Remote Players of any clients which were present before.</li>
+<li>disconnect another client: Remove All Remote Players Of the particular client. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>: the removal strategy is dependent on the net status. Make things more clear! E.g. this won't work outside of a room, right? </dd></dl>
+</li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00341">341</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00060">60</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
-<a id="af9e5bd083d848672c18ba8caa6eb6289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9e5bd083d848672c18ba8caa6eb6289">&#9670;&nbsp;</a></span>RemovePlayer()</h2>
+<a id="a33e6eeea710566d5442a031a1a48c2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e6eeea710566d5442a031a1a48c2e5">&#9670;&nbsp;</a></span>SpawnPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,9 +502,9 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void RemovePlayer </td>
+          <td class="memname">void SpawnPlayer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classplayer_1_1_local_player.html">LocalPlayer</a>&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -420,15 +515,43 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Hand networked information to the created object, which allows connecting it to a <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> instance: </p>
 
-<p><a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> removal can be caused by: </p>
-<ul>
-<li>a user action: remove the player for which deletion was called from the UI. This can happen when this or a remote client removes a player and is transmitted via an event.</li>
-<li>or disconnect of this client: RemoveAllRemotePlayers of any clients which were present before.</li>
-<li>or disconnect another client: RemoveAllRemotePlayersOf the particular client. </li>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00136">136</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1e9c22a11c59b54970b6e9af4fb4931f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9c22a11c59b54970b6e9af4fb4931f">&#9670;&nbsp;</a></span>playerChangeEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classplayer_1_1_unity_player_change_event.html">UnityPlayerChangeEvent</a> playerChangeEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoked from NET layer but located better here. </p>
+<p>This is activated when player data changes for any client, also for the local client. THIS does however not work when disconnected! -&gt; Do no player modifications then!</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>: care for this.</dd></dl>
+<p>The EventCause further specifies what exactly has happended to the player. Addition: Has to be added to the local Model and Views. No guarantee to have net Data yet! Deletion: Has to be removed from local Model and Views A Data Change can affect anything stored in <a class="el" href="classplayer_1_1_net_data.html" title="Holds all player data that needs to be synchronized over the network. ">player.NetData</a>:</p><ul>
+<li>string name : Is displayed in a Lobby Slot, so the slot needs to register to this.</li>
+<li><a class="el" href="classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. ">ColorScheme</a> color : Same as above</li>
+<li><a class="el" href="classplayer_1_1_player_figure_prefab.html" title="Holds one of the character models players can choose. ">PlayerFigurePrefab</a> prefab : Will be added to the Lobby Slots in the future.</li>
+<li><a class="el" href="classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284" title="Holds current state of this player here, so it is not bound to any specific go (player figure)...">Player.State</a> state : Can lead to the match end -&gt; bound by match manager </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00281">281</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_manager_8cs_source.html#l00052">52</a> of file <a class="el" href="_player_manager_8cs_source.html">PlayerManager.cs</a>.</p>
 
 </div>
 </div>
@@ -441,7 +564,7 @@ static <a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceplayer.html">player</a></li><li class="navelem"><a class="el" href="classplayer_1_1_player_manager.html">PlayerManager</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

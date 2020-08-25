@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_player_prefs_keys.html" title="Static class defining the key strings to be used with player preferences. " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node1" href="$class_mono_singleton.html" title="MonoSingleton\&lt; GameSettings \&gt;" alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node2" href="$classmanagement_1_1_game_settings.html" title="Wraps all settings into one component, modifyable from the editor. " alt="" coords="268,5,373,32"/>
 </map>

@@ -82,8 +82,9 @@ $(document).ready(function(){initNavTree('classui_1_1_billboard.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classui_1_1_billboard-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Billboard Class Reference</div>  </div>
@@ -107,26 +108,39 @@ $(document).ready(function(){initNavTree('classui_1_1_billboard.html','');});
 <div class="center"><img src="classui_1_1_billboard__coll__graph.png" border="0" usemap="#_billboard_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa3cfe0c33af49ee3990ded17b9dac92c"><td class="memItemLeft" align="right" valign="top"><a id="aa3cfe0c33af49ee3990ded17b9dac92c"></a>
+Camera&#160;</td><td class="memItemRight" valign="bottom"><b>target_camera</b></td></tr>
+<tr class="separator:aa3cfe0c33af49ee3990ded17b9dac92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730d6a2e936437a95bb66aadf86e934b"><td class="memItemLeft" align="right" valign="top"><a id="a730d6a2e936437a95bb66aadf86e934b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LateUpdate</b> ()</td></tr>
 <tr class="separator:a730d6a2e936437a95bb66aadf86e934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e23ba394eacd818d2e005cc466c4d1"><td class="memItemLeft" align="right" valign="top"><a id="a84e23ba394eacd818d2e005cc466c4d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnable</b> ()</td></tr>
+<tr class="separator:a84e23ba394eacd818d2e005cc466c4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9a1e1cd7a478a0d00f0efb51a8e4cf"><td class="memItemLeft" align="right" valign="top"><a id="a3e9a1e1cd7a478a0d00f0efb51a8e4cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisable</b> ()</td></tr>
+<tr class="separator:a3e9a1e1cd7a478a0d00f0efb51a8e4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aa3cfe0c33af49ee3990ded17b9dac92c"><td class="memItemLeft" align="right" valign="top"><a id="aa3cfe0c33af49ee3990ded17b9dac92c"></a>
-Camera&#160;</td><td class="memItemRight" valign="bottom"><b>target_camera</b></td></tr>
-<tr class="separator:aa3cfe0c33af49ee3990ded17b9dac92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7677b2078543402dbd1a77cdc65686dc"><td class="memItemLeft" align="right" valign="top"><a id="a7677b2078543402dbd1a77cdc65686dc"></a>
+Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_billboard.html#a7677b2078543402dbd1a77cdc65686dc">savedRotation</a></td></tr>
+<tr class="memdesc:a7677b2078543402dbd1a77cdc65686dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backup of initial rotation to return to when not billboarding. <br /></td></tr>
+<tr class="separator:a7677b2078543402dbd1a77cdc65686dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The billboard script allows this gameobject to always face a set target camera. </p>
-<p>!&ndash; Will use the main camera if no target is set. </p>
+<p>!&ndash; Will use the main camera if no target is set. The orientation will reset when this script is disabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="_billboard_8cs_source.html#l00007">7</a> of file <a class="el" href="_billboard_8cs_source.html">Billboard.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_billboard_8cs_source.html#l00008">8</a> of file <a class="el" href="_billboard_8cs_source.html">Billboard.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Toni/Documents/Programming/Unity/BomberUnits/Assets/Scripts/UI/Overlays/<a class="el" href="_billboard_8cs_source.html">Billboard.cs</a></li>
 </ul>
@@ -136,7 +150,7 @@ Camera&#160;</td><td class="memItemRight" valign="bottom"><b>target_camera</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceui.html">ui</a></li><li class="navelem"><a class="el" href="classui_1_1_billboard.html">Billboard</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

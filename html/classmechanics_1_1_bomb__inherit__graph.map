@@ -1,0 +1,3 @@
+<map id="Bomb" name="Bomb">
+<area shape="rect" id="node3" href="$interfacelevel_1_1_i_tile_object.html" title="{ITileObject\n||+ SetAssociatedTile()\l+ GetAssociatedTile()\l}" alt="" coords="140,5,288,97"/>
+</map>

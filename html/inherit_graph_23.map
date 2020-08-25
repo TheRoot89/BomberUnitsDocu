@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_read_only_attribute.html" title="Defines the ReadOnly attribute or property. " alt="" coords="173,5,301,32"/>
+<area shape="rect" id="node1" href="$class_mono_singleton.html" title="MonoSingleton\&lt; PlayerManager \&gt;" alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node2" href="$classplayer_1_1_player_manager.html" title="The PlayerManager controlls the local and remote players. " alt="" coords="272,5,381,32"/>
 </map>

@@ -82,18 +82,17 @@ $(document).ready(function(){initNavTree('classmechanics_1_1_explodeable.html','
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmechanics_1_1_explodeable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Explodeable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides the '<a class="el" href="classmechanics_1_1_explodeable.html" title="Provides the &#39;Explodeable&#39; attribute to game objects, giving them the Light() method. ">Explodeable</a>' attribute to game objects, giving them the Light() method.  
+<p>Provides the '<a class="el" href="classmechanics_1_1_explodeable.html" title="Provides the &#39;Explodeable&#39; attribute to game objects, giving them Explode() method. ">Explodeable</a>' attribute to game objects, giving them <a class="el" href="classmechanics_1_1_explodeable.html#aa1c00c00eaab58c7c78990ef5abf4263">Explode()</a> method.  
  <a href="classmechanics_1_1_explodeable.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Explodeable:</div>
@@ -108,25 +107,32 @@ $(document).ready(function(){initNavTree('classmechanics_1_1_explodeable.html','
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmechanics_1_1_explodeable__coll__graph.png" border="0" usemap="#_explodeable_coll__map" alt="Collaboration graph"/></div>
+<map name="_explodeable_coll__map" id="_explodeable_coll__map">
+<area shape="rect" id="node3" href="classmechanics_1_1_explodeable_1_1_damage.html" title="{Explodeable.Damage\n|+ value\l+ force\l+ upFactor\l+ forceRange\l+ origin\l|}" alt="" coords="140,5,285,141"/>
+</map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable_1_1_damage.html">Damage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
-<tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9dfa78781ef965c03bf4fcfe1f91b46"><td class="memItemLeft" align="right" valign="top"><a id="ac9dfa78781ef965c03bf4fcfe1f91b46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Light</b> (float countdown)</td></tr>
-<tr class="separator:ac9dfa78781ef965c03bf4fcfe1f91b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa790689cfce02f09effc037d26a1de77"><td class="memItemLeft" align="right" valign="top"><a id="aa790689cfce02f09effc037d26a1de77"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ExplodeSphere</b> ()</td></tr>
-<tr class="separator:aa790689cfce02f09effc037d26a1de77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f412facbbeba60dd84f94ab837a71d2"><td class="memItemLeft" align="right" valign="top"><a id="a3f412facbbeba60dd84f94ab837a71d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ExplodeGrid</b> ()</td></tr>
-<tr class="separator:a3f412facbbeba60dd84f94ab837a71d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c00c00eaab58c7c78990ef5abf4263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#aa1c00c00eaab58c7c78990ef5abf4263">Explode</a> (int gridRange, bool isCharged)</td></tr>
+<tr class="separator:aa1c00c00eaab58c7c78990ef5abf4263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28370ab2a050b635d3fcc81773b4c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#ac28370ab2a050b635d3fcc81773b4c39">ExplodeGrid</a> (<a class="el" href="classlevel_1_1_tile.html">Tile</a> origin, int gridRange)</td></tr>
+<tr class="memdesc:ac28370ab2a050b635d3fcc81773b4c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard explosion of a bomb has the shape of a hor and vert cross with a given range.  <a href="#ac28370ab2a050b635d3fcc81773b4c39">More...</a><br /></td></tr>
+<tr class="separator:ac28370ab2a050b635d3fcc81773b4c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810b255e09dd24e488ab68751e6acb83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#a810b255e09dd24e488ab68751e6acb83">ExplodeSphere</a> (float range)</td></tr>
+<tr class="memdesc:a810b255e09dd24e488ab68751e6acb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">This range-based explosion effect can be used for testing, as well as for explosions not happending on a tile as a fallback.  <a href="#a810b255e09dd24e488ab68751e6acb83">More...</a><br /></td></tr>
+<tr class="separator:a810b255e09dd24e488ab68751e6acb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a81904bee91c6675fb59efd20a6af8bf0"><td class="memItemLeft" align="right" valign="top"><a id="a81904bee91c6675fb59efd20a6af8bf0"></a>
+<a class="el" href="classmechanics_1_1_explodeable_1_1_damage.html">Damage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>damage</b></td></tr>
+<tr class="separator:a81904bee91c6675fb59efd20a6af8bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7672b941007a6f73c83dbe13d7224a3"><td class="memItemLeft" align="right" valign="top"><a id="ac7672b941007a6f73c83dbe13d7224a3"></a>
 ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><b>coreExplosionEffect</b></td></tr>
 <tr class="separator:ac7672b941007a6f73c83dbe13d7224a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,60 +142,32 @@ ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><b>coreExplosi
 <tr class="memitem:add3a797f5738beedb09aa6d4a53c72cb"><td class="memItemLeft" align="right" valign="top"><a id="add3a797f5738beedb09aa6d4a53c72cb"></a>
 ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><b>subExplosionEffect</b></td></tr>
 <tr class="separator:add3a797f5738beedb09aa6d4a53c72cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3930d1e8af0848833f4de0e0e9517dca"><td class="memItemLeft" align="right" valign="top"><a id="a3930d1e8af0848833f4de0e0e9517dca"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>range</b></td></tr>
-<tr class="separator:a3930d1e8af0848833f4de0e0e9517dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc365937760a36a10a304dd6916ab6a7"><td class="memItemLeft" align="right" valign="top"><a id="afc365937760a36a10a304dd6916ab6a7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>bigExplMinRange</b> = 5</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#afc365937760a36a10a304dd6916ab6a7">bigExplMinRange</a> = 5</td></tr>
+<tr class="memdesc:afc365937760a36a10a304dd6916ab6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Governs after which range the big core explosion is used. <br /></td></tr>
 <tr class="separator:afc365937760a36a10a304dd6916ab6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f69930d3c7bb53fdc90cf71ba6499c"><td class="memItemLeft" align="right" valign="top"><a id="a55f69930d3c7bb53fdc90cf71ba6499c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>partsCollision</b></td></tr>
-<tr class="separator:a55f69930d3c7bb53fdc90cf71ba6499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b39867abc3f09243fcdc739bd9e6c90"><td class="memItemLeft" align="right" valign="top"><a id="a9b39867abc3f09243fcdc739bd9e6c90"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>damage</b> = 1</td></tr>
-<tr class="separator:a9b39867abc3f09243fcdc739bd9e6c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7a8246f2a14564d4ba00f227976764"><td class="memItemLeft" align="right" valign="top"><a id="a7e7a8246f2a14564d4ba00f227976764"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>splinterBaseWeight</b> = 0.3f</td></tr>
-<tr class="separator:a7e7a8246f2a14564d4ba00f227976764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290b2b0256720ce85b4d14570fffc010"><td class="memItemLeft" align="right" valign="top"><a id="a290b2b0256720ce85b4d14570fffc010"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#a290b2b0256720ce85b4d14570fffc010">explosionForce</a> = 2</td></tr>
+<tr class="memdesc:a290b2b0256720ce85b4d14570fffc010"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: this is shit. how should the force be calculated really? <br /></td></tr>
+<tr class="separator:a290b2b0256720ce85b4d14570fffc010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cf5b0716073e99a2601dd6099dcf1b"><td class="memItemLeft" align="right" valign="top"><a id="ae3cf5b0716073e99a2601dd6099dcf1b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>backupSphereRange</b> = 1.0f</td></tr>
+<tr class="separator:ae3cf5b0716073e99a2601dd6099dcf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a527dfb9f52a4726fc41ead9198d39ae5"><td class="memItemLeft" align="right" valign="top"><a id="a527dfb9f52a4726fc41ead9198d39ae5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>TestPosition</b> (Vector3 posUnderTest)</td></tr>
-<tr class="separator:a527dfb9f52a4726fc41ead9198d39ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabfff1f9200248c3e05d8382e5c995a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#aabfff1f9200248c3e05d8382e5c995a8">Hit</a> (GameObject obj)</td></tr>
-<tr class="separator:aabfff1f9200248c3e05d8382e5c995a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c5edcb18e8149920e676219e3082261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#a1c5edcb18e8149920e676219e3082261">BreakAndThrow</a> (GameObject obj)</td></tr>
-<tr class="separator:a1c5edcb18e8149920e676219e3082261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4d0963d778d05f80ebebf99b806b48e4"><td class="memItemLeft" align="right" valign="top"><a id="a4d0963d778d05f80ebebf99b806b48e4"></a>
-GameObject []&#160;</td><td class="memItemRight" valign="bottom"><b>parts</b></td></tr>
-<tr class="separator:a4d0963d778d05f80ebebf99b806b48e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d32c2c57ed714ed4b04fbfbafb9e198"><td class="memItemLeft" align="right" valign="top"><a id="a8d32c2c57ed714ed4b04fbfbafb9e198"></a>
-List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objAffected</b></td></tr>
-<tr class="separator:a8d32c2c57ed714ed4b04fbfbafb9e198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a588c98aec9647d79081a6fc6fa39c4ba"><td class="memItemLeft" align="right" valign="top"><a id="a588c98aec9647d79081a6fc6fa39c4ba"></a>
-List&lt; Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gridCellsAffected</b></td></tr>
-<tr class="separator:a588c98aec9647d79081a6fc6fa39c4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a4a9121016693f83f4f2ef0d7b000c741"><td class="memItemLeft" align="right" valign="top"><a id="a4a9121016693f83f4f2ef0d7b000c741"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>baseForce</b> = 10</td></tr>
-<tr class="separator:a4a9121016693f83f4f2ef0d7b000c741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3ef0df6c8864d60f5d8b9f687b2b72"><td class="memItemLeft" align="right" valign="top"><a id="a0c3ef0df6c8864d60f5d8b9f687b2b72"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>upFactor</b> = 1</td></tr>
-<tr class="separator:a0c3ef0df6c8864d60f5d8b9f687b2b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d92b1603f722681242256443731e36"><td class="memItemLeft" align="right" valign="top"><a id="a16d92b1603f722681242256443731e36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmechanics_1_1_explodeable.html#a16d92b1603f722681242256443731e36">InstantiateCoreEffect</a> (float range)</td></tr>
+<tr class="memdesc:a16d92b1603f722681242256443731e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depending on the range, a more epic effect is displayed: <br /></td></tr>
+<tr class="separator:a16d92b1603f722681242256443731e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides the '<a class="el" href="classmechanics_1_1_explodeable.html" title="Provides the &#39;Explodeable&#39; attribute to game objects, giving them the Light() method. ">Explodeable</a>' attribute to game objects, giving them the Light() method. </p>
+<div class="textblock"><p>Provides the '<a class="el" href="classmechanics_1_1_explodeable.html" title="Provides the &#39;Explodeable&#39; attribute to game objects, giving them Explode() method. ">Explodeable</a>' attribute to game objects, giving them <a class="el" href="classmechanics_1_1_explodeable.html#aa1c00c00eaab58c7c78990ef5abf4263">Explode()</a> method. </p>
 
-<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00009">9</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00010">10</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1c5edcb18e8149920e676219e3082261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c5edcb18e8149920e676219e3082261">&#9670;&nbsp;</a></span>BreakAndThrow()</h2>
+<a id="aa1c00c00eaab58c7c78990ef5abf4263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c00c00eaab58c7c78990ef5abf4263">&#9670;&nbsp;</a></span>Explode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,27 +176,37 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>upFactor</b> 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void BreakAndThrow </td>
+          <td class="memname">void Explode </td>
           <td>(</td>
-          <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridRange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCharged</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>: Add rotation to exploded parts. Either here with rng or maybe via setting the center of mass off a bit for these objects during modelling? </dd></dl>
+<p>Explodeables have to be local it seems...TODO: this is a problem! </p>
 
-<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00154">154</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00037">37</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
 
 </div>
 </div>
-<a id="aabfff1f9200248c3e05d8382e5c995a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabfff1f9200248c3e05d8382e5c995a8">&#9670;&nbsp;</a></span>Hit()</h2>
+<a id="ac28370ab2a050b635d3fcc81773b4c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28370ab2a050b635d3fcc81773b4c39">&#9670;&nbsp;</a></span>ExplodeGrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,22 +215,64 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>upFactor</b> 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Hit </td>
+          <td class="memname">void ExplodeGrid </td>
           <td>(</td>
-          <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlevel_1_1_tile.html">Tile</a>&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridRange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The standard explosion of a bomb has the shape of a hor and vert cross with a given range. </p>
+<p>For this explosion type, there has to be a tile underneath! </p>
+
+<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00060">60</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
+
+</div>
+</div>
+<a id="a810b255e09dd24e488ab68751e6acb83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810b255e09dd24e488ab68751e6acb83">&#9670;&nbsp;</a></span>ExplodeSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExplodeSphere </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>range</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>: Add objects that need multiple hits -&gt; move lives to 'Destroyable'. Everything would be treated the same this way. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00137">137</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
+<p>This range-based explosion effect can be used for testing, as well as for explosions not happending on a tile as a fallback. </p>
+
+<p class="definition">Definition at line <a class="el" href="_explodeable_8cs_source.html#l00099">99</a> of file <a class="el" href="_explodeable_8cs_source.html">Explodeable.cs</a>.</p>
 
 </div>
 </div>
@@ -255,7 +285,7 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>upFactor</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemechanics.html">mechanics</a></li><li class="navelem"><a class="el" href="classmechanics_1_1_explodeable.html">Explodeable</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:11 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

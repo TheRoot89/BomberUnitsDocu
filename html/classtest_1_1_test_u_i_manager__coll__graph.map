@@ -1,4 +1,6 @@
 <map id="TestUIManager" name="TestUIManager">
-<area shape="rect" id="node2" href="$classui_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="5,477,180,716"/>
-<area shape="rect" id="node4" href="$classui_1_1mainmenu_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="109,132,319,415"/>
+<area shape="rect" id="node2" href="$classui_1_1_u_i_manager.html" title="Manages all UI interactions and transitions. " alt="" coords="5,632,180,827"/>
+<area shape="rect" id="node5" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="108,132,264,341"/>
+<area shape="rect" id="node4" href="$classui_1_1mainmenu_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="89,419,264,555"/>
+<area shape="rect" id="node6" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="289,404,459,569"/>
 </map>

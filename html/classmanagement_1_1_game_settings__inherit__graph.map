@@ -1,2 +1,3 @@
 <map id="GameSettings" name="GameSettings">
+<area shape="rect" id="node2" href="$class_mono_singleton.html" title="{MonoSingleton\&lt; GameSettings \&gt;\n|# instance\l|+ Get()\l# MyAwake()\l&#45; Awake()\l}" alt="" coords="5,5,220,112"/>
 </map>

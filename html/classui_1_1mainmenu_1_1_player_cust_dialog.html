@@ -105,12 +105,11 @@ $(document).ready(function(){initNavTree('classui_1_1mainmenu_1_1_player_cust_di
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classui_1_1mainmenu_1_1_player_cust_dialog__coll__graph.png" border="0" usemap="#_player_cust_dialog_coll__map" alt="Collaboration graph"/></div>
 <map name="_player_cust_dialog_coll__map" id="_player_cust_dialog_coll__map">
-<area shape="rect" id="node10" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="61,132,217,327"/>
-<area shape="rect" id="node3" href="classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="314,720,495,1003"/>
-<area shape="rect" id="node4" href="classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="283,426,417,621"/>
-<area shape="rect" id="node6" href="classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="504,389,639,657"/>
-<area shape="rect" id="node7" href="classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="663,433,829,613"/>
-<area shape="rect" id="node8" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="87,441,258,606"/>
+<area shape="rect" id="node3" href="classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="140,512,275,780"/>
+<area shape="rect" id="node4" href="classplayer_1_1_local_player.html" title="{LocalPlayer\n|+ isNew\l&#45; localPlayers\l|+ IsLocal()\l+ FreeResourcesAndRemove()\l+ Update()\l+ UpdateClientId()\l+ UpdateState()\l+ GetNetData()\l+ ToString()\l+ Awake()\l+ Contains()\l+ Get()\l+ GetAll()\l+ GetMain()\l+ Count()\l+ CreateNew()\l+ CreateMainFromSave()\l+ SaveMain()\l&#45; LocalPlayer()\l}" alt="" coords="299,483,497,809"/>
+<area shape="rect" id="node5" href="classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="203,5,401,420"/>
+<area shape="rect" id="node6" href="classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="425,42,560,383"/>
+<area shape="rect" id="node7" href="classplayer_1_1_player_figure_prefab.html" title="Holds one of the character models players can choose. " alt="" coords="583,549,749,743"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,10 +121,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98e1bd02367b7ae69cf31582bafeea0b"><td class="memItemLeft" align="right" valign="top"><a id="a98e1bd02367b7ae69cf31582bafeea0b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a98e1bd02367b7ae69cf31582bafeea0b">Init</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> <a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a4bc462ebe85ffb253d970e5e7a8f9f2e">workingCopy</a>)</td></tr>
-<tr class="memdesc:a98e1bd02367b7ae69cf31582bafeea0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is intended to be given a copy of an actual player. <br /></td></tr>
-<tr class="separator:a98e1bd02367b7ae69cf31582bafeea0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aefb66c22f23715289030d56c1b9f3b"><td class="memItemLeft" align="right" valign="top"><a id="a3aefb66c22f23715289030d56c1b9f3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a3aefb66c22f23715289030d56c1b9f3b">Init</a> (<a class="el" href="classplayer_1_1_local_player.html">LocalPlayer</a> p)</td></tr>
+<tr class="memdesc:a3aefb66c22f23715289030d56c1b9f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is intended to be given a copy of an actual player. <br /></td></tr>
+<tr class="separator:a3aefb66c22f23715289030d56c1b9f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad017096929256d5e9c41b55c22ea39e0"><td class="memItemLeft" align="right" valign="top"><a id="ad017096929256d5e9c41b55c22ea39e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPressOkBtn</b> ()</td></tr>
 <tr class="separator:ad017096929256d5e9c41b55c22ea39e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,10 +153,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a5f7f67600591fd73d5d552fbf4c68e37"><td class="memItemLeft" align="right" valign="top"><a id="a5f7f67600591fd73d5d552fbf4c68e37"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PopulateDialog</b> ()</td></tr>
 <tr class="separator:a5f7f67600591fd73d5d552fbf4c68e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac009dc40d5b45c49639527c82a305c6f"><td class="memItemLeft" align="right" valign="top"><a id="ac009dc40d5b45c49639527c82a305c6f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#ac009dc40d5b45c49639527c82a305c6f">PopulateColors</a> ()</td></tr>
-<tr class="memdesc:ac009dc40d5b45c49639527c82a305c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates color selection fields from available colors list. <br /></td></tr>
-<tr class="separator:ac009dc40d5b45c49639527c82a305c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e07f160201616f2c11adcac3ebf59b"><td class="memItemLeft" align="right" valign="top"><a id="a93e07f160201616f2c11adcac3ebf59b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a93e07f160201616f2c11adcac3ebf59b">PopulateColors</a> (Color curOwnColor)</td></tr>
+<tr class="memdesc:a93e07f160201616f2c11adcac3ebf59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates color selection fields from available colors list. <br /></td></tr>
+<tr class="separator:a93e07f160201616f2c11adcac3ebf59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2088c2879ac558812d38e33d97064538"><td class="memItemLeft" align="right" valign="top"><a id="a2088c2879ac558812d38e33d97064538"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a2088c2879ac558812d38e33d97064538">PopulateInputSchemes</a> ()</td></tr>
 <tr class="memdesc:a2088c2879ac558812d38e33d97064538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates selection list of input schemes from available input schemes. <br /></td></tr>
@@ -169,11 +168,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a09966e42980ad311296302f0104ea0aa"><td class="memItemLeft" align="right" valign="top"><a id="a09966e42980ad311296302f0104ea0aa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelection</b> (<a class="el" href="classplayer_1_1_color_scheme.html">ColorScheme</a> c)</td></tr>
 <tr class="separator:a09966e42980ad311296302f0104ea0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb2a1a7f506e4167b8d7599d98d94e6a"><td class="memItemLeft" align="right" valign="top"><a id="adb2a1a7f506e4167b8d7599d98d94e6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelection</b> (Dropdown inputSchemeDropdown)</td></tr>
-<tr class="separator:adb2a1a7f506e4167b8d7599d98d94e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16c5547ba328691c74a5aa905305479d"><td class="memItemLeft" align="right" valign="top"><a id="a16c5547ba328691c74a5aa905305479d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelection</b> (<a class="el" href="classplayer_1_1_input_scheme.html">InputScheme</a> inputScheme)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a16c5547ba328691c74a5aa905305479d">SetSelection</a> (<a class="el" href="classplayer_1_1_input_scheme.html">InputScheme</a> inputScheme)</td></tr>
+<tr class="memdesc:a16c5547ba328691c74a5aa905305479d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the given input scheme in the dropdown and selects it. <br /></td></tr>
 <tr class="separator:a16c5547ba328691c74a5aa905305479d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce9faaa0ee7e2f63606af278d059b1f"><td class="memItemLeft" align="right" valign="top"><a id="a4ce9faaa0ee7e2f63606af278d059b1f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelection</b> (<a class="el" href="classplayer_1_1_player_figure_prefab.html">PlayerFigurePrefab</a> figurePrefab)</td></tr>
@@ -181,10 +178,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelection</b> (<a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4bc462ebe85ffb253d970e5e7a8f9f2e"><td class="memItemLeft" align="right" valign="top"><a id="a4bc462ebe85ffb253d970e5e7a8f9f2e"></a>
-<a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a4bc462ebe85ffb253d970e5e7a8f9f2e">workingCopy</a> = null</td></tr>
-<tr class="memdesc:a4bc462ebe85ffb253d970e5e7a8f9f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be set when the dialog is created via <a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a98e1bd02367b7ae69cf31582bafeea0b" title="Is intended to be given a copy of an actual player. ">Init()</a>. <br /></td></tr>
-<tr class="separator:a4bc462ebe85ffb253d970e5e7a8f9f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0fca8557b76ba31c56fb7adf668cc7"><td class="memItemLeft" align="right" valign="top"><a id="a6a0fca8557b76ba31c56fb7adf668cc7"></a>
+<a class="el" href="classplayer_1_1_local_player.html">LocalPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a6a0fca8557b76ba31c56fb7adf668cc7">targetPlayer</a> = null</td></tr>
+<tr class="memdesc:a6a0fca8557b76ba31c56fb7adf668cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to be set when the dialog is created via <a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a3aefb66c22f23715289030d56c1b9f3b" title="Is intended to be given a copy of an actual player. ">Init()</a>. <br /></td></tr>
+<tr class="separator:a6a0fca8557b76ba31c56fb7adf668cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d16305fc7b125986c675a339c2525d"><td class="memItemLeft" align="right" valign="top"><a id="a93d16305fc7b125986c675a339c2525d"></a>
+<a class="el" href="classplayer_1_1_color_scheme.html">ColorScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selectedColor</b></td></tr>
+<tr class="separator:a93d16305fc7b125986c675a339c2525d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03e66c91b9d8a0435f0d08b31cab560"><td class="memItemLeft" align="right" valign="top"><a id="af03e66c91b9d8a0435f0d08b31cab560"></a>
+<a class="el" href="classplayer_1_1_player_figure_prefab.html">PlayerFigurePrefab</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selectedFigure</b></td></tr>
+<tr class="separator:af03e66c91b9d8a0435f0d08b31cab560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -198,7 +201,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceui.html">ui</a></li><li class="navelem"><a class="el" href="namespaceui_1_1mainmenu.html">mainmenu</a></li><li class="navelem"><a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html">PlayerCustDialog</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

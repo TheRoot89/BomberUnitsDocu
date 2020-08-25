@@ -87,19 +87,19 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="contents">
 <div class="textblock"><h1>BomberUnits </h1>
 <div class="image">
-<img src="Screenshot1.png" alt="Screenshot1.png"/>
+<img src="StartScreenInGameURP_Text.png" alt="StartScreenInGameURP_Text.png"/>
 <div class="caption">
 Bam! (Pre-alpha footage)</div></div>
-<p> BomberUnits is a Bomberman clone in Unity as a learning project. It is developed in 3D and supports mixed local and remote multiplayer via <a href="https://www.photonengine.com/en-us/Photon">Photon</a>.</p>
+<p> BomberUnits is a Bomberman-alike video game using the Unity Engine. It is intended as a learning project for the various tasks encountered in game development. It is developed in 3D and supports mixed local and remote multiplayer via <a href="https://www.photonengine.com/en-us/Photon">Photon</a>.</p>
 <h2>Current master version: </h2>
 <p><b><a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a>:</b> Playable with the basic features, as well as online MP!<br />
- <b>Unity version to use:</b> 2019.2.18f1<br />
-</p>
+ <b>Unity version to use:</b> 2019.3.15f1<br />
+ <b>How to start:</b> Check out the correct commit, install and assign the correct Unity version to the project in UnityHub, load the project, load the "MainMenuScene" and click <em>Play</em>. For Multiplayer, you may have to start the Photon Setup first: Window-&gt;Photon Unity Networking-&gt;PUN Wizard-&gt;Set App ID to '7d8d867e-5a63-45d9-ae10-1b5b20070d12'.</p>
 <h2>Last "stable" release: </h2>
 <p><b>Tag &amp; Name:</b> v0.3 "OnlineMP_MVP_onUnity_2019.2.18f1"<br />
  <b>Hash:</b> ef50e839677e73397d1e35da29212775be6d0561<br />
  <b>Unity version to use:</b> 2019.2.18f1<br />
- <b>How to start:</b> Check out the correct commit, install and assign the correct Unity version to the project in UnityHub, load the project, load the "MainMenuScene" and click <em>Play</em>. For Multiplayer, you may have to start the Photon Setup first: Window-&gt;Photon Unity Networking-&gt;PUN Wizard-&gt;Set App ID to '7d8d867e-5a63-45d9-ae10-1b5b20070d12'.</p>
+</p>
 <h2>About the Documentation </h2>
 <p>This documentation is based on a combination of Doxygen generation and custom Markdown pages. While the Markdown part is (mostly) readable as raw file or rendered - e.g. on GitHub - better go to our "GitHub Pages" for the fully generated docu. It will be updated from the master branch from time to time:</p>
 <blockquote class="doxtable">
@@ -107,34 +107,33 @@ Bam! (Pre-alpha footage)</div></div>
 </blockquote>
 <p>You can also generate and view the up-to-data HTML output locally, as explained here:<br />
  <a class="el" href="page_how_to_generate_doxygen.html">How to generate Doxygen</a></p>
-<h2>Content </h2>
-<ul>
-<li><a class="el" href="page_intro.html">Introduction</a> : As the name says :) Be sure to also take a look at the "Getting Started" subpage!</li>
-<li><a class="el" href="page_game_design.html">Game Design</a> : Descriptions of the features we want in this game.</li>
-<li><a class="el" href="page_sw_architecture.html">SW Architecture</a> : Describes overarching SW parts, implementing the design concepts.</li>
-<li><a class="el" href="page_concepts.html">Concepts</a> : Details on the design approaches for the above features.</li>
-<li><a class="el" href="page_tooling.html">Tooling</a> : A list of, explanations on and recommended settings for or tooling.</li>
-<li><a class="el" href="page_howtos.html">How-Tos</a> : Overview of our available How-to pages.</li>
-<li>Auto-generated content: <a class="el" href="todo.html">Todo List</a> , Classes, etc. Many of these are linked from the "Architecture" page and contain the finest level of SW documentation.</li>
-</ul>
 <blockquote class="doxtable">
-<p>These documentation pages are viewable as text files, rendered as Markdown, e.g. in VSCode preview, or after generating the Doxygen docu HTML as explained below.</p>
 <p><b>Note:</b> The Doxygen-specific "\\ref" links and commands will not work when viewing as raw files or as Markdown, but you may search textually for the referenced unique page keywords to find the referenced content. </p>
 </blockquote>
+<h2>Content </h2>
+<ul>
+<li><a class="el" href="page_intro.html">Introduction</a> : As the name says :) Be sure to also take a look at the "Getting Started" subpage as well!</li>
+<li><a class="el" href="page_game_design.html">Game Design</a> : Descriptions of the features we want in this game.</li>
+<li><a class="el" href="page_sw_architecture.html">SW Architecture</a> : Describes overarching SW parts, implementing the design concepts.</li>
+<li><a class="el" href="page_sw_component_design.html">SW Component Design</a> : Details on the design approaches for the above features.</li>
+<li><a class="el" href="page_tooling.html">Tooling</a> : A list of, explanations on and recommended settings for or tooling.</li>
+<li><a class="el" href="page_howtos.html">How-Tos</a> : Overview of our available How-to pages.</li>
+<li>Auto-generated content: <a class="el" href="todo.html">Todo List</a> , Classes, etc. Many of these are linked from the <em>Architecture</em> and <em>SW Component Design</em> pages and contain the finest level of SW documentation.</li>
+</ul>
 <h2>Contributing to the Documentation </h2>
 <p>Everyone is encouraged to contribute to these pages! The worst documentation is the one that was never written ;) <br />
  Have a look at the How-To for this: <a class="el" href="page_how_to_add_to_doxygen.html">How to add to Doxygen</a></p>
 <p>Best regards and have fun,</p>
-<p><em>TheRoot89</em></p>
-<p>PS: Please find below the descriptions of our folder structure in Doxygen format. This is visible in rendered .md, from the raw file, or (best) in the HTML docu by going to the file browser in <em>Files -&gt; File List</em>. </p><blockquote class="doxtable">
-<p>Note: This may be moved to respective readme files within their folder.</p>
+<p><em>TheRoot89</em> </p><hr/>
+<p>PS: Please find below the descriptions of our folder structure in Doxygen format. This is visible in rendered .md, from the raw file, or (best) in the HTML docu by going to the file browser via <em>Files -&gt; File List</em>. </p><blockquote class="doxtable">
+<p>Note: This may be moved to respective readme files within their folders in the future.</p>
 </blockquote>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

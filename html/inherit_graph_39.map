@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="5,31,64,57"/>
+<area shape="rect" id="node2" href="$classplayer_1_1_local_player.html" title="LocalPlayer" alt="" coords="119,5,209,32"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_remote_player.html" title="A Player is one participant in a game. " alt="" coords="112,56,216,83"/>
+</map>

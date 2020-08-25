@@ -1,2 +1,3 @@
 <map id="Explodeable" name="Explodeable">
+<area shape="rect" id="node3" href="$classmechanics_1_1_explodeable_1_1_damage.html" title="{Explodeable.Damage\n|+ value\l+ force\l+ upFactor\l+ forceRange\l+ origin\l|}" alt="" coords="140,5,285,141"/>
 </map>

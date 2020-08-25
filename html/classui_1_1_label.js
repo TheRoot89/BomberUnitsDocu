@@ -5,6 +5,7 @@ var classui_1_1_label =
     [ "SetActive", "classui_1_1_label.html#a4cdab454d1f128c9e89fa07b2952379e", null ],
     [ "SetTargetCamera", "classui_1_1_label.html#ac9a7d3a2d0f827e08ddee7b0c5493932", null ],
     [ "SetText", "classui_1_1_label.html#ac79f901fccfd8f6c97297276c66b20af", null ],
+    [ "SetVisible", "classui_1_1_label.html#a71a209185b7a98adf0a310d2c44cdbe6", null ],
     [ "Show", "classui_1_1_label.html#ace79e5f49885e486e8e1d48ff0666476", null ],
     [ "canvas", "classui_1_1_label.html#a8c636afb7e42bc06147dc78e5f8d3fad", null ],
     [ "text", "classui_1_1_label.html#aa5fc53cd8e35e2be93583df0a26bd94b", null ]

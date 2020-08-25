@@ -1,0 +1,5 @@
+<map id="NetData" name="NetData">
+<area shape="rect" id="node2" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="5,79,140,347"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the character models players can choose. " alt="" coords="164,115,331,310"/>
+<area shape="rect" id="node4" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="355,5,553,420"/>
+</map>

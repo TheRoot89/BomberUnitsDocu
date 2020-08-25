@@ -1,0 +1,3 @@
+<map id="MultiTargetCamera" name="MultiTargetCamera">
+<area shape="rect" id="node3" href="$class_smooth_move_to_target.html" title="Moves this script&#39;s object towards the target position while active. " alt="" coords="91,132,287,327"/>
+</map>

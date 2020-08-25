@@ -1,0 +1,3 @@
+<map id="ParabolaMover" name="ParabolaMover">
+<area shape="rect" id="node3" href="$class_parabola_trajectory.html" title="{ParabolaTrajectory\n|+ startAngleRad\l+ v0\l+ g\l+ isValid\l+ totalTravelTime\l+ origin\l+ dirToTargetInXZPlane\l|+ ParabolaTrajectory()\l+ GetAtTime()\l}" alt="" coords="141,5,295,185"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="LevelManager" name="LevelManager">
+<area shape="rect" id="node2" href="$class_mono_singleton.html" title="{MonoSingleton\&lt; LevelManager \&gt;\n|# instance\l|+ Get()\l# MyAwake()\l&#45; Awake()\l}" alt="" coords="5,345,216,452"/>
+<area shape="rect" id="node3" href="$classlevel_1_1_scene_reference.html" title="A wrapper that provides the means to safely serialize Scene Asset References. " alt="" coords="246,132,397,268"/>
+<area shape="rect" id="node5" href="$classlevel_1_1_level.html" title="Wraps info on each level. " alt="" coords="394,345,497,452"/>
+<area shape="rect" id="node6" href="$class_scene_fader.html" title="{SceneFader\n|&#45; anim\l&#45; onFadeOutCompleteCallback\l|+ FadeOut()\l+ FadeIn()\l+ OnFadeComplete()\l&#45; Awake()\l}" alt="" coords="521,331,719,467"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classnet_1_1_net_event_1_1_unity_event_with_cust_type.html" title="It is somehow necessary to create this and get rid of the template parameter. " alt="" coords="139,5,322,47"/>
+<area shape="rect" id="node3" href="$classnet_1_1_unity_client_properties_update_event.html" title="UnityClientPropertiesUpdate\lEvent" alt="" coords="138,71,323,112"/>
+<area shape="rect" id="node4" href="$classnet_1_1_unity_room_properties_update_event.html" title="UnityRoomPropertiesUpdate\lEvent" alt="" coords="137,136,324,177"/>
+<area shape="rect" id="node5" href="$classnet_1_1_unity_string_event.html" title="UnityStringEvent" alt="" coords="171,202,290,229"/>
+<area shape="rect" id="node6" href="$classplayer_1_1_player_1_1_unity_string_int_event.html" title="Player.UnityStringIntEvent" alt="" coords="144,253,317,279"/>
+<area shape="rect" id="node7" href="$classplayer_1_1_unity_player_change_event.html" title="An event type that contains the reference to a specific player. " alt="" coords="148,303,313,330"/>
+<area shape="rect" id="node8" href="$class_unity_float_event.html" title="UnityFloatEvent" alt="" coords="174,354,287,381"/>
+</map>

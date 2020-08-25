@@ -1,0 +1,4 @@
+<map id="LocalPlayer" name="LocalPlayer">
+<area shape="rect" id="node2" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="5,5,204,420"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="228,42,363,383"/>
+</map>

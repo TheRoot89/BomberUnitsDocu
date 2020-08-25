@@ -1,0 +1,4 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$classplayer_1_1_local_player.html" title="{LocalPlayer\n|+ input\l+ isNew\l&#45; localPlayers\l&#45; main\l|+ IsLocal()\l+ FreeResourcesAndRemove()\l+ Update()\l+ UpdateClientId()\l+ UpdateState()\l+ GetNetData()\l+ ToString()\l+ Awake()\l+ Contains()\l+ Get()\l+ GetAll()\l+ GetMain()\l+ Count()\l+ CreateNew()\l+ CreateMainFromSave()\l+ SaveMain()\l&#45; LocalPlayer()\l}" alt="" coords="5,468,204,824"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_remote_player.html" title="A Player is one participant in a game. " alt="" coords="228,497,427,795"/>
+</map>

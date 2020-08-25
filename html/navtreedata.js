@@ -3,9 +3,9 @@ var NAVTREE =
   [ "BomberUnits", "index.html", [
     [ "Home", "index.html", null ],
     [ "Introduction", "page_intro.html", "page_intro" ],
-    [ "Game Design", "page_game_design.html", null ],
+    [ "Game Design", "page_game_design.html", "page_game_design" ],
     [ "SW Architecture", "page_sw_architecture.html", "page_sw_architecture" ],
-    [ "Concepts", "page_concepts.html", "page_concepts" ],
+    [ "SW Component Design", "page_sw_component_design.html", "page_sw_component_design" ],
     [ "Tooling", "page_tooling.html", "page_tooling" ],
     [ "How-Tos", "page_howtos.html", "page_howtos" ],
     [ "Todo List", "todo.html", null ],
@@ -22,7 +22,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
       ] ]
@@ -35,11 +35,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_auto_destroy_particle_sys_8cs_source.html",
-"classeffects_1_1_fade_children.html#a0f9c47d23c09c0b467fb881032a82dca",
-"classnet_1_1_net_manager.html#ab809512d85b2b1fee32dde5735bc7794",
-"classui_1_1_menu_page.html#adccf3eca2892cba30d678619c1d14865",
-"page_vs_code_setup.html"
+"_ao_e_scheme_8cs_source.html",
+"class_overlay_camera_follow.html#a3235f34cafb24ba9efc7e57ec50fba95",
+"classeffects_1_1_float_and_rotate.html#acef2e8431680d8a7062f863e5d4f8411",
+"classnet_1_1_connect_to_master_state.html",
+"classplayer_1_1_input_scheme.html#ad31de88bcb18164d313219d86a796115",
+"classtest_1_1_test_bootstrapper.html",
+"classui_1_1mainmenu_1_1_player_slot.html#a81be1534725646dcf653c2d0bb0f8cc3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

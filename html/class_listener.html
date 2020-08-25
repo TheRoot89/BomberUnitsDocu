@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_listener.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_listener__inherit__graph.png" border="0" usemap="#_listener_inherit__map" alt="Inheritance graph"/></div>
 <map name="_listener_inherit__map" id="_listener_inherit__map">
-<area shape="rect" id="node2" href="class_pair.html" title="{Pair\&lt; UnityEvent, UnityAction \&gt;\n|+ First\l+ Second\l|+ Pair()\l+ Pair()\l}" alt="" coords="5,5,212,112"/>
+<area shape="rect" id="node2" href="class_pair.html" title="{Pair\&lt; UnityEvent, UnityAction \&gt;\n|+ First\l+ Second\l|+ Pair()\l+ Pair()\l+ Equals()\l+ GetHashCode()\l# Equals()\l}" alt="" coords="5,5,212,156"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('class_listener.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_listener__coll__graph.png" border="0" usemap="#_listener_coll__map" alt="Collaboration graph"/></div>
 <map name="_listener_coll__map" id="_listener_coll__map">
-<area shape="rect" id="node2" href="class_pair.html" title="{Pair\&lt; UnityEvent, UnityAction \&gt;\n|+ First\l+ Second\l|+ Pair()\l+ Pair()\l}" alt="" coords="5,5,212,112"/>
+<area shape="rect" id="node2" href="class_pair.html" title="{Pair\&lt; UnityEvent, UnityAction \&gt;\n|+ First\l+ Second\l|+ Pair()\l+ Pair()\l+ Equals()\l+ GetHashCode()\l# Equals()\l}" alt="" coords="5,5,212,156"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -127,9 +127,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> ()</td></t
 <tr class="memitem:a4d800354f4d4611399827ab183fd4635 inherit pub_methods_class_pair"><td class="memItemLeft" align="right" valign="top"><a id="a4d800354f4d4611399827ab183fd4635"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Pair</b> (T first, U second)</td></tr>
 <tr class="separator:a4d800354f4d4611399827ab183fd4635 inherit pub_methods_class_pair"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd01d8a22ff5a6e634a0ebef367a51c inherit pub_methods_class_pair"><td class="memItemLeft" align="right" valign="top"><a id="a8bd01d8a22ff5a6e634a0ebef367a51c"></a>
+override bool&#160;</td><td class="memItemRight" valign="bottom"><b>Equals</b> (System.Object obj)</td></tr>
+<tr class="separator:a8bd01d8a22ff5a6e634a0ebef367a51c inherit pub_methods_class_pair"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e1afa2b6dee1ed3640da81d7407b42 inherit pub_methods_class_pair"><td class="memItemLeft" align="right" valign="top"><a id="a77e1afa2b6dee1ed3640da81d7407b42"></a>
+override int&#160;</td><td class="memItemRight" valign="bottom"><b>GetHashCode</b> ()</td></tr>
+<tr class="separator:a77e1afa2b6dee1ed3640da81d7407b42 inherit pub_methods_class_pair"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_pair"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_pair')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_pair.html">Pair&lt; UnityEvent, UnityAction &gt;</a></td></tr>
+<tr class="memitem:a428cfc1b33808cf6583d0a82010f3f3c inherit pro_methods_class_pair"><td class="memItemLeft" align="right" valign="top"><a id="a428cfc1b33808cf6583d0a82010f3f3c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pair.html#a428cfc1b33808cf6583d0a82010f3f3c">Equals</a> (<a class="el" href="class_pair.html">Pair</a>&lt; T, U &gt; other)</td></tr>
+<tr class="memdesc:a428cfc1b33808cf6583d0a82010f3f3c inherit pro_methods_class_pair"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to make comparison functional! <br /></td></tr>
+<tr class="separator:a428cfc1b33808cf6583d0a82010f3f3c inherit pro_methods_class_pair"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_pair"><td colspan="2" onclick="javascript:toggleInherit('properties_class_pair')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_pair.html">Pair&lt; UnityEvent, UnityAction &gt;</a></td></tr>
 <tr class="memitem:a2552c392770a9e6ead8811bc5a31429b inherit properties_class_pair"><td class="memItemLeft" align="right" valign="top"><a id="a2552c392770a9e6ead8811bc5a31429b"></a>
 T&#160;</td><td class="memItemRight" valign="bottom"><b>First</b><code> [get, set]</code></td></tr>
@@ -151,7 +162,7 @@ U&#160;</td><td class="memItemRight" valign="bottom"><b>Second</b><code> [get, s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_listener.html">Listener</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:11 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

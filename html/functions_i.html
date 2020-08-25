@@ -86,18 +86,27 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>Init()
 : <a class="el" href="interface_i_initable.html#a11d00a87ddbbd6c1bad18acd97cd0ec6">IInitable</a>
-, <a class="el" href="classplayer_1_1_player_controller.html#a11d00a87ddbbd6c1bad18acd97cd0ec6">PlayerController</a>
-, <a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a98e1bd02367b7ae69cf31582bafeea0b">PlayerCustDialog</a>
+, <a class="el" href="classmechanics_1_1_bomb.html#a1a1464b530bb2add2ca5422aae7be732">Bomb</a>
+, <a class="el" href="classui_1_1mainmenu_1_1_player_cust_dialog.html#a3aefb66c22f23715289030d56c1b9f3b">PlayerCustDialog</a>
+, <a class="el" href="classui_1_1mainmenu_1_1_player_slot.html#a209ca39e5deb4d0235180515d5d36789">PlayerSlot</a>
 </li>
 <li>InitDepOnNetState()
 : <a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html#a1107a0432bf6f35e6eaacba6fb693570">MainMenuStateMachine</a>
 </li>
+<li>input
+: <a class="el" href="classplayer_1_1_local_player.html#a72386a46ee420f71a0076dc47f2676fb">LocalPlayer</a>
+</li>
+<li>inputMoveDir
+: <a class="el" href="classplayer_1_1_input_state.html#a7e217de8300b898f77989949b3017199">InputState</a>
+</li>
+<li>inputRotDir
+: <a class="el" href="classplayer_1_1_input_state.html#ade26caf992df96d8d55996a335af13f8">InputState</a>
+</li>
 <li>instance
 : <a class="el" href="classmanagement_1_1_game_manager.html#aa26454863fd4a4875ea7ab82b28d5fc9">GameManager</a>
-, <a class="el" href="classmanagement_1_1_game_settings.html#a4ee6de6769004828bf98883b74ce0537">GameSettings</a>
 , <a class="el" href="classmanagement_1_1_match_manager.html#ade96e61bfb94cd24f2be2e9480b9328d">MatchManager</a>
+, <a class="el" href="class_mono_singleton.html#ac0091740a1a1b13daab37328b10bdc3f">MonoSingleton&lt; T &gt;</a>
 , <a class="el" href="classnet_1_1_net_manager.html#a51a04f5a912a5a1c01924541f9907e4d">NetManager</a>
-, <a class="el" href="classplayer_1_1_player_manager.html#a4822262c5fd7b8bb030ee839c9a6a93e">PlayerManager</a>
 , <a class="el" href="class_status_bar.html#af1aba7f0f89b7b10e3373a18f523d762">StatusBar</a>
 , <a class="el" href="classui_1_1_u_i_manager.html#afb4732e564d2f49384602a1e3cc98525">UIManager</a>
 </li>
@@ -107,21 +116,44 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <li>Instantiate()
 : <a class="el" href="classnet_1_1_net_adapter.html#ac2281eb11f1255c558fc464542002321">NetAdapter</a>
 </li>
+<li>InstantiateCoreEffect()
+: <a class="el" href="classmechanics_1_1_explodeable.html#a16d92b1603f722681242256443731e36">Explodeable</a>
+</li>
+<li>InterpreteNetDataChangeAndSendEvents()
+: <a class="el" href="classplayer_1_1_player_manager.html#a0ab5734622ef5567e4cb0970f8957471">PlayerManager</a>
+</li>
+<li>inUse
+: <a class="el" href="classplayer_1_1_color_scheme.html#a0937b653999b14c16d75fc408f4dce05">ColorScheme</a>
+</li>
 <li>Invoke()
-: <a class="el" href="classnet_1_1_net_event.html#a2223f57f1f6b3bd81a12b14207cb3e11">NetEvent&lt; NetDataType &gt;</a>
+: <a class="el" href="classnet_1_1_net_event.html#a83110f1123300cc9ebf0328de5470a68">NetEvent&lt; NetDataType &gt;</a>
 </li>
 <li>IsActiveState()
 : <a class="el" href="class_state.html#a7c94f4722ec15ae20b94793b0ac5da4b">State</a>
 </li>
+<li>isBlocking
+: <a class="el" href="classlevel_1_1_tile.html#a0a4ca7b0f29b3468e8395bc4c912ca55">Tile</a>
+</li>
 <li>IsConnected()
 : <a class="el" href="classnet_1_1_net_adapter.html#a48bca14d41772555382e77f707fa4579">NetAdapter</a>
 </li>
+<li>isFuseLitOnStart
+: <a class="el" href="classmechanics_1_1_bomb.html#a285caf817e91d4459982c5cdfee47a50">Bomb</a>
+</li>
 <li>IsLocal()
-: <a class="el" href="classplayer_1_1_player.html#aa72a1414a9a27affdb25cc120cda4ad2">Player</a>
+: <a class="el" href="classplayer_1_1_local_player.html#a50a8cdcb62559c049c5e4aad870569b7">LocalPlayer</a>
+, <a class="el" href="classplayer_1_1_player.html#af57f0c87d5ab60dbfbea54bf5020acc8">Player</a>
+, <a class="el" href="classplayer_1_1_remote_player.html#a50a8cdcb62559c049c5e4aad870569b7">RemotePlayer</a>
 </li>
 <li>IsMaster()
 : <a class="el" href="classnet_1_1_net_adapter.html#a92636b668501066b2428904a65f254cb">NetAdapter</a>
 , <a class="el" href="classnet_1_1_net_manager.html#a7cc2f44672b34385d014a196b3c88b49">NetManager</a>
+</li>
+<li>isMoving
+: <a class="el" href="classplayer_1_1_movement_state.html#a420415c6b665fb9669a388e0e96ceb02">MovementState</a>
+</li>
+<li>isNew
+: <a class="el" href="classplayer_1_1_local_player.html#a9530e1e393763277fa4e373d996a2142">LocalPlayer</a>
 </li>
 <li>isShown()
 : <a class="el" href="classui_1_1_menu_element.html#ab23515d860fc613ee1fa2263d3752d15">MenuElement</a>
@@ -132,7 +164,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

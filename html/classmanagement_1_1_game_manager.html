@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('classmanagement_1_1_game_manager.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -110,26 +109,18 @@ $(document).ready(function(){initNavTree('classmanagement_1_1_game_manager.html'
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmanagement_1_1_game_manager__coll__graph.png" border="0" usemap="#_game_manager_coll__map" alt="Collaboration graph"/></div>
 <map name="_game_manager_coll__map" id="_game_manager_coll__map">
-<area shape="rect" id="node4" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="65,132,221,327"/>
-<area shape="rect" id="node3" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="61,426,199,518"/>
-<area shape="rect" id="node5" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="223,389,394,555"/>
-<area shape="rect" id="node7" href="classmanagement_1_1_scene_reference.html" title="A wrapper that provides the means to safely serialize Scene Asset References. " alt="" coords="436,404,587,540"/>
+<area shape="rect" id="node4" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="65,132,221,341"/>
+<area shape="rect" id="node3" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="60,441,197,533"/>
+<area shape="rect" id="node5" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="222,404,393,569"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9984181b08166fac54b2e3d07b21c278"><td class="memItemLeft" align="right" valign="top"><a id="a9984181b08166fac54b2e3d07b21c278"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a9984181b08166fac54b2e3d07b21c278">EnsureMainMenuScene</a> ()</td></tr>
-<tr class="memdesc:a9984181b08166fac54b2e3d07b21c278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure the main menu scene is the current scene. <br /></td></tr>
-<tr class="separator:a9984181b08166fac54b2e3d07b21c278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ff13d025cfc9da8a334629574ff33ff"><td class="memItemLeft" align="right" valign="top"><a id="a0ff13d025cfc9da8a334629574ff33ff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a0ff13d025cfc9da8a334629574ff33ff">QuitGame</a> ()</td></tr>
 <tr class="memdesc:a0ff13d025cfc9da8a334629574ff33ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quitting mechanism depends on whether we are in the Unity Editor or in the built application. <br /></td></tr>
 <tr class="separator:a0ff13d025cfc9da8a334629574ff33ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d942fe576cb5b2cb7e2245c77862738"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a0d942fe576cb5b2cb7e2245c77862738">AttemptToStartDemoLevel</a> ()</td></tr>
-<tr class="memdesc:a0d942fe576cb5b2cb7e2245c77862738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary match start function.  <a href="#a0d942fe576cb5b2cb7e2245c77862738">More...</a><br /></td></tr>
-<tr class="separator:a0d942fe576cb5b2cb7e2245c77862738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -145,13 +136,9 @@ static <a class="el" href="classmanagement_1_1_game_state_machine.html">GameStat
 static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a915559b3cc949c6e8e8c276e2e43e99b">GetVersion</a> ()</td></tr>
 <tr class="memdesc:a915559b3cc949c6e8e8c276e2e43e99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The game version is needed for configuration of the MP server connection to ensure version sync. <br /></td></tr>
 <tr class="separator:a915559b3cc949c6e8e8c276e2e43e99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aa6a3316bd7b321507aa6695fd4255262"><td class="memItemLeft" align="right" valign="top"><a id="aa6a3316bd7b321507aa6695fd4255262"></a>
-<a class="el" href="classmanagement_1_1_scene_reference.html">SceneReference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#aa6a3316bd7b321507aa6695fd4255262">mainMenuScene</a></td></tr>
-<tr class="memdesc:aa6a3316bd7b321507aa6695fd4255262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Held reference to a scene, which can be switched to. <br /></td></tr>
-<tr class="separator:aa6a3316bd7b321507aa6695fd4255262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8899c1f21bc486dcba4d219c83153d9"><td class="memItemLeft" align="right" valign="top"><a id="ae8899c1f21bc486dcba4d219c83153d9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartMatch</b> ()</td></tr>
+<tr class="separator:ae8899c1f21bc486dcba4d219c83153d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -159,35 +146,18 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton Awake ensures the first instance is saved and further duplicates discarded.  <a href="#ae4b513cddd594f1c359e4f0a3e79a8c6">More...</a><br /></td></tr>
 <tr class="separator:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a07aaf1227e4d645f15e0a964f54ef291">Start</a> ()</td></tr>
-<tr class="memdesc:a07aaf1227e4d645f15e0a964f54ef291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootstraps the game. This allows for initial managers to be loaded etc. during the delay. <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memItemLeft" align="right" valign="top"><a id="a1e3b6d38df0786ccf7f938d60e386aae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
 <tr class="separator:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d7a39756e67a1f25a73b8917528b0e"><td class="memItemLeft" align="right" valign="top"><a id="ae1d7a39756e67a1f25a73b8917528b0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#ae1d7a39756e67a1f25a73b8917528b0e">StartMatch</a> (<a class="el" href="structmanagement_1_1_level.html">Level</a> level)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#ae1d7a39756e67a1f25a73b8917528b0e">StartMatch</a> (<a class="el" href="classlevel_1_1_level.html">Level</a> level)</td></tr>
 <tr class="memdesc:ae1d7a39756e67a1f25a73b8917528b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be done from a state as well? Questions... <br /></td></tr>
 <tr class="separator:ae1d7a39756e67a1f25a73b8917528b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a590b64e28f9c04afc44654bf4d9fbd21"><td class="memItemLeft" align="right" valign="top"><a id="a590b64e28f9c04afc44654bf4d9fbd21"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a590b64e28f9c04afc44654bf4d9fbd21">Bootstrap</a> ()</td></tr>
-<tr class="memdesc:a590b64e28f9c04afc44654bf4d9fbd21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target for the delayed initialization of the <a class="el" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">GameStateMachine</a>. <br /></td></tr>
-<tr class="separator:a590b64e28f9c04afc44654bf4d9fbd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5a58fbf752d8890f32f36351c5ad7ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#ad5a58fbf752d8890f32f36351c5ad7ef">AddDummyLevel</a> ()</td></tr>
-<tr class="memdesc:ad5a58fbf752d8890f32f36351c5ad7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the level list.  <a href="#ad5a58fbf752d8890f32f36351c5ad7ef">More...</a><br /></td></tr>
-<tr class="separator:ad5a58fbf752d8890f32f36351c5ad7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b95deb69a7aff593b94faf9553e6777"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#a3b95deb69a7aff593b94faf9553e6777">CheckMatchStartConditions</a> (<a class="el" href="structmanagement_1_1_level.html">Level</a> level)</td></tr>
-<tr class="separator:a3b95deb69a7aff593b94faf9553e6777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad2813b0540d13c7e3a051064eeb5b97b"><td class="memItemLeft" align="right" valign="top"><a id="ad2813b0540d13c7e3a051064eeb5b97b"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#ad2813b0540d13c7e3a051064eeb5b97b">bootstrapDelay</a> = 0.5f</td></tr>
-<tr class="memdesc:ad2813b0540d13c7e3a051064eeb5b97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial delay before initializing the <a class="el" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">GameStateMachine</a>. <br /></td></tr>
-<tr class="separator:ad2813b0540d13c7e3a051064eeb5b97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18d20f001f36a47cc7b87828e4c975d"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="structmanagement_1_1_level.html">Level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmanagement_1_1_game_manager.html#ad18d20f001f36a47cc7b87828e4c975d">levels</a></td></tr>
-<tr class="memdesc:ad18d20f001f36a47cc7b87828e4c975d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information on available Levels;.  <a href="#ad18d20f001f36a47cc7b87828e4c975d">More...</a><br /></td></tr>
-<tr class="separator:ad18d20f001f36a47cc7b87828e4c975d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689c5d34c6035bbd91ae51d8b4b1323f"><td class="memItemLeft" align="right" valign="top"><a id="a689c5d34c6035bbd91ae51d8b4b1323f"></a>
 <a class="el" href="classmanagement_1_1_game_state_machine.html">GameStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gameSM</b> = null</td></tr>
 <tr class="separator:a689c5d34c6035bbd91ae51d8b4b1323f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,68 +177,8 @@ static <a class="el" href="classmanagement_1_1_game_manager.html">GameManager</a
 <div class="textblock"><p>The <a class="el" href="classmanagement_1_1_game_manager.html" title="The GameManager controls the overall flow of the program and organizes the interaction of its parts...">GameManager</a> controls the overall flow of the program and organizes the interaction of its parts. </p>
 <p>It can be accessed via <a class="el" href="classmanagement_1_1_game_manager.html#af1b396ea8d84b2607f64d89eafb71939" title="Singleton access Getter. ">Get()</a> by its Singleton pattern, after this object was initialized. It is not deleted after scene switch. It notably tracks the current <a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> of the game, see also: <a class="el" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in-game...">GameStateMachine</a> To not overcrowd this class, functionality is continuously relocated to external managers. See also: UIManager <a class="el" href="classmanagement_1_1_match_manager.html" title="Responsible for managing a single match. ">MatchManager</a> PlayerManger NetManager </p>
 
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00019">19</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00021">21</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad5a58fbf752d8890f32f36351c5ad7ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5a58fbf752d8890f32f36351c5ad7ef">&#9670;&nbsp;</a></span>AddDummyLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AddDummyLevel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets up the level list. </p>
-<p>This is a temporary dummy for just one level. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>replace by having proper level management. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00142">142</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="a0d942fe576cb5b2cb7e2245c77862738"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d942fe576cb5b2cb7e2245c77862738">&#9670;&nbsp;</a></span>AttemptToStartDemoLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AttemptToStartDemoLevel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Temporary match start function. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>: Start from a state </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00151">151</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
-
-</div>
-</div>
 <a id="ae4b513cddd594f1c359e4f0a3e79a8c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4b513cddd594f1c359e4f0a3e79a8c6">&#9670;&nbsp;</a></span>Awake()</h2>
 
@@ -293,66 +203,9 @@ static <a class="el" href="classmanagement_1_1_game_manager.html">GameManager</a
 </div><div class="memdoc">
 
 <p>Singleton Awake ensures the first instance is saved and further duplicates discarded. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Create a common 'Singleton' base MonoBehaviour for all these managers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>Create a common 'Singleton' base MonoBehaviour for all these managers. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00073">73</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="a3b95deb69a7aff593b94faf9553e6777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b95deb69a7aff593b94faf9553e6777">&#9670;&nbsp;</a></span>CheckMatchStartConditions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CheckMatchStartConditions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmanagement_1_1_level.html">Level</a>&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Move to proper level management. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00161">161</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad18d20f001f36a47cc7b87828e4c975d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad18d20f001f36a47cc7b87828e4c975d">&#9670;&nbsp;</a></span>levels</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;<a class="el" href="structmanagement_1_1_level.html">Level</a>&gt; levels</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Information on available Levels;. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>: Move to a <a class="el" href="structmanagement_1_1_level.html" title="Wraps info on each level. ">Level</a> Manager </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00030">30</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_manager_8cs_source.html#l00076">76</a> of file <a class="el" href="_game_manager_8cs_source.html">GameManager.cs</a>.</p>
 
 </div>
 </div>
@@ -365,7 +218,7 @@ static <a class="el" href="classmanagement_1_1_game_manager.html">GameManager</a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemanagement.html">management</a></li><li class="navelem"><a class="el" href="classmanagement_1_1_game_manager.html">GameManager</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:11 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

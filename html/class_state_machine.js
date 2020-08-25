@@ -10,5 +10,6 @@ var class_state_machine =
     [ "UpdateCurrentState", "class_state_machine.html#a58df4b1b31e0682d77e62748c0250e52", null ],
     [ "activeState", "class_state_machine.html#adcdf89b3a7bbf31a537ff156403af798", null ],
     [ "controller", "class_state_machine.html#a14be8540c39e8ff0ab7639c2608e7966", null ],
+    [ "logEnabled", "class_state_machine.html#a18400c2baf794b578451bb2b1fb0fb7e", null ],
     [ "states", "class_state_machine.html#a1ccf23cabed27f8d474f81a6c4513f7d", null ]
 ];

@@ -1,0 +1,3 @@
+<map id="CharCustomizer" name="CharCustomizer">
+<area shape="rect" id="node3" href="$class_char_settings.html" title="{CharSettings\n|+ baseSpeed\l+ baseTurnSpeed\l+ showLabels\l+ kickBombSelectionAngleTolerance\l+ kickVelocityIncrement\l+ initialMaxBombs\l+ initialBombRange\l+ initialBombCountdown\l+ initialBombCooldown\l+ initialKickVelocity\l+ initialThrowDist\l|}" alt="" coords="141,132,375,356"/>
+</map>

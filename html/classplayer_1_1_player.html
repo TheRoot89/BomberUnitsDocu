@@ -82,132 +82,165 @@ $(document).ready(function(){initNavTree('classplayer_1_1_player.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classplayer_1_1_player-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Player Class Reference</div>  </div>
+<div class="title">Player Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>A <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> is one participant in a game.  
  <a href="classplayer_1_1_player.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Player:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Player:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classplayer_1_1_player__coll__graph.png" border="0" usemap="#_player_coll__map" alt="Collaboration graph"/></div>
-<map name="_player_coll__map" id="_player_coll__map">
-<area shape="rect" id="node2" href="classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="196,169,331,363"/>
-<area shape="rect" id="node4" href="classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="417,132,552,400"/>
-<area shape="rect" id="node5" href="classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="5,176,172,356"/>
-<area shape="rect" id="node6" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="577,183,747,349"/>
-<area shape="rect" id="node8" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="691,507,847,701"/>
+<div class="center"><img src="classplayer_1_1_player__inherit__graph.png" border="0" usemap="#_player_inherit__map" alt="Inheritance graph"/></div>
+<map name="_player_inherit__map" id="_player_inherit__map">
+<area shape="rect" id="node2" href="classplayer_1_1_local_player.html" title="{LocalPlayer\n|+ input\l+ isNew\l&#45; localPlayers\l&#45; main\l|+ IsLocal()\l+ FreeResourcesAndRemove()\l+ Update()\l+ UpdateClientId()\l+ UpdateState()\l+ GetNetData()\l+ ToString()\l+ Awake()\l+ Contains()\l+ Get()\l+ GetAll()\l+ GetMain()\l+ Count()\l+ CreateNew()\l+ CreateMainFromSave()\l+ SaveMain()\l&#45; LocalPlayer()\l}" alt="" coords="5,468,204,824"/>
+<area shape="rect" id="node3" href="classplayer_1_1_remote_player.html" title="A Player is one participant in a game. " alt="" coords="228,497,427,795"/>
 </map>
 </div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for Player:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classplayer_1_1_player__coll__graph.png" border="0" usemap="#_player_coll__map" alt="Collaboration graph"/></div>
+</div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player_1_1_unity_string_int_event.html">UnityStringIntEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top"><a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <b>local</b>, 
-<b>remote</b>
- }<tr class="memdesc:a1d1cfd8ffb84e947f82999c682b666a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a player as local or remote, -&gt; different for each client. <br /></td></tr>
+<tr class="memitem:a37aa9e50301ade8fb86f3344ec9a6284"><td class="memItemLeft" align="right" valign="top"><a id="a37aa9e50301ade8fb86f3344ec9a6284"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284">State</a> : short { <b>notPlaying</b> = 0, 
+<b>playing</b> = 1, 
+<b>ready</b> = 2
+ }<tr class="memdesc:a37aa9e50301ade8fb86f3344ec9a6284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds current state of this player here, so it is not bound to any specific go (player figure). <br /></td></tr>
 </td></tr>
-<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d74787dedbc4e11c1ab15bf487e61f8"><td class="memItemLeft" align="right" valign="top"><a id="a5d74787dedbc4e11c1ab15bf487e61f8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a> { <b>notPlaying</b>, 
-<b>playing</b>, 
-<b>dead</b>
- }<tr class="memdesc:a5d74787dedbc4e11c1ab15bf487e61f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds current state of this player here, so it is not bound to any specific go (player figure). <br /></td></tr>
-</td></tr>
-<tr class="separator:a5d74787dedbc4e11c1ab15bf487e61f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a37aa9e50301ade8fb86f3344ec9a6284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a645e2c37f442c43763ae7c44279f54b4"><td class="memItemLeft" align="right" valign="top"><a id="a645e2c37f442c43763ae7c44279f54b4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Player</b> (string name, <a class="el" href="classplayer_1_1_color_scheme.html">ColorScheme</a> color, <a class="el" href="classplayer_1_1_input_scheme.html">InputScheme</a> input, <a class="el" href="classplayer_1_1_player.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, <a class="el" href="classplayer_1_1_player_figure_prefab.html">PlayerFigurePrefab</a> prefab)</td></tr>
-<tr class="separator:a645e2c37f442c43763ae7c44279f54b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7132b804f4467176cba14a715682d0cc"><td class="memItemLeft" align="right" valign="top"><a id="a7132b804f4467176cba14a715682d0cc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a7132b804f4467176cba14a715682d0cc">Player</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> orig)</td></tr>
-<tr class="memdesc:a7132b804f4467176cba14a715682d0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-constructor for a shallow copy. <br /></td></tr>
-<tr class="separator:a7132b804f4467176cba14a715682d0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ac3da773312bbdec2eef81265091c70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a4ac3da773312bbdec2eef81265091c70">UpdateWith</a> (<a class="el" href="structnet_1_1_player_full_net_data.html">PlayerFullNetData</a> data)</td></tr>
-<tr class="memdesc:a4ac3da773312bbdec2eef81265091c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the details of remote or local players with incoming network data For local players, the taken attributes of input and color are changed as well.  <a href="#a4ac3da773312bbdec2eef81265091c70">More...</a><br /></td></tr>
-<tr class="separator:a4ac3da773312bbdec2eef81265091c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57f0c87d5ab60dbfbea54bf5020acc8"><td class="memItemLeft" align="right" valign="top"><a id="af57f0c87d5ab60dbfbea54bf5020acc8"></a>
+abstract bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#af57f0c87d5ab60dbfbea54bf5020acc8">IsLocal</a> ()</td></tr>
+<tr class="memdesc:af57f0c87d5ab60dbfbea54bf5020acc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to make the many queries for a player being local more readable. <br /></td></tr>
+<tr class="separator:af57f0c87d5ab60dbfbea54bf5020acc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d8c090ec88f48d41ad623d13e0d82e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a95d8c090ec88f48d41ad623d13e0d82e">FreeResourcesAndRemove</a> ()</td></tr>
+<tr class="memdesc:a95d8c090ec88f48d41ad623d13e0d82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes this instance from the tracking list.  <a href="#a95d8c090ec88f48d41ad623d13e0d82e">More...</a><br /></td></tr>
+<tr class="separator:a95d8c090ec88f48d41ad623d13e0d82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195a3811395e1adda6e6afc924ac49b3"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="classplayer_1_1_net_data.html">NetData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a195a3811395e1adda6e6afc924ac49b3">GetNetData</a> ()</td></tr>
+<tr class="memdesc:a195a3811395e1adda6e6afc924ac49b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy(!) of the currently held <a class="el" href="classplayer_1_1_net_data.html" title="Holds all player data that needs to be synchronized over the network. ">NetData</a> of this <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a>.  <a href="#a195a3811395e1adda6e6afc924ac49b3">More...</a><br /></td></tr>
+<tr class="separator:a195a3811395e1adda6e6afc924ac49b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263461ebae5129f74caaf28ba3935df2"><td class="memItemLeft" align="right" valign="top"><a id="a263461ebae5129f74caaf28ba3935df2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasFigure</b> ()</td></tr>
+<tr class="separator:a263461ebae5129f74caaf28ba3935df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770362001a10745adbac9e180431c8a4"><td class="memItemLeft" align="right" valign="top"><a id="a770362001a10745adbac9e180431c8a4"></a>
 <a class="el" href="classplayer_1_1_player_controller.html">PlayerController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a770362001a10745adbac9e180431c8a4">GetCtrl</a> ()</td></tr>
 <tr class="memdesc:a770362001a10745adbac9e180431c8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This getter shortens the access to a player's controller and thus player figure status. <br /></td></tr>
 <tr class="separator:a770362001a10745adbac9e180431c8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72a1414a9a27affdb25cc120cda4ad2"><td class="memItemLeft" align="right" valign="top"><a id="aa72a1414a9a27affdb25cc120cda4ad2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#aa72a1414a9a27affdb25cc120cda4ad2">IsLocal</a> ()</td></tr>
-<tr class="memdesc:aa72a1414a9a27affdb25cc120cda4ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to make the many queries for a player being local more readable. <br /></td></tr>
-<tr class="separator:aa72a1414a9a27affdb25cc120cda4ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cac4e0af9f4a575e5c3cb8988730999"><td class="memItemLeft" align="right" valign="top"><a id="a0cac4e0af9f4a575e5c3cb8988730999"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAsMain</b> ()</td></tr>
-<tr class="separator:a0cac4e0af9f4a575e5c3cb8988730999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb20f6305414cac69e3b1c8b557e3504"><td class="memItemLeft" align="right" valign="top"><a id="aeb20f6305414cac69e3b1c8b557e3504"></a>
-object []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#aeb20f6305414cac69e3b1c8b557e3504">ToRaw</a> ()</td></tr>
-<tr class="memdesc:aeb20f6305414cac69e3b1c8b557e3504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packed Net format: see Management::Player documentation. <br /></td></tr>
-<tr class="separator:aeb20f6305414cac69e3b1c8b557e3504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab172a2047501c81b67f9f713ccaf2feb"><td class="memItemLeft" align="right" valign="top"><a id="ab172a2047501c81b67f9f713ccaf2feb"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetClientId</b> ()</td></tr>
+<tr class="separator:ab172a2047501c81b67f9f713ccaf2feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97112280cc4435c8df3c88070c839b4"><td class="memItemLeft" align="right" valign="top"><a id="ac97112280cc4435c8df3c88070c839b4"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> ()</td></tr>
+<tr class="separator:ac97112280cc4435c8df3c88070c839b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26479b236729b5d013ced949b019dd87"><td class="memItemLeft" align="right" valign="top"><a id="a26479b236729b5d013ced949b019dd87"></a>
+<a class="el" href="classplayer_1_1_color_scheme.html">ColorScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetColor</b> ()</td></tr>
+<tr class="separator:a26479b236729b5d013ced949b019dd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9524ee87b0cb838dbb379f9148d90a"><td class="memItemLeft" align="right" valign="top"><a id="a2d9524ee87b0cb838dbb379f9148d90a"></a>
+<a class="el" href="classplayer_1_1_player_figure_prefab.html">PlayerFigurePrefab</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefab</b> ()</td></tr>
+<tr class="separator:a2d9524ee87b0cb838dbb379f9148d90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8742399df838aa4c32a36220a9d10e7"><td class="memItemLeft" align="right" valign="top"><a id="ae8742399df838aa4c32a36220a9d10e7"></a>
+<a class="el" href="classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ()</td></tr>
+<tr class="separator:ae8742399df838aa4c32a36220a9d10e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a18c3796d9ee276482de1aa1b79fbd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a9a18c3796d9ee276482de1aa1b79fbd4">UpdateMultiple</a> (<a class="el" href="classplayer_1_1_net_data.html">NetData</a> newNetData)</td></tr>
+<tr class="memdesc:a9a18c3796d9ee276482de1aa1b79fbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to update multiple net dat content at once.  <a href="#a9a18c3796d9ee276482de1aa1b79fbd4">More...</a><br /></td></tr>
+<tr class="separator:a9a18c3796d9ee276482de1aa1b79fbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942426861ac6049b047832df73ac4c08"><td class="memItemLeft" align="right" valign="top"><a id="a942426861ac6049b047832df73ac4c08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a942426861ac6049b047832df73ac4c08">OnNetDataChange</a> (<a class="el" href="classplayer_1_1_net_data.html">NetData</a> newNetData)</td></tr>
+<tr class="memdesc:a942426861ac6049b047832df73ac4c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This ensures actions on changing networked data are taken, such as player resource usage. <br /></td></tr>
+<tr class="separator:a942426861ac6049b047832df73ac4c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="memItemLeft" align="right" valign="top"><a id="aa73e7c4dd1df5fd5fbf81c7764ee1533"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="separator:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0545cba3fcd4837a92f064b1bd9c9520"><td class="memItemLeft" align="right" valign="top"><a id="a0545cba3fcd4837a92f064b1bd9c9520"></a>
-static <a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NewLocalPlayer</b> ()</td></tr>
-<tr class="separator:a0545cba3fcd4837a92f064b1bd9c9520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad82ca5cd6a219030cc7bc12accbe8399"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#ad82ca5cd6a219030cc7bc12accbe8399">NewPlayerFromNetData</a> (<a class="el" href="structnet_1_1_player_full_net_data.html">PlayerFullNetData</a> data)</td></tr>
-<tr class="memdesc:ad82ca5cd6a219030cc7bc12accbe8399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> instance based on incoming NET data.  <a href="#ad82ca5cd6a219030cc7bc12accbe8399">More...</a><br /></td></tr>
-<tr class="separator:ad82ca5cd6a219030cc7bc12accbe8399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26f82bec64b6b5efc770011c8733e77c"><td class="memItemLeft" align="right" valign="top"><a id="a26f82bec64b6b5efc770011c8733e77c"></a>
-static <a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a26f82bec64b6b5efc770011c8733e77c">LoadOrCreateMain</a> ()</td></tr>
-<tr class="memdesc:a26f82bec64b6b5efc770011c8733e77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the main player as was saved to player prefs. Returns std values if none was saved. <br /></td></tr>
-<tr class="separator:a26f82bec64b6b5efc770011c8733e77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9595148316c5b32f9ce72c90a574f52f"><td class="memItemLeft" align="right" valign="top"><a id="a9595148316c5b32f9ce72c90a574f52f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a9595148316c5b32f9ce72c90a574f52f">Awake</a> ()</td></tr>
+<tr class="memdesc:a9595148316c5b32f9ce72c90a574f52f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> is no MonoBehaviour, so this has to be called from playerManager during startup. <br /></td></tr>
+<tr class="separator:a9595148316c5b32f9ce72c90a574f52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb7e171d2c684927f0be4056e05a207"><td class="memItemLeft" align="right" valign="top"><a id="a9eb7e171d2c684927f0be4056e05a207"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (string clientId, int uid)</td></tr>
+<tr class="separator:a9eb7e171d2c684927f0be4056e05a207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc93e613d072ed09c909270ce847ff37"><td class="memItemLeft" align="right" valign="top"><a id="acc93e613d072ed09c909270ce847ff37"></a>
+static <a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> (string clientId, int uid)</td></tr>
+<tr class="separator:acc93e613d072ed09c909270ce847ff37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6023f8fcf14e41345fd70b6d10462b08"><td class="memItemLeft" align="right" valign="top"><a id="a6023f8fcf14e41345fd70b6d10462b08"></a>
+static Dictionary&lt; int, <a class="el" href="classplayer_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAll</b> ()</td></tr>
+<tr class="separator:a6023f8fcf14e41345fd70b6d10462b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c29d639d79d8fed8b46d9702121d5fc"><td class="memItemLeft" align="right" valign="top"><a id="a5c29d639d79d8fed8b46d9702121d5fc"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>Count</b> ()</td></tr>
+<tr class="separator:a5c29d639d79d8fed8b46d9702121d5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8ccf841cb59e451791bcb2e1ac4f1edc"><td class="memItemLeft" align="right" valign="top"><a id="a8ccf841cb59e451791bcb2e1ac4f1edc"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="separator:a8ccf841cb59e451791bcb2e1ac4f1edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6f4e6d3fde00ce906e46494f60dfe7a"><td class="memItemLeft" align="right" valign="top"><a id="ab6f4e6d3fde00ce906e46494f60dfe7a"></a>
-<a class="el" href="classplayer_1_1_player.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
-<tr class="separator:ab6f4e6d3fde00ce906e46494f60dfe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421b619707d65d8c377508c560b5c3c5"><td class="memItemLeft" align="right" valign="top"><a id="a421b619707d65d8c377508c560b5c3c5"></a>
+readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>uid</b></td></tr>
+<tr class="separator:a421b619707d65d8c377508c560b5c3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf44da2163ca6067b247cdc95ecc862b"><td class="memItemLeft" align="right" valign="top"><a id="adf44da2163ca6067b247cdc95ecc862b"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>playerFigure</b></td></tr>
 <tr class="separator:adf44da2163ca6067b247cdc95ecc862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd10b0042859d5c953360f3efb2701fc"><td class="memItemLeft" align="right" valign="top"><a id="acd10b0042859d5c953360f3efb2701fc"></a>
-<a class="el" href="classplayer_1_1_color_scheme.html">ColorScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
-<tr class="separator:acd10b0042859d5c953360f3efb2701fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72386a46ee420f71a0076dc47f2676fb"><td class="memItemLeft" align="right" valign="top"><a id="a72386a46ee420f71a0076dc47f2676fb"></a>
-<a class="el" href="classplayer_1_1_input_scheme.html">InputScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
-<tr class="separator:a72386a46ee420f71a0076dc47f2676fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51c4ab395c4ce3629133f3c15526379"><td class="memItemLeft" align="right" valign="top"><a id="aa51c4ab395c4ce3629133f3c15526379"></a>
-<a class="el" href="classui_1_1mainmenu_1_1_player_slot.html">ui.mainmenu.PlayerSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>playerSlot</b></td></tr>
-<tr class="separator:aa51c4ab395c4ce3629133f3c15526379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb2ab8135385520ea1d31247e1143f5"><td class="memItemLeft" align="right" valign="top"><a id="afdb2ab8135385520ea1d31247e1143f5"></a>
-<a class="el" href="classplayer_1_1_player_figure_prefab.html">PlayerFigurePrefab</a>&#160;</td><td class="memItemRight" valign="bottom"><b>playerFigurePrefab</b></td></tr>
-<tr class="separator:afdb2ab8135385520ea1d31247e1143f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a822e49087b879cfbb569168f7b28d925"><td class="memItemLeft" align="right" valign="top"><a id="a822e49087b879cfbb569168f7b28d925"></a>
 Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>spawnLoc</b></td></tr>
 <tr class="separator:a822e49087b879cfbb569168f7b28d925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebb5b72510c0b72d007afc720364818"><td class="memItemLeft" align="right" valign="top"><a id="a6ebb5b72510c0b72d007afc720364818"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>UID</b></td></tr>
-<tr class="separator:a6ebb5b72510c0b72d007afc720364818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad658ef4234d62bbb2844b427bd2aa6aa"><td class="memItemLeft" align="right" valign="top"><a id="ad658ef4234d62bbb2844b427bd2aa6aa"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>clientID</b></td></tr>
-<tr class="separator:ad658ef4234d62bbb2844b427bd2aa6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876b486d3a5241a126bd5751c5f70f79"><td class="memItemLeft" align="right" valign="top"><a id="a876b486d3a5241a126bd5751c5f70f79"></a>
-<a class="el" href="classplayer_1_1_player.html#a5d74787dedbc4e11c1ab15bf487e61f8">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="separator:a876b486d3a5241a126bd5751c5f70f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5e4eeb3ef0149e5631442a33478a2e12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a5e4eeb3ef0149e5631442a33478a2e12">Player</a> (string clientId, int uid, <a class="el" href="classplayer_1_1_net_data.html">NetData</a> netData)</td></tr>
+<tr class="memdesc:a5e4eeb3ef0149e5631442a33478a2e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor is only called from concrete subclasses.  <a href="#a5e4eeb3ef0149e5631442a33478a2e12">More...</a><br /></td></tr>
+<tr class="separator:a5e4eeb3ef0149e5631442a33478a2e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8753a72f0a67c40ecbbd4582cbe680b1"><td class="memItemLeft" align="right" valign="top"><a id="a8753a72f0a67c40ecbbd4582cbe680b1"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>clientId</b></td></tr>
+<tr class="separator:a8753a72f0a67c40ecbbd4582cbe680b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3519ba4b45ec71c323ac279041d68f09"><td class="memItemLeft" align="right" valign="top"><a id="a3519ba4b45ec71c323ac279041d68f09"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer_1_1_player.html#a3519ba4b45ec71c323ac279041d68f09">colorDictKeyBackup</a></td></tr>
+<tr class="memdesc:a3519ba4b45ec71c323ac279041d68f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy to be able to compare incoming changes. <br /></td></tr>
+<tr class="separator:a3519ba4b45ec71c323ac279041d68f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aa7b79e961b727420e02004b77314b547"><td class="memItemLeft" align="right" valign="top"><a id="aa7b79e961b727420e02004b77314b547"></a>
+static Dictionary&lt; int, <a class="el" href="classplayer_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>players</b></td></tr>
+<tr class="separator:aa7b79e961b727420e02004b77314b547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> is one participant in a game. </p>
-<p>There may be multiple players playing from one client. This wraps all player information needed for the Lobby and in-game. It does not currently contain match information! This is tracked by the figure controller. Packed Net format: [0]: string clientID [1]: int UID [2]: string name [3]: Type player type (local or remote) [4]: int color scheme Key [5]: int player figure prefab Key [6]: int input scheme Key Note: a valid spawn position is indicated by the value being different than negative infinity! </p>
+<p>There may be multiple players playing from one client. This wraps all player information needed for the Lobby and in-game. It does not currently contain match information! This is tracked by the figure controller. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00020">20</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad82ca5cd6a219030cc7bc12accbe8399"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad82ca5cd6a219030cc7bc12accbe8399">&#9670;&nbsp;</a></span>NewPlayerFromNetData()</h2>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00015">15</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5e4eeb3ef0149e5631442a33478a2e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4eeb3ef0149e5631442a33478a2e12">&#9670;&nbsp;</a></span>Player()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,29 +249,79 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>clientID</b></td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classplayer_1_1_player.html">Player</a> NewPlayerFromNetData </td>
+          <td class="memname"><a class="el" href="classplayer_1_1_player.html">Player</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnet_1_1_player_full_net_data.html">PlayerFullNetData</a>&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>clientId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classplayer_1_1_net_data.html">NetData</a>&#160;</td>
+          <td class="paramname"><em>netData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor is only called from concrete subclasses. </p>
+<p>Adds standard values for new <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> objects. Also tracks all Players in a Dictionary. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>: Does this work? How about the same color joining? Check beforehand? </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00192">192</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a95d8c090ec88f48d41ad623d13e0d82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d8c090ec88f48d41ad623d13e0d82e">&#9670;&nbsp;</a></span>FreeResourcesAndRemove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FreeResourcesAndRemove </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> instance based on incoming NET data. </p>
-<p>The corresponding event can origin from this client or another in the room -&gt; Set Type accordingly. </p>
+<p>Removes this instance from the tracking list. </p>
+<p>This is extended with additional steps in the <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a> subclasses, to be called by instances. At this point, the player's net data is most likely not available -&gt; use backups for the resources. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00053">53</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p>Reimplemented in <a class="el" href="classplayer_1_1_remote_player.html#a5f216d25687239680802a16f007e226b">RemotePlayer</a>, and <a class="el" href="classplayer_1_1_local_player.html#a5f216d25687239680802a16f007e226b">LocalPlayer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00099">99</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
-<a id="a4ac3da773312bbdec2eef81265091c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ac3da773312bbdec2eef81265091c70">&#9670;&nbsp;</a></span>UpdateWith()</h2>
+<a id="a195a3811395e1adda6e6afc924ac49b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195a3811395e1adda6e6afc924ac49b3">&#9670;&nbsp;</a></span>GetNetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,10 +330,40 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>clientID</b></td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool UpdateWith </td>
+          <td class="memname">abstract <a class="el" href="classplayer_1_1_net_data.html">NetData</a> GetNetData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structnet_1_1_player_full_net_data.html">PlayerFullNetData</a>&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a copy(!) of the currently held <a class="el" href="classplayer_1_1_net_data.html" title="Holds all player data that needs to be synchronized over the network. ">NetData</a> of this <a class="el" href="classplayer_1_1_player.html" title="A Player is one participant in a game. ">Player</a>. </p>
+<p>Whether a server request or local shortcut can be used is implemented by the concrete classes. </p>
+
+<p>Implemented in <a class="el" href="classplayer_1_1_remote_player.html#a3ebd1b3844fe057731752777e3770775">RemotePlayer</a>, and <a class="el" href="classplayer_1_1_local_player.html#a3ebd1b3844fe057731752777e3770775">LocalPlayer</a>.</p>
+
+</div>
+</div>
+<a id="a9a18c3796d9ee276482de1aa1b79fbd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a18c3796d9ee276482de1aa1b79fbd4">&#9670;&nbsp;</a></span>UpdateMultiple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UpdateMultiple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classplayer_1_1_net_data.html">NetData</a>&#160;</td>
+          <td class="paramname"><em>newNetData</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -261,10 +374,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>clientID</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Updates the details of remote or local players with incoming network data For local players, the taken attributes of input and color are changed as well. </p>
-<p>Packed Net format: see Management::Player </p>
+<p>Interface to update multiple net dat content at once. </p>
+<p>Will not send an update if the content has not changed or is null. </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00156">156</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00154">154</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -277,7 +390,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>clientID</b></td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceplayer.html">player</a></li><li class="navelem"><a class="el" href="classplayer_1_1_player.html">Player</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

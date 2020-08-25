@@ -2,6 +2,7 @@ var namespaces =
 [
     [ "editor", "namespaceeditor.html", null ],
     [ "effects", "namespaceeffects.html", null ],
+    [ "level", "namespacelevel.html", null ],
     [ "management", "namespacemanagement.html", null ],
     [ "mechanics", "namespacemechanics.html", null ],
     [ "misc", "namespacemisc.html", null ],

@@ -86,80 +86,58 @@ $(document).ready(function(){initNavTree('page_sw_architecture.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>SW Architecture </h1>
-<p>These pages shall give an overview on how the overall system works. The SW architecture realizes the game concepts (See <a class="el" href="page_concepts.html">Concepts</a>) in a hopefully understandable way. Below the architecture come the individual SW components, which are documented by code comments, generated into the API.</p>
-<h2>Overview </h2>
-<p>The SW components are sorted to namespaces reflecting their overall category. Have a look at the namespace index for a short comment on each: <a href="namespaces.html"><b>Namespace List</b></a> <br />
- Also have a look at the grouping below:</p>
-<p>```plantuml </p><div class="plantumlgraph">
-<img src="inline_umlgraph_1.png" />
-</div>
-<p> ```</p>
-<h2>Management </h2>
-<p>The <b>Management</b> Layer (click for details) is responsible for various basic, background tasks. The following important managers exist, with each topic being fairly independent. Have a look at their detailed design docu:</p>
-<table class="doxtable">
-<tr>
-<th>Component </th><th>Short description  </th></tr>
-<tr>
-<td>Management::GameManager </td><td>Manages the overall game state: startup, loading, quit </td></tr>
-<tr>
-<td>Management::UIManager </td><td>Manages UI display and inputs and delegates reactions accordingly </td></tr>
-<tr>
-<td>Management::MatchManager </td><td>Initializes and manages a single match's state </td></tr>
-<tr>
-<td>Management::PlayerManager </td><td>Manages local and remote players </td></tr>
-<tr>
-<td>Management::NetManager </td><td>Manages Network interactions with Photon for enabling MP </td></tr>
-</table>
-<p>Most important is the <b>GameManager</b>, featuring its own state machine:</p>
+<p>These pages shall give an overview on how the overall system works. The SW architecture organizes the SW components (See <a class="el" href="page_sw_component_design.html">SW Component Design</a>) in a hopefully understandable way. Overall decision on SW architecture shall be explained here, while the details of components and of SW units can be found under <a class="el" href="page_sw_component_design.html">SW Component Design</a> and, of course, the Doxygen-generated classes list.</p>
+<p>Here are the available architecture topics on subpages:</p>
 <ul>
-<li>Concept: <a class="el" href="page_game_management_control_flow.html">Game Management and Control Flow</a></li>
-<li>Concept: <a class="el" href="page_handling_state.html">Handling State</a></li>
-<li><a class="el" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. ">State</a> Machine: Management::GameStateMachine</li>
-<li>Also see: <a class="el" href="page_game_startup.html">The Game Startup</a> : How the components work together during startup</li>
+<li><a class="el" href="page_arch_control_flow.html">Control Flow</a> : How the components interact</li>
+<li><a class="el" href="page_game_startup.html">The Game Startup</a> : How the components work together during startup</li>
+<li><a class="el" href="page_arch_handling_state.html">Handling State</a> : How SW states are represented abusing the animation system</li>
+<li><a class="el" href="page_networking.html">Networking</a> : What networking options we have and how to use them</li>
 </ul>
-<p>Additionally, there is a range of custom classes which don't need to be behaviors. These are often data structures, such as:</p>
+<h2>On Unity SW artifacts in general </h2>
+<p>The image below shows my simplified understanding of the types of SW artifacts you come across while scripting for Unity:</p>
+<div class="image">
+<object type="image/svg+xml" data="SWArtifacts.svg">SWArtifacts.svg</object>
+<div class="caption">
+Unity SW artifact hierarchy</div></div>
+<p> Each SW Component making up the program may make use of the building blocks above. Starting from the top:</p>
 <ul>
-<li>Management::Player</li>
-<li>Management::InputScheme</li>
-<li>Management::GameSettings</li>
-<li>Management::Level</li>
+<li><b>Game Objects</b> are the virtual objects present in any scene of the game. They may not even be visible, but are the central means of invoking scripts by attaching so-called Behaviours to them. Game Objects (GOs) can be made a Prefab asset, which means their current composition and values are saved to disc as a kind of template.</li>
+<li><b>MonoBehaviours</b> are, as mentioned, the base class of scripts attachable to GOs. They offer a range of Callbacks to be implemented, such as the Update() function, which is called for every active MonoBehaviour on every object each frame. Attached to GOs, scripts are called "Components".</li>
+<li><b>StateMachineBehaviours</b> are not attached to objects, but to the states of a state machine, which can be visually designed within the Unity Editor. This allows to compose and visualize state-full behaviour easily. The state machine instance itself lives, again, as a Component on a GO.</li>
+<li><b>Classes and Data Structures</b> are your usual C# object-oriented SW. They are at some point used Behaviours to allocate functionality nicely without having the overhead of making everything a Behaviour subclass. Also Behaviours are instantiated by the engine and have no own constructors, while your own classes of course can have those.</li>
+<li><b>Scriptable Object (Instances)</b> are your own subclasses of the "ScriptableObject" class provided by the engine. You can create and save instances of these classes to disc during build time. The can serve as data containers which can be drag-n-dropped onto behaviours for reference. This also allows usage as a means of communication between components.</li>
+<li><b><a class="el" href="class_helpers.html" title="Contains various static helpful functions usable from any other component. ">Helpers</a> &amp; Editor Extensions</b> are your custom C# helpers, like extension classes, as well as various capabilities to extend the Unity Editor with own scripts! This encompasses custom menu entries or custom views for your components in the Unity Inspector. Editor extensions have to be placed in "Editor" folders in the asset hierarchy.</li>
+<li><b>Engine Features</b> are used across all levels. Most prominent is the Unity Inspector feature, which allows setting member variable values for provided and custom components and ScriptableObject instances from Unity directly.<br />
+ These member variables are "serializable", i.e. Unity knows how to save and read their values to disc to provide the above capabilities. Note that all serialized members are instantiated by the engine, e.g. when the owning object is created. Constructors are not used this way.<br />
+ There are of course many more engine features, such as Mecanim-based state-machines, which shall be mentioned where they are used.</li>
 </ul>
-<h2>UI </h2>
-<p>The UI implementations one the one hand need to provide functionality to compose, animate and switch menu pages.<br />
- Architecture Details: <a class="el" href="page_ui_menu_page_system.html">The Menu Page System</a> <br />
- Concept page: <a class="el" href="page_ui_menu_system.html">Menu page System</a> <br />
+<p><br />
 </p>
-<table class="doxtable">
-<tr>
-<th>Component </th><th>Short description  </th></tr>
-<tr>
-<td>UI::MenuPage </td><td>Groups MenuElements to be shown together as a menu page </td></tr>
-<tr>
-<td>UI::MenuElement </td><td>Added to game objects to enable their animation </td></tr>
-<tr>
-<td>UI::Trigger </td><td>Provides Button Callback registering at creation </td></tr>
-<tr>
-<td>UI::MainMenuStateMachine </td><td>Treats each main menu page as a state </td></tr>
-</table>
-<p>On the other hand there are single-use pop-ups (like simple menus without transitions). These will be called Dialogs, but this is work in progress.</p>
-<p>And finally additional UI content, such as in-game hovering labels and other effects:</p>
+<h2>Overall SW Architecture </h2>
+<p>The below are the main SW components, each of which may be represented by one or more classes and behaviours.</p>
+<div class="image">
+<object type="image/svg+xml" data="BU_SWArch.svg">BU_SWArch.svg</object>
+<div class="caption">
+BomberUnits SW Architecture</div></div>
+<p> Please find details on the component subpages:</p>
 <ul>
-<li>UI::Label</li>
-<li>UI::Billboard</li>
-</ul>
-<h2>Mechanics </h2>
-<p>Game Mechanics represent core game design ideas, spread out over various scripts. Some of these provide input management (Mechanics::PlayerController), while other provide behaviours for game objects:</p>
-<ul>
-<li>Mechanics::Breakable : Exposes the Break() to replace a model by its broken variant.</li>
-<li>Mechanics::Explodeable : Exposes the Light() function to trigger a delayed explosion of the object.</li>
-<li>Mechanics::LootSpawner : Exposes the RollDropLoot() function </li>
+<li><a class="el" href="page_comp_char_control.html">Character Control</a></li>
+<li><a class="el" href="page_arch_game_mechanics.html">Game Mechanics</a></li>
+<li><a class="el" href="page_comp_ingame_ui.html">In-game UI</a></li>
+<li><a class="el" href="page_comp_menu_ui.html">Menu UI</a></li>
+<li><a class="el" href="page_comp_game_management.html">Game Management</a></li>
+<li><a class="el" href="page_comp_match_management.html">Match Management</a></li>
+<li><a class="el" href="page_comp_player_management.html">Player Management</a></li>
+<li><a class="el" href="page_comp_level_management.html">Level Management Component</a></li>
+<li><a class="el" href="page_comp_net_management.html">Net Management</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:31 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:09 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

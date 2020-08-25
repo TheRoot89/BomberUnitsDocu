@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_state_machine.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -102,9 +103,10 @@ $(document).ready(function(){initNavTree('class_state_machine.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_state_machine__inherit__graph.png" border="0" usemap="#_state_machine_inherit__map" alt="Inheritance graph"/></div>
 <map name="_state_machine_inherit__map" id="_state_machine_inherit__map">
-<area shape="rect" id="node3" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="5,417,143,509"/>
-<area shape="rect" id="node4" href="classnet_1_1_net_state_machine.html" title="{NetStateMachine\n|+ netOverlayPrefab\l&#45; netOverlayInstance\l|+ IsMaster()\l+ GetCurStateName()\l+ GetNetOverlay()\l+ HideNetOverlay()\l+ HandleDisconnect()\l}" alt="" coords="167,388,315,539"/>
-<area shape="rect" id="node5" href="classtest_1_1_test_state_machine.html" title="{TestStateMachine\n||}" alt="" coords="339,425,465,502"/>
+<area shape="rect" id="node3" href="classmanagement_1_1_game_state_machine.html" title="The GameStateMachine holds the overall program state, transitioning through menu, in&#45;game..." alt="" coords="5,439,143,531"/>
+<area shape="rect" id="node4" href="classnet_1_1_net_state_machine.html" title="{NetStateMachine\n|+ netOverlayPrefab\l&#45; netOverlayInstance\l|+ IsMaster()\l+ GetCurStateName()\l+ GetNetOverlay()\l+ HideNetOverlay()\l# MyStart()\l&#45; OnDisconnect()\l}" alt="" coords="167,403,315,568"/>
+<area shape="rect" id="node5" href="classtest_1_1_test_state_machine.html" title="{TestStateMachine\n||}" alt="" coords="339,447,465,524"/>
+<area shape="rect" id="node6" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html" title="The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks ..." alt="" coords="489,417,664,553"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -114,7 +116,7 @@ $(document).ready(function(){initNavTree('class_state_machine.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_state_machine__coll__graph.png" border="0" usemap="#_state_machine_coll__map" alt="Collaboration graph"/></div>
 <map name="_state_machine_coll__map" id="_state_machine_coll__map">
-<area shape="rect" id="node3" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="121,389,291,555"/>
+<area shape="rect" id="node3" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="121,404,291,569"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -141,11 +143,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a4242187f62952be3d9144f8415b0da2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by all States to register themselves at the SM during startup.  <a href="#a4242187f62952be3d9144f8415b0da2f">More...</a><br /></td></tr>
 <tr class="separator:a4242187f62952be3d9144f8415b0da2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a18400c2baf794b578451bb2b1fb0fb7e"><td class="memItemLeft" align="right" valign="top"><a id="a18400c2baf794b578451bb2b1fb0fb7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>logEnabled</b></td></tr>
+<tr class="separator:a18400c2baf794b578451bb2b1fb0fb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a32cf8bedcaa1f3389e893c6c49bd0ce9"><td class="memItemLeft" align="right" valign="top"><a id="a32cf8bedcaa1f3389e893c6c49bd0ce9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#a32cf8bedcaa1f3389e893c6c49bd0ce9">MyStart</a> ()</td></tr>
-<tr class="memdesc:a32cf8bedcaa1f3389e893c6c49bd0ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to prove an extended Start function for subclasses. Do not override '<a class="el" href="class_state_machine.html#a07aaf1227e4d645f15e0a964f54ef291" title="Callback is used to provide the state registering mechanism. ">Start()</a>' itself! <br /></td></tr>
+<tr class="memdesc:a32cf8bedcaa1f3389e893c6c49bd0ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to provide an extended Start function for subclasses. Do not override '<a class="el" href="class_state_machine.html#a07aaf1227e4d645f15e0a964f54ef291" title="Callback is used to provide the state registering mechanism. ">Start()</a>' itself! <br /></td></tr>
 <tr class="separator:a32cf8bedcaa1f3389e893c6c49bd0ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -174,9 +182,9 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common Base class for all state machines. </p>
-<p>Implementing subclasses may use the public interface, as well as the provided start method: <a class="el" href="class_state_machine.html#a32cf8bedcaa1f3389e893c6c49bd0ce9" title="Override to prove an extended Start function for subclasses. Do not override &#39;Start()&#39; itself! ...">MyStart()</a> </p>
+<p>Implementing subclasses may use the public interface, as well as the provided start method: <a class="el" href="class_state_machine.html#a32cf8bedcaa1f3389e893c6c49bd0ce9" title="Override to provide an extended Start function for subclasses. Do not override &#39;Start()&#39; itself! ...">MyStart()</a> The reference to the animator's controller is initialized by this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00007">7</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00008">8</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4242187f62952be3d9144f8415b0da2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4242187f62952be3d9144f8415b0da2f">&#9670;&nbsp;</a></span>RegisterState()</h2>
@@ -205,7 +213,7 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 <p>Used by all States to register themselves at the SM during startup. </p>
 <p>Not to be used for other purposes than the SM plumbing layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00078">78</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00082">82</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
 
 </div>
 </div>
@@ -233,9 +241,9 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 </div><div class="memdoc">
 
 <p>Callback is used to provide the state registering mechanism. </p>
-<p>Do not override! A replacing '<a class="el" href="class_state_machine.html#a32cf8bedcaa1f3389e893c6c49bd0ce9" title="Override to prove an extended Start function for subclasses. Do not override &#39;Start()&#39; itself! ...">MyStart()</a>' function is provided! </p>
+<p>Do not override! A replacing '<a class="el" href="class_state_machine.html#a32cf8bedcaa1f3389e893c6c49bd0ce9" title="Override to provide an extended Start function for subclasses. Do not override &#39;Start()&#39; itself! ...">MyStart()</a>' function is provided! </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00098">98</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00102">102</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
 
 </div>
 </div>
@@ -266,7 +274,7 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 <p>Overload to enable external transition triggering from current state. </p>
 <p>Use with care, as having to explicitly give the state to transition from is safer! </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00032">32</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00034">34</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
 
 </div>
 </div>
@@ -307,7 +315,7 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 <p>Overload to enable external transition triggering using state and transition names. </p>
 <p>Checks whether the given state name exists. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00039">39</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00041">41</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
 
 </div>
 </div>
@@ -348,7 +356,7 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 <p>Attempts to execute the given transition. </p>
 <p>Will throw a warning and abort if the transition is not applicable for the given state, or the state is not the currently active state. </p>
 
-<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00054">54</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_state_machine_8cs_source.html#l00056">56</a> of file <a class="el" href="_state_machine_8cs_source.html">StateMachine.cs</a>.</p>
 
 </div>
 </div>
@@ -361,7 +369,7 @@ List&lt; <a class="el" href="class_state.html">State</a> &gt;&#160;</td><td clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_state_machine.html">StateMachine</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:11 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

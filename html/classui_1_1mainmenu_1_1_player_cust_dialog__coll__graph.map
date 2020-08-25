@@ -1,8 +1,7 @@
 <map id="PlayerCustDialog" name="PlayerCustDialog">
-<area shape="rect" id="node10" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="61,132,217,327"/>
-<area shape="rect" id="node3" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="314,720,495,1003"/>
-<area shape="rect" id="node4" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="283,426,417,621"/>
-<area shape="rect" id="node6" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="504,389,639,657"/>
-<area shape="rect" id="node7" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="663,433,829,613"/>
-<area shape="rect" id="node8" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="87,441,258,606"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="140,512,275,780"/>
+<area shape="rect" id="node4" href="$classplayer_1_1_local_player.html" title="{LocalPlayer\n|+ isNew\l&#45; localPlayers\l|+ IsLocal()\l+ FreeResourcesAndRemove()\l+ Update()\l+ UpdateClientId()\l+ UpdateState()\l+ GetNetData()\l+ ToString()\l+ Awake()\l+ Contains()\l+ Get()\l+ GetAll()\l+ GetMain()\l+ Count()\l+ CreateNew()\l+ CreateMainFromSave()\l+ SaveMain()\l&#45; LocalPlayer()\l}" alt="" coords="299,483,497,809"/>
+<area shape="rect" id="node5" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="203,5,401,420"/>
+<area shape="rect" id="node6" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="425,42,560,383"/>
+<area shape="rect" id="node7" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the character models players can choose. " alt="" coords="583,549,749,743"/>
 </map>

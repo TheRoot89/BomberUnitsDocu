@@ -1,0 +1,3 @@
+<map id="DepthNormalsFeature" name="DepthNormalsFeature">
+<area shape="rect" id="node3" href="$class_depth_normals_feature_1_1_depth_normals_pass.html" title="{DepthNormalsFeature.Depth\lNormalsPass\n|+ depthAttachmentHandle\l+ descriptor\l&#45; kDepthBufferBits\l&#45; depthNormalsMaterial\l&#45; m_FilteringSettings\l&#45; m_ProfilerTag\l&#45; m_ShaderTagId\l|+ DepthNormalsPass()\l+ Setup()\l+ Configure()\l+ Execute()\l+ FrameCleanup()\l}" alt="" coords="205,132,392,371"/>
+</map>

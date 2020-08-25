@@ -1,0 +1,5 @@
+<map id="InputHandler" name="InputHandler">
+<area shape="rect" id="node2" href="$classplayer_1_1_input_state.html" title="{InputState\n|+ inputMoveDir\l+ inputRotDir\l|}" alt="" coords="5,257,113,349"/>
+<area shape="rect" id="node3" href="$class_unity_float_event.html" title="{UnityFloatEvent\n||}" alt="" coords="137,264,251,341"/>
+<area shape="rect" id="node5" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="284,132,419,473"/>
+</map>

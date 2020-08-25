@@ -8,14 +8,16 @@ var namespacenet =
     [ "NetAdapter", "classnet_1_1_net_adapter.html", "classnet_1_1_net_adapter" ],
     [ "NetEvent", "classnet_1_1_net_event.html", "classnet_1_1_net_event" ],
     [ "NetManager", "classnet_1_1_net_manager.html", "classnet_1_1_net_manager" ],
+    [ "NetManagerEditor", "classnet_1_1_net_manager_editor.html", "classnet_1_1_net_manager_editor" ],
     [ "NetOverlayState", "classnet_1_1_net_overlay_state.html", "classnet_1_1_net_overlay_state" ],
     [ "NetStateMachine", "classnet_1_1_net_state_machine.html", "classnet_1_1_net_state_machine" ],
     [ "PhotonDestructor", "classnet_1_1_photon_destructor.html", "classnet_1_1_photon_destructor" ],
-    [ "PlayerFullNetData", "structnet_1_1_player_full_net_data.html", "structnet_1_1_player_full_net_data" ],
     [ "PlayerIdNetData", "structnet_1_1_player_id_net_data.html", "structnet_1_1_player_id_net_data" ],
     [ "PlayerSpawnNetData", "structnet_1_1_player_spawn_net_data.html", "structnet_1_1_player_spawn_net_data" ],
     [ "PositionalEventNetData", "structnet_1_1_positional_event_net_data.html", "structnet_1_1_positional_event_net_data" ],
     [ "TargetMethods", "classnet_1_1_target_methods.html", "classnet_1_1_target_methods" ],
     [ "TypeOnlyEventNetData", "structnet_1_1_type_only_event_net_data.html", "structnet_1_1_type_only_event_net_data" ],
+    [ "UnityClientPropertiesUpdateEvent", "classnet_1_1_unity_client_properties_update_event.html", null ],
+    [ "UnityRoomPropertiesUpdateEvent", "classnet_1_1_unity_room_properties_update_event.html", null ],
     [ "UnityStringEvent", "classnet_1_1_unity_string_event.html", null ]
 ];

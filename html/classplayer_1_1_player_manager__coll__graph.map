@@ -1,9 +1,4 @@
 <map id="PlayerManager" name="PlayerManager">
-<area shape="rect" id="node3" href="$classui_1_1mainmenu_1_1_lobby_panel_controller.html" title="{LobbyPanelController\n|+ addPlayerButton\l+ playerSlotPrefab\l+ playerSlotParentLayout\l+ customizationDialogPrefab\l&#45; customizationDialogInstance\l|+ Awake()\l+ Start()\l+ OnDestroy()\l+ OnClickAddPlayer()\l+ OnPressCustomizePlayerFigure()\l+ UpdateAllPlayerSlots()\l+ CreateOrUpdateSlotOfPlayer()\l+ AddPlayerSlotToUIandPlayer()\l+ UpdateAddPlayerBtnAvailability()\l&#45; OnPressRemovePlayerBtn()\l}" alt="" coords="26,351,254,619"/>
-<area shape="rect" id="node11" href="$class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="194,132,350,327"/>
-<area shape="rect" id="node4" href="$classplayer_1_1_player.html" title="A Player is one participant in a game. " alt="" coords="456,973,637,1256"/>
-<area shape="rect" id="node5" href="$classplayer_1_1_color_scheme.html" title="Holds one of the colors players can choose. " alt="" coords="425,679,559,874"/>
-<area shape="rect" id="node7" href="$classplayer_1_1_input_scheme.html" title="Holds the Input axes of a given input setting. " alt="" coords="646,643,781,911"/>
-<area shape="rect" id="node8" href="$classplayer_1_1_player_figure_prefab.html" title="Holds one of the colors players can choose. " alt="" coords="805,687,971,867"/>
-<area shape="rect" id="node9" href="$class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="229,694,400,859"/>
+<area shape="rect" id="node2" href="$class_mono_singleton.html" title="{MonoSingleton\&lt; PlayerManager \&gt;\n|# instance\l|+ Get()\l# MyAwake()\l&#45; Awake()\l}" alt="" coords="5,147,224,253"/>
+<area shape="rect" id="node3" href="$classplayer_1_1_unity_player_change_event.html" title="An event type that contains the reference to a specific player. " alt="" coords="248,161,413,239"/>
 </map>

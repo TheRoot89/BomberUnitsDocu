@@ -1,13 +1,16 @@
 <map id="State" name="State">
-<area shape="rect" id="node3" href="$class_listening_state.html" title="Extended functionality our States, adding automatic Listener handling. " alt="" coords="457,359,594,465"/>
-<area shape="rect" id="node10" href="$classmanagement_1_1_game_over_state.html" title="Behaviour to trigger transition to main menu state upon receiving the corresponding event..." alt="" coords="618,359,777,465"/>
-<area shape="rect" id="node11" href="$classmanagement_1_1_main_menu_state.html" title="Triggers the Main Menu Scene and UI upon entering. " alt="" coords="801,373,940,451"/>
-<area shape="rect" id="node12" href="$classtest_1_1_test_state_a.html" title="{TestStateA\n||# OnMyStateEnter()\l&#45; ContinueForward()\l}" alt="" coords="964,366,1103,458"/>
-<area shape="rect" id="node13" href="$classtest_1_1_test_state_b.html" title="{TestStateB\n||# OnMyStateEnter()\l&#45; ContinueForward()\l}" alt="" coords="1127,366,1265,458"/>
-<area shape="rect" id="node4" href="$classnet_1_1_net_overlay_state.html" title="{NetOverlayState\n|# netOverlayRef\l# netSM\l|+ OnStateEnter()\l}" alt="" coords="465,513,586,605"/>
-<area shape="rect" id="node5" href="$classnet_1_1_connect_to_master_state.html" title="This state is responsible for doing the first step to hosting: connecting to the Photon Master Server..." alt="" coords="5,675,176,782"/>
-<area shape="rect" id="node6" href="$classnet_1_1_disconnected_state.html" title="This network behaviour is reached during startup and whenever a disconnect occurs for whatever reason..." alt="" coords="201,675,407,782"/>
-<area shape="rect" id="node7" href="$classnet_1_1_host_new_room_state.html" title="Responsible for creating and hosting a new room once connected to Master. " alt="" coords="431,661,619,797"/>
-<area shape="rect" id="node8" href="$classnet_1_1_join_room_state.html" title="State for joining an existing room; expects to be connected to Master. " alt="" coords="644,653,839,804"/>
-<area shape="rect" id="node9" href="$classnet_1_1_leave_room_state.html" title="A base behaviour to initialize and return the state&#39;s name. " alt="" coords="863,683,1033,775"/>
+<area shape="rect" id="node3" href="$class_command_behaviour.html" title="A generic behaviour to trigger an event when entered. " alt="" coords="293,366,432,458"/>
+<area shape="rect" id="node4" href="$class_listening_state.html" title="Extended functionality our States, adding automatic Listener handling. " alt="" coords="457,359,594,465"/>
+<area shape="rect" id="node11" href="$classmanagement_1_1_game_over_state.html" title="Behaviour to trigger transition to main menu state upon receiving the corresponding event..." alt="" coords="618,359,777,465"/>
+<area shape="rect" id="node12" href="$classmanagement_1_1_main_menu_state.html" title="Triggers the Main Menu Scene and UI upon entering. " alt="" coords="801,373,940,451"/>
+<area shape="rect" id="node13" href="$classmanagement_1_1_startup_state.html" title="During the startup the managers can prepare a stable state. " alt="" coords="965,359,1115,465"/>
+<area shape="rect" id="node14" href="$classtest_1_1_test_state_a.html" title="{TestStateA\n||# OnMyStateEnter()\l&#45; ContinueForward()\l}" alt="" coords="1140,366,1279,458"/>
+<area shape="rect" id="node15" href="$classtest_1_1_test_state_b.html" title="{TestStateB\n||# OnMyStateEnter()\l&#45; ContinueForward()\l}" alt="" coords="1303,366,1441,458"/>
+<area shape="rect" id="node16" href="$classui_1_1mainmenu_1_1_show_page_state.html" title="A UI behaviour to show a specific named page. " alt="" coords="1465,373,1604,451"/>
+<area shape="rect" id="node5" href="$classnet_1_1_net_overlay_state.html" title="{NetOverlayState\n|# netOverlayRef\l# netSM\l|+ OnStateEnter()\l}" alt="" coords="465,513,586,605"/>
+<area shape="rect" id="node6" href="$classnet_1_1_connect_to_master_state.html" title="This state is responsible for doing the first step to hosting: connecting to the Photon Master Server..." alt="" coords="5,675,176,782"/>
+<area shape="rect" id="node7" href="$classnet_1_1_disconnected_state.html" title="This network behaviour is reached during startup and whenever a disconnect occurs for whatever reason..." alt="" coords="201,675,407,782"/>
+<area shape="rect" id="node8" href="$classnet_1_1_host_new_room_state.html" title="Responsible for creating and hosting a new room once connected to Master. " alt="" coords="431,661,619,797"/>
+<area shape="rect" id="node9" href="$classnet_1_1_join_room_state.html" title="State for joining an existing room; expects to be connected to Master. " alt="" coords="644,653,839,804"/>
+<area shape="rect" id="node10" href="$classnet_1_1_leave_room_state.html" title="A base behaviour to initialize and return the state&#39;s name. " alt="" coords="863,683,1033,775"/>
 </map>

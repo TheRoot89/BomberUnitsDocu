@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classplayer_1_1_input_scheme.html','')
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classplayer_1_1_input_scheme-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,6 +112,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70e7dab548be6d37f79761988ec8222c"><td class="memItemLeft" align="right" valign="top"><a id="a70e7dab548be6d37f79761988ec8222c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Register</b> ()</td></tr>
 <tr class="separator:a70e7dab548be6d37f79761988ec8222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ced80f8e666091c2500e2fed3cec1b"><td class="memItemLeft" align="right" valign="top"><a id="a07ced80f8e666091c2500e2fed3cec1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Use</b> ()</td></tr>
+<tr class="separator:a07ced80f8e666091c2500e2fed3cec1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e96de373101f7325f2e1bb97acf91b1"><td class="memItemLeft" align="right" valign="top"><a id="a8e96de373101f7325f2e1bb97acf91b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Free</b> ()</td></tr>
+<tr class="separator:a8e96de373101f7325f2e1bb97acf91b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254344ac2c647d900c88f0e71499aa2a"><td class="memItemLeft" align="right" valign="top"><a id="a254344ac2c647d900c88f0e71499aa2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UseInsteadOf</b> (<a class="el" href="classplayer_1_1_input_scheme.html">InputScheme</a> previous)</td></tr>
+<tr class="separator:a254344ac2c647d900c88f0e71499aa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce8d9b1df5db4ec0c4a9c82e0b057ce"><td class="memItemLeft" align="right" valign="top"><a id="a5ce8d9b1df5db4ec0c4a9c82e0b057ce"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInUse</b> ()</td></tr>
+<tr class="separator:a5ce8d9b1df5db4ec0c4a9c82e0b057ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="memItemLeft" align="right" valign="top"><a id="aa73e7c4dd1df5fd5fbf81c7764ee1533"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="separator:aa73e7c4dd1df5fd5fbf81c7764ee1533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -147,15 +163,18 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>vertical</b></td></
 <tr class="memitem:a6d65368b87c61225be0d9d3e9110fbea"><td class="memItemLeft" align="right" valign="top"><a id="a6d65368b87c61225be0d9d3e9110fbea"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>fire</b></td></tr>
 <tr class="separator:a6d65368b87c61225be0d9d3e9110fbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f82d1d1293c3de8527c67be4b2880f9"><td class="memItemLeft" align="right" valign="top"><a id="a2f82d1d1293c3de8527c67be4b2880f9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>taken</b></td></tr>
-<tr class="separator:a2f82d1d1293c3de8527c67be4b2880f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ada550e5d5519d7c7c29e6a6f7cdb252a"><td class="memItemLeft" align="right" valign="top"><a id="ada550e5d5519d7c7c29e6a6f7cdb252a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>dictKey</b><code> [get, private set]</code></td></tr>
 <tr class="separator:ada550e5d5519d7c7c29e6a6f7cdb252a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0937b653999b14c16d75fc408f4dce05"><td class="memItemLeft" align="right" valign="top"><a id="a0937b653999b14c16d75fc408f4dce05"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>inUse</b></td></tr>
+<tr class="separator:a0937b653999b14c16d75fc408f4dce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -169,7 +188,7 @@ static Dictionary&lt; int, <a class="el" href="classplayer_1_1_input_scheme.html
 
 <p class="definition">Definition at line <a class="el" href="_input_scheme_8cs_source.html#l00009">9</a> of file <a class="el" href="_input_scheme_8cs_source.html">InputScheme.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Toni/Documents/Programming/Unity/BomberUnits/Assets/Scripts/GameManagement/Player/<a class="el" href="_input_scheme_8cs_source.html">InputScheme.cs</a></li>
+<li>C:/Users/Toni/Documents/Programming/Unity/BomberUnits/Assets/Scripts/GameManagement/Player/Customization/<a class="el" href="_input_scheme_8cs_source.html">InputScheme.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -177,7 +196,7 @@ static Dictionary&lt; int, <a class="el" href="classplayer_1_1_input_scheme.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceplayer.html">player</a></li><li class="navelem"><a class="el" href="classplayer_1_1_input_scheme.html">InputScheme</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

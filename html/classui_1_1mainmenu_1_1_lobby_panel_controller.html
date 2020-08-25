@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('classui_1_1mainmenu_1_1_lobby_panel_co
 <div class="title">LobbyPanelController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This provides a number of PlayerSlots displaying each in the UI.  
+ <a href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for LobbyPanelController:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -120,22 +123,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroy</b> ()</td>
 <tr class="memitem:a7a402c652b656433f669377096542d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#a7a402c652b656433f669377096542d82">OnClickAddPlayer</a> ()</td></tr>
 <tr class="memdesc:a7a402c652b656433f669377096542d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for the "Add Player" symbol button of the lobby panel.  <a href="#a7a402c652b656433f669377096542d82">More...</a><br /></td></tr>
 <tr class="separator:a7a402c652b656433f669377096542d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac120bff2bde80b7b55c96ad6300ed78e"><td class="memItemLeft" align="right" valign="top"><a id="ac120bff2bde80b7b55c96ad6300ed78e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPressCustomizePlayerFigure</b> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="separator:ac120bff2bde80b7b55c96ad6300ed78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac820cae421a1841d34ea13b9bdd947c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#ac820cae421a1841d34ea13b9bdd947c9">UpdateAllPlayerSlots</a> ()</td></tr>
-<tr class="separator:ac820cae421a1841d34ea13b9bdd947c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a603dca862dc6198025bda3dc4ec93e30"><td class="memItemLeft" align="right" valign="top"><a id="a603dca862dc6198025bda3dc4ec93e30"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#a603dca862dc6198025bda3dc4ec93e30">CreateOrUpdateSlotOfPlayer</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="memdesc:a603dca862dc6198025bda3dc4ec93e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes what is displayed on a Player's playerSlot with what is stored in the Player instance. <br /></td></tr>
-<tr class="separator:a603dca862dc6198025bda3dc4ec93e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac10ad5a521183a478d1f9d76116e74"><td class="memItemLeft" align="right" valign="top"><a id="a8ac10ad5a521183a478d1f9d76116e74"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#a8ac10ad5a521183a478d1f9d76116e74">AddPlayerSlotToUIandPlayer</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="memdesc:a8ac10ad5a521183a478d1f9d76116e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Slot, shows it and places a reference to it in the Player's instance. <br /></td></tr>
-<tr class="separator:a8ac10ad5a521183a478d1f9d76116e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad81ed5427e18b234914356bbdfef706f"><td class="memItemLeft" align="right" valign="top"><a id="ad81ed5427e18b234914356bbdfef706f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAddPlayerBtnAvailability</b> ()</td></tr>
-<tr class="separator:ad81ed5427e18b234914356bbdfef706f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -154,9 +141,22 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>customizationDi
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a270646580f92015bb0d2e4288ee4487f"><td class="memItemLeft" align="right" valign="top"><a id="a270646580f92015bb0d2e4288ee4487f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPressRemovePlayerBtn</b> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
-<tr class="separator:a270646580f92015bb0d2e4288ee4487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9390ce2bd8499af37dd3dea04299c73e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#a9390ce2bd8499af37dd3dea04299c73e">OnPlayerChange</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p, <a class="el" href="namespaceplayer.html#a1bd0356cc63d4f2b8a2d92cd22ac39d7">EventCause</a> cause)</td></tr>
+<tr class="memdesc:a9390ce2bd8499af37dd3dea04299c73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a local or remote Player is changed.  <a href="#a9390ce2bd8499af37dd3dea04299c73e">More...</a><br /></td></tr>
+<tr class="separator:a9390ce2bd8499af37dd3dea04299c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd5f8edc56d6dec2d19c981b344aeb9"><td class="memItemLeft" align="right" valign="top"><a id="abdd5f8edc56d6dec2d19c981b344aeb9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPressRemovePlayerBtn</b> (<a class="el" href="classplayer_1_1_local_player.html">LocalPlayer</a> p)</td></tr>
+<tr class="separator:abdd5f8edc56d6dec2d19c981b344aeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81591a1622ec3247812b543017278e5f"><td class="memItemLeft" align="right" valign="top"><a id="a81591a1622ec3247812b543017278e5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPressCustomizePlayerFigure</b> (<a class="el" href="classplayer_1_1_local_player.html">LocalPlayer</a> p)</td></tr>
+<tr class="separator:a81591a1622ec3247812b543017278e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e0b3d4a6e6c4f89474f3294e63f8ac"><td class="memItemLeft" align="right" valign="top"><a id="a66e0b3d4a6e6c4f89474f3294e63f8ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html#a66e0b3d4a6e6c4f89474f3294e63f8ac">AddPlayerSlot</a> (<a class="el" href="classplayer_1_1_player.html">Player</a> p)</td></tr>
+<tr class="memdesc:a66e0b3d4a6e6c4f89474f3294e63f8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Slot, shows it and places a reference to it in the Player's instance. <br /></td></tr>
+<tr class="separator:a66e0b3d4a6e6c4f89474f3294e63f8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8172f8b605cfc0ff6fc6060498dc349"><td class="memItemLeft" align="right" valign="top"><a id="aa8172f8b605cfc0ff6fc6060498dc349"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAddPlayerBtnVisibility</b> ()</td></tr>
+<tr class="separator:aa8172f8b605cfc0ff6fc6060498dc349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -165,8 +165,10 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>customizationDi
 <tr class="separator:a5a603bd744c435103309bbaf13b99aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_lobby_panel_controller_8cs_source.html#l00009">9</a> of file <a class="el" href="_lobby_panel_controller_8cs_source.html">LobbyPanelController.cs</a>.</p>
+<div class="textblock"><p>This provides a number of PlayerSlots displaying each in the UI. </p>
+<p>When the total number of players is below the maximum number, a vacant slot will be shown which will open a dialogue for adding another player when clicked. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lobby_panel_controller_8cs_source.html#l00015">15</a> of file <a class="el" href="_lobby_panel_controller_8cs_source.html">LobbyPanelController.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7a402c652b656433f669377096542d82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a402c652b656433f669377096542d82">&#9670;&nbsp;</a></span>OnClickAddPlayer()</h2>
@@ -199,12 +201,12 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>customizationDi
 <li>Raise an event to have the new player added. Remark: The player management is responsible to mark the input scheme and color as used upon add. The whole process of player creation is thus kept within this controller and the dialog until ready. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="_lobby_panel_controller_8cs_source.html#l00068">68</a> of file <a class="el" href="_lobby_panel_controller_8cs_source.html">LobbyPanelController.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lobby_panel_controller_8cs_source.html#l00071">71</a> of file <a class="el" href="_lobby_panel_controller_8cs_source.html">LobbyPanelController.cs</a>.</p>
 
 </div>
 </div>
-<a id="ac820cae421a1841d34ea13b9bdd947c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac820cae421a1841d34ea13b9bdd947c9">&#9670;&nbsp;</a></span>UpdateAllPlayerSlots()</h2>
+<a id="a9390ce2bd8499af37dd3dea04299c73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9390ce2bd8499af37dd3dea04299c73e">&#9670;&nbsp;</a></span>OnPlayerChange()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,21 +215,34 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>customizationDi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UpdateAllPlayerSlots </td>
+          <td class="memname">void OnPlayerChange </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classplayer_1_1_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespaceplayer.html#a1bd0356cc63d4f2b8a2d92cd22ac39d7">EventCause</a>&#160;</td>
+          <td class="paramname"><em>cause</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>: Also check for unused player slots? Or guarantee by Player destruction? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_lobby_panel_controller_8cs_source.html#l00087">87</a> of file <a class="el" href="_lobby_panel_controller_8cs_source.html">LobbyPanelController.cs</a>.</p>
+<p>Called when a local or remote Player is changed. </p>
+<p>Also called for updates of local-only player data (input) to trigger this. In this case, the net content will not have changed. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lobby_panel_controller_8cs_source.html#l00090">90</a> of file <a class="el" href="_lobby_panel_controller_8cs_source.html">LobbyPanelController.cs</a>.</p>
 
 </div>
 </div>
@@ -240,7 +255,7 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>customizationDi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceui.html">ui</a></li><li class="navelem"><a class="el" href="namespaceui_1_1mainmenu.html">mainmenu</a></li><li class="navelem"><a class="el" href="classui_1_1mainmenu_1_1_lobby_panel_controller.html">LobbyPanelController</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

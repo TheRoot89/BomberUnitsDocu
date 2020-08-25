@@ -1,0 +1,5 @@
+<map id="MoveHandler" name="MoveHandler">
+<area shape="rect" id="node2" href="$class_char_settings.html" title="{CharSettings\n|+ baseSpeed\l+ baseTurnSpeed\l+ showLabels\l+ kickBombSelectionAngleTolerance\l+ kickVelocityIncrement\l+ initialMaxBombs\l+ initialBombRange\l+ initialBombCountdown\l+ initialBombCooldown\l+ initialKickVelocity\l+ initialThrowDist\l|}" alt="" coords="5,132,240,356"/>
+<area shape="rect" id="node4" href="$classplayer_1_1_input_state.html" title="{InputState\n|+ inputMoveDir\l+ inputRotDir\l|}" alt="" coords="265,198,373,290"/>
+<area shape="rect" id="node5" href="$classplayer_1_1_movement_state.html" title="{MovementState\n|+ charTransform\l+ speedMultiplier\l+ remainingCharTurnDeg\l+ isMoving\l&#45; movement\l|+ MovementState()\l+ SetMovement()\l+ GetMovement()\l+ SendSynced()\l+ ReceiveSynced()\l}" alt="" coords="397,147,563,341"/>
+</map>

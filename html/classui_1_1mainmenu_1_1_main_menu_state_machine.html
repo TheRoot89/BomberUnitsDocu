@@ -82,13 +82,10 @@ $(document).ready(function(){initNavTree('classui_1_1mainmenu_1_1_main_menu_stat
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classui_1_1mainmenu_1_1_main_menu_state_machine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MainMenuStateMachine Class Reference</div>  </div>
@@ -103,6 +100,9 @@ $(document).ready(function(){initNavTree('classui_1_1mainmenu_1_1_main_menu_stat
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classui_1_1mainmenu_1_1_main_menu_state_machine__inherit__graph.png" border="0" usemap="#_main_menu_state_machine_inherit__map" alt="Inheritance graph"/></div>
+<map name="_main_menu_state_machine_inherit__map" id="_main_menu_state_machine_inherit__map">
+<area shape="rect" id="node2" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="15,131,171,355"/>
+</map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for MainMenuStateMachine:</div>
@@ -110,96 +110,84 @@ $(document).ready(function(){initNavTree('classui_1_1mainmenu_1_1_main_menu_stat
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classui_1_1mainmenu_1_1_main_menu_state_machine__coll__graph.png" border="0" usemap="#_main_menu_state_machine_coll__map" alt="Collaboration graph"/></div>
+<map name="_main_menu_state_machine_coll__map" id="_main_menu_state_machine_coll__map">
+<area shape="rect" id="node2" href="class_state_machine.html" title="Common Base class for all state machines. " alt="" coords="188,132,344,341"/>
+<area shape="rect" id="node4" href="class_state.html" title="Extended functionality for Unity SM Behaviours and makes them complete &#39;States&#39;. " alt="" coords="70,404,241,569"/>
+</map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a2afce0a47a93eee73a314d53e4890153"><td class="memItemLeft" align="right" valign="top"><a id="a2afce0a47a93eee73a314d53e4890153"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Command</b> { <br />
-&#160;&#160;<b>None</b>, 
-<b>Next</b>, 
-<b>Back</b>, 
-<b>Options</b>, 
-<br />
-&#160;&#160;<b>Init</b>, 
-<b>Host</b>, 
-<b>Join</b>
-<br />
- }</td></tr>
-<tr class="separator:a2afce0a47a93eee73a314d53e4890153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a45083581ca36844d685bb506c1d72f0d"><td class="memItemLeft" align="right" valign="top"><a id="a45083581ca36844d685bb506c1d72f0d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyMenu</b> ()</td></tr>
-<tr class="separator:a45083581ca36844d685bb506c1d72f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f8006fb72cb622d5b5dcc8b3408738"><td class="memItemLeft" align="right" valign="top"><a id="a14f8006fb72cb622d5b5dcc8b3408738"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpretTriggerCommand</b> (Command triggerCmd)</td></tr>
-<tr class="separator:a14f8006fb72cb622d5b5dcc8b3408738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8eaa91280d37b9ef060bc0be41ac5f"><td class="memItemLeft" align="right" valign="top"><a id="aad8eaa91280d37b9ef060bc0be41ac5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerTransitionWrapper</b> (string trigger)</td></tr>
-<tr class="separator:aad8eaa91280d37b9ef060bc0be41ac5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1107a0432bf6f35e6eaacba6fb693570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html#a1107a0432bf6f35e6eaacba6fb693570">InitDepOnNetState</a> ()</td></tr>
-<tr class="separator:a1107a0432bf6f35e6eaacba6fb693570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6202bf2123c11886dc1a09ec5fb721b3"><td class="memItemLeft" align="right" valign="top"><a id="a6202bf2123c11886dc1a09ec5fb721b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureMainMenuInstantiated</b> ()</td></tr>
-<tr class="separator:a6202bf2123c11886dc1a09ec5fb721b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0091452c3122c20eb932653295c01ce"><td class="memItemLeft" align="right" valign="top"><a id="ac0091452c3122c20eb932653295c01ce"></a>
 <a class="el" href="classui_1_1_menu_page.html">MenuPage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPageFromName</b> (string pageName)</td></tr>
 <tr class="separator:ac0091452c3122c20eb932653295c01ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5779165c8f1a138c662cb26a8b2b2d"><td class="memItemLeft" align="right" valign="top"><a id="aca5779165c8f1a138c662cb26a8b2b2d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DisconnectFromMP</b> ()</td></tr>
-<tr class="separator:aca5779165c8f1a138c662cb26a8b2b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a74eec5cd2634f190f31a9da427297854"><td class="memItemLeft" align="right" valign="top"><a id="a74eec5cd2634f190f31a9da427297854"></a>
-static <a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html">MainMenuStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b> ()</td></tr>
-<tr class="separator:a74eec5cd2634f190f31a9da427297854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95968480e076e38e80a7ac714100a582"><td class="memItemLeft" align="right" valign="top"><a id="a95968480e076e38e80a7ac714100a582"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerTransition</b> (string trigger)</td></tr>
-<tr class="separator:a95968480e076e38e80a7ac714100a582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4b3756afe5bfddf3eca0c23a92754c"><td class="memItemLeft" align="right" valign="top"><a id="a6b4b3756afe5bfddf3eca0c23a92754c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLaunchBtnAvailable</b> (bool value)</td></tr>
+<tr class="separator:a6b4b3756afe5bfddf3eca0c23a92754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_state_machine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_state_machine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_state_machine.html">StateMachine</a></td></tr>
+<tr class="memitem:ab807f70baebac154b672fe7f6d1c9700 inherit pub_methods_class_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="ab807f70baebac154b672fe7f6d1c9700"></a>
+<a class="el" href="class_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#ab807f70baebac154b672fe7f6d1c9700">GetActiveState</a> ()</td></tr>
+<tr class="memdesc:ab807f70baebac154b672fe7f6d1c9700 inherit pub_methods_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the currently active state. <br /></td></tr>
+<tr class="separator:ab807f70baebac154b672fe7f6d1c9700 inherit pub_methods_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3817a443de9c6cedbb893e5ed1cc14d inherit pub_methods_class_state_machine"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#ac3817a443de9c6cedbb893e5ed1cc14d">TriggerTransition</a> (string transName)</td></tr>
+<tr class="memdesc:ac3817a443de9c6cedbb893e5ed1cc14d inherit pub_methods_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload to enable external transition triggering from current state.  <a href="class_state_machine.html#ac3817a443de9c6cedbb893e5ed1cc14d">More...</a><br /></td></tr>
+<tr class="separator:ac3817a443de9c6cedbb893e5ed1cc14d inherit pub_methods_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2521da2913ca168715298da5636dd16 inherit pub_methods_class_state_machine"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#af2521da2913ca168715298da5636dd16">TriggerTransition</a> (string fromState, string transName)</td></tr>
+<tr class="memdesc:af2521da2913ca168715298da5636dd16 inherit pub_methods_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload to enable external transition triggering using state and transition names.  <a href="class_state_machine.html#af2521da2913ca168715298da5636dd16">More...</a><br /></td></tr>
+<tr class="separator:af2521da2913ca168715298da5636dd16 inherit pub_methods_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057456089aadf240c40b4dbf724495f7 inherit pub_methods_class_state_machine"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#a057456089aadf240c40b4dbf724495f7">TriggerTransition</a> (<a class="el" href="class_state.html">State</a> fromState, string transName)</td></tr>
+<tr class="memdesc:a057456089aadf240c40b4dbf724495f7 inherit pub_methods_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to execute the given transition.  <a href="class_state_machine.html#a057456089aadf240c40b4dbf724495f7">More...</a><br /></td></tr>
+<tr class="separator:a057456089aadf240c40b4dbf724495f7 inherit pub_methods_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58df4b1b31e0682d77e62748c0250e52 inherit pub_methods_class_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a58df4b1b31e0682d77e62748c0250e52"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#a58df4b1b31e0682d77e62748c0250e52">UpdateCurrentState</a> (<a class="el" href="class_state.html">State</a> stateRef)</td></tr>
+<tr class="memdesc:a58df4b1b31e0682d77e62748c0250e52 inherit pub_methods_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used bu all States to announce themselves as currently active state when entered. <br /></td></tr>
+<tr class="separator:a58df4b1b31e0682d77e62748c0250e52 inherit pub_methods_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4242187f62952be3d9144f8415b0da2f inherit pub_methods_class_state_machine"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#a4242187f62952be3d9144f8415b0da2f">RegisterState</a> (<a class="el" href="class_state.html">State</a> state)</td></tr>
+<tr class="memdesc:a4242187f62952be3d9144f8415b0da2f inherit pub_methods_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by all States to register themselves at the SM during startup.  <a href="class_state_machine.html#a4242187f62952be3d9144f8415b0da2f">More...</a><br /></td></tr>
+<tr class="separator:a4242187f62952be3d9144f8415b0da2f inherit pub_methods_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6077a28bf491847c89af54b1c5984c84"><td class="memItemLeft" align="right" valign="top"><a id="a6077a28bf491847c89af54b1c5984c84"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>mainMenuPrefab</b></td></tr>
-<tr class="separator:a6077a28bf491847c89af54b1c5984c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef4bde7e9614c4ea11884b450bc0df4"><td class="memItemLeft" align="right" valign="top"><a id="adef4bde7e9614c4ea11884b450bc0df4"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>launchBtn</b></td></tr>
+<tr class="separator:adef4bde7e9614c4ea11884b450bc0df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d6d683aa98b751f76dd3ccbdf211bd"><td class="memItemLeft" align="right" valign="top"><a id="a80d6d683aa98b751f76dd3ccbdf211bd"></a>
+List&lt; <a class="el" href="classui_1_1_menu_page.html">MenuPage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pages</b></td></tr>
+<tr class="separator:a80d6d683aa98b751f76dd3ccbdf211bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_state_machine"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_state_machine')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_state_machine.html">StateMachine</a></td></tr>
+<tr class="memitem:a18400c2baf794b578451bb2b1fb0fb7e inherit pub_attribs_class_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a18400c2baf794b578451bb2b1fb0fb7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>logEnabled</b></td></tr>
+<tr class="separator:a18400c2baf794b578451bb2b1fb0fb7e inherit pub_attribs_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adf9b29cfa192202d8561a17ece0a2266"><td class="memItemLeft" align="right" valign="top"><a id="adf9b29cfa192202d8561a17ece0a2266"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html#adf9b29cfa192202d8561a17ece0a2266">MyStart</a> ()</td></tr>
+<tr class="memdesc:adf9b29cfa192202d8561a17ece0a2266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to provide an extended Start function for subclasses. Do not override '<a class="el" href="class_state_machine.html#a07aaf1227e4d645f15e0a964f54ef291" title="Callback is used to provide the state registering mechanism. ">Start()</a>' itself! <br /></td></tr>
+<tr class="separator:adf9b29cfa192202d8561a17ece0a2266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memItemLeft" align="right" valign="top"><a id="ae4b513cddd594f1c359e4f0a3e79a8c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
-<tr class="separator:ae4b513cddd594f1c359e4f0a3e79a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07aaf1227e4d645f15e0a964f54ef291"><td class="memItemLeft" align="right" valign="top"><a id="a07aaf1227e4d645f15e0a964f54ef291"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
-<tr class="separator:a07aaf1227e4d645f15e0a964f54ef291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd2b43a0f97d137a1d231bf9273866d"><td class="memItemLeft" align="right" valign="top"><a id="acbd2b43a0f97d137a1d231bf9273866d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetAllTriggers</b> ()</td></tr>
-<tr class="separator:acbd2b43a0f97d137a1d231bf9273866d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1107a0432bf6f35e6eaacba6fb693570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html#a1107a0432bf6f35e6eaacba6fb693570">InitDepOnNetState</a> ()</td></tr>
+<tr class="separator:a1107a0432bf6f35e6eaacba6fb693570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a14be8540c39e8ff0ab7639c2608e7966"><td class="memItemLeft" align="right" valign="top"><a id="a14be8540c39e8ff0ab7639c2608e7966"></a>
-Animator&#160;</td><td class="memItemRight" valign="bottom"><b>controller</b> = null</td></tr>
-<tr class="separator:a14be8540c39e8ff0ab7639c2608e7966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a4d70f4a3a2a1cb0eefe01ebd69ebc"><td class="memItemLeft" align="right" valign="top"><a id="a04a4d70f4a3a2a1cb0eefe01ebd69ebc"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>menuPagesInstance</b> = null</td></tr>
-<tr class="separator:a04a4d70f4a3a2a1cb0eefe01ebd69ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d98c563c26a8c18cdd95ecb1669043"><td class="memItemLeft" align="right" valign="top"><a id="ac3d98c563c26a8c18cdd95ecb1669043"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>menuInstance</b> = null</td></tr>
-<tr class="separator:ac3d98c563c26a8c18cdd95ecb1669043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:abe8fa6e6f542acc410a112e3f779d8ab"><td class="memItemLeft" align="right" valign="top"><a id="abe8fa6e6f542acc410a112e3f779d8ab"></a>
-static <a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html">MainMenuStateMachine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> = null</td></tr>
-<tr class="separator:abe8fa6e6f542acc410a112e3f779d8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_state_machine"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_state_machine')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_state_machine.html">StateMachine</a></td></tr>
+<tr class="memitem:adcdf89b3a7bbf31a537ff156403af798 inherit pro_attribs_class_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="adcdf89b3a7bbf31a537ff156403af798"></a>
+<a class="el" href="class_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#adcdf89b3a7bbf31a537ff156403af798">activeState</a> = null</td></tr>
+<tr class="memdesc:adcdf89b3a7bbf31a537ff156403af798 inherit pro_attribs_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds a reference to the current active state. <br /></td></tr>
+<tr class="separator:adcdf89b3a7bbf31a537ff156403af798 inherit pro_attribs_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14be8540c39e8ff0ab7639c2608e7966 inherit pro_attribs_class_state_machine"><td class="memItemLeft" align="right" valign="top"><a id="a14be8540c39e8ff0ab7639c2608e7966"></a>
+Animator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_machine.html#a14be8540c39e8ff0ab7639c2608e7966">controller</a> = null</td></tr>
+<tr class="memdesc:a14be8540c39e8ff0ab7639c2608e7966 inherit pro_attribs_class_state_machine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the Unity (Animation) mechanism for SM design. <br /></td></tr>
+<tr class="separator:a14be8540c39e8ff0ab7639c2608e7966 inherit pro_attribs_class_state_machine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The MainMenu state machine provides the logic behind switching the menu pages and provides callbacks for actions required from the states. </p>
 <p>It is part of the Main Menu Scene. </p>
 
-<p class="definition">Definition at line <a class="el" href="_main_menu_state_machine_8cs_source.html#l00011">11</a> of file <a class="el" href="_main_menu_state_machine_8cs_source.html">MainMenuStateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_main_menu_state_machine_8cs_source.html#l00014">14</a> of file <a class="el" href="_main_menu_state_machine_8cs_source.html">MainMenuStateMachine.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1107a0432bf6f35e6eaacba6fb693570"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1107a0432bf6f35e6eaacba6fb693570">&#9670;&nbsp;</a></span>InitDepOnNetState()</h2>
@@ -219,13 +207,13 @@ static <a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html"
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>: case "Local": was removed, so no direct transition to the local MP match page is possible this way. How can we get this functionality back? controller.SetTrigger("Next"); break; </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000044">Todo:</a></b></dt><dd>: case "Local": was removed, so no direct transition to the local MP match page is possible this way. How can we get this functionality back? We would need to set the following: controller.Play("LocalMatchPage"); break; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_main_menu_state_machine_8cs_source.html#l00117">117</a> of file <a class="el" href="_main_menu_state_machine_8cs_source.html">MainMenuStateMachine.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_main_menu_state_machine_8cs_source.html#l00059">59</a> of file <a class="el" href="_main_menu_state_machine_8cs_source.html">MainMenuStateMachine.cs</a>.</p>
 
 </div>
 </div>
@@ -238,7 +226,7 @@ static <a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceui.html">ui</a></li><li class="navelem"><a class="el" href="namespaceui_1_1mainmenu.html">mainmenu</a></li><li class="navelem"><a class="el" href="classui_1_1mainmenu_1_1_main_menu_state_machine.html">MainMenuStateMachine</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 09:22:33 for BomberUnits by
+    <li class="footer">Generated on Tue Aug 25 2020 09:01:12 for BomberUnits by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,33 +1,34 @@
 var classplayer_1_1_player =
 [
-    [ "State", "classplayer_1_1_player.html#a5d74787dedbc4e11c1ab15bf487e61f8", [
-      [ "notPlaying", "classplayer_1_1_player.html#a5d74787dedbc4e11c1ab15bf487e61f8a5fd5e6d53eda605ad36321bcd479daee", null ],
-      [ "playing", "classplayer_1_1_player.html#a5d74787dedbc4e11c1ab15bf487e61f8a7ed501a93c1205e3a23f7f0313ea65dc", null ],
-      [ "dead", "classplayer_1_1_player.html#a5d74787dedbc4e11c1ab15bf487e61f8af58e6a506c76fc2c90a7d29cbc631c2f", null ]
+    [ "UnityStringIntEvent", "classplayer_1_1_player_1_1_unity_string_int_event.html", null ],
+    [ "State", "classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284", [
+      [ "notPlaying", "classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284a5fd5e6d53eda605ad36321bcd479daee", null ],
+      [ "playing", "classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284a7ed501a93c1205e3a23f7f0313ea65dc", null ],
+      [ "ready", "classplayer_1_1_player.html#a37aa9e50301ade8fb86f3344ec9a6284ab2fdab230a2c39f3595a947861863cb7", null ]
     ] ],
-    [ "Type", "classplayer_1_1_player.html#a1d1cfd8ffb84e947f82999c682b666a7", [
-      [ "local", "classplayer_1_1_player.html#a1d1cfd8ffb84e947f82999c682b666a7af5ddaf0ca7929578b408c909429f68f2", null ],
-      [ "remote", "classplayer_1_1_player.html#a1d1cfd8ffb84e947f82999c682b666a7a2c18e486683a3db1e645ad8523223b72", null ]
-    ] ],
-    [ "Player", "classplayer_1_1_player.html#a645e2c37f442c43763ae7c44279f54b4", null ],
-    [ "Player", "classplayer_1_1_player.html#a7132b804f4467176cba14a715682d0cc", null ],
+    [ "Player", "classplayer_1_1_player.html#a5e4eeb3ef0149e5631442a33478a2e12", null ],
+    [ "Awake", "classplayer_1_1_player.html#a9595148316c5b32f9ce72c90a574f52f", null ],
+    [ "Contains", "classplayer_1_1_player.html#a9eb7e171d2c684927f0be4056e05a207", null ],
+    [ "Count", "classplayer_1_1_player.html#a5c29d639d79d8fed8b46d9702121d5fc", null ],
+    [ "FreeResourcesAndRemove", "classplayer_1_1_player.html#a95d8c090ec88f48d41ad623d13e0d82e", null ],
+    [ "Get", "classplayer_1_1_player.html#acc93e613d072ed09c909270ce847ff37", null ],
+    [ "GetAll", "classplayer_1_1_player.html#a6023f8fcf14e41345fd70b6d10462b08", null ],
+    [ "GetClientId", "classplayer_1_1_player.html#ab172a2047501c81b67f9f713ccaf2feb", null ],
+    [ "GetColor", "classplayer_1_1_player.html#a26479b236729b5d013ced949b019dd87", null ],
     [ "GetCtrl", "classplayer_1_1_player.html#a770362001a10745adbac9e180431c8a4", null ],
-    [ "IsLocal", "classplayer_1_1_player.html#aa72a1414a9a27affdb25cc120cda4ad2", null ],
-    [ "LoadOrCreateMain", "classplayer_1_1_player.html#a26f82bec64b6b5efc770011c8733e77c", null ],
-    [ "NewLocalPlayer", "classplayer_1_1_player.html#a0545cba3fcd4837a92f064b1bd9c9520", null ],
-    [ "NewPlayerFromNetData", "classplayer_1_1_player.html#ad82ca5cd6a219030cc7bc12accbe8399", null ],
-    [ "SaveAsMain", "classplayer_1_1_player.html#a0cac4e0af9f4a575e5c3cb8988730999", null ],
-    [ "ToRaw", "classplayer_1_1_player.html#aeb20f6305414cac69e3b1c8b557e3504", null ],
-    [ "UpdateWith", "classplayer_1_1_player.html#a4ac3da773312bbdec2eef81265091c70", null ],
-    [ "clientID", "classplayer_1_1_player.html#ad658ef4234d62bbb2844b427bd2aa6aa", null ],
-    [ "color", "classplayer_1_1_player.html#acd10b0042859d5c953360f3efb2701fc", null ],
-    [ "input", "classplayer_1_1_player.html#a72386a46ee420f71a0076dc47f2676fb", null ],
-    [ "name", "classplayer_1_1_player.html#a8ccf841cb59e451791bcb2e1ac4f1edc", null ],
+    [ "GetName", "classplayer_1_1_player.html#ac97112280cc4435c8df3c88070c839b4", null ],
+    [ "GetNetData", "classplayer_1_1_player.html#a195a3811395e1adda6e6afc924ac49b3", null ],
+    [ "GetPrefab", "classplayer_1_1_player.html#a2d9524ee87b0cb838dbb379f9148d90a", null ],
+    [ "GetState", "classplayer_1_1_player.html#ae8742399df838aa4c32a36220a9d10e7", null ],
+    [ "HasFigure", "classplayer_1_1_player.html#a263461ebae5129f74caaf28ba3935df2", null ],
+    [ "IsLocal", "classplayer_1_1_player.html#af57f0c87d5ab60dbfbea54bf5020acc8", null ],
+    [ "OnNetDataChange", "classplayer_1_1_player.html#a942426861ac6049b047832df73ac4c08", null ],
+    [ "ToString", "classplayer_1_1_player.html#aa73e7c4dd1df5fd5fbf81c7764ee1533", null ],
+    [ "UpdateMultiple", "classplayer_1_1_player.html#a9a18c3796d9ee276482de1aa1b79fbd4", null ],
+    [ "clientId", "classplayer_1_1_player.html#a8753a72f0a67c40ecbbd4582cbe680b1", null ],
+    [ "colorDictKeyBackup", "classplayer_1_1_player.html#a3519ba4b45ec71c323ac279041d68f09", null ],
     [ "playerFigure", "classplayer_1_1_player.html#adf44da2163ca6067b247cdc95ecc862b", null ],
-    [ "playerFigurePrefab", "classplayer_1_1_player.html#afdb2ab8135385520ea1d31247e1143f5", null ],
-    [ "playerSlot", "classplayer_1_1_player.html#aa51c4ab395c4ce3629133f3c15526379", null ],
+    [ "players", "classplayer_1_1_player.html#aa7b79e961b727420e02004b77314b547", null ],
     [ "spawnLoc", "classplayer_1_1_player.html#a822e49087b879cfbb569168f7b28d925", null ],
-    [ "state", "classplayer_1_1_player.html#a876b486d3a5241a126bd5751c5f70f79", null ],
-    [ "type", "classplayer_1_1_player.html#ab6f4e6d3fde00ce906e46494f60dfe7a", null ],
-    [ "UID", "classplayer_1_1_player.html#a6ebb5b72510c0b72d007afc720364818", null ]
+    [ "uid", "classplayer_1_1_player.html#a421b619707d65d8c377508c560b5c3c5", null ]
 ];

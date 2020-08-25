@@ -1,3 +1,3 @@
 <map id="Listener" name="Listener">
-<area shape="rect" id="node2" href="$class_pair.html" title="{Pair\&lt; UnityEvent, UnityAction \&gt;\n|+ First\l+ Second\l|+ Pair()\l+ Pair()\l}" alt="" coords="5,5,212,112"/>
+<area shape="rect" id="node2" href="$class_pair.html" title="{Pair\&lt; UnityEvent, UnityAction \&gt;\n|+ First\l+ Second\l|+ Pair()\l+ Pair()\l+ Equals()\l+ GetHashCode()\l# Equals()\l}" alt="" coords="5,5,212,156"/>
 </map>
